@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://26hfwix0vxbq" path="res://card/card_target_selector/card_target_selector.tscn" id="3_0lqow"]
 [ext_resource type="AudioStream" uid="uid://bwd4bs0lvmopv" path="res://music/Nosville-Soundtrack_8-bit.mp3" id="3_dxsh4"]
 [ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://enemies/enemy.tscn" id="4_ihngk"]
-[ext_resource type="Texture2D" uid="uid://bjnrct4phemuf" path="res://test_folder/mina_oeste_bg_x640.png" id="4_ihybe"]
+[ext_resource type="Texture2D" uid="uid://cp4iq5fd6j8be" path="res://art/background.png" id="4_ihybe"]
 [ext_resource type="Script" uid="uid://d0ju8kxj270pt" path="res://enemies/enemy_handler.gd" id="5_4m2ey"]
 [ext_resource type="Resource" uid="uid://bba0mkapf7afe" path="res://enemies/crab/crab_enemy.tres" id="6_rcrfk"]
 [ext_resource type="Script" uid="uid://bjmooy4x05e57" path="res://ui/battle_ui.gd" id="7_rcrfk"]
