@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://ec65km0arx71"]
+
+[ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Player/Characters/character_stats.gd" id="1_s1pb3"]
+[ext_resource type="Texture2D" uid="uid://cpydvk8mq66o5" path="res://art/tile_0087.png" id="1_svnxh"]
+[ext_resource type="Resource" uid="uid://ckqscnsae8pwi" path="res://Entities/Player/Characters/Warrior/warrior_draftable_cards.tres" id="2_wgifn"]
+[ext_resource type="Resource" uid="uid://bk7txja3x83th" path="res://Entities/Player/Characters/Warrior/warrior_starting_deck.tres" id="3_yy12i"]
+
+[resource]
+script = ExtResource("1_s1pb3")
+character_name = "Warrior"
+description = "Likes to slice things."
+portrait = ExtResource("1_svnxh")
+starting_deck = ExtResource("3_yy12i")
+draftable_cards = ExtResource("2_wgifn")
+cards_per_turn = 5
+max_mana = 3
+max_health = 38
+art = ExtResource("1_svnxh")
+metadata/_custom_type_script = "uid://ct3m4uqtcbqtc"

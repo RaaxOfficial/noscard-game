@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://b6t87pws1baur"]
+
+[ext_resource type="PackedScene" uid="uid://duwfq02dcc7qb" path="res://Entities/Card/card_menu_ui.tscn" id="1_1qj6r"]
+[ext_resource type="Script" uid="uid://bdaq1rietl0af" path="res://UI/Card/Card Rewards/card_rewards.gd" id="1_8qcms"]
+[ext_resource type="PackedScene" uid="uid://lto4w36ihp6x" path="res://UI/Card/Card Tooltip/card_tooltip_popup.tscn" id="2_8qcms"]
+[ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Card/card.gd" id="2_lqqnu"]
+[ext_resource type="Resource" uid="uid://bvmpy826aefsm" path="res://Entities/Player/Characters/Wild Keeper/Cards/wild_keeper_snake_rush_card.tres" id="3_p3fln"]
+[ext_resource type="Resource" uid="uid://4olsvcwpt1hx" path="res://Entities/Player/Characters/Wild Keeper/Cards/wild_keeper_ivy_card.tres" id="4_6n3ab"]
+[ext_resource type="Resource" uid="uid://gtbh37in2l6h" path="res://Entities/Player/Characters/Wild Keeper/Cards/wild_keeper_forest_power_card.tres" id="5_wmuch"]
+
+[node name="CardRewards" type="ColorRect" unique_id=120003861]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6862745)
+script = ExtResource("1_8qcms")
+rewards = Array[ExtResource("2_lqqnu")]([ExtResource("3_p3fln"), ExtResource("4_6n3ab"), ExtResource("5_wmuch")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1578821023]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -45.5
+offset_top = -31.0
+offset_right = 45.5
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Cards" type="HBoxContainer" parent="VBoxContainer" unique_id=510043752]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 8
+
+[node name="CardMenuUI" parent="VBoxContainer/Cards" unique_id=123346407 instance=ExtResource("1_1qj6r")]
+layout_mode = 2
+
+[node name="CardMenuUI2" parent="VBoxContainer/Cards" unique_id=551550456 instance=ExtResource("1_1qj6r")]
+layout_mode = 2
+
+[node name="CardMenuUI3" parent="VBoxContainer/Cards" unique_id=1433039256 instance=ExtResource("1_1qj6r")]
+layout_mode = 2
+
+[node name="SkipCardReward" type="Button" parent="VBoxContainer" unique_id=163665265]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 12)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Skip"
+
+[node name="CardTooltipPopup" parent="." unique_id=435580330 instance=ExtResource("2_8qcms")]
+visible = false
+layout_mode = 1
+background_color = Color(0, 0, 0, 0.5019608)
+
+[node name="TakeButton" type="Button" parent="CardTooltipPopup" unique_id=1115957209]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -25.0
+offset_top = -27.0
+offset_right = 25.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Take"

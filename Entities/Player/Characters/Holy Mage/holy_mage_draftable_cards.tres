@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardPile" format=3 uid="uid://cj7y7rw7nyorl"]
+
+[ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Card/card.gd" id="1_wjpcn"]
+[ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Card/Card Pile/card_pile.gd" id="2_ltrjm"]
+[ext_resource type="Resource" uid="uid://bocxjlf82vxqr" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_healing_card.tres" id="2_nsetj"]
+[ext_resource type="Resource" uid="uid://dm1cqfxvrtdqk" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_holy_light_card.tres" id="3_dqn8a"]
+[ext_resource type="Resource" uid="uid://gh7312ufyhgv" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_cure_all_card.tres" id="4_sc68a"]
+[ext_resource type="Resource" uid="uid://b0nx8dsqs3y7p" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_holy_hammer_card.tres" id="5_haxk3"]
+
+[resource]
+script = ExtResource("2_ltrjm")
+cards = Array[ExtResource("1_wjpcn")]([ExtResource("2_nsetj"), ExtResource("2_nsetj"), ExtResource("2_nsetj"), ExtResource("3_dqn8a"), ExtResource("3_dqn8a"), ExtResource("3_dqn8a"), ExtResource("4_sc68a"), ExtResource("5_haxk3"), ExtResource("5_haxk3")])
+metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

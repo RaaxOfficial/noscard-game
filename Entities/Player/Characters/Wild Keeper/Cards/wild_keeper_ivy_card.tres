@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://4olsvcwpt1hx"]
+
+[ext_resource type="Texture2D" uid="uid://c6rme2o6dyaoj" path="res://art/tile_0104.png" id="1_ia48p"]
+[ext_resource type="Script" uid="uid://8usp3w8t8ru2" path="res://Entities/Player/Characters/Wild Keeper/Cards/wild_keeper_ivy_card.gd" id="2_3qrdx"]
+[ext_resource type="AudioStream" uid="uid://dixklg6g4jnsq" path="res://Assets/Audio/SFX/slash.ogg" id="3_3qrdx"]
+
+[resource]
+script = ExtResource("2_3qrdx")
+id = "wild_keeper_ivy_card"
+rarity = 1
+target = 2
+cost = 2
+icon = ExtResource("1_ia48p")
+tooltip_text = "[center]Deal [color=\"ff0000\"]9[/color] damage to all enemies. Apply [color=\"d3aa17\"]Shock[/color] for 1 turn.[/center]"
+sound = ExtResource("3_3qrdx")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Deck Builder Project"
+config/name="NosBit"
 run/main_scene="uid://c7oxkqjy8y15c"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="uid://cfmdsuti4aqft"
@@ -21,10 +21,10 @@ buses/default_bus_layout="uid://bkuglkx7we5vc"
 
 [autoload]
 
-Events="*uid://cts5ie47a2071"
-Shaker="*uid://crd0u5mrfcx4i"
-MusicPlayer="*uid://fjmh2iwxcx7a"
-SFXPlayer="*uid://s8jp58evyn8h"
+EventManager="*uid://cts5ie47a2071"
+ShakeManager="*uid://crd0u5mrfcx4i"
+MusicManager="*uid://fjmh2iwxcx7a"
+SFXManager="*uid://s8jp58evyn8h"
 
 [display]
 

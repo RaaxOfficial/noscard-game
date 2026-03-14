@@ -1,8 +1,8 @@
 [gd_resource type="Theme" format=3 uid="uid://xqhaecxd2rsq"]
 
-[ext_resource type="FontFile" uid="uid://dskmdk146n4rq" path="res://art/pixel_rpg.ttf" id="1_ydht1"]
-[ext_resource type="StyleBox" uid="uid://dbu2g5is65xrj" path="res://card/card_hovered_style_box_flat.tres" id="2_8gw6x"]
-[ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://card/card_base_style_box_flat.tres" id="3_g21io"]
+[ext_resource type="FontFile" uid="uid://dskmdk146n4rq" path="res://Assets/Fonts/pixel_rpg.ttf" id="1_ydht1"]
+[ext_resource type="StyleBox" uid="uid://dbu2g5is65xrj" path="res://Entities/Card/Stylebox/card_hovered_style_box_flat.tres" id="2_8gw6x"]
+[ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://Entities/Card/Stylebox/card_base_style_box_flat.tres" id="3_g21io"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58jnp"]
 bg_color = Color(0.6509804, 0.36862746, 0.31764707, 0.49019608)

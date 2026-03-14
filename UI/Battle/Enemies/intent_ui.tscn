@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://dx26sgo77cm56"]
+
+[ext_resource type="Texture2D" uid="uid://d0edy7thj8ce6" path="res://art/heart.png" id="1_8yxru"]
+[ext_resource type="Script" uid="uid://dwqvgh8m5jh6f" path="res://UI/Battle/Enemies/intent_ui.gd" id="1_j3nyr"]
+
+[node name="IntentUI" type="HBoxContainer" unique_id=375231013]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 14.0
+grow_horizontal = 2
+theme_override_constants/separation = 1
+alignment = 1
+script = ExtResource("1_j3nyr")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=1167013458]
+custom_minimum_size = Vector2(14, 14)
+layout_mode = 2
+texture = ExtResource("1_8yxru")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Number" type="Label" parent="." unique_id=945804611]
+layout_mode = 2
+size_flags_vertical = 1
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

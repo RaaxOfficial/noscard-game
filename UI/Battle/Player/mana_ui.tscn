@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://d1lk80tnhnt42"]
+
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_lu7sp"]
+[ext_resource type="Script" uid="uid://dotghrac2806a" path="res://UI/Battle/Player/mana_ui.gd" id="2_nt0up"]
+
+[node name="ManaUI" type="Panel" unique_id=1519675835]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -22.0
+offset_right = 23.0
+offset_bottom = -4.0
+grow_vertical = 0
+theme = ExtResource("1_lu7sp")
+script = ExtResource("2_nt0up")
+
+[node name="ManaLabel" type="Label" parent="." unique_id=1547924393]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1

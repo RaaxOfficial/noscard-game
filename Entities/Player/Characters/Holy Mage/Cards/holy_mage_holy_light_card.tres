@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Card" format=3 uid="uid://dm1cqfxvrtdqk"]
+
+[ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Card/card.gd" id="1_7sf8c"]
+[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://art/tile_0130.png" id="1_sfn16"]
+[ext_resource type="AudioStream" uid="uid://dixklg6g4jnsq" path="res://Assets/Audio/SFX/slash.ogg" id="3_a3gw8"]
+
+[resource]
+script = ExtResource("1_7sf8c")
+id = "holy_mage_holy_light_card"
+rarity = 1
+target = 1
+cost = 2
+icon = ExtResource("1_sfn16")
+tooltip_text = "[center]Deal [color=\"ff0000\"]6[/color] damage. Apply [color=\"d3aa17\"]Blind[/color].[/center]"
+sound = ExtResource("3_a3gw8")
+metadata/_custom_type_script = "uid://yhnspsq248rn"
