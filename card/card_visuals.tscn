@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://gliubhdf0s0"]
+
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_8uwpd"]
+[ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://card/card_base_style_box_flat.tres" id="2_nus08"]
+[ext_resource type="Script" uid="uid://ch5ojwrnlswiq" path="res://card/card_visuals.gd" id="2_ofefm"]
+[ext_resource type="Resource" uid="uid://bocxjlf82vxqr" path="res://characters/holy_mage/cards/holy_mage_healing_card.tres" id="3_56qiq"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_ofefm"]
+[ext_resource type="Texture2D" uid="uid://e2h0gwwvmi24" path="res://art/rarity.png" id="4_56qiq"]
+
+[node name="CardVisuals" type="Control" unique_id=748695514]
+custom_minimum_size = Vector2(25, 30)
+layout_mode = 3
+anchors_preset = 0
+theme = ExtResource("1_8uwpd")
+script = ExtResource("2_ofefm")
+card = ExtResource("3_56qiq")
+
+[node name="Panel" type="Panel" parent="." unique_id=68044167]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("2_nus08")
+
+[node name="Cost" type="Label" parent="." unique_id=1712791057]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 10.0
+offset_bottom = 11.0
+theme_override_font_sizes/font_size = 7
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Icon" type="TextureRect" parent="." unique_id=1123209512]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_ofefm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Rarity" type="TextureRect" parent="." unique_id=584637484]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -8.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = 8.0
+grow_horizontal = 0
+texture = ExtResource("4_56qiq")
+expand_mode = 1
+stretch_mode = 5

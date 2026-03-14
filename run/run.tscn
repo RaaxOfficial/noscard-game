@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://c403mftopa3f6"]
+
+[ext_resource type="PackedScene" uid="uid://v2uwtsply7kf" path="res://map/map.tscn" id="1_6y1hf"]
+[ext_resource type="Script" uid="uid://bqywishr0k410" path="res://run/run.gd" id="1_wkui6"]
+[ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://run/run_startup.tres" id="2_badgd"]
+[ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://ui/card_pile_opener.tscn" id="4_irdq8"]
+[ext_resource type="PackedScene" uid="uid://b8q2qgacswmyx" path="res://ui/gold_ui.tscn" id="4_k8enk"]
+[ext_resource type="Texture2D" uid="uid://1jxkrrqj5h18" path="res://art/deck.png" id="5_io1fk"]
+[ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://ui/card_pile_view.tscn" id="6_6x33b"]
+
+[node name="Run" type="Node" unique_id=1553944693]
+script = ExtResource("1_wkui6")
+run_startup = ExtResource("2_badgd")
+
+[node name="Map" parent="." unique_id=2054299021 instance=ExtResource("1_6y1hf")]
+
+[node name="CurrentView" type="Node" parent="." unique_id=492381709]
+
+[node name="DebugButtons" type="VBoxContainer" parent="." unique_id=1638067924]
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+alignment = 1
+
+[node name="MapButton" type="Button" parent="DebugButtons" unique_id=1834407313]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Map"
+
+[node name="BattleButton" type="Button" parent="DebugButtons" unique_id=1456499802]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Battle"
+
+[node name="ShopButton" type="Button" parent="DebugButtons" unique_id=278110814]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Shop"
+
+[node name="CampfireButton" type="Button" parent="DebugButtons" unique_id=189883984]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Campifre"
+
+[node name="TreasureButton" type="Button" parent="DebugButtons" unique_id=1799456060]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Treasure"
+
+[node name="BattleRewardButton" type="Button" parent="DebugButtons" unique_id=933806245]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Rewards"
+
+[node name="TopBarCanvas" type="CanvasLayer" parent="." unique_id=468907575]
+layer = 3
+
+[node name="Background" type="ColorRect" parent="TopBarCanvas" unique_id=113120908]
+custom_minimum_size = Vector2(0, 18)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 0.6862745)
+
+[node name="BarItems" type="HBoxContainer" parent="TopBarCanvas" unique_id=1567099451]
+custom_minimum_size = Vector2(0, 18)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="TopBarCanvas/BarItems" unique_id=94232840]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_right = 2
+
+[node name="GoldUI" parent="TopBarCanvas/BarItems/MarginContainer" unique_id=1809462329 instance=ExtResource("4_k8enk")]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="DeckButton" parent="TopBarCanvas/BarItems/MarginContainer" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("4_irdq8")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 8
+texture_normal = ExtResource("5_io1fk")
+counter = NodePath("Counter")
+
+[node name="Counter" type="Label" parent="TopBarCanvas/BarItems/MarginContainer/DeckButton" unique_id=1142472071]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 12.0
+offset_right = 5.0
+offset_bottom = 18.0
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DeckView" parent="TopBarCanvas" unique_id=12730481 instance=ExtResource("6_6x33b")]
+unique_name_in_owner = true
+visible = false

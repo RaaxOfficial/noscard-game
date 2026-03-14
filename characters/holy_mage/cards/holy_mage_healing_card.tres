@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://bocxjlf82vxqr"]
+
+[ext_resource type="Texture2D" uid="uid://dmnh5xxe2xne0" path="res://art/player_heart.png" id="1_gwjsu"]
+[ext_resource type="Script" uid="uid://3wda0cqjtnxc" path="res://characters/holy_mage/cards/holy_mage_healing_card.gd" id="2_gwjsu"]
+[ext_resource type="AudioStream" uid="uid://bq0xce0o1w8ys" path="res://sfx/true_strength.ogg" id="3_dnmv2"]
+
+[resource]
+script = ExtResource("2_gwjsu")
+id = "holy_mage_healing_card"
+type = 2
+cost = 2
+icon = ExtResource("1_gwjsu")
+tooltip_text = "[center]Recover [color=\"80cca3\"]5[/color] HP.[/center]"
+sound = ExtResource("3_dnmv2")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

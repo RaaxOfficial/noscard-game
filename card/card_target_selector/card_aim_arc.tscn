@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dicnoa4p66j4l"]
+
+[sub_resource type="Curve" id="Curve_t7tew"]
+_limits = [0.2, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 0.2), 0.0, 0.0, 0, 0, Vector2(0.8767773, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.2), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="CardAimArc" type="Line2D" unique_id=1461190932]
+width = 4.0
+width_curve = SubResource("Curve_t7tew")

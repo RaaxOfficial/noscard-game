@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://dj5rtsxgjbivd"]
+
+[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://art/tile_0130.png" id="1_ydevx"]
+[ext_resource type="Script" uid="uid://bnmvj2cxadov4" path="res://characters/holy_mage/cards/holy_mage_basic_card.gd" id="2_ydevx"]
+[ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://sfx/axe.ogg" id="3_30yra"]
+
+[resource]
+script = ExtResource("2_ydevx")
+id = "holy_mage_basic_card"
+target = 1
+cost = 1
+icon = ExtResource("1_ydevx")
+tooltip_text = "[center]Deal [color=\"ff0000\"]4[/color] damage.[/center]"
+sound = ExtResource("3_30yra")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

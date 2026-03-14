@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="RunStartup" format=3 uid="uid://bwgk87l43oehf"]
+
+[ext_resource type="Script" uid="uid://hhhrl7nxyar7" path="res://custom_resources/run_startup.gd" id="1_fskkm"]
+[ext_resource type="Resource" uid="uid://fbnpo60jbtew" path="res://characters/wild_keeper/wild_keeper.tres" id="1_gf80o"]
+
+[resource]
+script = ExtResource("1_fskkm")
+picked_character = ExtResource("1_gf80o")
+metadata/_custom_type_script = "uid://hhhrl7nxyar7"
