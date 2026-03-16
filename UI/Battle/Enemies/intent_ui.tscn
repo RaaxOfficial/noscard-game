@@ -4,13 +4,9 @@
 [ext_resource type="Script" uid="uid://dwqvgh8m5jh6f" path="res://UI/Battle/Enemies/intent_ui.gd" id="1_j3nyr"]
 
 [node name="IntentUI" type="HBoxContainer" unique_id=375231013]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -20.0
-offset_right = 20.0
+offset_right = 40.0
 offset_bottom = 14.0
-grow_horizontal = 2
+pivot_offset_ratio = Vector2(0, 1)
 theme_override_constants/separation = 1
 alignment = 1
 script = ExtResource("1_j3nyr")

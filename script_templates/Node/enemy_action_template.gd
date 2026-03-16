@@ -10,6 +10,6 @@ func perform_action() -> void:
 	var start := enemy.global_position
 	var end := target.global_position + Vector2.RIGHT * 32
 	
-	SFXPlayer.play(sound)
+	SFXManager.play(sound)
 	
 	EventManager.enemy_action_completed.emit(enemy)
