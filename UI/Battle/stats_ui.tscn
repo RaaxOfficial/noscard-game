@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dqghv0t4eg7pw"]
 
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_inad3"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_inad3"]
 [ext_resource type="Script" uid="uid://cf21yynumye43" path="res://UI/Battle/stats_ui.gd" id="2_k0jlt"]
 [ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="2_ka01j"]
 [ext_resource type="Texture2D" uid="uid://d0edy7thj8ce6" path="res://art/heart.png" id="3_k0jlt"]

@@ -15,7 +15,7 @@
 [ext_resource type="Resource" uid="uid://bhjye87hhk4r8" path="res://Entities/Enemies/Bat/bat_enemy.tres" id="9_ioj8t"]
 [ext_resource type="PackedScene" uid="uid://d1lk80tnhnt42" path="res://UI/Battle/Player/mana_ui.tscn" id="11_yrmgv"]
 [ext_resource type="PackedScene" uid="uid://dtsvbwjh1sbe1" path="res://UI/Card/Card Tooltip/tooltip_container.tscn" id="12_lksgk"]
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="13_rcrfk"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="13_rcrfk"]
 [ext_resource type="Script" uid="uid://cjckoxmgw34j4" path="res://UI/Battle/Player/red_tint.gd" id="15_iurou"]
 [ext_resource type="PackedScene" uid="uid://dd51rmgtcjwsl" path="res://UI/Battle/battle_over_panel.tscn" id="17_mov3w"]
 [ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://Entities/Card/Card Pile/card_pile_opener.tscn" id="17_phvbk"]

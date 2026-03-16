@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dtsvbwjh1sbe1"]
 
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_7jh55"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_7jh55"]
 [ext_resource type="Script" uid="uid://byg6p5k12wqk3" path="res://UI/Card/Card Tooltip/tooltip_container.gd" id="2_bsshv"]
 [ext_resource type="Texture2D" uid="uid://ck1t4hdip6xrl" path="res://art/tile_0119.png" id="2_ol28w"]
 

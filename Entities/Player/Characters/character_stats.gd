@@ -4,7 +4,6 @@ extends Stats
 @export_group("Visuals")
 @export var character_name: String
 @export_multiline var description: String
-@export var portrait: Texture
 
 @export_group("Gameplay Data")
 @export var starting_deck: CardPile

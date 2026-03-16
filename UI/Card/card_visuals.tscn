@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://gliubhdf0s0"]
 
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_8uwpd"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_8uwpd"]
 [ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://Entities/Card/Stylebox/card_base_style_box_flat.tres" id="2_nus08"]
 [ext_resource type="Script" uid="uid://ch5ojwrnlswiq" path="res://UI/Card/card_visuals.gd" id="2_ofefm"]
 [ext_resource type="Resource" uid="uid://bocxjlf82vxqr" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_healing_card.tres" id="3_56qiq"]

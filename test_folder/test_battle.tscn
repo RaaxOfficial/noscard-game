@@ -15,13 +15,12 @@
 [ext_resource type="Script" uid="uid://b5s8pucuq5qif" path="res://Entities/Player/hand.gd" id="13_2tkou"]
 [ext_resource type="PackedScene" uid="uid://d1lk80tnhnt42" path="res://UI/Battle/Player/mana_ui.tscn" id="14_dfit3"]
 [ext_resource type="PackedScene" uid="uid://dtsvbwjh1sbe1" path="res://UI/Card/Card Tooltip/tooltip_container.tscn" id="15_364ck"]
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="16_kykb3"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="16_kykb3"]
 [ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://Entities/Card/Card Pile/card_pile_opener.tscn" id="17_l5x32"]
 [ext_resource type="Texture2D" uid="uid://td4fojsqqge6" path="res://art/discard.png" id="18_j2jwq"]
 [ext_resource type="Script" uid="uid://cjckoxmgw34j4" path="res://UI/Battle/Player/red_tint.gd" id="19_eprj7"]
 [ext_resource type="PackedScene" uid="uid://dd51rmgtcjwsl" path="res://UI/Battle/battle_over_panel.tscn" id="20_tjkl1"]
 [ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://Entities/Card/Card Pile/card_pile_view.tscn" id="21_mkxbb"]
-[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://test_folder/chiken64.png" id="22_is3lf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac2hh"]
 size = Vector2(640, 108)
@@ -48,8 +47,12 @@ shape = SubResource("RectangleShape2D_ac2hh")
 debug_color = Color(0, 0.6, 0.69803923, 0.1764706)
 
 [node name="Player" parent="." unique_id=1304863896 instance=ExtResource("5_xhor1")]
-position = Vector2(182, 285)
+position = Vector2(165, 269)
 stats = ExtResource("2_is3lf")
+
+[node name="StatsUI" parent="Player" index="1" unique_id=1695982680]
+offset_top = 32.0
+offset_bottom = 48.0
 
 [node name="EnemyHandler" type="Node2D" parent="." unique_id=196685373]
 script = ExtResource("6_ing3e")
@@ -199,6 +202,4 @@ visible = false
 unique_name_in_owner = true
 visible = false
 
-[node name="Chiken64" type="Sprite2D" parent="." unique_id=956921242]
-position = Vector2(406, 288)
-texture = ExtResource("22_is3lf")
+[editable path="Player"]
