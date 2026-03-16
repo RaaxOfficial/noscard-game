@@ -5,7 +5,7 @@
 [ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://Entities/Run/Resources/run_startup.tres" id="2_l7epe"]
 [ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_hbv3a"]
 [ext_resource type="Texture2D" uid="uid://cpydvk8mq66o5" path="res://art/tile_0087.png" id="4_h5h53"]
-[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://art/tile_0130.png" id="4_jfqin"]
+[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://Entities/Player/Characters/Warrior/Sprites/tile_0130.png" id="4_jfqin"]
 
 [sub_resource type="Gradient" id="Gradient_gl0q7"]
 colors = PackedColorArray(0.2, 0.11764706, 0.050980393, 1, 0.05490196, 0, 0.05882353, 1)

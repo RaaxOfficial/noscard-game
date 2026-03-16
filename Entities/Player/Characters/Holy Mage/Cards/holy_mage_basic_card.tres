@@ -1,6 +1,6 @@
 [gd_resource type="Resource" format=3 uid="uid://dj5rtsxgjbivd"]
 
-[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://art/tile_0130.png" id="1_ydevx"]
+[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://Entities/Player/Characters/Warrior/Sprites/tile_0130.png" id="1_ydevx"]
 [ext_resource type="Script" uid="uid://bnmvj2cxadov4" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_basic_card.gd" id="2_ydevx"]
 [ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://Assets/Audio/SFX/axe.ogg" id="3_30yra"]
 

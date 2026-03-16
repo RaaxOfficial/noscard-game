@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pgj8vfpj6tc5"
-path="res://.godot/imported/tile_0130.png-292be4779904bddf18325cb001927af2.ctex"
+uid="uid://c1gvqgvgs3xc8"
+path="res://.godot/imported/tile_0131.png-b5d965a2a00ddbbf3a821402c21e1292.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/tile_0130.png"
-dest_files=["res://.godot/imported/tile_0130.png-292be4779904bddf18325cb001927af2.ctex"]
+source_file="res://Entities/Player/Characters/Holy Mage/Sprites/tile_0131.png"
+dest_files=["res://.godot/imported/tile_0131.png-b5d965a2a00ddbbf3a821402c21e1292.ctex"]
 
 [params]
 

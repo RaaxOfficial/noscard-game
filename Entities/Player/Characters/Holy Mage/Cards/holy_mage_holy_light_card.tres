@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Card" format=3 uid="uid://dm1cqfxvrtdqk"]
 
 [ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Card/card.gd" id="1_7sf8c"]
-[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://art/tile_0130.png" id="1_sfn16"]
+[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://Entities/Player/Characters/Warrior/Sprites/tile_0130.png" id="1_sfn16"]
 [ext_resource type="AudioStream" uid="uid://dixklg6g4jnsq" path="res://Assets/Audio/SFX/slash.ogg" id="3_a3gw8"]
 
 [resource]
