@@ -20,7 +20,7 @@ func set_current_character(new_character: CharacterStats) -> void:
 	current_character = new_character
 	title.text = current_character.character_name
 	description.text = current_character.description
-	#character_portrait.texture = current_character.portrait
+	character_portrait.texture = current_character.portrait
 
 func _on_start_button_pressed() -> void:
 	print("Start new run with %s" % current_character.character_name)

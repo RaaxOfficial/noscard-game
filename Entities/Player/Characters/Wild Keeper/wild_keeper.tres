@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://fbnpo60jbtew"]
 
+[ext_resource type="Texture2D" uid="uid://ccxre25wwy8my" path="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_portrait.png" id="1_1enol"]
 [ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Player/Characters/character_stats.gd" id="1_8ujwr"]
-[ext_resource type="Texture2D" uid="uid://c1c23msgjrotr" path="res://Entities/Player/Characters/Wild Keeper/Sprites/Sprite-wk-breathing.png" id="1_nr68c"]
 [ext_resource type="Resource" uid="uid://dtbtov0o58ebl" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper_draftable_cards.tres" id="2_fwkwx"]
 [ext_resource type="Resource" uid="uid://bj15tf82k7y4c" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper_starting_deck.tres" id="3_y3ftm"]
 
@@ -9,11 +9,11 @@
 script = ExtResource("1_8ujwr")
 character_name = "Wild Keeper"
 description = "Currently using the SP2 assassin."
-portrait = ExtResource("1_nr68c")
+portrait = ExtResource("1_1enol")
 starting_deck = ExtResource("3_y3ftm")
 draftable_cards = ExtResource("2_fwkwx")
 cards_per_turn = 5
 max_mana = 3
 max_health = 32
-art = ExtResource("1_nr68c")
+art = ExtResource("1_1enol")
 metadata/_custom_type_script = "uid://ct3m4uqtcbqtc"
