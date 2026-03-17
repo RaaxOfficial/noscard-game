@@ -1,7 +1,7 @@
 class_name Player
 extends Node2D
 
-const WARRIOR_SPRITE_FRAMES = preload("uid://deowxenm3le3y") # Replace with warrior sprite frames when possible
+const WARRIOR_SPRITE_FRAMES = preload("uid://cpsu5kgpl3h2b")
 const WILD_KEEPER_SPRITE_FRAMES = preload("uid://deowxenm3le3y")
 const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 

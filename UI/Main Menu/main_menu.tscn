@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://c7oxkqjy8y15c"]
 
 [ext_resource type="Script" uid="uid://jdl5c101dcw8" path="res://UI/Main Menu/main_menu.gd" id="1_p8ri8"]
-[ext_resource type="Texture2D" uid="uid://c1c23msgjrotr" path="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_breathing.png" id="2_v04x6"]
+[ext_resource type="SpriteFrames" uid="uid://cquesy7j5vstq" path="res://Entities/Player/Characters/Holy Mage/Sprites/holy_mage_sprite_frames.tres" id="2_mqkp3"]
+[ext_resource type="SpriteFrames" uid="uid://cpsu5kgpl3h2b" path="res://Entities/Player/Characters/Warrior/Sprites/warrior_sprite_frames.tres" id="2_vq10u"]
 [ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://Entities/Enemies/Chicken/Sprites/chiken64.png" id="3_jri5q"]
+[ext_resource type="SpriteFrames" uid="uid://deowxenm3le3y" path="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_sprite_frames.tres" id="3_vq10u"]
 
 [sub_resource type="Gradient" id="Gradient_gl0q7"]
 colors = PackedColorArray(0.2, 0.11764706, 0.050980393, 1, 0.05490196, 0, 0.05882353, 1)
@@ -15,42 +17,6 @@ width = 50
 font_size = 24
 shadow_size = 2
 shadow_color = Color(0.5764706, 0.40392157, 0.33333334, 0.49411765)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jri5q"]
-atlas = ExtResource("2_v04x6")
-region = Rect2(0, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mqkp3"]
-atlas = ExtResource("2_v04x6")
-region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vq10u"]
-atlas = ExtResource("2_v04x6")
-region = Rect2(128, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k0v0h"]
-atlas = ExtResource("2_v04x6")
-region = Rect2(192, 0, 64, 64)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_ajqx1"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jri5q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mqkp3")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vq10u")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k0v0h")
-}],
-"loop": true,
-"name": &"default",
-"speed": 7.0
-}]
 
 [node name="MainMenu" type="Control" unique_id=2035016919]
 layout_mode = 3
@@ -119,10 +85,25 @@ custom_minimum_size = Vector2(0, 14)
 layout_mode = 2
 text = "Exit"
 
+[node name="Warrior" type="AnimatedSprite2D" parent="." unique_id=764477955]
+position = Vector2(66, 209)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("2_vq10u")
+animation = &"breathing"
+flip_h = true
+
+[node name="HolyMage" type="AnimatedSprite2D" parent="." unique_id=1564077526]
+position = Vector2(147, 198)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("2_mqkp3")
+animation = &"breathing"
+flip_h = true
+
 [node name="WildKeeper" type="AnimatedSprite2D" parent="." unique_id=1233798072]
 position = Vector2(114, 271)
 scale = Vector2(2, 2)
-sprite_frames = SubResource("SpriteFrames_ajqx1")
+sprite_frames = ExtResource("3_vq10u")
+animation = &"blinking"
 flip_h = true
 
 [node name="Chicken" type="Sprite2D" parent="." unique_id=657831586]

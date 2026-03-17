@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://maaf8njfs1yh"
-path="res://.godot/imported/Sprite-warrior-breathing.png-f1df3cd2edfd3f045655568960420e86.ctex"
+uid="uid://dr4e0227j8ymn"
+path="res://.godot/imported/warrior_portrait.png-3fcc790b337287d4d2d46a1d3171f469.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Warrior/Sprites/Sprite-warrior-breathing.png"
-dest_files=["res://.godot/imported/Sprite-warrior-breathing.png-f1df3cd2edfd3f045655568960420e86.ctex"]
+source_file="res://Entities/Player/Characters/Warrior/Sprites/warrior_portrait.png"
+dest_files=["res://.godot/imported/warrior_portrait.png-3fcc790b337287d4d2d46a1d3171f469.ctex"]
 
 [params]
 

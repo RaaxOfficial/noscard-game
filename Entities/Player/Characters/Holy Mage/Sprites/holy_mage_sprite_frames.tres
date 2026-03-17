@@ -43,7 +43,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_alsx6")
 }],
-"loop": true,
+"loop": false,
 "name": &"blinking",
 "speed": 10.0
 }, {

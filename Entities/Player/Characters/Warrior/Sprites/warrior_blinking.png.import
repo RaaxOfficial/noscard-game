@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pgj8vfpj6tc5"
-path="res://.godot/imported/tile_0130.png-329c2bc7b9e9a494c5ad93baa8aaaf77.ctex"
+uid="uid://dvblmx5sdkfmc"
+path="res://.godot/imported/warrior_blinking.png-439caaa9260a4ff85f8d3b29c6ae9e1d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Warrior/Sprites/tile_0130.png"
-dest_files=["res://.godot/imported/tile_0130.png-329c2bc7b9e9a494c5ad93baa8aaaf77.ctex"]
+source_file="res://Entities/Player/Characters/Warrior/Sprites/warrior_blinking.png"
+dest_files=["res://.godot/imported/warrior_blinking.png-439caaa9260a4ff85f8d3b29c6ae9e1d.ctex"]
 
 [params]
 

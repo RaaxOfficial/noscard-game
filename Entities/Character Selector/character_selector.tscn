@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://d28c3q65dv8st"]
 
 [ext_resource type="Script" uid="uid://bj8obnjpiexb8" path="res://Entities/Character Selector/character_selector.gd" id="1_o5s7u"]
-[ext_resource type="Texture2D" uid="uid://cqcal03735mv8" path="res://art/tile_0118.png" id="2_6taux"]
 [ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://Entities/Run/Resources/run_startup.tres" id="2_l7epe"]
-[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_hbv3a"]
-[ext_resource type="Texture2D" uid="uid://cpydvk8mq66o5" path="res://art/tile_0087.png" id="4_h5h53"]
-[ext_resource type="Texture2D" uid="uid://pgj8vfpj6tc5" path="res://Entities/Player/Characters/Warrior/Sprites/tile_0130.png" id="4_jfqin"]
+[ext_resource type="Texture2D" uid="uid://dr4e0227j8ymn" path="res://Entities/Player/Characters/Warrior/Sprites/warrior_portrait.png" id="3_3hc3r"]
+[ext_resource type="Texture2D" uid="uid://ccxre25wwy8my" path="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_portrait.png" id="4_iytmp"]
+[ext_resource type="Texture2D" uid="uid://ckvrnjrany2cf" path="res://Entities/Player/Characters/Holy Mage/Sprites/holy_mage_portrait.png" id="5_g4r68"]
 
 [sub_resource type="Gradient" id="Gradient_gl0q7"]
 colors = PackedColorArray(0.2, 0.11764706, 0.050980393, 1, 0.05490196, 0, 0.05882353, 1)
@@ -88,7 +87,7 @@ offset_top = -65.0
 offset_right = 65.0
 offset_bottom = -5.0
 grow_vertical = 0
-texture = ExtResource("4_h5h53")
+texture = ExtResource("3_3hc3r")
 expand_mode = 1
 stretch_mode = 5
 
@@ -143,7 +142,7 @@ offset_right = 9.0
 offset_bottom = 9.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_6taux")
+texture = ExtResource("3_3hc3r")
 expand_mode = 1
 stretch_mode = 5
 
@@ -166,7 +165,7 @@ offset_right = 9.0
 offset_bottom = 9.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_hbv3a")
+texture = ExtResource("4_iytmp")
 expand_mode = 1
 stretch_mode = 5
 
@@ -189,7 +188,7 @@ offset_right = 9.0
 offset_bottom = 9.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("4_jfqin")
+texture = ExtResource("5_g4r68")
 expand_mode = 1
 stretch_mode = 5
 
