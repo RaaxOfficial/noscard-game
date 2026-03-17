@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://c81fpnfiu8a73"]
 
-[ext_resource type="Texture2D" uid="uid://dpfqok8tuy4r7" path="res://art/tile_0084.png" id="1_3twn1"]
 [ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Player/Characters/character_stats.gd" id="1_jthx8"]
+[ext_resource type="Texture2D" uid="uid://ckvrnjrany2cf" path="res://Entities/Player/Characters/Holy Mage/Sprites/holy_mage_portrait.png" id="1_oc247"]
 [ext_resource type="Resource" uid="uid://cj7y7rw7nyorl" path="res://Entities/Player/Characters/Holy Mage/holy_mage_draftable_cards.tres" id="2_qhbow"]
 [ext_resource type="Resource" uid="uid://bi5ohdrku38ba" path="res://Entities/Player/Characters/Holy Mage/holy_mage_starting_deck.tres" id="3_mb8vu"]
 
@@ -9,11 +9,11 @@
 script = ExtResource("1_jthx8")
 character_name = "Holy Mage"
 description = "Years of wisdom and recurring back pain."
-portrait = ExtResource("1_3twn1")
+portrait = ExtResource("1_oc247")
 starting_deck = ExtResource("3_mb8vu")
 draftable_cards = ExtResource("2_qhbow")
 cards_per_turn = 5
 max_mana = 4
 max_health = 28
-art = ExtResource("1_3twn1")
+art = ExtResource("1_oc247")
 metadata/_custom_type_script = "uid://ct3m4uqtcbqtc"

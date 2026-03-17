@@ -1,7 +1,9 @@
 class_name Player
 extends Node2D
 
-const WHITE_SPRITE_MATERIAL := preload("res://art/white_sprite_material.tres")
+const WARRIOR_SPRITE_FRAMES = preload("uid://deowxenm3le3y") # Replace with warrior sprite frames when possible
+const WILD_KEEPER_SPRITE_FRAMES = preload("uid://deowxenm3le3y")
+const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 
 @export var stats: CharacterStats : set = set_character_stats
 
@@ -12,6 +14,15 @@ const WHITE_SPRITE_MATERIAL := preload("res://art/white_sprite_material.tres")
 
 func _ready() -> void:
 	EventManager.player_hit.connect(_on_player_hit)
+	
+	match stats.character_name:
+		"Warrior":
+			anim.sprite_frames = WARRIOR_SPRITE_FRAMES
+		"Wild Keeper":
+			anim.sprite_frames = WILD_KEEPER_SPRITE_FRAMES
+		"Holy Mage":
+			anim.sprite_frames = HOLY_MAGE_SPRITE_FRAMES
+	
 	anim.play("breathing")
 
 func set_character_stats(value: CharacterStats) -> void:
@@ -28,7 +39,6 @@ func update_player() -> void:
 	if not is_inside_tree():
 		await ready
 	
-	#anim.texture = stats.art
 	update_stats()
 
 func update_stats() -> void:
@@ -44,7 +54,6 @@ func take_damage(damage: int) -> void:
 	tween.tween_interval(0.17)
 	
 	tween.finished.connect(func():
-		#sprite_2d.material = null
 		if stats.health <= 0:
 			EventManager.player_died.emit()
 			queue_free()
@@ -57,7 +66,7 @@ func heal(amount: int) -> void:
 	stats.heal(amount)
 
 func _on_player_hit() -> void:
-	#sprite_2d.material = WHITE_SPRITE_MATERIAL
+	# ToDo: Play "hurt" animation
 	pass
 
 func _on_blink_timer_timeout() -> void:

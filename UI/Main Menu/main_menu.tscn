@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7oxkqjy8y15c"]
 
 [ext_resource type="Script" uid="uid://jdl5c101dcw8" path="res://UI/Main Menu/main_menu.gd" id="1_p8ri8"]
-[ext_resource type="Texture2D" uid="uid://c1c23msgjrotr" path="res://Entities/Player/Characters/Wild Keeper/Sprites/Sprite-wk-breathing.png" id="2_v04x6"]
+[ext_resource type="Texture2D" uid="uid://c1c23msgjrotr" path="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_breathing.png" id="2_v04x6"]
 [ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://Entities/Enemies/Chicken/Sprites/chiken64.png" id="3_jri5q"]
 
 [sub_resource type="Gradient" id="Gradient_gl0q7"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1gvqgvgs3xc8"
-path="res://.godot/imported/tile_0131.png-b5d965a2a00ddbbf3a821402c21e1292.ctex"
+uid="uid://c1c23msgjrotr"
+path="res://.godot/imported/wild_keeper_breathing.png-87ea5995e91ce1b3a9b6f5085d4a4e1e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Holy Mage/Sprites/tile_0131.png"
-dest_files=["res://.godot/imported/tile_0131.png-b5d965a2a00ddbbf3a821402c21e1292.ctex"]
+source_file="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_breathing.png"
+dest_files=["res://.godot/imported/wild_keeper_breathing.png-87ea5995e91ce1b3a9b6f5085d4a4e1e.ctex"]
 
 [params]
 

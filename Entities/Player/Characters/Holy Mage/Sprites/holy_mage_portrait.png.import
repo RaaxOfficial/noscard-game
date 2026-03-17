@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clotdm00bex2o"
-path="res://.godot/imported/Sprite-wk-eyes.png-a1517790e37c53366f5d79280d617810.ctex"
+uid="uid://ckvrnjrany2cf"
+path="res://.godot/imported/holy_mage_portrait.png-4611312e761af630eea711732d0bb50d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Wild Keeper/Sprites/Sprite-wk-eyes.png"
-dest_files=["res://.godot/imported/Sprite-wk-eyes.png-a1517790e37c53366f5d79280d617810.ctex"]
+source_file="res://Entities/Player/Characters/Holy Mage/Sprites/holy_mage_portrait.png"
+dest_files=["res://.godot/imported/holy_mage_portrait.png-4611312e761af630eea711732d0bb50d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnp186xhaouj4"
-path="res://.godot/imported/Sprite-holly-eyes.png-1acce943edd8341c3843af287623b6fd.ctex"
+uid="uid://clotdm00bex2o"
+path="res://.godot/imported/wild_keeper_blinking.png-19602c4e682a171bf8fba1dd289be54d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Holy Mage/Sprites/Sprite-holly-eyes.png"
-dest_files=["res://.godot/imported/Sprite-holly-eyes.png-1acce943edd8341c3843af287623b6fd.ctex"]
+source_file="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_blinking.png"
+dest_files=["res://.godot/imported/wild_keeper_blinking.png-19602c4e682a171bf8fba1dd289be54d.ctex"]
 
 [params]
 

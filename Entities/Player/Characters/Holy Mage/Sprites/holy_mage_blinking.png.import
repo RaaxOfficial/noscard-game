@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5hev7jjytupv"
-path="res://.godot/imported/Sprite-holly-breathing.png-d1eb2e0aad4d872769d2aa359bb2ddc0.ctex"
+uid="uid://cnp186xhaouj4"
+path="res://.godot/imported/holy_mage_blinking.png-4620de2875f3809e65841c3dcfa6a90e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Holy Mage/Sprites/Sprite-holly-breathing.png"
-dest_files=["res://.godot/imported/Sprite-holly-breathing.png-d1eb2e0aad4d872769d2aa359bb2ddc0.ctex"]
+source_file="res://Entities/Player/Characters/Holy Mage/Sprites/holy_mage_blinking.png"
+dest_files=["res://.godot/imported/holy_mage_blinking.png-4620de2875f3809e65841c3dcfa6a90e.ctex"]
 
 [params]
 
