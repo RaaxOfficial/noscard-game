@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmqpijctrr5ru"
-path="res://.godot/imported/shopkeeper_blink.png-cdcd84606eab4f8338fc53caf8bc19e7.ctex"
+uid="uid://bjnrct4phemuf"
+path="res://.godot/imported/mina_oeste_bg_x640.png-d8a8cdd8921906b234643d5acf4531ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Entities/Player/Characters/Wild Keeper/Sprites/shopkeeper_blink.png"
-dest_files=["res://.godot/imported/shopkeeper_blink.png-cdcd84606eab4f8338fc53caf8bc19e7.ctex"]
+source_file="res://UI/Battle/Sprites/mina_oeste_bg_x640.png"
+dest_files=["res://.godot/imported/mina_oeste_bg_x640.png-d8a8cdd8921906b234643d5acf4531ba.ctex"]
 
 [params]
 

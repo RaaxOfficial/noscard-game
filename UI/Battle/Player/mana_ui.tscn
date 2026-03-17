@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d1lk80tnhnt42"]
 
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_lu7sp"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_lu7sp"]
 [ext_resource type="Script" uid="uid://dotghrac2806a" path="res://UI/Battle/Player/mana_ui.gd" id="2_nt0up"]
 
 [node name="ManaUI" type="Panel" unique_id=1519675835]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rupkwrn82o7m"
-path="res://.godot/imported/chiken64out.png-6feceb1fba644ebfdb90a29747f6d2b0.ctex"
+uid="uid://ccxre25wwy8my"
+path="res://.godot/imported/wild_keeper_portrait.png-9aed50ef519d1693cbfb18d6a0c5d676.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://test_folder/chiken64out.png"
-dest_files=["res://.godot/imported/chiken64out.png-6feceb1fba644ebfdb90a29747f6d2b0.ctex"]
+source_file="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_portrait.png"
+dest_files=["res://.godot/imported/wild_keeper_portrait.png-9aed50ef519d1693cbfb18d6a0c5d676.ctex"]
 
 [params]
 

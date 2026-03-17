@@ -1,15 +1,91 @@
 [gd_scene format=3 uid="uid://c6ggxgxnbuibe"]
 
-[ext_resource type="Texture2D" uid="uid://b1nj6u7dxl3mh" path="res://art/tile_0085.png" id="1_eovys"]
 [ext_resource type="Script" uid="uid://cqyyo5h2yd4ff" path="res://Entities/Player/player.gd" id="1_vb825"]
+[ext_resource type="Texture2D" uid="uid://clotdm00bex2o" path="res://Entities/Player/Characters/Wild Keeper/Sprites/Sprite-wk-eyes.png" id="2_tekja"]
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Battle/stats_ui.tscn" id="2_vb825"]
+[ext_resource type="Texture2D" uid="uid://c1c23msgjrotr" path="res://Entities/Player/Characters/Wild Keeper/Sprites/Sprite-wk-breathing.png" id="3_5c2io"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wf4l"]
+atlas = ExtResource("2_tekja")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01a4e"]
+atlas = ExtResource("2_tekja")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7a1se"]
+atlas = ExtResource("2_tekja")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x1y6q"]
+atlas = ExtResource("3_5c2io")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ap3xn"]
+atlas = ExtResource("3_5c2io")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iplt1"]
+atlas = ExtResource("3_5c2io")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_owvpp"]
+atlas = ExtResource("3_5c2io")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xr8lj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wf4l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01a4e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7a1se")
+}],
+"loop": false,
+"name": &"blinking",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x1y6q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ap3xn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iplt1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_owvpp")
+}],
+"loop": true,
+"name": &"breathing",
+"speed": 10.0
+}]
 
 [node name="Player" type="Node2D" unique_id=1304863896 groups=["player"]]
 script = ExtResource("1_vb825")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=218683869]
-texture = ExtResource("1_eovys")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944163954]
+sprite_frames = SubResource("SpriteFrames_xr8lj")
+animation = &"blinking"
+frame = 2
+frame_progress = 1.0
+offset = Vector2(-8, 0)
+flip_h = true
 
 [node name="StatsUI" parent="." unique_id=1695982680 instance=ExtResource("2_vb825")]
-offset_top = 7.0
-offset_bottom = 23.0
+offset_left = -45.0
+offset_top = 32.0
+offset_right = 45.0
+offset_bottom = 48.0
+
+[node name="BlinkTimer" type="Timer" parent="." unique_id=834756053]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]

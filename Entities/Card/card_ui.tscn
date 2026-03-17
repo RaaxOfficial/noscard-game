@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://k26awt4p7d3k"]
 
 [ext_resource type="Script" uid="uid://11275rrxnv6a" path="res://Entities/Card/card_ui.gd" id="1_qqgrj"]
-[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://themes/main_theme.tres" id="1_yal6m"]
+[ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_yal6m"]
 [ext_resource type="PackedScene" uid="uid://gliubhdf0s0" path="res://UI/Card/card_visuals.tscn" id="3_7kphq"]
 [ext_resource type="Script" uid="uid://d0c1lifgh2qd7" path="res://Entities/Card/Card States Machine/card_state_machine.gd" id="3_ic3er"]
 [ext_resource type="Script" uid="uid://bruey2d5b0fil" path="res://Entities/Card/Card States Machine/Card States/card_base_state.gd" id="4_j2b4k"]

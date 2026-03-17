@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://twaf8dwpqxes"]
+
+[ext_resource type="PackedScene" uid="uid://cexpw05v2vp7j" path="res://Entities/Enemies/Chicken/chicken_enemy_ai.tscn" id="1_bbbf7"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Enemies/enemy_stats.gd" id="1_j281h"]
+[ext_resource type="Texture2D" uid="uid://c16em7qn7e1oh" path="res://Entities/Enemies/Chicken/Sprites/chiken32.png" id="2_pbf7a"]
+
+[resource]
+script = ExtResource("1_j281h")
+ai = ExtResource("1_bbbf7")
+max_health = 8
+art = ExtResource("2_pbf7a")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

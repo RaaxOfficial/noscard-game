@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c16em7qn7e1oh"
-path="res://.godot/imported/chiken32.png-93e43f739f83cf6b12db9414ad65a52d.ctex"
+uid="uid://bdwcnbp1wqy4o"
+path="res://.godot/imported/chiken64.png-66d1c8c642ad234ecc8cf92c3ef95d37.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://test_folder/chiken32.png"
-dest_files=["res://.godot/imported/chiken32.png-93e43f739f83cf6b12db9414ad65a52d.ctex"]
+source_file="res://Entities/Enemies/Chicken/Sprites/chiken64.png"
+dest_files=["res://.godot/imported/chiken64.png-66d1c8c642ad234ecc8cf92c3ef95d37.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjnrct4phemuf"
-path="res://.godot/imported/mina_oeste_bg_x640.png-4ce9e9ff8d21e1448577df94245f7187.ctex"
+uid="uid://c16em7qn7e1oh"
+path="res://.godot/imported/chiken32.png-7bb700aea2727088f4865a5f6c8d5813.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://test_folder/mina_oeste_bg_x640.png"
-dest_files=["res://.godot/imported/mina_oeste_bg_x640.png-4ce9e9ff8d21e1448577df94245f7187.ctex"]
+source_file="res://Entities/Enemies/Chicken/Sprites/chiken32.png"
+dest_files=["res://.godot/imported/chiken32.png-7bb700aea2727088f4865a5f6c8d5813.ctex"]
 
 [params]
 
