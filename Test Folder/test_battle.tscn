@@ -7,9 +7,11 @@
 [ext_resource type="PackedScene" uid="uid://c6ggxgxnbuibe" path="res://Entities/Player/player.tscn" id="5_xhor1"]
 [ext_resource type="Script" uid="uid://d0ju8kxj270pt" path="res://Entities/Enemies/enemy_handler.gd" id="6_ing3e"]
 [ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="7_86wvh"]
-[ext_resource type="Resource" uid="uid://bhjye87hhk4r8" path="res://Entities/Enemies/Bat/bat_enemy.tres" id="8_r1ycs"]
-[ext_resource type="Resource" uid="uid://bba0mkapf7afe" path="res://Entities/Enemies/Crab/crab_enemy.tres" id="9_henhc"]
+[ext_resource type="PackedScene" uid="uid://cexpw05v2vp7j" path="res://Entities/Enemies/Chicken/chicken_enemy_ai.tscn" id="8_emvq1"]
+[ext_resource type="Texture2D" uid="uid://c16em7qn7e1oh" path="res://Entities/Enemies/Chicken/Sprites/chiken32.png" id="9_f2px0"]
 [ext_resource type="PackedScene" uid="uid://26hfwix0vxbq" path="res://Entities/Card/Card Target Selector/card_target_selector.tscn" id="10_bt8l4"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Enemies/enemy_stats.gd" id="10_mwvh5"]
+[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://Entities/Enemies/Chicken/Sprites/chiken64.png" id="11_f2px0"]
 [ext_resource type="Script" uid="uid://yp0h3ndgtga3" path="res://Entities/Player/player_handler.gd" id="11_sh850"]
 [ext_resource type="Script" uid="uid://bjmooy4x05e57" path="res://UI/Battle/battle_ui.gd" id="12_5b2vy"]
 [ext_resource type="Script" uid="uid://b5s8pucuq5qif" path="res://Entities/Player/hand.gd" id="13_2tkou"]
@@ -24,6 +26,20 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac2hh"]
 size = Vector2(640, 108)
+
+[sub_resource type="Resource" id="Resource_18wcp"]
+script = ExtResource("10_mwvh5")
+ai = ExtResource("8_emvq1")
+max_health = 8
+art = ExtResource("9_f2px0")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
+
+[sub_resource type="Resource" id="Resource_um25n"]
+script = ExtResource("10_mwvh5")
+ai = ExtResource("8_emvq1")
+max_health = 8
+art = ExtResource("11_f2px0")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 
 [node name="Battle" type="Node2D" unique_id=1162226834]
 script = ExtResource("1_0gy2t")
@@ -50,24 +66,16 @@ debug_color = Color(0, 0.6, 0.69803923, 0.1764706)
 position = Vector2(165, 269)
 stats = ExtResource("2_is3lf")
 
-[node name="StatsUI" parent="Player" index="1" unique_id=1695982680]
-offset_top = 32.0
-offset_bottom = 48.0
-
 [node name="EnemyHandler" type="Node2D" parent="." unique_id=196685373]
 script = ExtResource("6_ing3e")
 
-[node name="BatEnemy" parent="EnemyHandler" unique_id=525624160 instance=ExtResource("7_86wvh")]
-position = Vector2(469, 279)
-stats = ExtResource("8_r1ycs")
+[node name="ChickenEnemy" parent="EnemyHandler" unique_id=1381364638 instance=ExtResource("7_86wvh")]
+position = Vector2(445, 286)
+stats = SubResource("Resource_18wcp")
 
-[node name="BatEnemy2" parent="EnemyHandler" unique_id=1289071514 instance=ExtResource("7_86wvh")]
-position = Vector2(547, 279)
-stats = ExtResource("8_r1ycs")
-
-[node name="CrabEnemy" parent="EnemyHandler" unique_id=1381364638 instance=ExtResource("7_86wvh")]
-position = Vector2(506, 293)
-stats = ExtResource("9_henhc")
+[node name="ChickenEnemy2" parent="EnemyHandler" unique_id=459956347 instance=ExtResource("7_86wvh")]
+position = Vector2(536, 286)
+stats = SubResource("Resource_um25n")
 
 [node name="CardTargetSelector" parent="." unique_id=883950278 instance=ExtResource("10_bt8l4")]
 
@@ -203,3 +211,4 @@ unique_name_in_owner = true
 visible = false
 
 [editable path="Player"]
+[editable path="EnemyHandler/ChickenEnemy2"]

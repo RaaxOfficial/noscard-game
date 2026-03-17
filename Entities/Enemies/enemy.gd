@@ -13,6 +13,7 @@ var current_action: EnemyAction : set = set_current_action
 @onready var arrow: Sprite2D = $Arrow
 @onready var stats_ui: StatsUI = $StatsUI
 @onready var intent_ui: IntentUI = $IntentUI
+@onready var collision: CollisionShape2D = %CollisionShape2D
 
 
 func set_current_action(value: EnemyAction) -> void:
@@ -71,9 +72,11 @@ func update_ui() -> void:
 		return
 	
 	var sprite_offset: Vector2 = sprite_2d.get_rect().size
-	print(sprite_offset)
-	stats_ui.global_position.y += sprite_offset.y / 2
-	intent_ui.global_position.y -= sprite_offset.y / 2
+	stats_ui.global_position.y += sprite_offset.y / 2 * sprite_2d.scale.y
+	intent_ui.global_position.y -= sprite_offset.y / 2 * sprite_2d.scale.y
+	
+	collision.shape.extents = sprite_2d.texture.get_size() / 4
+	collision.scale = sprite_2d.scale
 	
 	arrow.position = Vector2.RIGHT * (sprite_2d.get_rect().size.x / 2 + ARROW_OFFSET)
 
