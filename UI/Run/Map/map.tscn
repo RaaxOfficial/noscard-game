@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cxcgws2bicmtx" path="res://UI/Run/Map/map.gd" id="1_73axm"]
 [ext_resource type="Script" uid="uid://6tcohfctivdd" path="res://Entities/Map/map_generator.gd" id="2_lq8of"]
+[ext_resource type="Resource" uid="uid://uwgpwtrkwnug" path="res://Entities/Battle/Battles/battle_stats_pool.tres" id="3_ldv2g"]
 
 [sub_resource type="Gradient" id="Gradient_lq8of"]
 colors = PackedColorArray(0.21568628, 0.21568628, 0.21568628, 1, 0.4, 0.21960784, 0.20392157, 1)
@@ -26,6 +27,7 @@ unique_name_in_owner = true
 
 [node name="MapGenerator" type="Node" parent="." unique_id=280646718]
 script = ExtResource("2_lq8of")
+battle_stats_pool = ExtResource("3_ldv2g")
 
 [node name="MapBackground" type="CanvasLayer" parent="." unique_id=1591898635]
 layer = -1

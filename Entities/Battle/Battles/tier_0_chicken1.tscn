@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bq0cfocjket6k"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="1_ssbeo"]
+[ext_resource type="PackedScene" uid="uid://cexpw05v2vp7j" path="res://Entities/Enemies/Chicken/chicken_enemy_ai.tscn" id="2_uyfxi"]
+[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://Entities/Enemies/Chicken/Sprites/chiken64.png" id="3_pxxeh"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Enemies/enemy_stats.gd" id="4_22f4b"]
+
+[sub_resource type="Resource" id="Resource_wpycq"]
+script = ExtResource("4_22f4b")
+ai = ExtResource("2_uyfxi")
+max_health = 12
+art = ExtResource("3_pxxeh")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
+
+[node name="Tier0Chicken1" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_ssbeo")]
+position = Vector2(458, 270)
+stats = SubResource("Resource_wpycq")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleStatsPool" format=3 uid="uid://uwgpwtrkwnug"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Battle/battle_stats.gd" id="1_ylklq"]
+[ext_resource type="Resource" uid="uid://bxegyx8lf81nh" path="res://Entities/Battle/Battles/tier_0_chicken1.tres" id="2_x7wpy"]
+[ext_resource type="Script" uid="uid://bv01ns8q10a7y" path="res://Entities/Battle/battle_stats_pool.gd" id="2_xrgwq"]
+[ext_resource type="Resource" uid="uid://dn43bi3xs0026" path="res://Entities/Battle/Battles/tier_0_chicken2.tres" id="3_q6ott"]
+[ext_resource type="Resource" uid="uid://deuenjq0y4mfv" path="res://Entities/Battle/Battles/tier_1_chicken2.tres" id="4_ekts7"]
+[ext_resource type="Resource" uid="uid://b8p8blrqvhpqr" path="res://Entities/Battle/Battles/tier_1_chicken3.tres" id="5_m0k4j"]
+[ext_resource type="Resource" uid="uid://48utjjp5gvds" path="res://Entities/Battle/Battles/tier_2_chicken1.tres" id="6_q6ott"]
+
+[resource]
+script = ExtResource("2_xrgwq")
+pool = Array[ExtResource("1_ylklq")]([ExtResource("2_x7wpy"), ExtResource("3_q6ott"), ExtResource("4_ekts7"), ExtResource("5_m0k4j"), ExtResource("6_q6ott")])
+metadata/_custom_type_script = "uid://bv01ns8q10a7y"

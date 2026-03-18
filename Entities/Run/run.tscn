@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://v2uwtsply7kf" path="res://UI/Run/Map/map.tscn" id="1_6y1hf"]
 [ext_resource type="Script" uid="uid://bqywishr0k410" path="res://Entities/Run/run.gd" id="1_wkui6"]
 [ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://Entities/Run/Resources/run_startup.tres" id="2_badgd"]
+[ext_resource type="PackedScene" uid="uid://bg311u3cjume4" path="res://UI/Run/Player/health_ui.tscn" id="4_88h0l"]
 [ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://Entities/Card/Card Pile/card_pile_opener.tscn" id="4_irdq8"]
-[ext_resource type="PackedScene" uid="uid://b8q2qgacswmyx" path="res://UI/Run/Gold/gold_ui.tscn" id="4_k8enk"]
+[ext_resource type="PackedScene" uid="uid://b8q2qgacswmyx" path="res://UI/Run/Player/gold_ui.tscn" id="4_k8enk"]
 [ext_resource type="Texture2D" uid="uid://1jxkrrqj5h18" path="res://art/deck.png" id="5_io1fk"]
 [ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://Entities/Card/Card Pile/card_pile_view.tscn" id="6_6x33b"]
 
@@ -68,18 +69,19 @@ anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="TopBarCanvas/BarItems" unique_id=94232840]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_left = 2
-theme_override_constants/margin_right = 2
-
-[node name="GoldUI" parent="TopBarCanvas/BarItems/MarginContainer" unique_id=1809462329 instance=ExtResource("4_k8enk")]
+[node name="HealthUI" parent="TopBarCanvas/BarItems" unique_id=10009548 instance=ExtResource("4_88h0l")]
 unique_name_in_owner = true
 layout_mode = 2
-size_flags_horizontal = 0
 
-[node name="DeckButton" parent="TopBarCanvas/BarItems/MarginContainer" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("4_irdq8")]
+[node name="GoldUI" parent="TopBarCanvas/BarItems" unique_id=1809462329 instance=ExtResource("4_k8enk")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Separation" type="Control" parent="TopBarCanvas/BarItems" unique_id=322766260]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="DeckButton" parent="TopBarCanvas/BarItems" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("4_irdq8")]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
@@ -87,7 +89,7 @@ size_flags_horizontal = 8
 texture_normal = ExtResource("5_io1fk")
 counter = NodePath("Counter")
 
-[node name="Counter" type="Label" parent="TopBarCanvas/BarItems/MarginContainer/DeckButton" unique_id=1142472071]
+[node name="Counter" type="Label" parent="TopBarCanvas/BarItems/DeckButton" unique_id=1142472071]
 layout_mode = 0
 offset_left = -5.0
 offset_top = 12.0

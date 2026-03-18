@@ -14,15 +14,6 @@ const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 
 func _ready() -> void:
 	EventManager.player_hit.connect(_on_player_hit)
-	
-	match stats.character_name:
-		"Warrior":
-			anim.sprite_frames = WARRIOR_SPRITE_FRAMES
-		"Wild Keeper":
-			anim.sprite_frames = WILD_KEEPER_SPRITE_FRAMES
-		"Holy Mage":
-			anim.sprite_frames = HOLY_MAGE_SPRITE_FRAMES
-	
 	anim.play("breathing")
 
 func set_character_stats(value: CharacterStats) -> void:
@@ -38,6 +29,14 @@ func update_player() -> void:
 		return
 	if not is_inside_tree():
 		await ready
+	
+	match stats.character_name:
+		"Warrior":
+			anim.sprite_frames = WARRIOR_SPRITE_FRAMES
+		"Wild Keeper":
+			anim.sprite_frames = WILD_KEEPER_SPRITE_FRAMES
+		"Holy Mage":
+			anim.sprite_frames = HOLY_MAGE_SPRITE_FRAMES
 	
 	update_stats()
 

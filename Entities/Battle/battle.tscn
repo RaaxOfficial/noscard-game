@@ -3,7 +3,6 @@
 [ext_resource type="Script" uid="uid://lt67v3hop5r" path="res://Entities/Battle/battle.gd" id="1_4m2ey"]
 [ext_resource type="PackedScene" uid="uid://c6ggxgxnbuibe" path="res://Entities/Player/player.tscn" id="2_ihngk"]
 [ext_resource type="Script" uid="uid://b5s8pucuq5qif" path="res://Entities/Player/hand.gd" id="2_o5tja"]
-[ext_resource type="Resource" uid="uid://ec65km0arx71" path="res://Entities/Player/Characters/Warrior/warrior.tres" id="2_pwmcl"]
 [ext_resource type="PackedScene" uid="uid://26hfwix0vxbq" path="res://Entities/Card/Card Target Selector/card_target_selector.tscn" id="3_0lqow"]
 [ext_resource type="AudioStream" uid="uid://bwd4bs0lvmopv" path="res://Assets/Audio/Nosville-Soundtrack_8-bit.mp3" id="3_dxsh4"]
 [ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="4_ihngk"]
@@ -36,7 +35,6 @@ metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 
 [node name="Battle" type="Node2D" unique_id=1162226834]
 script = ExtResource("1_4m2ey")
-char_stats = ExtResource("2_pwmcl")
 music = ExtResource("3_dxsh4")
 metadata/_edit_lock_ = true
 
@@ -56,7 +54,6 @@ debug_color = Color(0, 0.6, 0.69803923, 0.1764706)
 
 [node name="Player" parent="." unique_id=1304863896 instance=ExtResource("2_ihngk")]
 position = Vector2(182, 262)
-stats = ExtResource("2_pwmcl")
 
 [node name="EnemyHandler" type="Node2D" parent="." unique_id=196685373]
 script = ExtResource("5_4m2ey")
@@ -66,7 +63,7 @@ position = Vector2(458, 286)
 stats = ExtResource("8_h5j6c")
 
 [node name="ChickenBossEnemy2" parent="EnemyHandler" unique_id=1381364638 instance=ExtResource("4_ihngk")]
-position = Vector2(545, 270)
+position = Vector2(522, 270)
 stats = SubResource("Resource_avgb2")
 
 [node name="CardTargetSelector" parent="." unique_id=883950278 instance=ExtResource("3_0lqow")]

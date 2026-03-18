@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://dn43bi3xs0026"]
+
+[ext_resource type="PackedScene" uid="uid://nyf4e7qhhjoo" path="res://Entities/Battle/Battles/tier_0_chicken2.tscn" id="1_nhsqs"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Battle/battle_stats.gd" id="2_ko6xp"]
+
+[resource]
+script = ExtResource("2_ko6xp")
+weight = 2.5
+gold_reward_min = 20
+gold_reward_max = 30
+enemies = ExtResource("1_nhsqs")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

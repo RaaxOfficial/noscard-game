@@ -15,6 +15,7 @@ var stats: RunStats
 @onready var current_view: Node = $CurrentView
 @onready var deck_button: CardPileOpener = %DeckButton
 @onready var deck_view: CardPileView = %DeckView
+@onready var health_ui: HealthUI = %HealthUI
 @onready var gold_ui: GoldUI = %GoldUI
 @onready var map: Map = $Map
 
@@ -46,6 +47,8 @@ func _start_run() -> void:
 	map.unlock_floor(0)
 
 func _setup_top_bar() -> void:
+	character.stats_changed.connect(health_ui.update_stats.bind(character))
+	health_ui.update_stats(character)
 	gold_ui.run_stats = stats
 	deck_button.card_pile = character.deck
 	deck_view.card_pile = character.deck
@@ -84,24 +87,33 @@ func _setup_event_connections() -> void:
 	shop_button.pressed.connect(_change_view.bind(SHOP_SCENE))
 	treasure_button.pressed.connect(_change_view.bind(TREASURE_SCENE))
 
+func _on_battle_room_entered(room: Room) -> void:
+	var battle_scene: Battle = _change_view(BATTLE_SCENE) as Battle
+	battle_scene.char_stats = character
+	battle_scene.battle_stats = room.battle_stats
+	battle_scene.start_battle()
+
+func _on_campfire_entered() -> void:
+	var campfire := _change_view(CAMPFIRE_SCENE) as Campfire
+	campfire.char_stats = character
+
 func _on_battle_won() -> void:
 	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
 	reward_scene.run_stats = stats
 	reward_scene.character_stats = character
 	
-	# Temporary code, it will come from real battle encounter data
-	reward_scene.add_gold_reward(77)
+	reward_scene.add_gold_reward(map.last_room.battle_stats.roll_gold_reward())
 	reward_scene.add_card_reward()
 
 func _on_map_exited(room: Room) -> void:
 	match room.type:
 		Room.Type.MONSTER:
-			_change_view(BATTLE_SCENE)
+			_on_battle_room_entered(room)
 		Room.Type.TREASURE:
 			_change_view(TREASURE_SCENE)
 		Room.Type.CAMPFIRE:
-			_change_view(CAMPFIRE_SCENE)
+			_on_campfire_entered()
 		Room.Type.SHOP:
 			_change_view(SHOP_SCENE)
 		Room.Type.BOSS:
-			_change_view(BATTLE_SCENE)
+			_on_battle_room_entered(room)

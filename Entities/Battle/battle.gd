@@ -1,5 +1,7 @@
+class_name Battle
 extends Node2D
 
+@export var battle_stats: BattleStats
 @export var char_stats: CharacterStats
 @export var music: AudioStream
 
@@ -9,13 +11,6 @@ extends Node2D
 @onready var enemy_handler: EnemyHandler = $EnemyHandler
 
 func _ready() -> void:
-	# Normally, we would do this on a "Run" level
-	# so we kepp our health, gold and deck
-	# between battles.
-	var new_stats: CharacterStats = char_stats.create_instance()
-	battle_ui.char_stats = new_stats
-	player.stats = new_stats
-	
 	enemy_handler.child_order_changed.connect(_on_enemies_child_order_changed)
 	EventManager.enemy_turn_ended.connect(_on_enemy_turn_ended)
 	
@@ -23,14 +18,20 @@ func _ready() -> void:
 	EventManager.player_hand_discarded.connect(enemy_handler.start_turn)
 	EventManager.player_died.connect(_on_player_died)
 	
-	start_battle(new_stats)
-	battle_ui.initialize_card_pìle_ui()
 
-func start_battle(stats: CharacterStats) -> void:
+func start_battle() -> void:
 	get_tree().paused = false
 	MusicManager.play(music, true)
+	
+	battle_ui.char_stats = char_stats
+	player.stats = char_stats
+	print(player.stats.character_name)
+	
+	enemy_handler.setup_enemies(battle_stats)
 	enemy_handler.reset_enemy_actions()
-	player_handler.start_battle(stats)
+	
+	player_handler.start_battle(char_stats)
+	battle_ui.initialize_card_pìle_ui()
 
 func _on_enemy_turn_ended() -> void:
 	player_handler.start_turn()

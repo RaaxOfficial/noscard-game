@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://nyf4e7qhhjoo"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="1_w0iwx"]
+[ext_resource type="Resource" uid="uid://twaf8dwpqxes" path="res://Entities/Enemies/Chicken/chicken_enemy.tres" id="2_fjg87"]
+
+[node name="Tier0Chicken2" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_w0iwx")]
+position = Vector2(458, 286)
+stats = ExtResource("2_fjg87")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_w0iwx")]
+position = Vector2(520, 286)
+stats = ExtResource("2_fjg87")
