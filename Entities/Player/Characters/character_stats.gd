@@ -24,11 +24,13 @@ func set_mana(value: int) -> void:
 func reset_mana() -> void:
 	mana = max_mana
 
-func take_damage(damage: int) -> void:
+func take_damage(damage: int, from: Node = null) -> void:
 	var initial_health := health
 	super.take_damage(damage) # Call the take_damage func from the base class Stats
 	if initial_health > health:
-		EventManager.player_hit.emit()
+		EventManager.player_hurt.emit()
+	
+	EventManager.player_hit.emit(from)
 
 func can_play_card(card: Card) -> bool:
 	return mana >= card.cost

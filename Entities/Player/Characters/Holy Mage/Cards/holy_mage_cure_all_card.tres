@@ -7,10 +7,11 @@
 [resource]
 script = ExtResource("2_tn7rb")
 id = "holy_mage_cure_all_card"
-type = 2
+type = 1
 rarity = 2
 amount = 2
 cost = 3
+exhaustable = true
 icon = ExtResource("1_prb0w")
 tooltip_text = "[center]Apply [color=\"d3aa17\"]Recovery Aura[/color] to yourself. Cleanse all debuffs.[/center]"
 sound = ExtResource("3_tn7rb")

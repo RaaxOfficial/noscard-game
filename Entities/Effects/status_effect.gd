@@ -3,7 +3,7 @@ extends Effect
 
 var status: Status
 
-func execute(targets: Array[Node], _sender: Node = null) -> void:
+func execute(targets: Array[Node], _from: Node = null) -> void:
 	for target in targets:
 		if not target:
 			continue

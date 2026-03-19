@@ -13,7 +13,8 @@ signal tooltip_hide_requested
 signal player_hand_drawn
 signal player_hand_discarded
 signal player_turn_ended
-signal player_hit(sender: Node)
+signal player_hit(from: Node)
+signal player_hurt
 signal player_died
 signal player_countered
 

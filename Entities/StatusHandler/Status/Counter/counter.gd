@@ -20,11 +20,11 @@ func apply_status(target: Node) -> void:
 	
 	status_applied.emit(self)
 
-func _on_player_hit(sender: Node) -> void:
-	if sender is not Enemy:
+func _on_player_hit(from: Node) -> void:
+	if from is not Enemy:
 		return
 	
-	enemy = sender
+	enemy = from
 	player_hit = true
 
 func _on_enemy_action_completed(who: Enemy) -> void:

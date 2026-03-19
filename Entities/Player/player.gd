@@ -14,7 +14,7 @@ const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 
 
 func _ready() -> void:
-	EventManager.player_hit.connect(_on_player_hit)
+	EventManager.player_hurt.connect(_on_player_hurt)
 	status_handler.status_owner = self
 	anim.play("breathing")
 
@@ -45,17 +45,16 @@ func update_player() -> void:
 func update_stats() -> void:
 	stats_ui.update_stats(stats)
 
-func take_damage(damage: int, sender: Node = null) -> void:
+func take_damage(damage: int, from: Node = null) -> void:
 	if stats.health <= 0:
 		return
 	
 	var tween := create_tween()
 	tween.tween_callback(ShakeManager.shake.bind(self, 16, 0.15))
-	tween.tween_callback(stats.take_damage.bind(damage))
+	tween.tween_callback(stats.take_damage.bind(damage, from))
 	tween.tween_interval(0.17)
 	
 	tween.finished.connect(func():
-		EventManager.player_hit.emit(sender)
 		if stats.health <= 0:
 			EventManager.player_died.emit()
 			queue_free()
@@ -67,9 +66,8 @@ func heal(amount: int) -> void:
 	
 	stats.heal(amount)
 
-func _on_player_hit(sender: Node) -> void:
-	# ToDo: anim.play("hurt")
-	pass
+func _on_player_hurt() -> void:
+	print("ToDo: anim.play(hurt)")
 
 func _on_blink_timer_timeout() -> void:
 	if anim.is_playing():

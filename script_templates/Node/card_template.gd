@@ -4,6 +4,6 @@ extends Card
 
 @export var optional_sound: AudioStream
 
-func apply_effects(targets: Array[Node], sender: Node = null) -> void:
+func apply_effects(targets: Array[Node], from: Node = null) -> void:
 	print("Card played")
 	print("Targets: %s" % targets)

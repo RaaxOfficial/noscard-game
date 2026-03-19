@@ -5,6 +5,6 @@ extends Effect
 
 var member_var := 0
 
-func execute(targets: Array[Node], sender: Node = null) -> void:
+func execute(targets: Array[Node], from: Node = null) -> void:
 	print("Effect targeting: %s" % targets)
 	print("It does %s something" % member_var)

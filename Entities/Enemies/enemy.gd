@@ -90,7 +90,7 @@ func do_turn() -> void:
 	
 	current_action.perform_action()
 
-func take_damage(damage: int, _sender: Node = null) -> void:
+func take_damage(damage: int, _from: Node = null) -> void:
 	if stats.health <= 0:
 		return
 	

@@ -25,7 +25,6 @@ func start_battle() -> void:
 	
 	battle_ui.char_stats = char_stats
 	player.stats = char_stats
-	print(player.stats.character_name)
 	
 	enemy_handler.setup_enemies(battle_stats)
 	enemy_handler.reset_enemy_actions()
