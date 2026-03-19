@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d08lkw4qqra2h"]
 
-[ext_resource type="Texture2D" uid="uid://cltd7vwvruan8" path="res://UI/Status/Sprites/counter_icon_x64.png" id="1_komeg"]
-[ext_resource type="Script" uid="uid://d2i6ljqw2s52i" path="res://UI/Status/status_ui.gd" id="1_lx1rq"]
+[ext_resource type="Texture2D" uid="uid://cltd7vwvruan8" path="res://UI/Battle/Status/Sprites/counter_icon_x64.png" id="1_komeg"]
+[ext_resource type="Script" uid="uid://d2i6ljqw2s52i" path="res://UI/Battle/Status/status_ui.gd" id="1_lx1rq"]
 [ext_resource type="Resource" uid="uid://bew6xrjxi55hq" path="res://Entities/StatusHandler/Status/Weaken Attack Power/weaken_attack_power.tres" id="2_0jsg0"]
 
 [node name="StatusUI" type="Control" unique_id=1330886063]

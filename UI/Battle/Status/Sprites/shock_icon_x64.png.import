@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qtgxlhjtrp85"
-path="res://.godot/imported/cut_iconx_x64.png-1cb5140a35f4575787e1c615727f18d4.ctex"
+uid="uid://dr3mk1tj3fj0"
+path="res://.godot/imported/shock_icon_x64.png-666926ee6b1bfc3682742fc9f8e4d5d0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Status/Sprites/cut_iconx_x64.png"
-dest_files=["res://.godot/imported/cut_iconx_x64.png-1cb5140a35f4575787e1c615727f18d4.ctex"]
+source_file="res://UI/Battle/Status/Sprites/shock_icon_x64.png"
+dest_files=["res://.godot/imported/shock_icon_x64.png-666926ee6b1bfc3682742fc9f8e4d5d0.ctex"]
 
 [params]
 

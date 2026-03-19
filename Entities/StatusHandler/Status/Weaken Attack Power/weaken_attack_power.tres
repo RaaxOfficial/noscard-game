@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Status" format=3 uid="uid://bew6xrjxi55hq"]
 
-[ext_resource type="Texture2D" uid="uid://bk440315jipi6" path="res://UI/Status/Sprites/weaken_attack_power_x64.png" id="1_c5h0k"]
+[ext_resource type="Texture2D" uid="uid://bk440315jipi6" path="res://UI/Battle/Status/Sprites/weaken_attack_power_x64.png" id="1_c5h0k"]
 [ext_resource type="Script" uid="uid://dx0is2tc5dfi6" path="res://Entities/StatusHandler/Status/status.gd" id="1_soh5k"]
 
 [resource]

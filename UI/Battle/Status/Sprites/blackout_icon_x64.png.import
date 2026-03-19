@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj1eayi7ofgpg"
-path="res://.godot/imported/blackout_icon_x64.png-f5b47a5ebeffd3cae797926d1a1e4bda.ctex"
+path="res://.godot/imported/blackout_icon_x64.png-4a0e6f84d527dde6fae008106a6fcef7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Status/Sprites/blackout_icon_x64.png"
-dest_files=["res://.godot/imported/blackout_icon_x64.png-f5b47a5ebeffd3cae797926d1a1e4bda.ctex"]
+source_file="res://UI/Battle/Status/Sprites/blackout_icon_x64.png"
+dest_files=["res://.godot/imported/blackout_icon_x64.png-4a0e6f84d527dde6fae008106a6fcef7.ctex"]
 
 [params]
 

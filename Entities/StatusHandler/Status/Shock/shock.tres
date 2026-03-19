@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Status" format=3 uid="uid://kjch13ysqafu"]
 
 [ext_resource type="Script" uid="uid://dx0is2tc5dfi6" path="res://Entities/StatusHandler/Status/status.gd" id="1_77kdo"]
-[ext_resource type="Texture2D" uid="uid://dr3mk1tj3fj0" path="res://UI/Status/Sprites/shock_icon_x64.png" id="1_o4tc8"]
+[ext_resource type="Texture2D" uid="uid://dr3mk1tj3fj0" path="res://UI/Battle/Status/Sprites/shock_icon_x64.png" id="1_o4tc8"]
 
 [resource]
 script = ExtResource("1_77kdo")

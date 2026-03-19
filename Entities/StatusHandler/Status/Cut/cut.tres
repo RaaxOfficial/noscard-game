@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CutStatus" format=3 uid="uid://duhpfaoe5a4ua"]
 
-[ext_resource type="Texture2D" uid="uid://qtgxlhjtrp85" path="res://UI/Status/Sprites/cut_iconx_x64.png" id="1_wh38i"]
+[ext_resource type="Texture2D" uid="uid://qtgxlhjtrp85" path="res://UI/Battle/Status/Sprites/cut_iconx_x64.png" id="1_wh38i"]
 [ext_resource type="Script" uid="uid://c2lsr3pkgeor1" path="res://Entities/StatusHandler/Status/Cut/cut.gd" id="2_xuq10"]
 
 [resource]

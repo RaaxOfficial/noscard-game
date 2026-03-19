@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cltd7vwvruan8"
-path="res://.godot/imported/counter_icon_x64.png-6fc38551e69ee2c6fd7b3c3b1641d1b2.ctex"
+uid="uid://bk440315jipi6"
+path="res://.godot/imported/weaken_attack_power_x64.png-29e9606253eae046e00f88604faca723.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Status/Sprites/counter_icon_x64.png"
-dest_files=["res://.godot/imported/counter_icon_x64.png-6fc38551e69ee2c6fd7b3c3b1641d1b2.ctex"]
+source_file="res://UI/Battle/Status/Sprites/weaken_attack_power_x64.png"
+dest_files=["res://.godot/imported/weaken_attack_power_x64.png-29e9606253eae046e00f88604faca723.ctex"]
 
 [params]
 

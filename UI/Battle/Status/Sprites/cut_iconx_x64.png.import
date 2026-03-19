@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hw67xul7622s"
-path="res://.godot/imported/recovery_aura_icon_x64.png-5b58817d23f30fe10636441b0b9b29b0.ctex"
+uid="uid://qtgxlhjtrp85"
+path="res://.godot/imported/cut_iconx_x64.png-2ab4d6dd4d9d5e4871ac33567ed3b2dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Status/Sprites/recovery_aura_icon_x64.png"
-dest_files=["res://.godot/imported/recovery_aura_icon_x64.png-5b58817d23f30fe10636441b0b9b29b0.ctex"]
+source_file="res://UI/Battle/Status/Sprites/cut_iconx_x64.png"
+dest_files=["res://.godot/imported/cut_iconx_x64.png-2ab4d6dd4d9d5e4871ac33567ed3b2dc.ctex"]
 
 [params]
 
