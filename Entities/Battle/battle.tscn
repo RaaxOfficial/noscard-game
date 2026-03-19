@@ -68,8 +68,9 @@ stats = SubResource("Resource_avgb2")
 
 [node name="CardTargetSelector" parent="." unique_id=883950278 instance=ExtResource("3_0lqow")]
 
-[node name="PlayerHandler" type="Node" parent="." unique_id=2083631594 node_paths=PackedStringArray("hand")]
+[node name="PlayerHandler" type="Node" parent="." unique_id=2083631594 node_paths=PackedStringArray("player", "hand")]
 script = ExtResource("8_lksgk")
+player = NodePath("../Player")
 hand = NodePath("../BattleUICanvas/Hand")
 
 [node name="BattleUICanvas" type="CanvasLayer" parent="." unique_id=2134989780 groups=["ui_layer"]]

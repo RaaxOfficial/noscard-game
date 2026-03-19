@@ -7,7 +7,7 @@ func _ready() -> void:
 	EventManager.player_hit.connect(_on_player_hit)
 	timer.timeout.connect(_on_timer_timeout)
 
-func _on_player_hit() -> void:
+func _on_player_hit(_sender: Node) -> void:
 	color_rect.color.a = 0.25
 	timer.start()
 

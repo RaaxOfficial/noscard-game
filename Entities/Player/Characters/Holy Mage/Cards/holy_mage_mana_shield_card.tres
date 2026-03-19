@@ -8,8 +8,9 @@
 script = ExtResource("2_ftg3w")
 id = "holy_mage_mana_shield_card"
 type = 1
+amount = 5
 cost = 1
 icon = ExtResource("1_ftg3w")
-tooltip_text = "[center]Gain [color=\"0044ff\"]6[/color] block.[/center]"
+tooltip_text = "[center]Gain [color=\"0044ff\"]5[/color] block.[/center]"
 sound = ExtResource("3_t6bhb")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

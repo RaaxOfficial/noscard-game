@@ -8,6 +8,7 @@
 script = ExtResource("2_r3yxb")
 id = "warrior_whirlind_card"
 target = 2
+amount = 6
 cost = 2
 icon = ExtResource("1_n4tqh")
 tooltip_text = "[center]Deal [color=\"ff0000\"]4[/color] damage to all enemies.[/center]"

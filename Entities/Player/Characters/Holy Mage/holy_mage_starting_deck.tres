@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Card/card.gd" id="1_iitoy"]
 [ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Card/Card Pile/card_pile.gd" id="2_1o1nu"]
+[ext_resource type="Resource" uid="uid://gh7312ufyhgv" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_cure_all_card.tres" id="2_3usit"]
 [ext_resource type="Resource" uid="uid://dj5rtsxgjbivd" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_basic_card.tres" id="2_827qs"]
 [ext_resource type="Resource" uid="uid://bvm8tepjhrpmx" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_mana_shield_card.tres" id="3_p7ypm"]
 
 [resource]
 script = ExtResource("2_1o1nu")
-cards = Array[ExtResource("1_iitoy")]([ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm")])
+cards = Array[ExtResource("1_iitoy")]([ExtResource("2_3usit"), ExtResource("2_3usit"), ExtResource("2_3usit"), ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm"), ExtResource("3_p7ypm")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

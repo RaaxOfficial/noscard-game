@@ -8,6 +8,7 @@
 script = ExtResource("2_kk756")
 id = "wild_keeper_snake_rush_card"
 target = 2
+amount = 3
 cost = 2
 icon = ExtResource("1_kuke4")
 tooltip_text = "[center]Deal [color=\"ff0000\"]3[/color] damage 2 times to all enemies. Apply [color=\"d3aa17\"]Blackout[/color] with a 25% chance.[/center]"

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cqyyo5h2yd4ff" path="res://Entities/Player/player.gd" id="1_vb825"]
 [ext_resource type="SpriteFrames" uid="uid://cpsu5kgpl3h2b" path="res://Entities/Player/Characters/Warrior/Sprites/warrior_sprite_frames.tres" id="2_lu8i8"]
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Battle/stats_ui.tscn" id="2_vb825"]
+[ext_resource type="PackedScene" uid="uid://bum2nrejflmb6" path="res://Entities/StatusHandler/status_handler.tscn" id="4_tekja"]
 
 [node name="Player" type="Node2D" unique_id=1304863896 groups=["player"]]
 script = ExtResource("1_vb825")
@@ -21,5 +22,12 @@ offset_bottom = 48.0
 [node name="BlinkTimer" type="Timer" parent="." unique_id=834756053]
 wait_time = 3.0
 autostart = true
+
+[node name="StatusHandler" parent="." unique_id=662056357 node_paths=PackedStringArray("status_owner") instance=ExtResource("4_tekja")]
+offset_left = -41.0
+offset_top = 48.0
+offset_right = -41.0
+offset_bottom = 48.0
+status_owner = NodePath("..")
 
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]

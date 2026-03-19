@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="3_rt1x0"]
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Battle/stats_ui.tscn" id="4_8wvsg"]
 [ext_resource type="PackedScene" uid="uid://dx26sgo77cm56" path="res://UI/Battle/Enemies/intent_ui.tscn" id="5_rt1x0"]
+[ext_resource type="PackedScene" uid="uid://bum2nrejflmb6" path="res://Entities/StatusHandler/status_handler.tscn" id="6_ftopr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lqow"]
 
@@ -38,6 +39,13 @@ offset_top = -18.0
 offset_right = 20.0
 offset_bottom = -4.0
 grow_vertical = 0
+
+[node name="StatusHandler" parent="." unique_id=662056357 node_paths=PackedStringArray("status_owner") instance=ExtResource("6_ftopr")]
+offset_left = -75.0
+offset_top = 16.0
+offset_right = -75.0
+offset_bottom = 16.0
+status_owner = NodePath("..")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

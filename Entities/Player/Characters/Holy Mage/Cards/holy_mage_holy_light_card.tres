@@ -9,6 +9,7 @@ script = ExtResource("2_j6hv2")
 id = "holy_mage_holy_light_card"
 rarity = 1
 target = 1
+amount = 6
 cost = 2
 icon = ExtResource("1_j6hv2")
 tooltip_text = "[center]Deal [color=\"ff0000\"]6[/color] damage. Apply [color=\"d3aa17\"]Blind[/color].[/center]"

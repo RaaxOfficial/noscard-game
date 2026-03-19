@@ -11,9 +11,10 @@ var current_action: EnemyAction : set = set_current_action
 
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var arrow: Sprite2D = $Arrow
+@onready var collision: CollisionShape2D = %CollisionShape2D
 @onready var stats_ui: StatsUI = $StatsUI
 @onready var intent_ui: IntentUI = $IntentUI
-@onready var collision: CollisionShape2D = %CollisionShape2D
+@onready var status_handler: StatusHandler = $StatusHandler
 
 
 func set_current_action(value: EnemyAction) -> void:
@@ -74,6 +75,7 @@ func update_ui() -> void:
 	var sprite_offset: Vector2 = sprite_2d.get_rect().size
 	stats_ui.global_position.y += sprite_offset.y / 2 * sprite_2d.scale.y
 	intent_ui.global_position.y -= sprite_offset.y / 2 * sprite_2d.scale.y
+	status_handler.global_position.y += sprite_offset.y / 2 * sprite_2d.scale.y
 	
 	collision.shape.extents = sprite_2d.texture.get_size() / 4
 	collision.scale = sprite_2d.scale
@@ -88,7 +90,7 @@ func do_turn() -> void:
 	
 	current_action.perform_action()
 
-func take_damage(damage: int) -> void:
+func take_damage(damage: int, _sender: Node = null) -> void:
 	if stats.health <= 0:
 		return
 	
@@ -102,6 +104,7 @@ func take_damage(damage: int) -> void:
 	tween.finished.connect(func():
 		sprite_2d.material = null
 		if stats.health <= 0:
+			EventManager.enemy_died.emit(self)
 			queue_free()
 		)
 

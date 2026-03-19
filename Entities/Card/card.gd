@@ -16,6 +16,7 @@ const RARITY_COLORS := {
 @export var type: Type
 @export var rarity: Rarity
 @export var target: Target
+@export var amount: int
 @export var cost: int
 
 @export_group("Card Visuals")
@@ -51,5 +52,5 @@ func play(targets: Array[Node], char_stats: CharacterStats) -> void:
 	else:
 		apply_effects(_get_targets((targets)))
 
-func apply_effects(_targets: Array[Node]) -> void:
+func apply_effects(_targets: Array[Node], _sender: Node = null) -> void:
 	pass

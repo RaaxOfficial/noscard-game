@@ -9,6 +9,7 @@ script = ExtResource("2_3qrdx")
 id = "wild_keeper_ivy_card"
 rarity = 1
 target = 2
+amount = 9
 cost = 2
 icon = ExtResource("1_ia48p")
 tooltip_text = "[center]Deal [color=\"ff0000\"]9[/color] damage to all enemies. Apply [color=\"d3aa17\"]Shock[/color] for 1 turn.[/center]"

@@ -10,10 +10,12 @@ const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 @onready var stats_ui: StatsUI = $StatsUI
 @onready var anim: AnimatedSprite2D = $AnimatedSprite2D
 @onready var blink_timer: Timer = $BlinkTimer
+@onready var status_handler: StatusHandler = $StatusHandler
 
 
 func _ready() -> void:
 	EventManager.player_hit.connect(_on_player_hit)
+	status_handler.status_owner = self
 	anim.play("breathing")
 
 func set_character_stats(value: CharacterStats) -> void:
@@ -43,7 +45,7 @@ func update_player() -> void:
 func update_stats() -> void:
 	stats_ui.update_stats(stats)
 
-func take_damage(damage: int) -> void:
+func take_damage(damage: int, sender: Node = null) -> void:
 	if stats.health <= 0:
 		return
 	
@@ -53,6 +55,7 @@ func take_damage(damage: int) -> void:
 	tween.tween_interval(0.17)
 	
 	tween.finished.connect(func():
+		EventManager.player_hit.emit(sender)
 		if stats.health <= 0:
 			EventManager.player_died.emit()
 			queue_free()
@@ -64,8 +67,8 @@ func heal(amount: int) -> void:
 	
 	stats.heal(amount)
 
-func _on_player_hit() -> void:
-	# ToDo: Play "hurt" animation
+func _on_player_hit(sender: Node) -> void:
+	# ToDo: anim.play("hurt")
 	pass
 
 func _on_blink_timer_timeout() -> void:

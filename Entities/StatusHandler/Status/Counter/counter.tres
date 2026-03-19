@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CounterStatus" format=3 uid="uid://djoxk0rw6eoc1"]
+
+[ext_resource type="Texture2D" uid="uid://cltd7vwvruan8" path="res://UI/Status/Sprites/counter_icon_x64.png" id="1_817x3"]
+[ext_resource type="Script" uid="uid://176imn51bywg" path="res://Entities/StatusHandler/Status/Counter/counter.gd" id="2_817x3"]
+
+[resource]
+script = ExtResource("2_817x3")
+id = "counter"
+type = 2
+stack_type = 1
+stacks = 1
+icon = ExtResource("1_817x3")
+tooltip = "ToDo: Effect: Deal damage equal to your \"Basic\" card to an enemy when defending."
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

@@ -9,7 +9,7 @@ func perform_action() -> void:
 	var block_effect = BlockEffect.new()
 	block_effect.amount = block
 	block_effect.sound = sound
-	block_effect.execute([enemy])
+	block_effect.execute([enemy], enemy)
 	
 	SFXManager.play(sound)
 	
