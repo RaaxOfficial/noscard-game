@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="WeakenDefensePowerStatus" format=3 uid="uid://bps5o6dkp3oyh"]
 
-[ext_resource type="Texture2D" uid="uid://dti2k3x45b1w3" path="res://UI/Battle/Status/Sprites/weaken_defense_power_x64.png" id="1_lwch6"]
+[ext_resource type="Texture2D" uid="uid://dti2k3x45b1w3" path="res://UI/Run/Battle/Status/Sprites/weaken_defense_power_x64.png" id="1_lwch6"]
 [ext_resource type="Script" uid="uid://rhl1c6v2mjqy" path="res://Entities/StatusHandler/Status/Weaken Defense Power/weaken_defense_power.gd" id="2_u7skr"]
 
 [resource]

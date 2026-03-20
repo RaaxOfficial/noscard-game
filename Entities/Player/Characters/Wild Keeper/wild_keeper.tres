@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://fbnpo60jbtew"]
 
-[ext_resource type="Texture2D" uid="uid://ccxre25wwy8my" path="res://Entities/Player/Characters/Wild Keeper/Sprites/wild_keeper_portrait.png" id="1_1enol"]
+[ext_resource type="Texture2D" uid="uid://ccxre25wwy8my" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_portrait.png" id="1_1enol"]
 [ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Player/Characters/character_stats.gd" id="1_8ujwr"]
 [ext_resource type="Resource" uid="uid://dtbtov0o58ebl" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper_draftable_cards.tres" id="2_fwkwx"]
 [ext_resource type="Resource" uid="uid://bj15tf82k7y4c" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper_starting_deck.tres" id="3_y3ftm"]

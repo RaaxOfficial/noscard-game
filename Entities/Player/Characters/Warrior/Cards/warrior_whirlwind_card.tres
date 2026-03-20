@@ -1,6 +1,6 @@
 [gd_resource type="Resource" format=3 uid="uid://ut60oqajtmqd"]
 
-[ext_resource type="Texture2D" uid="uid://cqcal03735mv8" path="res://art/tile_0118.png" id="1_n4tqh"]
+[ext_resource type="Texture2D" uid="uid://by6bqn5m0pf11" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_whirlwind_icon_x64.png" id="1_rigkg"]
 [ext_resource type="Script" uid="uid://dsivtmltlf335" path="res://Entities/Player/Characters/Warrior/Cards/warrior_whirlind_card.gd" id="2_r3yxb"]
 [ext_resource type="AudioStream" uid="uid://dixklg6g4jnsq" path="res://Assets/Audio/SFX/slash.ogg" id="3_r3yxb"]
 
@@ -10,7 +10,7 @@ id = "warrior_whirlind_card"
 target = 2
 amount = 6
 cost = 2
-icon = ExtResource("1_n4tqh")
+icon = ExtResource("1_rigkg")
 tooltip_text = "[center]Deal [color=\"ff0000\"]4[/color] damage to all enemies.[/center]"
 sound = ExtResource("3_r3yxb")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

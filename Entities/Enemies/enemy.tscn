@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dvfawhc5l7bau"]
 
 [ext_resource type="Script" uid="uid://drkue30paxf81" path="res://Entities/Enemies/enemy.gd" id="1_572h1"]
-[ext_resource type="Texture2D" uid="uid://c16em7qn7e1oh" path="res://Entities/Enemies/Chicken/Sprites/chiken32.png" id="2_ihd1f"]
+[ext_resource type="Texture2D" uid="uid://c16em7qn7e1oh" path="res://UI/Run/Battle/Enemies/Chicken/chiken32.png" id="2_ihd1f"]
 [ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="3_rt1x0"]
-[ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Battle/stats_ui.tscn" id="4_8wvsg"]
-[ext_resource type="PackedScene" uid="uid://dx26sgo77cm56" path="res://UI/Battle/Enemies/intent_ui.tscn" id="5_rt1x0"]
+[ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Run/Battle/stats_ui.tscn" id="4_8wvsg"]
+[ext_resource type="PackedScene" uid="uid://dx26sgo77cm56" path="res://UI/Run/Battle/Enemies/intent_ui.tscn" id="5_rt1x0"]
 [ext_resource type="PackedScene" uid="uid://bum2nrejflmb6" path="res://Entities/StatusHandler/status_handler.tscn" id="6_ftopr"]
 [ext_resource type="PackedScene" uid="uid://b30pkyymfiwo1" path="res://Entities/ModifierHandler/modifier_handler.tscn" id="7_ftopr"]
 [ext_resource type="PackedScene" uid="uid://dt53fguyhj0fr" path="res://Entities/ModifierHandler/modifier.tscn" id="8_jk8g3"]

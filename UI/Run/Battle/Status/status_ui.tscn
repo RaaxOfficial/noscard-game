@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://d08lkw4qqra2h"]
+
+[ext_resource type="Texture2D" uid="uid://cltd7vwvruan8" path="res://UI/Run/Battle/Status/Sprites/counter_icon_x64.png" id="1_komeg"]
+[ext_resource type="Script" uid="uid://d2i6ljqw2s52i" path="res://UI/Run/Battle/Status/status_ui.gd" id="1_lx1rq"]
+[ext_resource type="Resource" uid="uid://bew6xrjxi55hq" path="res://Entities/StatusHandler/Status/Weaken Attack Power/weaken_attack_power.tres" id="2_0jsg0"]
+
+[node name="StatusUI" type="Control" unique_id=1330886063]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lx1rq")
+status = ExtResource("2_0jsg0")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=137133655]
+layout_mode = 0
+offset_right = 10.0
+offset_bottom = 10.0
+texture = ExtResource("1_komeg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Duration" type="Label" parent="." unique_id=1301734053]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 13.0
+theme_override_colors/font_color = Color(0.49053442, 0.6290944, 0.8616981, 1)
+theme_override_font_sizes/font_size = 6
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Stacks" type="Label" parent="." unique_id=377989275]
+layout_mode = 0
+offset_left = 5.0
+offset_top = -2.0
+offset_right = 15.0
+offset_bottom = 4.0
+theme_override_colors/font_color = Color(0.37511116, 0.7192097, 0.35755402, 1)
+theme_override_font_sizes/font_size = 6
+text = "99"
+horizontal_alignment = 1
+vertical_alignment = 1

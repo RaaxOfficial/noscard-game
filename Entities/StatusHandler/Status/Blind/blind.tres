@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="BlindStatus" format=3 uid="uid://dh0t1hba5vo5v"]
 
-[ext_resource type="Texture2D" uid="uid://bbx6tw0ugqhjr" path="res://UI/Battle/Status/Sprites/blind_icon_x64.png" id="1_fef27"]
+[ext_resource type="Texture2D" uid="uid://bbx6tw0ugqhjr" path="res://UI/Run/Battle/Status/Sprites/blind_icon_x64.png" id="1_fef27"]
 [ext_resource type="Script" uid="uid://dypndpgi1xail" path="res://Entities/StatusHandler/Status/Blind/blind.gd" id="2_fef27"]
 
 [resource]

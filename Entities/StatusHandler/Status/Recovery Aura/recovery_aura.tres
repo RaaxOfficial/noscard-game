@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CustomStatus" format=3 uid="uid://dln7276kbgh7n"]
 
-[ext_resource type="Texture2D" uid="uid://hw67xul7622s" path="res://UI/Battle/Status/Sprites/recovery_aura_icon_x64.png" id="1_7dubs"]
+[ext_resource type="Texture2D" uid="uid://hw67xul7622s" path="res://UI/Run/Battle/Status/Sprites/recovery_aura_icon_x64.png" id="1_7dubs"]
 [ext_resource type="Script" uid="uid://bgavok4ibd46u" path="res://Entities/StatusHandler/Status/Recovery Aura/recovery_aura.gd" id="2_8gtt0"]
 
 [resource]

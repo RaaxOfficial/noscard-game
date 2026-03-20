@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="1_eus8i"]
 [ext_resource type="PackedScene" uid="uid://cexpw05v2vp7j" path="res://Entities/Enemies/Chicken/chicken_enemy_ai.tscn" id="2_w3hxe"]
-[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://Entities/Enemies/Chicken/Sprites/chiken64.png" id="3_xs7lc"]
+[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://UI/Run/Battle/Enemies/Chicken/chiken64.png" id="3_xs7lc"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Enemies/enemy_stats.gd" id="4_aje6v"]
 
 [sub_resource type="Resource" id="Resource_qigov"]

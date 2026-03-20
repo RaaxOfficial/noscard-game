@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://ec65km0arx71"]
 
-[ext_resource type="Texture2D" uid="uid://dr4e0227j8ymn" path="res://Entities/Player/Characters/Warrior/Sprites/warrior_portrait.png" id="1_o6dw5"]
+[ext_resource type="Texture2D" uid="uid://dr4e0227j8ymn" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_portrait.png" id="1_o6dw5"]
 [ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Player/Characters/character_stats.gd" id="1_s1pb3"]
 [ext_resource type="Resource" uid="uid://ckqscnsae8pwi" path="res://Entities/Player/Characters/Warrior/warrior_draftable_cards.tres" id="2_wgifn"]
 [ext_resource type="Resource" uid="uid://bk7txja3x83th" path="res://Entities/Player/Characters/Warrior/warrior_starting_deck.tres" id="3_yy12i"]

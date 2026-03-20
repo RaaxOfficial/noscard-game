@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c6ggxgxnbuibe"]
 
 [ext_resource type="Script" uid="uid://cqyyo5h2yd4ff" path="res://Entities/Player/player.gd" id="1_vb825"]
-[ext_resource type="SpriteFrames" uid="uid://cpsu5kgpl3h2b" path="res://Entities/Player/Characters/Warrior/Sprites/warrior_sprite_frames.tres" id="2_lu8i8"]
-[ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Battle/stats_ui.tscn" id="2_vb825"]
+[ext_resource type="SpriteFrames" uid="uid://cpsu5kgpl3h2b" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_sprite_frames.tres" id="2_lu8i8"]
+[ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Run/Battle/stats_ui.tscn" id="2_vb825"]
 [ext_resource type="PackedScene" uid="uid://bum2nrejflmb6" path="res://Entities/StatusHandler/status_handler.tscn" id="4_tekja"]
 [ext_resource type="PackedScene" uid="uid://b30pkyymfiwo1" path="res://Entities/ModifierHandler/modifier_handler.tscn" id="5_5c2io"]
 [ext_resource type="PackedScene" uid="uid://dt53fguyhj0fr" path="res://Entities/ModifierHandler/modifier.tscn" id="6_4wf4l"]

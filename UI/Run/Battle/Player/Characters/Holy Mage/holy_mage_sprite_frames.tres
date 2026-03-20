@@ -1,0 +1,66 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cquesy7j5vstq"]
+
+[ext_resource type="Texture2D" uid="uid://cnp186xhaouj4" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_blinking.png" id="1_gxkka"]
+[ext_resource type="Texture2D" uid="uid://b5hev7jjytupv" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_breathing.png" id="2_jlkye"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_myd0w"]
+atlas = ExtResource("1_gxkka")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fcgqy"]
+atlas = ExtResource("1_gxkka")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_alsx6"]
+atlas = ExtResource("1_gxkka")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_laeh5"]
+atlas = ExtResource("2_jlkye")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s7q5f"]
+atlas = ExtResource("2_jlkye")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5pje"]
+atlas = ExtResource("2_jlkye")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_akiqh"]
+atlas = ExtResource("2_jlkye")
+region = Rect2(192, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_myd0w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fcgqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_alsx6")
+}],
+"loop": false,
+"name": &"blinking",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_laeh5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s7q5f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5pje")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_akiqh")
+}],
+"loop": true,
+"name": &"breathing",
+"speed": 10.0
+}]
