@@ -110,6 +110,10 @@ func take_damage(damage: int, which_modifier: Modifier.Type, _from: Node = null)
 			queue_free()
 		)
 
+func skip_turn() -> void:
+	stats.stunned = true
+	update_action()
+
 func _on_area_entered(_area: Area2D) -> void:
 	arrow.show()
 

@@ -4,7 +4,7 @@ extends Control
 @export var card: Card : set = set_card
 
 @onready var panel: Panel = $Panel
-@onready var cost: Label = $Cost
+@onready var cost: Label = %Cost
 @onready var icon: TextureRect = $Icon
 @onready var rarity: TextureRect = $Rarity
 

@@ -69,6 +69,9 @@ func heal(amount: int) -> void:
 	
 	stats.heal(amount)
 
+func skip_turn() -> void:
+	print("Player has skipped turn")
+
 func _on_player_hurt() -> void:
 	print("ToDo: anim.play(hurt)")
 

@@ -1,5 +1,6 @@
 extends Card
 
+const BLACKOUT_STATUS = preload("uid://y3cuw8vip86y")
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var damage_effect := DamageEffect.new()
@@ -7,4 +8,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	damage_effect.sound = sound
 	damage_effect.execute(targets)
 	
-	print("TODO: Apply Blackout debuff.")
+	var status_effect := StatusEffect.new()
+	var blackout := BLACKOUT_STATUS.duplicate()
+	status_effect.status = blackout
+	status_effect.execute(targets)

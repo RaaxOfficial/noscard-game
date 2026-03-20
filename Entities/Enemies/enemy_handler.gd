@@ -56,6 +56,7 @@ func _on_enemy_statuses_applied(type: Status.Type, enemy: Enemy) -> void:
 
 func _on_enemy_action_completed(enemy: Enemy) -> void:
 	enemy.status_handler.apply_statuses_by_type(Status.Type.END_OF_TURN)
+	enemy.stats.stunned = false
 
 func _on_enemy_died(enemy: Enemy) -> void:
 	var is_enemy_turn := acting_enemies.size() > 0

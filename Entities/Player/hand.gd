@@ -23,7 +23,6 @@ func disable_hand() -> void:
 	for card in get_children():
 		card.disabled = true
 
-
 func _on_card_ui_reparent_requested(child: CardUI) -> void:
 	child.disabled = true
 	child.reparent(self)

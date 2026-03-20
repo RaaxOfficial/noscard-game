@@ -8,6 +8,8 @@
 [ext_resource type="Script" uid="uid://n0xduce8g2y2" path="res://Entities/Enemies/Chicken/chicken_block_action.gd" id="6_nthak"]
 [ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_j4wns"]
 [ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_q8l6v"]
+[ext_resource type="Script" uid="uid://bvo0hx3k2hfr7" path="res://Entities/Enemies/Chicken/chicken_skip_action.gd" id="9_pyh8x"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_synnb"]
 
 [sub_resource type="Resource" id="Resource_kp58c"]
 script = ExtResource("4_synnb")
@@ -18,6 +20,11 @@ metadata/_custom_type_script = "uid://qfuev8x2tj4x"
 [sub_resource type="Resource" id="Resource_vwp8o"]
 script = ExtResource("4_synnb")
 icon = ExtResource("7_j4wns")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_synnb")
+icon = ExtResource("10_synnb")
 metadata/_custom_type_script = "uid://qfuev8x2tj4x"
 
 [node name="ChickenEnemyAI" type="Node" unique_id=836036035]
@@ -38,3 +45,7 @@ intent = SubResource("Resource_vwp8o")
 sound = ExtResource("8_q8l6v")
 type = 1
 chance_weight = 1.0
+
+[node name="ChickenSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_pyh8x")
+intent = SubResource("Resource_jqmxn")
