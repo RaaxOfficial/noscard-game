@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Battle/stats_ui.tscn" id="4_8wvsg"]
 [ext_resource type="PackedScene" uid="uid://dx26sgo77cm56" path="res://UI/Battle/Enemies/intent_ui.tscn" id="5_rt1x0"]
 [ext_resource type="PackedScene" uid="uid://bum2nrejflmb6" path="res://Entities/StatusHandler/status_handler.tscn" id="6_ftopr"]
+[ext_resource type="PackedScene" uid="uid://b30pkyymfiwo1" path="res://Entities/ModifierHandler/modifier_handler.tscn" id="7_ftopr"]
+[ext_resource type="PackedScene" uid="uid://dt53fguyhj0fr" path="res://Entities/ModifierHandler/modifier.tscn" id="8_jk8g3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0lqow"]
 
@@ -46,6 +48,16 @@ offset_top = 16.0
 offset_right = -75.0
 offset_bottom = 16.0
 status_owner = NodePath("..")
+
+[node name="ModifierHandler" parent="." unique_id=1888997952 instance=ExtResource("7_ftopr")]
+
+[node name="DamageDealtModifier" parent="ModifierHandler" unique_id=1497955756 instance=ExtResource("8_jk8g3")]
+
+[node name="DamageTakenModifier" parent="ModifierHandler" unique_id=579360092 instance=ExtResource("8_jk8g3")]
+type = 1
+
+[node name="BlockGainedModifier" parent="ModifierHandler" unique_id=1593290568 instance=ExtResource("8_jk8g3")]
+type = 2
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

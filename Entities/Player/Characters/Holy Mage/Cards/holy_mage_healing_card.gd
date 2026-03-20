@@ -1,7 +1,7 @@
 extends Card
 
 
-func apply_effects(targets: Array[Node], from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, from: Node = null) -> void:
 	var heal_effect := HealEffect.new()
 	heal_effect.amount = amount
 	heal_effect.sound = sound

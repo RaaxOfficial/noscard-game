@@ -9,6 +9,7 @@ const HOVER_STYLEBOX := preload("uid://dbu2g5is65xrj")
 
 @export var card: Card : set = _set_card
 @export var char_stats: CharacterStats : set = _set_char_stats
+@export var player_modifiers: ModifierHandler
 
 var parent: Control
 var tween: Tween
@@ -40,7 +41,7 @@ func play() -> void:
 	if not card:
 		return
 	
-	card.play(targets, char_stats)
+	card.play(targets, char_stats, player_modifiers)
 	queue_free()
 
 func _set_card(value: Card) -> void:

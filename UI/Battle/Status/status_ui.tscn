@@ -20,24 +20,24 @@ stretch_mode = 5
 
 [node name="Duration" type="Label" parent="." unique_id=1301734053]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 5.0
-offset_right = 14.0
-offset_bottom = 11.0
+offset_left = 5.0
+offset_top = 7.0
+offset_right = 15.0
+offset_bottom = 13.0
 theme_override_colors/font_color = Color(0.49053442, 0.6290944, 0.8616981, 1)
-theme_override_font_sizes/font_size = 4
+theme_override_font_sizes/font_size = 6
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Stacks" type="Label" parent="." unique_id=377989275]
 layout_mode = 0
-offset_left = 4.0
-offset_top = -1.0
-offset_right = 14.0
-offset_bottom = 5.0
+offset_left = 5.0
+offset_top = -2.0
+offset_right = 15.0
+offset_bottom = 4.0
 theme_override_colors/font_color = Color(0.37511116, 0.7192097, 0.35755402, 1)
-theme_override_font_sizes/font_size = 4
+theme_override_font_sizes/font_size = 6
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1

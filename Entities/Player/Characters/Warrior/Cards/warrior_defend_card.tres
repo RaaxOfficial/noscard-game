@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("2_efiof")
 card = ExtResource("1_1obcb")
-id = "warrior_iron_skin_card"
+id = "warrior_defend_card"
 type = 1
 amount = 5
 cost = 1

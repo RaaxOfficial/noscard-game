@@ -4,7 +4,7 @@ const BLIND_STATUS = preload("uid://dh0t1hba5vo5v")
 
 @export var blind_duration := 2
 
-func apply_effects(targets: Array[Node], from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, from: Node = null) -> void:
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = amount
 	damage_effect.sound = sound
