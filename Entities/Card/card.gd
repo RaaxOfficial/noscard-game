@@ -53,5 +53,5 @@ func play(targets: Array[Node], char_stats: CharacterStats, modifiers: ModifierH
 	else:
 		apply_effects(_get_targets(targets), modifiers)
 
-func apply_effects(_targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+func apply_effects(_targets: Array[Node], _modifiers: ModifierHandler, _from: Node = null) -> void:
 	pass

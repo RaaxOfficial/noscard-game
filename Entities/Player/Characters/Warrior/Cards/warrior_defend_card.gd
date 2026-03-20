@@ -4,7 +4,7 @@ const COUNTER_STATUS := preload("uid://djoxk0rw6eoc1")
 
 @export var card: Card
 
-func apply_effects(targets: Array[Node], modifiers: ModifierHandler, from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var block_effect := BlockEffect.new()
 	block_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.BLOCK_GAINED)
 	block_effect.sound = sound

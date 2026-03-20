@@ -5,7 +5,7 @@ var card: Card
 var player_hit := false
 var enemy: Enemy
 
-func initialize_status(target: Node) -> void:
+func initialize_status(_target: Node) -> void:
 	EventManager.player_hit.connect(_on_player_hit)
 	EventManager.enemy_action_completed.connect(_on_enemy_action_completed)
 
@@ -27,7 +27,7 @@ func _on_player_hit(from: Node) -> void:
 	enemy = from
 	player_hit = true
 
-func _on_enemy_action_completed(who: Enemy) -> void:
+func _on_enemy_action_completed(_who: Enemy) -> void:
 	if not player_hit or not enemy:
 		return
 	
