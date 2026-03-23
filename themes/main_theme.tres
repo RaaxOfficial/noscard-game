@@ -1,6 +1,6 @@
 [gd_resource type="Theme" format=3 uid="uid://xqhaecxd2rsq"]
 
-[ext_resource type="FontFile" uid="uid://dskmdk146n4rq" path="res://Assets/Fonts/pixel_rpg.ttf" id="1_ydht1"]
+[ext_resource type="FontFile" uid="uid://6b8t4namiu47" path="res://Assets/Fonts/Glory-Regular.ttf" id="1_o2ta1"]
 [ext_resource type="StyleBox" uid="uid://dbu2g5is65xrj" path="res://Entities/Card/Stylebox/card_hovered_style_box_flat.tres" id="2_8gw6x"]
 [ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://Entities/Card/Stylebox/card_base_style_box_flat.tres" id="3_g21io"]
 
@@ -23,7 +23,6 @@ border_width_bottom = 1
 border_color = Color(0.41187868, 0.38877937, 0.3694525, 1)
 
 [resource]
-default_font = ExtResource("1_ydht1")
 default_font_size = 6
 Button/colors/font_color = Color(0.8627451, 0.8509804, 0.8392157, 1)
 Button/colors/font_disabled_color = Color(0.8627451, 0.8509804, 0.8392157, 1)
@@ -43,7 +42,7 @@ Button/constants/h_separation = 0
 Button/constants/icon_max_width = 0
 Button/constants/outline_size = 0
 Button/font_sizes/font_size = 6
-Button/fonts/font = ExtResource("1_ydht1")
+Button/fonts/font = ExtResource("1_o2ta1")
 Button/styles/disabled = SubResource("StyleBoxFlat_58jnp")
 Button/styles/focus = SubResource("StyleBoxEmpty_466ly")
 Button/styles/hover = ExtResource("2_8gw6x")

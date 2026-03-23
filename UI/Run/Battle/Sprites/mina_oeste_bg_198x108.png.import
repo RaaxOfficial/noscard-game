@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcjjay11pdtf3"
-path="res://.godot/imported/mina_oeste_bg_x640.png-32d276bc2f03d0ca290f76d5285da54d.ctex"
+uid="uid://bjnrct4phemuf"
+path="res://.godot/imported/mina_oeste_bg_198x108.png-2acc5947bf498c94eff991dd512969f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Sprites/mina_oeste_bg_x640.png"
-dest_files=["res://.godot/imported/mina_oeste_bg_x640.png-32d276bc2f03d0ca290f76d5285da54d.ctex"]
+source_file="res://UI/Run/Battle/Sprites/mina_oeste_bg_198x108.png"
+dest_files=["res://.godot/imported/mina_oeste_bg_198x108.png-2acc5947bf498c94eff991dd512969f3.ctex"]
 
 [params]
 

@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1_jthx8")
 character_name = "Holy Mage"
-description = "Years of wisdom and recurring back pain."
+description = "ToDo: Holy description."
 portrait = ExtResource("1_oc247")
 starting_deck = ExtResource("3_mb8vu")
 draftable_cards = ExtResource("2_qhbow")

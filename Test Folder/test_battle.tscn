@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://lt67v3hop5r" path="res://Entities/Battle/battle.gd" id="1_0gy2t"]
 [ext_resource type="Resource" uid="uid://fbnpo60jbtew" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper.tres" id="2_is3lf"]
 [ext_resource type="AudioStream" uid="uid://bwd4bs0lvmopv" path="res://Assets/Audio/Nosville-Soundtrack_8-bit.mp3" id="3_1g8n5"]
-[ext_resource type="Texture2D" uid="uid://bjnrct4phemuf" path="res://UI/Run/Battle/Sprites/mina_oeste_bg_x640.png" id="4_0gy2t"]
+[ext_resource type="Texture2D" uid="uid://bjnrct4phemuf" path="res://UI/Run/Battle/Sprites/mina_oeste_bg_198x108.png" id="4_0gy2t"]
 [ext_resource type="PackedScene" uid="uid://c6ggxgxnbuibe" path="res://Entities/Player/player.tscn" id="5_xhor1"]
 [ext_resource type="Script" uid="uid://d0ju8kxj270pt" path="res://Entities/Enemies/enemy_handler.gd" id="6_ing3e"]
 [ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="7_86wvh"]

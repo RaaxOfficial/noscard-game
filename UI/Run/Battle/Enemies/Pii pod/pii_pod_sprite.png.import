@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://clsq5ghkjp7tm"
-path="res://.godot/imported/pii_pod_sprite.png-c1ac68d99f6c34ac91067008a8c9fa1a.ctex"
+path="res://.godot/imported/pii_pod_sprite.png-ea9a4f9416084304bdfabb46726fc697.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Pii pod/pii_pod_sprite.png"
-dest_files=["res://.godot/imported/pii_pod_sprite.png-c1ac68d99f6c34ac91067008a8c9fa1a.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Pii Pod/pii_pod_sprite.png"
+dest_files=["res://.godot/imported/pii_pod_sprite.png-ea9a4f9416084304bdfabb46726fc697.ctex"]
 
 [params]
 

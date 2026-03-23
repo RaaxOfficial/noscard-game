@@ -16,13 +16,13 @@ metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 [node name="Tier1Chicken3" type="Node2D" unique_id=519215925]
 
 [node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_3uc7s")]
-position = Vector2(458, 286)
+position = Vector2(458, 279)
 stats = ExtResource("2_f27po")
 
 [node name="Enemy2" parent="." unique_id=1644657500 instance=ExtResource("1_3uc7s")]
-position = Vector2(586, 286)
+position = Vector2(586, 279)
 stats = ExtResource("2_f27po")
 
 [node name="Enemy3" parent="." unique_id=845036419 instance=ExtResource("1_3uc7s")]
-position = Vector2(522, 270)
+position = Vector2(522, 263)
 stats = SubResource("Resource_qigov")

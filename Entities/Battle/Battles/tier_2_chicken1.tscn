@@ -15,6 +15,6 @@ metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 [node name="Tier2Chicken1" type="Node2D" unique_id=519215925]
 
 [node name="Enemy" parent="." unique_id=845036419 instance=ExtResource("1_ksj11")]
-position = Vector2(522, 254)
+position = Vector2(522, 247.00002)
 scale = Vector2(1.5, 1.5)
 stats = SubResource("Resource_qigov")
