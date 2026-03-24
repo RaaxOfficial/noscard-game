@@ -3,8 +3,8 @@ extends CenterContainer
 
 signal tooltip_requested(card: Card)
 
-const BASE_STYLEBOX := preload("res://Entities/Card/Stylebox/card_base_style_box_flat.tres")
-const HOVER_STYLEBOX := preload("res://Entities/Card/Stylebox/card_hovered_style_box_flat.tres")
+const BASE_STYLEBOX := preload("uid://bpuidup1gge53")
+const HOVER_STYLEBOX := preload("uid://dbu2g5is65xrj")
 
 @export var card: Card : set = set_card
 

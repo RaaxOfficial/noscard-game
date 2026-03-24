@@ -7,4 +7,6 @@ func initialize_status(target: Node) -> void:
 		return
 	
 	target.skip_turn()
-	
+
+func apply_status(_target: Node) -> void:
+	status_applied.emit(self)
