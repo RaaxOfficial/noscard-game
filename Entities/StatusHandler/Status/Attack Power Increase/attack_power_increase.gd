@@ -6,6 +6,9 @@ func initialize_status(target: Node) -> void:
 	status_changed.connect(_on_status_changed.bind(target))
 	_on_status_changed(target)
 
+func get_tooltip() -> String:
+	return tooltip % stacks
+
 func _on_status_changed(target: Node) -> void:
 	# If the condition (first argument) is false, generate error with message (second argument).
 	assert(target.get("modifier_handler"), "No modifiers on %s" % target)

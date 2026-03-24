@@ -3,34 +3,36 @@ extends Control
 
 const STATUS_TOOLTIP = preload("uid://di0v1od0xm6bd")
 
-@onready var status_tooltips: VBoxContainer = %StatusTooltips
-
+var is_visible: bool = false
 
 func _ready() -> void:
-	for tooltip: StatusTooltip in status_tooltips.get_children():
+	for tooltip: StatusTooltip in get_children():
 		tooltip.queue_free()
 	
-	EventManager.status_tooltip_requested.connect(show_view)
+	EventManager.status_tooltip_requested.connect(toggle_view)
 
-func _input(event: InputEvent) -> void:
-	if event.is_action_pressed("ui_cancel") and visible:
-		hide_view()
-
-func show_view(statuses: Array[Status]) -> void:
-	for status: Status in statuses:
-		var new_status_tooltip := STATUS_TOOLTIP.instantiate() as StatusTooltip
-		status_tooltips.add_child(new_status_tooltip)
-		new_status_tooltip.status = status
+func show_view(status: Status) -> void:
+	if is_visible:
+		return
+	
+	var new_status_tooltip := STATUS_TOOLTIP.instantiate() as StatusTooltip
+	add_child(new_status_tooltip)
+	new_status_tooltip.status = status
+	new_status_tooltip.global_position = get_global_mouse_position()
 	show()
 
 func hide_view() -> void:
-	for tooltip: StatusTooltip in status_tooltips.get_children():
+	if not is_visible:
+		return
+	
+	for tooltip: StatusTooltip in get_children():
 		tooltip.queue_free()
 	hide()
 
-func _on_gui_input(event: InputEvent) -> void:
-	if event.is_action_pressed("left_mouse") and visible:
+func toggle_view(status: Status) -> void:
+	if is_visible:
 		hide_view()
-
-func _on_back_button_pressed() -> void:
-	hide_view()
+		is_visible = false
+	else:
+		show_view(status)
+		is_visible = true

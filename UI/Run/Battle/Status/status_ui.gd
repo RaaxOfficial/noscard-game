@@ -44,3 +44,10 @@ func _on_status_changed() -> void:
 	
 	duration.text = str(status.duration)
 	stacks.text = str(status.stacks)
+
+
+func _on_icon_mouse_entered() -> void:
+	EventManager.status_tooltip_requested.emit(status)
+
+func _on_icon_mouse_exited() -> void:
+	EventManager.status_tooltip_requested.emit(status)

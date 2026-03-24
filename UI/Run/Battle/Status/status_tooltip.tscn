@@ -2,24 +2,34 @@
 
 [ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_l0vtb"]
 [ext_resource type="Script" uid="uid://dvsymy66tujfl" path="res://UI/Run/Battle/Status/status_tooltip.gd" id="1_l24hl"]
-[ext_resource type="Resource" uid="uid://djoxk0rw6eoc1" path="res://Entities/StatusHandler/Status/Counter/counter.tres" id="2_2144x"]
 
-[node name="StatusTooltip" type="HBoxContainer" unique_id=1748278614]
-custom_minimum_size = Vector2(150, 0)
-offset_right = 150.0
-offset_bottom = 12.0
-theme_override_constants/separation = 2
+[node name="StatusTooltip" type="PanelContainer" unique_id=1327870707]
+offset_right = 152.0
+offset_bottom = 23.0
 script = ExtResource("1_l24hl")
-status = ExtResource("2_2144x")
 
-[node name="Icon" type="TextureRect" parent="." unique_id=2069806838]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1048899220]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="VBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1748278614]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Icon" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=2069806838]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 2
 texture = ExtResource("1_l0vtb")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="." unique_id=72561443]
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=72561443]
+unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3

@@ -1,10 +1,10 @@
 class_name StatusTooltip
-extends HBoxContainer
+extends PanelContainer
 
 @export var status: Status : set = set_status
 
-@onready var icon: TextureRect = $Icon
-@onready var label: Label = $Label
+@onready var icon: TextureRect = %Icon
+@onready var label: Label = %Label
 
 
 func set_status(new_status: Status) -> void:

@@ -7,7 +7,7 @@
 [node name="StatusUI" type="Control" unique_id=1330886063]
 layout_mode = 3
 anchors_preset = 0
-mouse_filter = 2
+mouse_filter = 1
 script = ExtResource("1_lx1rq")
 status = ExtResource("2_0jsg0")
 
@@ -42,3 +42,6 @@ theme_override_font_sizes/font_size = 6
 text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="mouse_entered" from="Icon" to="." method="_on_icon_mouse_entered"]
+[connection signal="mouse_exited" from="Icon" to="." method="_on_icon_mouse_exited"]
