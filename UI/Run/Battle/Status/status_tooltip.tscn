@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://di0v1od0xm6bd"]
+
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_l0vtb"]
+[ext_resource type="Script" uid="uid://dvsymy66tujfl" path="res://UI/Run/Battle/Status/status_tooltip.gd" id="1_l24hl"]
+[ext_resource type="Resource" uid="uid://djoxk0rw6eoc1" path="res://Entities/StatusHandler/Status/Counter/counter.tres" id="2_2144x"]
+
+[node name="StatusTooltip" type="HBoxContainer" unique_id=1748278614]
+custom_minimum_size = Vector2(150, 0)
+offset_right = 150.0
+offset_bottom = 12.0
+theme_override_constants/separation = 2
+script = ExtResource("1_l24hl")
+status = ExtResource("2_2144x")
+
+[node name="Icon" type="TextureRect" parent="." unique_id=2069806838]
+custom_minimum_size = Vector2(12, 12)
+layout_mode = 2
+texture = ExtResource("1_l0vtb")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=72561443]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "At the start of your turn, gain %s stacks of Attack Power Increase."
+vertical_alignment = 1
+autowrap_mode = 2

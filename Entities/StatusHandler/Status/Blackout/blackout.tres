@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CustomStatus" format=3 uid="uid://y3cuw8vip86y"]
+[gd_resource type="Resource" script_class="BlackoutStatus" format=3 uid="uid://y3cuw8vip86y"]
 
 [ext_resource type="Texture2D" uid="uid://dj1eayi7ofgpg" path="res://UI/Run/Battle/Status/Sprites/blackout_icon_x64.png" id="1_arxsr"]
 [ext_resource type="Script" uid="uid://dch8ulsvxmvu3" path="res://Entities/StatusHandler/Status/Blackout/blackout.gd" id="2_dbpyg"]
@@ -9,5 +9,5 @@ id = "blackout"
 can_expire = true
 duration = 1
 icon = ExtResource("1_arxsr")
-tooltip = "ToDo: Effect: No attack or defense possible."
+tooltip = "No action possible."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

@@ -7,4 +7,5 @@
 script = ExtResource("2_n0gcc")
 id = "fury"
 icon = ExtResource("1_muo2w")
+tooltip = "At the start of your turn, gain %s stacks of Attack Power Increase."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

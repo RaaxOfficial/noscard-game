@@ -11,6 +11,6 @@ target = 2
 amount = 3
 cost = 2
 icon = ExtResource("1_v2yex")
-tooltip_text = "[center]Deal [color=\"ff0000\"]3[/color] damage 2 times to all enemies. Apply [color=\"d3aa17\"]Blackout[/color] with a 25% chance.[/center]"
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 2 times to all enemies. Apply [color=\"d3aa17\"]Blackout[/color] with a 25% chance.[/center]"
 sound = ExtResource("3_kk756")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

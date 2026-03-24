@@ -12,5 +12,5 @@ amount = 12
 cost = 3
 exhaustable = true
 icon = ExtResource("1_2hi2p")
-tooltip_text = "[center]Deal [color=\"ff0000\"]12[/color] damage. Apply  [color=\"d3aa17\"]Weaken Defense Power[/color] for 2 turns.[/center]"
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage. Apply  [color=\"d3aa17\"]Weaken Defense Power[/color] for 2 turns.[/center]"
 metadata/_custom_type_script = "uid://yhnspsq248rn"

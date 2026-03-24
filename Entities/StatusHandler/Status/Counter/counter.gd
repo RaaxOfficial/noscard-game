@@ -1,7 +1,7 @@
 class_name CounterStatus
 extends Status
 
-var card: Card
+@export var card: Card
 var player_hit := false
 var enemy: Enemy
 
@@ -19,6 +19,9 @@ func apply_status(target: Node) -> void:
 	enemy = null
 	
 	status_applied.emit(self)
+
+func get_tooltip() -> String:
+	return tooltip % card.amount
 
 func _on_player_hit(from: Node) -> void:
 	if from is not Enemy:

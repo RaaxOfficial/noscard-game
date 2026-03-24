@@ -13,12 +13,13 @@
 
 [sub_resource type="Resource" id="Resource_kp58c"]
 script = ExtResource("4_synnb")
-number = "5"
+base_text = "%s"
 icon = ExtResource("3_pyh8x")
 metadata/_custom_type_script = "uid://qfuev8x2tj4x"
 
 [sub_resource type="Resource" id="Resource_vwp8o"]
 script = ExtResource("4_synnb")
+base_text = "%s"
 icon = ExtResource("7_j4wns")
 metadata/_custom_type_script = "uid://qfuev8x2tj4x"
 

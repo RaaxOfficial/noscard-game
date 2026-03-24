@@ -11,6 +11,6 @@ type = 1
 amount = 5
 cost = 2
 icon = ExtResource("1_5sto8")
-tooltip_text = "[center]Recover [color=\"80cca3\"]5[/color] HP.[/center]"
+tooltip_text = "[center]Recover [color=\"80cca3\"]%s[/color] HP.[/center]"
 sound = ExtResource("3_dnmv2")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

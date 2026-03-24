@@ -13,6 +13,6 @@ amount = 3
 cost = 3
 exhaustable = true
 icon = ExtResource("1_o2tcs")
-tooltip_text = "[center]Deal [color=\"ff0000\"]3[/color] damage 4 times to all enemies. Apply [color=\"d3aa17\"]Cut[/color].[/center]"
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 4 times to all enemies. Apply [color=\"d3aa17\"]Cut[/color].[/center]"
 sound = ExtResource("3_o2iuw")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

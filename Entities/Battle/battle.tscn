@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://Entities/Card/Card Pile/card_pile_opener.tscn" id="17_phvbk"]
 [ext_resource type="Texture2D" uid="uid://td4fojsqqge6" path="res://art/discard.png" id="18_sf8fp"]
 [ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://Entities/Card/Card Pile/card_pile_view.tscn" id="21_ihybe"]
+[ext_resource type="PackedScene" uid="uid://vppymdpx8fbm" path="res://UI/Run/Battle/Status/status_view.tscn" id="23_pleq6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac2hh"]
 size = Vector2(640, 171)
@@ -167,11 +168,11 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="RedTintCanvas" type="CanvasLayer" parent="." unique_id=1193166859]
+[node name="RedTintLayer" type="CanvasLayer" parent="." unique_id=1193166859]
 layer = 2
 script = ExtResource("15_iurou")
 
-[node name="ColorRect" type="ColorRect" parent="RedTintCanvas" unique_id=1084651300]
+[node name="ColorRect" type="ColorRect" parent="RedTintLayer" unique_id=1084651300]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -180,25 +181,31 @@ grow_vertical = 2
 mouse_filter = 2
 color = Color(1, 0.4745098, 0.42352942, 0)
 
-[node name="Timer" type="Timer" parent="RedTintCanvas" unique_id=1429310347]
+[node name="Timer" type="Timer" parent="RedTintLayer" unique_id=1429310347]
 wait_time = 0.1
 one_shot = true
 
-[node name="BattleOverCanvas" type="CanvasLayer" parent="." unique_id=1777977275]
+[node name="BattleOverLayer" type="CanvasLayer" parent="." unique_id=1777977275]
 layer = 2
 
-[node name="BattleOverPanel" parent="BattleOverCanvas" unique_id=1153553983 instance=ExtResource("17_mov3w")]
+[node name="BattleOverPanel" parent="BattleOverLayer" unique_id=1153553983 instance=ExtResource("17_mov3w")]
 visible = false
 
-[node name="CardPileViewCanvas" type="CanvasLayer" parent="." unique_id=1228275637]
+[node name="CardPileViewLayer" type="CanvasLayer" parent="." unique_id=1228275637]
 layer = 4
 
-[node name="DrawPileView" parent="CardPileViewCanvas" unique_id=12730481 instance=ExtResource("21_ihybe")]
+[node name="DrawPileView" parent="CardPileViewLayer" unique_id=12730481 instance=ExtResource("21_ihybe")]
 unique_name_in_owner = true
 visible = false
 
-[node name="DiscardPileView" parent="CardPileViewCanvas" unique_id=1552996669 instance=ExtResource("21_ihybe")]
+[node name="DiscardPileView" parent="CardPileViewLayer" unique_id=1552996669 instance=ExtResource("21_ihybe")]
 unique_name_in_owner = true
+visible = false
+
+[node name="StatusViewLayer" type="CanvasLayer" parent="." unique_id=2065680821]
+layer = 4
+
+[node name="StatusView" parent="StatusViewLayer" unique_id=1847874228 instance=ExtResource("23_pleq6")]
 visible = false
 
 [editable path="EnemyHandler/ChickenBossEnemy2"]

@@ -10,5 +10,5 @@ stack_type = 2
 can_expire = true
 duration = 1
 icon = ExtResource("1_fef27")
-tooltip = "ToDo: Effect: There's X% chance that every attack hits."
+tooltip = "There's a 50%% chance to miss the attack."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

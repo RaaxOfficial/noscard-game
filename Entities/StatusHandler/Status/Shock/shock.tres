@@ -11,5 +11,5 @@ stack_type = 2
 can_expire = true
 duration = 1
 icon = ExtResource("1_o4tc8")
-tooltip = "ToDo: Effect: 50% chance to skip action."
+tooltip = "50%% chance to skip action."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

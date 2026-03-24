@@ -11,6 +11,6 @@ target = 1
 amount = 4
 cost = 1
 icon = ExtResource("1_yxaie")
-tooltip_text = "[center]Deal [color=\"ff0000\"]4[/color] damage.[/center]"
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"
 sound = ExtResource("3_plopv")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

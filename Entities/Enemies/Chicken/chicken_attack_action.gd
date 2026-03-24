@@ -21,3 +21,11 @@ func perform_action() -> void:
 	tween.finished.connect(func():
 		EventManager.enemy_action_completed.emit(enemy)
 		)
+
+func update_intent_text() -> void:
+	var player := target as Player
+	if not player:
+		return
+	
+	var modified_damage := player.modifier_handler.get_modified_value(damage, Modifier.Type.DAMAGE_TAKEN)
+	intent.current_text = intent.base_text % modified_damage

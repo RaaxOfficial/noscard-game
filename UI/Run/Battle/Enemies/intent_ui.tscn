@@ -18,7 +18,7 @@ texture = ExtResource("1_8yxru")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Number" type="Label" parent="." unique_id=945804611]
+[node name="Label" type="Label" parent="." unique_id=945804611]
 layout_mode = 2
 size_flags_vertical = 1
 text = "0"

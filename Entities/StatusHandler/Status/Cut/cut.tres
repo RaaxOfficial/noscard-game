@@ -10,5 +10,5 @@ stack_type = 2
 can_expire = true
 duration = 1
 icon = ExtResource("1_wh38i")
-tooltip = "ToDo: Effect: Defence level is decreased by X. Apply additional effect."
+tooltip = "Defence level is decreased by X. Apply additional effect."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

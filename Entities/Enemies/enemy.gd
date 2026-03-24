@@ -21,7 +21,7 @@ var current_action: EnemyAction : set = set_current_action
 func set_current_action(value: EnemyAction) -> void:
 	current_action = value
 	if current_action:
-		intent_ui.update_intent(current_action.intent)
+		update_intent()
 
 func set_enemy_stats(value: EnemyStats) -> void:
 	stats = value.create_instance()
@@ -66,6 +66,11 @@ func update_enemy() -> void:
 	update_ui()
 	setup_ai()
 	update_stats()
+
+func update_intent() -> void:
+	if current_action:
+		current_action.update_intent_text()
+		intent_ui.update_intent(current_action.intent)
 
 func update_ui() -> void:
 	if not stats_ui:
