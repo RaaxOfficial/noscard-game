@@ -3,7 +3,7 @@ extends Control
 
 const STATUS_TOOLTIP = preload("uid://di0v1od0xm6bd")
 
-var is_visible: bool = false
+var showing: bool = false
 
 func _ready() -> void:
 	for tooltip: StatusTooltip in get_children():
@@ -12,7 +12,7 @@ func _ready() -> void:
 	EventManager.status_tooltip_requested.connect(toggle_view)
 
 func show_view(status: Status) -> void:
-	if is_visible:
+	if showing:
 		return
 	
 	var new_status_tooltip := STATUS_TOOLTIP.instantiate() as StatusTooltip
@@ -22,7 +22,7 @@ func show_view(status: Status) -> void:
 	show()
 
 func hide_view() -> void:
-	if not is_visible:
+	if not showing:
 		return
 	
 	for tooltip: StatusTooltip in get_children():
@@ -30,9 +30,9 @@ func hide_view() -> void:
 	hide()
 
 func toggle_view(status: Status) -> void:
-	if is_visible:
+	if showing:
 		hide_view()
-		is_visible = false
+		showing = false
 	else:
 		show_view(status)
-		is_visible = true
+		showing = true

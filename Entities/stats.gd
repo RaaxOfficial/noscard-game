@@ -29,7 +29,7 @@ func take_damage(damage: int) -> void:
 func heal(amount: int) -> void:
 	health += amount
 
-func skip_turn(chance: float) -> void:
+func skip_turn(_chance: float) -> void:
 	pass
 
 func create_instance() -> Resource:
