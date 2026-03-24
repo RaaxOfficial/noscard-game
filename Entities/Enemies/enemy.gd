@@ -55,6 +55,7 @@ func update_action() -> void:
 	var new_conditional_action := enemy_action_picker.get_first_conditional_action()
 	if new_conditional_action and current_action != new_conditional_action:
 		current_action = new_conditional_action
+		stats.stunned = false
 
 func update_enemy() -> void:
 	if not stats is Stats:

@@ -8,7 +8,7 @@
 [sub_resource type="Resource" id="Resource_qigov"]
 script = ExtResource("4_aje6v")
 ai = ExtResource("2_w3hxe")
-max_health = 12
+max_health = 24
 art = ExtResource("3_xs7lc")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 
