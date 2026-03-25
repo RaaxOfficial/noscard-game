@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjnrct4phemuf"
-path="res://.godot/imported/mina_oeste_bg_198x108.png-2acc5947bf498c94eff991dd512969f3.ctex"
+uid="uid://cp2ct78m7tpxs"
+path="res://.godot/imported/prados_soleados_bg_x640.png-85597dfd109836d05c59e1c5876046d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Sprites/mina_oeste_bg_198x108.png"
-dest_files=["res://.godot/imported/mina_oeste_bg_198x108.png-2acc5947bf498c94eff991dd512969f3.ctex"]
+source_file="res://UI/Run/Battle/Sprites/prados_soleados_bg_x640.png"
+dest_files=["res://.godot/imported/prados_soleados_bg_x640.png-85597dfd109836d05c59e1c5876046d8.ctex"]
 
 [params]
 
