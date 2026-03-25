@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmd6nluhejqas"]
 
 [ext_resource type="Script" uid="uid://s8x57kv327c1" path="res://UI/Run/Battle/Battle Rewards/battle_reward.gd" id="1_3fggn"]
-[ext_resource type="Texture2D" uid="uid://bjnrct4phemuf" path="res://UI/Run/Battle/Sprites/mina_oeste_bg_198x108.png" id="2_3xysv"]
+[ext_resource type="Texture2D" uid="uid://bcjjay11pdtf3" path="res://UI/Run/Battle/Sprites/mina_oeste_bg_x640.png" id="2_7inlq"]
 [ext_resource type="PackedScene" uid="uid://bjujdjie78od8" path="res://UI/Run/Rewards/reward_button.tscn" id="3_ugapt"]
 [ext_resource type="Texture2D" uid="uid://dt0vxcdp6krdv" path="res://art/gold.png" id="4_xa6bv"]
 [ext_resource type="Texture2D" uid="uid://e2h0gwwvmi24" path="res://art/rarity.png" id="5_ks0yo"]
@@ -29,7 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_3xysv")
+texture = ExtResource("2_7inlq")
 expand_mode = 1
 stretch_mode = 5
 

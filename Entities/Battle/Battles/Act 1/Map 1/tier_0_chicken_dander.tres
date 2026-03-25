@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://c1y3y84kianfa"]
+
+[ext_resource type="PackedScene" uid="uid://dxncs8bmrrb7c" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_0_chicken_dander.tscn" id="1_upglk"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Battle/battle_stats.gd" id="2_u823h"]
+
+[resource]
+script = ExtResource("2_u823h")
+weight = 1.0
+gold_reward_min = 18
+gold_reward_max = 27
+enemies = ExtResource("1_upglk")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

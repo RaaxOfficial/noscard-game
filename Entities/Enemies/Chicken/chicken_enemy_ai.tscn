@@ -41,7 +41,7 @@ chance_weight = 1.0
 
 [node name="ChickenBlockAction" type="Node" parent="." unique_id=842411529]
 script = ExtResource("6_nthak")
-block = 4
+block = 3
 intent = SubResource("Resource_vwp8o")
 sound = ExtResource("8_q8l6v")
 type = 1

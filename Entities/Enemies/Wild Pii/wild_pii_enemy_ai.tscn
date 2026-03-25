@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dvfegxplwq4u5"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_ysvbi"]
+[ext_resource type="Script" uid="uid://drx12eh8j6y15" path="res://Entities/Enemies/Wild Pii/wild_pii_attack_action.gd" id="2_ysvbi"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_qmg2v"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Enemies/Enemy Actions/intent.gd" id="4_qjryf"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_riua3"]
+[ext_resource type="Script" uid="uid://dfmglevcg5g7q" path="res://Entities/Enemies/Wild Pii/wild_pii_block_action.gd" id="6_51230"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_nur6d"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_dsya8"]
+[ext_resource type="Script" uid="uid://3dhd0oq0grlk" path="res://Entities/Enemies/Wild Pii/wild_pìi_skip_action.gd" id="9_qmg2v"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_dbabs"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_qjryf")
+base_text = "%s"
+icon = ExtResource("3_qmg2v")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_qjryf")
+base_text = "%s"
+icon = ExtResource("7_nur6d")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_qjryf")
+icon = ExtResource("10_dbabs")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="WildPiiEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_ysvbi")
+
+[node name="WildPiiAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_ysvbi")
+damage = 12
+intent = SubResource("Resource_kp58c")
+sound = ExtResource("5_riua3")
+type = 1
+chance_weight = 1.0
+
+[node name="WildPiiBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_51230")
+block = 8
+intent = SubResource("Resource_vwp8o")
+sound = ExtResource("8_dsya8")
+type = 1
+chance_weight = 0.5
+
+[node name="WildPiiSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_qmg2v")
+intent = SubResource("Resource_jqmxn")

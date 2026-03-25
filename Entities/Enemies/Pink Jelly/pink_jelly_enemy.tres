@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://cmli3y1qaboni"]
+
+[ext_resource type="PackedScene" uid="uid://dou1j7gixdxfl" path="res://Entities/Enemies/Pink Jelly/pink_jelly_enemy_ai.tscn" id="1_dh51y"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Enemies/enemy_stats.gd" id="1_rwr6r"]
+[ext_resource type="Texture2D" uid="uid://cxj0sxc653wyc" path="res://UI/Run/Battle/Enemies/Pink Jelly/pinky_jelly_sprite.png" id="2_fcyrn"]
+
+[resource]
+script = ExtResource("1_rwr6r")
+ai = ExtResource("1_dh51y")
+max_health = 20
+art = ExtResource("2_fcyrn")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ubj6qbn6c7kf"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_ecjs5"]
+[ext_resource type="Script" uid="uid://deqoo2f5mkq0n" path="res://Entities/Enemies/Koaren Archer/koaren_archer_attack_action.gd" id="2_ecjs5"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_kluqr"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Enemies/Enemy Actions/intent.gd" id="4_7wwgi"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_a5doj"]
+[ext_resource type="Script" uid="uid://w5lcps5h5gab" path="res://Entities/Enemies/Koaren Archer/koaren_archer_block_action.gd" id="6_l7c5g"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_vcjd0"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_l1k0j"]
+[ext_resource type="Script" uid="uid://dsmod2wqo27rj" path="res://Entities/Enemies/Koaren Archer/koaren_archer_skip_action.gd" id="9_kluqr"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_npk1j"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_7wwgi")
+base_text = "%s"
+icon = ExtResource("3_kluqr")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_7wwgi")
+base_text = "%s"
+icon = ExtResource("7_vcjd0")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_7wwgi")
+icon = ExtResource("10_npk1j")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="KoarenArcherEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_ecjs5")
+
+[node name="KoarenArcherAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_ecjs5")
+damage = 12
+intent = SubResource("Resource_kp58c")
+sound = ExtResource("5_a5doj")
+type = 1
+chance_weight = 1.5
+
+[node name="KoarenArcherBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_l7c5g")
+block = 15
+intent = SubResource("Resource_vwp8o")
+sound = ExtResource("8_l1k0j")
+type = 1
+chance_weight = 1.0
+
+[node name="KoarenArcherSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_kluqr")
+intent = SubResource("Resource_jqmxn")

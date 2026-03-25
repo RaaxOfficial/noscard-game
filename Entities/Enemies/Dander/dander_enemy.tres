@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://wxy0ymegl7g7"]
+
+[ext_resource type="PackedScene" uid="uid://diuiai500e8ad" path="res://Entities/Enemies/Dander/dander_enemy_ai.tscn" id="1_dun4m"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Enemies/enemy_stats.gd" id="1_ek4qq"]
+[ext_resource type="Texture2D" uid="uid://1mi36hepvg6p" path="res://UI/Run/Battle/Enemies/Dander/dander_sprite.png" id="2_ru74q"]
+
+[resource]
+script = ExtResource("1_ek4qq")
+ai = ExtResource("1_dun4m")
+max_health = 8
+art = ExtResource("2_ru74q")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

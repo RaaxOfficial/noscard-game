@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://b8p8blrqvhpqr"]
+
+[ext_resource type="PackedScene" uid="uid://cjcc13n0xdyv4" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_1_seedle_wooly.tscn" id="1_77rpq"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Battle/battle_stats.gd" id="2_878qd"]
+
+[resource]
+script = ExtResource("2_878qd")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 35
+gold_reward_max = 52
+enemies = ExtResource("1_77rpq")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

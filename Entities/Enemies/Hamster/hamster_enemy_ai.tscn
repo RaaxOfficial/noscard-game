@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://l7sankv6vcg1"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_lj3sq"]
+[ext_resource type="Script" uid="uid://bj6gtofk141qg" path="res://Entities/Enemies/Hamster/hamster_attack_action.gd" id="2_lj3sq"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_pf1cu"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Enemies/Enemy Actions/intent.gd" id="4_3x6wu"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_bdulf"]
+[ext_resource type="Script" uid="uid://cdgw5yf3v7sxp" path="res://Entities/Enemies/Hamster/hamster_block_action.gd" id="6_fdrlv"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_eabql"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_l2pc5"]
+[ext_resource type="Script" uid="uid://b6q77o36eobfu" path="res://Entities/Enemies/Hamster/hamster_skip_action.gd" id="9_pf1cu"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_efsmx"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_3x6wu")
+base_text = "%s"
+icon = ExtResource("3_pf1cu")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_3x6wu")
+base_text = "%s"
+icon = ExtResource("7_eabql")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_3x6wu")
+icon = ExtResource("10_efsmx")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="HamsterEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_lj3sq")
+
+[node name="HamsterAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_lj3sq")
+damage = 10
+intent = SubResource("Resource_kp58c")
+sound = ExtResource("5_bdulf")
+type = 1
+chance_weight = 0.5
+
+[node name="HamsterBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_fdrlv")
+block = 15
+intent = SubResource("Resource_vwp8o")
+sound = ExtResource("8_l2pc5")
+type = 1
+chance_weight = 1.0
+
+[node name="HamsterSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_pf1cu")
+intent = SubResource("Resource_jqmxn")

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://8lqyffxr5vb6"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_w6hwl"]
+[ext_resource type="Script" uid="uid://cbegxs6ycdtlc" path="res://Entities/Enemies/Ram/ram_attack_action.gd" id="2_w6hwl"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_us1vf"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Enemies/Enemy Actions/intent.gd" id="4_k7qm4"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_i8bvi"]
+[ext_resource type="Script" uid="uid://capl45eqnm8y7" path="res://Entities/Enemies/Ram/ram_block_action.gd" id="6_06omb"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_yk4b4"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_bd7r3"]
+[ext_resource type="Script" uid="uid://supmdhtt00sd" path="res://Entities/Enemies/Ram/ram_skip_action.gd" id="9_us1vf"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_5bwmr"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_k7qm4")
+base_text = "%s"
+icon = ExtResource("3_us1vf")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_k7qm4")
+base_text = "%s"
+icon = ExtResource("7_yk4b4")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_k7qm4")
+icon = ExtResource("10_5bwmr")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="RamEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_w6hwl")
+
+[node name="RamAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_w6hwl")
+damage = 15
+intent = SubResource("Resource_kp58c")
+sound = ExtResource("5_i8bvi")
+type = 1
+chance_weight = 2.0
+
+[node name="RamBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_06omb")
+block = 20
+intent = SubResource("Resource_vwp8o")
+sound = ExtResource("8_bd7r3")
+type = 1
+chance_weight = 0.5
+
+[node name="RamSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_us1vf")
+intent = SubResource("Resource_jqmxn")

@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://uirpgiu0v0ke"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_srkkd"]
+[ext_resource type="Script" uid="uid://ceesoqtueawlj" path="res://Entities/Enemies/Toxic Dander/toxic_dander_attack_action.gd" id="2_srkkd"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_bo6cv"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Enemies/Enemy Actions/intent.gd" id="4_g4w0k"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_upat5"]
+[ext_resource type="Script" uid="uid://cp1mherr25d45" path="res://Entities/Enemies/Toxic Dander/toxic_dander_block_action.gd" id="6_gr07t"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_q64jv"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_i8yru"]
+[ext_resource type="Script" uid="uid://df3cjbwb6c5fg" path="res://Entities/Enemies/Toxic Dander/toxic_dander_skip_action.gd" id="9_bo6cv"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_hd104"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_g4w0k")
+base_text = "%s"
+icon = ExtResource("3_bo6cv")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_g4w0k")
+base_text = "%s"
+icon = ExtResource("7_q64jv")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_g4w0k")
+icon = ExtResource("10_hd104")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="ToxicDanderEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_srkkd")
+
+[node name="ToxicDanderAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_srkkd")
+damage = 10
+intent = SubResource("Resource_kp58c")
+sound = ExtResource("5_upat5")
+type = 1
+chance_weight = 1.0
+
+[node name="ToxicDanderBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_gr07t")
+block = 10
+intent = SubResource("Resource_vwp8o")
+sound = ExtResource("8_i8yru")
+type = 1
+chance_weight = 1.0
+
+[node name="ToxicDanderSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_bo6cv")
+intent = SubResource("Resource_jqmxn")
