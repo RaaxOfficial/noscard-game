@@ -43,6 +43,7 @@ metadata/_edit_lock_ = true
 modulate = Color(0.6748146, 0.67481464, 0.6748144, 1)
 texture = ExtResource("3_pleq6")
 centered = false
+metadata/_edit_lock_ = true
 
 [node name="CardDropArea" type="Area2D" parent="." unique_id=1707927201]
 collision_layer = 2

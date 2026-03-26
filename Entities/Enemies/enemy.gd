@@ -116,6 +116,10 @@ func take_damage(damage: int, which_modifier: Modifier.Type, _from: Node = null)
 			queue_free()
 		)
 
+func gain_block(amount: int, which_modifier: Modifier.Type) -> void:
+	var modified_block := modifier_handler.get_modified_value(amount, which_modifier)
+	stats.block += modified_block
+
 func skip_turn() -> void:
 	stats.stunned = true
 	update_action()

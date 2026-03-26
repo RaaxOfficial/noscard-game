@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://b8q2qgacswmyx" path="res://UI/Run/Player/gold_ui.tscn" id="4_k8enk"]
 [ext_resource type="Texture2D" uid="uid://1jxkrrqj5h18" path="res://art/deck.png" id="5_io1fk"]
 [ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://Entities/Card/Card Pile/card_pile_view.tscn" id="6_6x33b"]
+[ext_resource type="PackedScene" uid="uid://deymt72xlraw7" path="res://Entities/Item Handler/item_handler.tscn" id="6_7mfdl"]
+[ext_resource type="PackedScene" uid="uid://csws0ftpge6hn" path="res://UI/Run/Items/item_view.tscn" id="10_5a0l6"]
 
 [node name="Run" type="Node" unique_id=1553944693]
 script = ExtResource("1_wkui6")
@@ -53,35 +55,41 @@ unique_name_in_owner = true
 layout_mode = 2
 text = "Rewards"
 
-[node name="TopBarCanvas" type="CanvasLayer" parent="." unique_id=468907575]
+[node name="TopBarLayer" type="CanvasLayer" parent="." unique_id=468907575]
 layer = 3
 
-[node name="Background" type="ColorRect" parent="TopBarCanvas" unique_id=113120908]
+[node name="Background" type="ColorRect" parent="TopBarLayer" unique_id=113120908]
 custom_minimum_size = Vector2(0, 18)
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
+mouse_filter = 2
 color = Color(0, 0, 0, 0.6862745)
 
-[node name="BarItems" type="HBoxContainer" parent="TopBarCanvas" unique_id=1567099451]
+[node name="BarItems" type="HBoxContainer" parent="TopBarLayer" unique_id=1567099451]
 custom_minimum_size = Vector2(0, 18)
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
 
-[node name="HealthUI" parent="TopBarCanvas/BarItems" unique_id=10009548 instance=ExtResource("4_88h0l")]
+[node name="HealthUI" parent="TopBarLayer/BarItems" unique_id=10009548 instance=ExtResource("4_88h0l")]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="GoldUI" parent="TopBarCanvas/BarItems" unique_id=1809462329 instance=ExtResource("4_k8enk")]
+[node name="GoldUI" parent="TopBarLayer/BarItems" unique_id=1809462329 instance=ExtResource("4_k8enk")]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="Separation" type="Control" parent="TopBarCanvas/BarItems" unique_id=322766260]
+[node name="ItemHandlerContainer" type="CenterContainer" parent="TopBarLayer/BarItems" unique_id=162684869]
 layout_mode = 2
 size_flags_horizontal = 3
+mouse_filter = 2
 
-[node name="DeckButton" parent="TopBarCanvas/BarItems" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("4_irdq8")]
+[node name="ItemHandler" parent="TopBarLayer/BarItems/ItemHandlerContainer" unique_id=899466551 instance=ExtResource("6_7mfdl")]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="DeckButton" parent="TopBarLayer/BarItems" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("4_irdq8")]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(16, 16)
 layout_mode = 2
@@ -89,7 +97,7 @@ size_flags_horizontal = 8
 texture_normal = ExtResource("5_io1fk")
 counter = NodePath("Counter")
 
-[node name="Counter" type="Label" parent="TopBarCanvas/BarItems/DeckButton" unique_id=1142472071]
+[node name="Counter" type="Label" parent="TopBarLayer/BarItems/DeckButton" unique_id=1142472071]
 layout_mode = 0
 offset_left = -5.0
 offset_top = 12.0
@@ -99,6 +107,12 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DeckView" parent="TopBarCanvas" unique_id=12730481 instance=ExtResource("6_6x33b")]
+[node name="DeckView" parent="TopBarLayer" unique_id=12730481 instance=ExtResource("6_6x33b")]
 unique_name_in_owner = true
 visible = false
+
+[node name="ItemTooltipLayer" type="CanvasLayer" parent="." unique_id=1709650043]
+layer = 4
+
+[node name="ItemView" parent="ItemTooltipLayer" unique_id=2055230799 instance=ExtResource("10_5a0l6")]
+mouse_filter = 2

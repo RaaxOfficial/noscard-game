@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" format=3 uid="uid://cdugy0t1pk0lw"]
+
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_0jrhd"]
+[ext_resource type="Script" uid="uid://covkxd7ci3fp1" path="res://Entities/Item Handler/item.gd" id="1_idouf"]
+
+[resource]
+script = ExtResource("1_idouf")
+item_name = "Coupons"
+id = "coupons"
+type = 4
+icon = ExtResource("1_0jrhd")
+tooltip = "[color=\"ffdf00\"]Coupons[/color]
+All items in the shop are discounted by 50%."
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

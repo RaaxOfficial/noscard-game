@@ -9,7 +9,7 @@ func _ready() -> void:
 	for tooltip: StatusTooltip in get_children():
 		tooltip.queue_free()
 	
-	EventManager.status_tooltip_requested.connect(toggle_view)
+	EventManager.status_tooltip_requested.connect(_on_status_tooltip_requested)
 
 func show_view(status: Status) -> void:
 	if showing:
@@ -29,7 +29,7 @@ func hide_view() -> void:
 		tooltip.queue_free()
 	hide()
 
-func toggle_view(status: Status) -> void:
+func _on_status_tooltip_requested(status: Status) -> void:
 	if showing:
 		hide_view()
 		showing = false

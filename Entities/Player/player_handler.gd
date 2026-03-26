@@ -1,3 +1,11 @@
+# Player turn order:
+# 1. START_OF_TURN Items
+# 2. START_OF_TURN Statuses
+# 3. Draw Hand
+# 4. End Turn
+# 5. END_OF_TURN Items
+# 6. END_OF_TURN Statuses
+# 7. Discard Hand
 class_name PlayerHandler
 extends Node
 
@@ -6,6 +14,7 @@ const HAND_DISCARD_INTERVAL := 0.25
 
 @export var player: Player
 @export var hand: Hand
+@export var items: ItemHandler
 
 var character: CharacterStats
 
@@ -17,17 +26,18 @@ func start_battle(char_stats: CharacterStats) -> void:
 	character.draw_pile = character.deck.duplicate(true)
 	character.draw_pile.shuffle()
 	character.discard = CardPile.new()
+	items.items_activated.connect(_on_items_activated)
 	player.status_handler.statuses_applied.connect(_on_statuses_applied)
 	start_turn()
 
 func start_turn() -> void:
 	character.block = 0
 	character.reset_mana()
-	player.status_handler.apply_statuses_by_type(Status.Type.START_OF_TURN)
+	items.activate_items_by_type(Item.Type.START_OF_TURN)
 
 func end_turn() -> void:
 	hand.disable_hand()
-	player.status_handler.apply_statuses_by_type(Status.Type.END_OF_TURN)
+	items.activate_items_by_type(Item.Type.END_OF_TURN)
 
 func draw_card() -> void:
 	reshuffle_deck_from_discard()
@@ -69,6 +79,13 @@ func _on_card_played(card: Card) -> void:
 		return
 	
 	character.discard.add_card(card)
+
+func _on_items_activated(type: Item.Type) -> void:
+	match type:
+		Item.Type.START_OF_TURN:
+			player.status_handler.apply_statuses_by_type(Status.Type.START_OF_TURN)
+		Item.Type.END_OF_TURN:
+			player.status_handler.apply_statuses_by_type(Status.Type.END_OF_TURN)
 
 func _on_statuses_applied(type: Status.Type) -> void:
 	match type:

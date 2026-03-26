@@ -1,12 +1,12 @@
-[gd_scene format=3 uid="uid://di0v1od0xm6bd"]
+[gd_scene format=3 uid="uid://bcr65k7uhj82"]
 
-[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_l0vtb"]
-[ext_resource type="Script" uid="uid://dvsymy66tujfl" path="res://UI/Run/Battle/Status/status_tooltip.gd" id="1_l24hl"]
+[ext_resource type="Script" uid="uid://cifyjv81hqfuc" path="res://UI/Run/Items/item_tooltip.gd" id="1_amney"]
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="2_lso4v"]
 
-[node name="StatusTooltip" type="PanelContainer" unique_id=1327870707]
-offset_right = 152.0
-offset_bottom = 23.0
-script = ExtResource("1_l24hl")
+[node name="ItemTooltip" type="PanelContainer" unique_id=1327870707]
+offset_right = 156.0
+offset_bottom = 32.0
+script = ExtResource("1_amney")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1048899220]
 layout_mode = 2
@@ -24,16 +24,16 @@ theme_override_constants/separation = 4
 unique_name_in_owner = true
 custom_minimum_size = Vector2(12, 12)
 layout_mode = 2
-texture = ExtResource("1_l0vtb")
+texture = ExtResource("2_lso4v")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer" unique_id=1277737608]
+[node name="Label" type="RichTextLabel" parent="MarginContainer/HBoxContainer" unique_id=1715506255]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 bbcode_enabled = true
-text = "At the start of your turn, gain %s stacks of Attack Power Increase."
+text = "Item description."
 autowrap_mode = 2
 vertical_alignment = 1

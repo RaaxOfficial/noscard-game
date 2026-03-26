@@ -23,6 +23,9 @@ signal enemy_action_completed(enemy: Enemy)
 signal enemy_turn_ended
 signal enemy_died(enemy: Enemy)
 
+# Run-related events
+signal item_tooltip_requested(item: Item)
+
 # Battle-related events
 signal battle_over_screen_requested(text: String, type: BattleOverPanel.Type)
 signal battle_won

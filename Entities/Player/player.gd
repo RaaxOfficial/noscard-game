@@ -36,9 +36,9 @@ func update_player() -> void:
 	match stats.character_name:
 		"Warrior":
 			anim.sprite_frames = WARRIOR_SPRITE_FRAMES
-		"Wild Keeper":
+		"Wild_Keeper":
 			anim.sprite_frames = WILD_KEEPER_SPRITE_FRAMES
-		"Holy Mage":
+		"Holy_Mage":
 			anim.sprite_frames = HOLY_MAGE_SPRITE_FRAMES
 	
 	update_stats()
@@ -62,6 +62,10 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 			EventManager.player_died.emit()
 			queue_free()
 		)
+
+func gain_block(amount: int, which_modifier: Modifier.Type) -> void:
+	var modified_block := modifier_handler.get_modified_value(amount, which_modifier)
+	stats.block += modified_block
 
 func heal(amount: int) -> void:
 	if amount <= 0:

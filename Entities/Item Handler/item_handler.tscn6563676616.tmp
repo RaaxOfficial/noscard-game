@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://deymt72xlraw7"]
+
+[ext_resource type="Script" uid="uid://68mho7kduca6" path="res://Entities/Item Handler/item_handler.gd" id="1_1sktb"]
+[ext_resource type="Script" uid="uid://dh4lbl075yr4o" path="res://UI/Run/Items/item_view.gd" id="1_fovo2"]
+[ext_resource type="PackedScene" uid="uid://dv2jyrtbb8htv" path="res://UI/Run/Items/item_ui.tscn" id="2_1sktb"]
+
+[node name="ItemHandler" type="HBoxContainer" unique_id=899466551]
+custom_minimum_size = Vector2(640, 32)
+offset_right = 716.0
+offset_bottom = 16.0
+script = ExtResource("1_1sktb")
+
+[node name="ItemView" type="Control" parent="." unique_id=1124762881]
+clip_contents = true
+custom_minimum_size = Vector2(640, 32)
+layout_mode = 2
+script = ExtResource("1_fovo2")
+
+[node name="Items" type="HBoxContainer" parent="ItemView" unique_id=1704592683]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(640, 32)
+layout_mode = 0
+offset_right = 716.0
+offset_bottom = 32.0
+theme_override_constants/separation = 2
+
+[node name="ItemUI" parent="ItemView/Items" unique_id=481909243 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI2" parent="ItemView/Items" unique_id=1912799141 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI3" parent="ItemView/Items" unique_id=439694791 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI4" parent="ItemView/Items" unique_id=1902243719 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI5" parent="ItemView/Items" unique_id=913145839 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI6" parent="ItemView/Items" unique_id=1128412400 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI7" parent="ItemView/Items" unique_id=491488480 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI8" parent="ItemView/Items" unique_id=1944882234 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI9" parent="ItemView/Items" unique_id=600065622 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI10" parent="ItemView/Items" unique_id=102583301 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI11" parent="ItemView/Items" unique_id=505063474 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI12" parent="ItemView/Items" unique_id=14254589 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI13" parent="ItemView/Items" unique_id=1398598001 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI14" parent="ItemView/Items" unique_id=1721437922 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI15" parent="ItemView/Items" unique_id=1286644184 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI16" parent="ItemView/Items" unique_id=1745495539 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI17" parent="ItemView/Items" unique_id=931112272 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI18" parent="ItemView/Items" unique_id=844208019 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI19" parent="ItemView/Items" unique_id=1096363311 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI20" parent="ItemView/Items" unique_id=256850808 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI21" parent="ItemView/Items" unique_id=1835869506 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI22" parent="ItemView/Items" unique_id=2133774625 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI23" parent="ItemView/Items" unique_id=839613201 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI24" parent="ItemView/Items" unique_id=1670059653 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI25" parent="ItemView/Items" unique_id=651801432 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI26" parent="ItemView/Items" unique_id=838579548 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI27" parent="ItemView/Items" unique_id=1864202183 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI28" parent="ItemView/Items" unique_id=793481349 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI29" parent="ItemView/Items" unique_id=1188685679 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="ItemUI30" parent="ItemView/Items" unique_id=1326243128 instance=ExtResource("2_1sktb")]
+layout_mode = 2
+
+[node name="TooltipContainer" type="Control" parent="ItemView" unique_id=1039352737]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

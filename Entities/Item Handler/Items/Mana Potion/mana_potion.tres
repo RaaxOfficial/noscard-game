@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://t2h7e5ha1vv"]
+
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_rv1ed"]
+[ext_resource type="Script" uid="uid://cl5vgjy0msput" path="res://Entities/Item Handler/Items/Mana Potion/mana_potion.gd" id="2_8uvkw"]
+
+[resource]
+script = ExtResource("2_8uvkw")
+item_name = "Mana Potion"
+id = "mana_potion"
+type = 1
+starter_item = true
+icon = ExtResource("1_rv1ed")
+tooltip = "[color=\"ffdf00\"]Rechargable Mana Potion[/color]
+At the start of combat, gain 1 mana."
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"
