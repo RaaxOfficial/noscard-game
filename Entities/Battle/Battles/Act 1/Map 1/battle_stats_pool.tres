@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Battle/battle_stats.gd" id="1_13ok1"]
 [ext_resource type="Resource" uid="uid://dn43bi3xs0026" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_0_chicken_2.tres" id="2_ejynm"]
-[ext_resource type="Resource" uid="uid://c1y3y84kianfa" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_0_chicken_dander.tres" id="2_qhsy8"]
 [ext_resource type="Script" uid="uid://bv01ns8q10a7y" path="res://Entities/Battle/battle_stats_pool.gd" id="3_3i8vh"]
+[ext_resource type="Resource" uid="uid://c1y3y84kianfa" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_0_chicken_dander.tres" id="3_ejynm"]
 [ext_resource type="Resource" uid="uid://c0t4wvrttgayy" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_0_dander_3.tres" id="4_iot8s"]
 [ext_resource type="Resource" uid="uid://vpjdhnv2usx2" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_1_dander_2_seedle.tres" id="5_8hf1u"]
 [ext_resource type="Resource" uid="uid://deuenjq0y4mfv" path="res://Entities/Battle/Battles/Act 1/Map 1/tier_1_pii_pod_1.tres" id="6_2c3p2"]
@@ -12,5 +12,5 @@
 
 [resource]
 script = ExtResource("3_3i8vh")
-pool = Array[ExtResource("1_13ok1")]([ExtResource("2_ejynm"), ExtResource("2_qhsy8"), ExtResource("4_iot8s"), ExtResource("5_8hf1u"), ExtResource("6_2c3p2"), ExtResource("7_smxw4"), ExtResource("8_i0sr8")])
+pool = Array[ExtResource("1_13ok1")]([ExtResource("2_ejynm"), ExtResource("3_ejynm"), ExtResource("4_iot8s"), ExtResource("5_8hf1u"), ExtResource("6_2c3p2"), ExtResource("7_smxw4"), ExtResource("8_i0sr8")])
 metadata/_custom_type_script = "uid://bv01ns8q10a7y"

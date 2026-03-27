@@ -11,5 +11,5 @@ stack_type = 2
 can_expire = true
 duration = 1
 icon = ExtResource("1_c5h0k")
-tooltip = "Damage dealt is decreased by 30%%."
+tooltip = "Damage dealt is decreased by 30%."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

@@ -74,10 +74,12 @@ grow_horizontal = 2
 
 [node name="HealthUI" parent="TopBarLayer/BarItems" unique_id=10009548 instance=ExtResource("4_88h0l")]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
 layout_mode = 2
 
 [node name="GoldUI" parent="TopBarLayer/BarItems" unique_id=1809462329 instance=ExtResource("4_k8enk")]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(32, 0)
 layout_mode = 2
 
 [node name="ItemHandlerContainer" type="CenterContainer" parent="TopBarLayer/BarItems" unique_id=162684869]

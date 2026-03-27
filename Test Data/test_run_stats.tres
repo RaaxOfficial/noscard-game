@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="RunStats" format=3 uid="uid://73acmdkbtlj"]
+
+[ext_resource type="Script" uid="uid://dn4sos4hykap" path="res://Entities/Run/Resources/run_stats.gd" id="1_mdvh5"]
+
+[resource]
+script = ExtResource("1_mdvh5")
+gold = 200
+metadata/_custom_type_script = "uid://dn4sos4hykap"

@@ -35,6 +35,8 @@ signal status_tooltip_requested(status: Status)
 signal map_exited(room: Room)
 
 # Shop-related events
+signal shop_item_bought(item: Item, gold_cost: int)
+signal shop_card_bought(card: Card, gold_cost: int)
 signal shop_exited
 
 # Campifre-related events
