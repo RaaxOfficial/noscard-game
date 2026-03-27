@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Player/Characters/character_stats.gd" id="1_8ujwr"]
 [ext_resource type="Resource" uid="uid://dtbtov0o58ebl" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper_draftable_cards.tres" id="2_fwkwx"]
 [ext_resource type="Resource" uid="uid://bj15tf82k7y4c" path="res://Entities/Player/Characters/Wild Keeper/wild_keeper_starting_deck.tres" id="3_y3ftm"]
-[ext_resource type="Resource" uid="uid://dn6xvd43amiww" path="res://Entities/Item Handler/Items/Explosive Barrel/explosive_barrel.tres" id="5_nr68c"]
+[ext_resource type="Resource" uid="uid://dn6xvd43amiww" path="res://Entities/Item Handler/Items/Firework/firework.tres" id="5_nr68c"]
 
 [resource]
 script = ExtResource("1_8ujwr")

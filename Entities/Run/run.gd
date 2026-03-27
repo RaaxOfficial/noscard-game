@@ -80,7 +80,7 @@ func _setup_event_connections() -> void:
 	EventManager.campfire_exited.connect(_show_map)
 	EventManager.map_exited.connect(_on_map_exited)
 	EventManager.shop_exited.connect(_show_map)
-	EventManager.treasure_room_exited.connect(_show_map)
+	EventManager.treasure_room_exited.connect(_on_treasure_room_exited)
 	
 	battle_button.pressed.connect(_change_view.bind(BATTLE_SCENE))
 	battle_reward_button.pressed.connect(_change_view.bind(BATTLE_REWARD_SCENE))
@@ -104,12 +104,26 @@ func _on_battle_won() -> void:
 	reward_scene.add_gold_reward(map.last_room.battle_stats.roll_gold_reward())
 	reward_scene.add_card_reward()
 
+func _on_treasure_room_entered() -> void:
+	var treasure_scene := _change_view(TREASURE_SCENE) as Treasure
+	treasure_scene.item_handler = item_handler
+	treasure_scene.char_stats = character
+	treasure_scene.generate_item()
+
+func _on_treasure_room_exited(item: Item) -> void:
+	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
+	reward_scene.run_stats = stats
+	reward_scene.character_stats = character
+	reward_scene.item_handler = item_handler
+	reward_scene.add_item_reward(item)
+
 func _on_campfire_entered() -> void:
 	var campfire := _change_view(CAMPFIRE_SCENE) as Campfire
 	campfire.char_stats = character
 
 func _on_shop_entered() -> void:
 	var shop := _change_view(SHOP_SCENE) as Shop
+	EventManager.shop_entered.emit(shop)
 	shop.char_stats = character
 	shop.run_stats = stats
 	shop.item_handler = item_handler
@@ -120,7 +134,7 @@ func _on_map_exited(room: Room) -> void:
 		Room.Type.MONSTER:
 			_on_battle_room_entered(room)
 		Room.Type.TREASURE:
-			_change_view(TREASURE_SCENE)
+			_on_treasure_room_entered()
 		Room.Type.CAMPFIRE:
 			_on_campfire_entered()
 		Room.Type.SHOP:

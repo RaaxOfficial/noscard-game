@@ -23,7 +23,7 @@ signal enemy_action_completed(enemy: Enemy)
 signal enemy_turn_ended
 signal enemy_died(enemy: Enemy)
 
-# Run-related events
+# Item-related events
 signal item_tooltip_requested(item: Item)
 
 # Battle-related events
@@ -35,6 +35,7 @@ signal status_tooltip_requested(status: Status)
 signal map_exited(room: Room)
 
 # Shop-related events
+signal shop_entered(shop: Shop)
 signal shop_item_bought(item: Item, gold_cost: int)
 signal shop_card_bought(card: Card, gold_cost: int)
 signal shop_exited
@@ -46,4 +47,4 @@ signal campfire_exited
 signal battle_reward_exited
 
 # Treasure-related events
-signal treasure_room_exited
+signal treasure_room_exited(found_item: Item)

@@ -1,6 +1,6 @@
 [gd_resource type="Resource" format=3 uid="uid://cf4rwn2w85sno"]
 
-[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_mmp6w"]
+[ext_resource type="Texture2D" uid="uid://ccj03ogoidbbw" path="res://UI/Run/Items/reinforced_armor_icon_x64.png" id="1_mmp6w"]
 [ext_resource type="Script" uid="uid://dgn8sul7kobbt" path="res://Entities/Item Handler/Items/Reinforced Armor/reinforced_armor.gd" id="2_dwq4j"]
 
 [resource]

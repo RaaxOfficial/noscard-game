@@ -4,12 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://bh5li8qlf8pi8" path="res://UI/Run/Battle/Enemies/Koaren Warrior/koaren_warrior_sprite.png" id="2_ve6h8"]
 [ext_resource type="Script" uid="uid://covkxd7ci3fp1" path="res://Entities/Item Handler/item.gd" id="2_wfsgj"]
 [ext_resource type="Texture2D" uid="uid://cirwdgeo6hr12" path="res://UI/Run/Battle/Enemies/Koaren Warrior/koaren_warrior_blink.png" id="3_f4vus"]
-[ext_resource type="Resource" uid="uid://cdugy0t1pk0lw" path="res://Entities/Item Handler/Items/coupons.tres" id="4_5x82v"]
+[ext_resource type="Resource" uid="uid://cdugy0t1pk0lw" path="res://Entities/Item Handler/Items/Coupon/nosmedal.tres" id="4_5x82v"]
 [ext_resource type="PackedScene" uid="uid://b2f0m5nkh8w75" path="res://UI/Run/Shop/shop_card.tscn" id="4_f4vus"]
 [ext_resource type="PackedScene" uid="uid://cq1t14la2uxiw" path="res://UI/Run/Shop/shop_item.tscn" id="5_276jn"]
 [ext_resource type="PackedScene" uid="uid://lto4w36ihp6x" path="res://UI/Card/Card Tooltip/card_tooltip_popup.tscn" id="5_g5vjh"]
 [ext_resource type="Resource" uid="uid://cf4rwn2w85sno" path="res://Entities/Item Handler/Items/Reinforced Armor/reinforced_armor.tres" id="6_e042p"]
 [ext_resource type="PackedScene" uid="uid://csws0ftpge6hn" path="res://UI/Run/Items/item_view.tscn" id="7_unin1"]
+[ext_resource type="PackedScene" uid="uid://b30pkyymfiwo1" path="res://Entities/ModifierHandler/modifier_handler.tscn" id="11_wfsgj"]
+[ext_resource type="PackedScene" uid="uid://dt53fguyhj0fr" path="res://Entities/ModifierHandler/modifier.tscn" id="12_u8llp"]
 
 [sub_resource type="Gradient" id="Gradient_t4koc"]
 colors = PackedColorArray(0, 0, 0, 1, 0.28229025, 0.13072315, 0.09976409, 1)
@@ -208,5 +210,10 @@ mouse_filter = 2
 
 [node name="ItemView" parent="UILayer" unique_id=2055230799 instance=ExtResource("7_unin1")]
 mouse_filter = 2
+
+[node name="ModifierHandler" parent="." unique_id=1888997952 instance=ExtResource("11_wfsgj")]
+
+[node name="ShopCostModifier" parent="ModifierHandler" unique_id=1497955756 instance=ExtResource("12_u8llp")]
+type = 4
 
 [connection signal="pressed" from="UILayer/BackButton" to="." method="_on_back_button_pressed"]

@@ -10,6 +10,7 @@ const CARD_TEXT := "Add New Card"
 
 @export var run_stats: RunStats
 @export var character_stats: CharacterStats
+@export var item_handler: ItemHandler
 
 var card_reward_total_weight := 0.0
 var card_rarity_weights := {
@@ -37,6 +38,13 @@ func add_card_reward() -> void:
 	card_reward.reward_text = CARD_TEXT
 	card_reward.pressed.connect(_show_card_rewards)
 	rewards.add_child.call_deferred(card_reward)
+
+func add_item_reward(item: Item) -> void:
+	var item_reward := REWARD_BUTTON.instantiate() as RewardButton
+	item_reward.reward_icon = item.icon
+	item_reward.reward_text = item.item_name
+	item_reward.pressed.connect(_on_item_reward_taken.bind(item))
+	rewards.add_child.call_deferred(item_reward)
 
 func _show_card_rewards() -> void:
 	if not run_stats or not character_stats:
@@ -95,6 +103,12 @@ func _on_card_reward_taken(card: Card) -> void:
 		return
 	
 	character_stats.deck.add_card(card)
+
+func _on_item_reward_taken(item: Item) -> void:
+	if not item_handler or not item:
+		return
+	
+	item_handler.add_item(item)
 
 func _on_back_button_pressed() -> void:
 	EventManager.battle_reward_exited.emit()

@@ -12,6 +12,7 @@ const SHOP_ITEM = preload("uid://cq1t14la2uxiw")
 @onready var cards: HBoxContainer = %Cards
 @onready var items: HBoxContainer = %Items
 @onready var card_tooltip_popup: CardTooltipPopup = %CardTooltipPopup
+@onready var modifier_handler: ModifierHandler = $ModifierHandler
 @onready var blink_timer: Timer = %BlinkTimer
 @onready var animation_player: AnimationPlayer = %AnimationPlayer
 
@@ -48,6 +49,7 @@ func _generate_shop_cards() -> void:
 		cards.add_child(new_shop_card)
 		new_shop_card.card = card
 		new_shop_card.current_card_ui.tooltip_requested.connect(card_tooltip_popup.show_tooltip)
+		new_shop_card.gold_cost = _get_updated_shop_cost(new_shop_card.gold_cost)
 		new_shop_card.update(run_stats)
 
 func _generate_shop_items() -> void:
@@ -66,6 +68,7 @@ func _generate_shop_items() -> void:
 		var new_shop_item := SHOP_ITEM.instantiate() as ShopItem
 		items.add_child(new_shop_item)
 		new_shop_item.item = item
+		new_shop_item.gold_cost = _get_updated_shop_cost(new_shop_item.gold_cost)
 		new_shop_item.update(run_stats)
 
 func _update_items() -> void:
@@ -75,6 +78,18 @@ func _update_items() -> void:
 	for shop_item: ShopItem in items.get_children():
 		shop_item.update(run_stats)
 
+func _update_shop_costs() -> void:
+	for shop_card: ShopCard in cards.get_children():
+		shop_card.gold_cost = _get_updated_shop_cost(shop_card.gold_cost)
+		shop_card.update(run_stats)
+	
+	for item_card: ShopItem in items.get_children():
+		item_card.gold_cost = _get_updated_shop_cost(item_card.gold_cost)
+		item_card.update(run_stats)
+
+func _get_updated_shop_cost(original_cost: int) -> int:
+	return modifier_handler.get_modified_value(original_cost, Modifier.Type.SHOP_COST)
+
 func _on_shop_card_bought(card: Card, gold_cost: int) -> void:
 	char_stats.deck.add_card(card)
 	run_stats.gold -= gold_cost
@@ -83,7 +98,13 @@ func _on_shop_card_bought(card: Card, gold_cost: int) -> void:
 func _on_shop_item_bought(item: Item, gold_cost: int) -> void:
 	item_handler.add_item(item)
 	run_stats.gold -= gold_cost
-	_update_items()
+	
+	if item is NosmedalItem:
+		var nosmedal_item := item as NosmedalItem
+		nosmedal_item.add_shop_modifier(self)
+		_update_shop_costs()
+	else:
+		_update_items()
 
 func _blink_timer_setup() -> void:
 	blink_timer.wait_time = randf_range(1.0, 5.0)

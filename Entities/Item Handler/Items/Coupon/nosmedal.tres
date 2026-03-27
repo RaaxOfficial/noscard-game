@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="NosmedalItem" format=3 uid="uid://cdugy0t1pk0lw"]
+
+[ext_resource type="Texture2D" uid="uid://b5r54lifc46ht" path="res://UI/Run/Items/nosmedal_icon_x64.png" id="1_ipoi5"]
+[ext_resource type="Script" uid="uid://bn223bbbmigv" path="res://Entities/Item Handler/Items/Coupon/nosmedal.gd" id="2_00qrm"]
+
+[resource]
+script = ExtResource("2_00qrm")
+item_name = "NosMedal"
+id = "nosmedal"
+type = 4
+icon = ExtResource("1_ipoi5")
+tooltip = "[color=\"ffdf00\"]NosMedal[/color]
+All items in the shop are discounted by 50%."
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

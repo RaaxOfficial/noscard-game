@@ -1,6 +1,6 @@
 [gd_resource type="Resource" format=3 uid="uid://t2h7e5ha1vv"]
 
-[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_rv1ed"]
+[ext_resource type="Texture2D" uid="uid://ghnwqyp1b651" path="res://UI/Run/Items/mana_potion_icon_x64.png" id="1_rv1ed"]
 [ext_resource type="Script" uid="uid://cl5vgjy0msput" path="res://Entities/Item Handler/Items/Mana Potion/mana_potion.gd" id="2_8uvkw"]
 
 [resource]
