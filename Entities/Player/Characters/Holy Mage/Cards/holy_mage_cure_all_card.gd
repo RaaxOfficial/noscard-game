@@ -11,3 +11,7 @@ func apply_effects(targets: Array[Node], _modifiers: ModifierHandler, _from: Nod
 	recovery_aura.heal_amount = amount
 	status_effect.status = recovery_aura
 	status_effect.execute(targets)
+	print("ToDo: Cleanse all debuffs")
+
+func get_default_tooltip() -> String:
+	return tooltip_text % recovery_aura_duration

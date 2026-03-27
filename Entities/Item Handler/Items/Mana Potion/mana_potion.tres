@@ -7,9 +7,8 @@
 script = ExtResource("2_8uvkw")
 item_name = "Mana Potion"
 id = "mana_potion"
-type = 1
 starter_item = true
 icon = ExtResource("1_rv1ed")
 tooltip = "[color=\"ffdf00\"]Rechargable Mana Potion[/color]
-At the start of combat, gain 1 mana."
+At the start of your turn, gain 1 mana."
 metadata/_custom_type_script = "uid://covkxd7ci3fp1"
