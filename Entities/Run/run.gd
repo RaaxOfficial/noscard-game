@@ -6,6 +6,7 @@ const BATTLE_REWARD_SCENE := preload("uid://dmd6nluhejqas")
 const CAMPFIRE_SCENE := preload("uid://cy5xkx1g7ud4o")
 const SHOP_SCENE := preload("uid://cqy15c3ypa351")
 const TREASURE_SCENE := preload("uid://3aaidh4qqif3")
+const WIN_SCREEN_SCENE = preload("uid://dd6mxnqr4m7gs")
 
 @export var run_startup: RunStartup
 
@@ -36,9 +37,15 @@ func _ready() -> void:
 	match run_startup.type:
 		RunStartup.Type.NEW_RUN:
 			character = run_startup.picked_character.create_instance()
+			run_startup.current_act = 1
+			run_startup.current_map = 1
 			_start_run()
 		RunStartup.Type.CONTINUED_RUN:
 			print("ToDo: Generate map lmao")
+
+func _input(event: InputEvent) -> void:
+	if event.is_action_pressed("cheat"):
+		get_tree().call_group("enemies", "queue_free")
 
 func _start_run() -> void:
 	stats = RunStats.new()
@@ -74,6 +81,14 @@ func _show_map() -> void:
 	map.show_map()
 	map.unlock_next_rooms()
 
+func _show_regular_battle_rewards() -> void:
+	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
+	reward_scene.run_stats = stats
+	reward_scene.character_stats = character
+	
+	reward_scene.add_gold_reward(map.last_room.battle_stats.roll_gold_reward())
+	reward_scene.add_card_reward()
+
 func _setup_event_connections() -> void:
 	EventManager.battle_won.connect(_on_battle_won)
 	EventManager.battle_reward_exited.connect(_show_map)
@@ -97,12 +112,13 @@ func _on_battle_room_entered(room: Room) -> void:
 	battle_scene.start_battle()
 
 func _on_battle_won() -> void:
-	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
-	reward_scene.run_stats = stats
-	reward_scene.character_stats = character
-	
-	reward_scene.add_gold_reward(map.last_room.battle_stats.roll_gold_reward())
-	reward_scene.add_card_reward()
+	if map.floors_climbed == MapGenerator.FLOORS:
+		var win_screen := _change_view(WIN_SCREEN_SCENE) as WinScreen
+		win_screen.character = character
+		EventManager.map_won.emit(run_startup.current_map)
+		run_startup.current_map += 1
+	else:
+		_show_regular_battle_rewards()
 
 func _on_treasure_room_entered() -> void:
 	var treasure_scene := _change_view(TREASURE_SCENE) as Treasure

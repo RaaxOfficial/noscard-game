@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://dd6mxnqr4m7gs"]
+
+[ext_resource type="Script" uid="uid://cwm0xgxb7j1b" path="res://UI/Run/Win Screen/win_screen.gd" id="1_g7fnb"]
+[ext_resource type="Texture2D" uid="uid://dr4e0227j8ymn" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_portrait.png" id="3_m3nf1"]
+
+[sub_resource type="Gradient" id="Gradient_gl0q7"]
+colors = PackedColorArray(0.2, 0.11764706, 0.050980393, 1, 0.05490196, 0, 0.05882353, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_t7e0r"]
+gradient = SubResource("Gradient_gl0q7")
+width = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_t83pu"]
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_nkknw"]
+line_spacing = 6.0
+font_size = 10
+shadow_color = Color(0.5764706, 0.40392157, 0.33333334, 0.49411765)
+
+[node name="WinScreen" type="Control" unique_id=2035016919]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g7fnb")
+
+[node name="Background" type="TextureRect" parent="." unique_id=379453451]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_t7e0r")
+
+[node name="CharacterPortrait" type="TextureRect" parent="." unique_id=416607704]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -240.0
+offset_top = -30.0
+offset_right = -180.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3, 3)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+texture = ExtResource("3_m3nf1")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1749766620]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -107.0
+offset_right = 128.0
+offset_bottom = 107.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="VBoxContainer" unique_id=410840510]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "MAP %s WON."
+label_settings = SubResource("LabelSettings_t83pu")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Message" type="Label" parent="VBoxContainer" unique_id=1842259224]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(240, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "ToDo:
+Story scene -> Map rewards -> Next map.
+If Map won == 3 -> Act story scene -> Act rewards -> End Act."
+label_settings = SubResource("LabelSettings_nkknw")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer" unique_id=1665333195]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Menu"
+
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_main_menu_button_pressed"]

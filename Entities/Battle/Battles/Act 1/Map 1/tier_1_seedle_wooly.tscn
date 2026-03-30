@@ -7,9 +7,9 @@
 [node name="Tier1SeedleWooly" type="Node2D" unique_id=519215925]
 
 [node name="Wooly" parent="." unique_id=1381364638 instance=ExtResource("1_uib1g")]
-position = Vector2(458, 279)
+position = Vector2(458, 291)
 stats = ExtResource("2_cavmy")
 
 [node name="Seedle" parent="." unique_id=1116830261 instance=ExtResource("1_uib1g")]
-position = Vector2(508, 295)
+position = Vector2(508, 307)
 stats = ExtResource("3_yt7j5")

@@ -7,9 +7,9 @@
 [node name="Tier0ChickenDander" type="Node2D" unique_id=519215925]
 
 [node name="Chicken" parent="." unique_id=1381364638 instance=ExtResource("1_2a85p")]
-position = Vector2(458, 279)
+position = Vector2(458, 295)
 stats = ExtResource("2_r52gx")
 
 [node name="Dander" parent="." unique_id=1643669232 instance=ExtResource("1_2a85p")]
-position = Vector2(532, 279)
+position = Vector2(532, 295)
 stats = ExtResource("3_dpruw")

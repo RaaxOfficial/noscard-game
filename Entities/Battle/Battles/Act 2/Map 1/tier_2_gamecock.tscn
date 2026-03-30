@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bni70qny38lcu"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Enemies/enemy.tscn" id="2_by7dc"]
+[ext_resource type="Resource" uid="uid://lvs18kibudq2" path="res://Entities/Enemies/Gamecock/gamecock_enemy.tres" id="3_35mxn"]
+
+[node name="Tier2Gamecock" type="Node2D" unique_id=72527955]
+
+[node name="Gamecock" parent="." unique_id=1381364638 instance=ExtResource("2_by7dc")]
+position = Vector2(557, 251)
+stats = ExtResource("3_35mxn")

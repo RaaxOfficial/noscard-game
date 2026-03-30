@@ -6,5 +6,5 @@
 [node name="Tier1PiiPod1" type="Node2D" unique_id=519215925]
 
 [node name="PiiPod" parent="." unique_id=1381364638 instance=ExtResource("1_67hvp")]
-position = Vector2(458, 263)
+position = Vector2(458, 295)
 stats = ExtResource("2_u3d7j")

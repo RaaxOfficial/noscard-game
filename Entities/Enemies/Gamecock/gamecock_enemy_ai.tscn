@@ -8,8 +8,8 @@
 [ext_resource type="Script" uid="uid://bt42odi5n21nl" path="res://Entities/Enemies/Gamecock/gamecock_block_action.gd" id="6_jl3wb"]
 [ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_55o7l"]
 [ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_vxbbh"]
-[ext_resource type="Script" uid="uid://bwyy8f3o60aof" path="res://Entities/Enemies/Gamecock/gamecock_skip_action.gd" id="9_em1oq"]
-[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Card/Sprites/blackout_intent_x64.png" id="10_w1i51"]
+[ext_resource type="Script" uid="uid://bhewk0slblnnp" path="res://Entities/Enemies/Gamecock/gamecock_fury_action.gd" id="9_uhjjc"]
+[ext_resource type="Texture2D" uid="uid://csxqwhvd4vodu" path="res://UI/Run/Battle/Status/Sprites/fury_icon_x64.png" id="10_2abtb"]
 
 [sub_resource type="Resource" id="Resource_kp58c"]
 script = ExtResource("4_3b54k")
@@ -25,29 +25,28 @@ metadata/_custom_type_script = "uid://qfuev8x2tj4x"
 
 [sub_resource type="Resource" id="Resource_jqmxn"]
 script = ExtResource("4_3b54k")
-icon = ExtResource("10_w1i51")
+icon = ExtResource("10_2abtb")
 metadata/_custom_type_script = "uid://qfuev8x2tj4x"
 
 [node name="GamecockEnemyAI" type="Node" unique_id=836036035]
 script = ExtResource("1_uhjjc")
 
-[node name="GamecockAttackAction" type="Node" parent="." unique_id=1711594864]
+[node name="AttackAction" type="Node" parent="." unique_id=1711594864]
 script = ExtResource("2_2abtb")
 damage = 25
 intent = SubResource("Resource_kp58c")
 sound = ExtResource("5_buihj")
 type = 1
-chance_weight = 3.0
+chance_weight = 7.0
 
-[node name="GamecockBlockAction" type="Node" parent="." unique_id=842411529]
+[node name="BlockAction" type="Node" parent="." unique_id=842411529]
 script = ExtResource("6_jl3wb")
 block = 15
 intent = SubResource("Resource_vwp8o")
 sound = ExtResource("8_vxbbh")
 type = 1
-chance_weight = 0.5
+chance_weight = 3.0
 
-[node name="GamecockSkipAction" type="Node" parent="." unique_id=685896315]
-script = ExtResource("9_em1oq")
+[node name="FuryAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_uhjjc")
 intent = SubResource("Resource_jqmxn")
-type = 1

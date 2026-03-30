@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Card" format=3 uid="uid://crnda756weadp"]
+
+[ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Card/card.gd" id="1_1gosw"]
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_vkkts"]
+
+[resource]
+script = ExtResource("1_1gosw")
+id = "test_toxin"
+type = 2
+cost = 1
+exhaustable = true
+icon = ExtResource("1_vkkts")
+tooltip_text = "[center][color=\"8e2818\"]Exhaust[/color].[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

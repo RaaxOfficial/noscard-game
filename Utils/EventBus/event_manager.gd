@@ -33,6 +33,7 @@ signal status_tooltip_requested(status: Status)
 
 # Map-related events
 signal map_exited(room: Room)
+signal map_won(map_index: int)
 
 # Shop-related events
 signal shop_entered(shop: Shop)

@@ -6,6 +6,6 @@
 [node name="Tier2GiantChick" type="Node2D" unique_id=519215925]
 
 [node name="GiantChick" parent="." unique_id=845036419 instance=ExtResource("1_iyf2u")]
-position = Vector2(522, 247.00002)
+position = Vector2(522, 271)
 scale = Vector2(1.5, 1.5)
 stats = ExtResource("2_oe4gm")
