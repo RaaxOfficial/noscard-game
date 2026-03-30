@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cxj0sxc653wyc"
-path="res://.godot/imported/pinky_jelly_sprite.png-9d853192e45646456a9979f7cee3cc4d.ctex"
+path="res://.godot/imported/pinky_jelly_sprite.png-a0cb5fbc5f7662bb719e155460ada47d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Pink Jelly/pinky_jelly_sprite.png"
-dest_files=["res://.godot/imported/pinky_jelly_sprite.png-9d853192e45646456a9979f7cee3cc4d.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Pink jelly/pinky_jelly_sprite.png"
+dest_files=["res://.godot/imported/pinky_jelly_sprite.png-a0cb5fbc5f7662bb719e155460ada47d.ctex"]
 
 [params]
 
