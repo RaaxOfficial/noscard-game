@@ -6,7 +6,7 @@ extends Node2D
 @export var items: ItemHandler
 @export var music: AudioStream
 
-@onready var battle_ui: BattleUI = $BattleUICanvas
+@onready var battle_ui: BattleUI = $BattleUILayer
 @onready var player_handler: PlayerHandler = $PlayerHandler
 @onready var player: Player = $Player
 @onready var enemy_handler: EnemyHandler = $EnemyHandler
@@ -18,7 +18,6 @@ func _ready() -> void:
 	EventManager.player_turn_ended.connect(player_handler.end_turn)
 	EventManager.player_hand_discarded.connect(enemy_handler.start_turn)
 	EventManager.player_died.connect(_on_player_died)
-	
 
 func start_battle() -> void:
 	get_tree().paused = false
@@ -53,3 +52,4 @@ func _on_enemies_child_order_changed() -> void:
 
 func _on_player_died() -> void:
 	EventManager.battle_over_screen_requested.emit("Game Over!", BattleOverPanel.Type.LOSE)
+	SaveGame.delete_data()

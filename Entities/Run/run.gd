@@ -6,12 +6,14 @@ const BATTLE_REWARD_SCENE := preload("uid://dmd6nluhejqas")
 const CAMPFIRE_SCENE := preload("uid://cy5xkx1g7ud4o")
 const SHOP_SCENE := preload("uid://cqy15c3ypa351")
 const TREASURE_SCENE := preload("uid://3aaidh4qqif3")
-const WIN_SCREEN_SCENE = preload("uid://dd6mxnqr4m7gs")
+const WIN_SCREEN_SCENE := preload("uid://dd6mxnqr4m7gs")
+const MAIN_MENU_PATH := "res://UI/Main Menu/main_menu.tscn"
 
 @export var run_startup: RunStartup
 
 var character: CharacterStats
 var stats: RunStats
+var save_data: SaveGame
 
 @onready var current_view: Node = $CurrentView
 @onready var deck_button: CardPileOpener = %DeckButton
@@ -20,19 +22,17 @@ var stats: RunStats
 @onready var gold_ui: GoldUI = %GoldUI
 @onready var map: Map = $Map
 @onready var item_handler: ItemHandler = %ItemHandler
-
-# Debugging Buttons
-@onready var map_button: Button = %MapButton
-@onready var battle_button: Button = %BattleButton
-@onready var shop_button: Button = %ShopButton
-@onready var campfire_button: Button = %CampfireButton
-@onready var treasure_button: Button = %TreasureButton
-@onready var battle_reward_button: Button = %BattleRewardButton
+@onready var pause_menu: PauseMenu = $PauseLayer
 
 
 func _ready() -> void:
 	if not run_startup:
 		return
+	
+	pause_menu.save_and_quit.connect(
+		func():
+			get_tree().change_scene_to_file(MAIN_MENU_PATH)
+	)
 	
 	match run_startup.type:
 		RunStartup.Type.NEW_RUN:
@@ -41,7 +41,7 @@ func _ready() -> void:
 			run_startup.current_map = 1
 			_start_run()
 		RunStartup.Type.CONTINUED_RUN:
-			print("ToDo: Generate map lmao")
+			_load_run()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("cheat"):
@@ -53,6 +53,44 @@ func _start_run() -> void:
 	_setup_top_bar()
 	map.generate_new_map()
 	map.unlock_floor(0)
+	
+	save_data = SaveGame.new()
+	_save_run(true)
+
+func _save_run(was_on_map: bool) -> void:
+	save_data.rng_seed = RNG.instance.seed
+	save_data.rng_state = RNG.instance.state
+	save_data.run_stats = stats
+	save_data.char_stats = character
+	save_data.current_deck = character.deck
+	save_data.current_health = character.health
+	save_data.items = item_handler.get_all_items()
+	save_data.last_room = map.last_room
+	save_data.map_data = map.map_data.duplicate()
+	save_data.floors_climbed = map.floors_climbed
+	save_data.current_map = run_startup.current_map
+	save_data.current_act = run_startup.current_act
+	save_data.was_on_map = was_on_map
+	save_data.save_data()
+
+func _load_run() -> void:
+	save_data = SaveGame.load_data()
+	assert(save_data, "Couldn't load last save")
+	
+	RNG.set_from_save_data(save_data.rng_seed, save_data.rng_state)
+	stats = save_data.run_stats
+	character = save_data.char_stats
+	character.deck = save_data.current_deck
+	character.health = save_data.current_health
+	item_handler.add_items(save_data.items)
+	run_startup.current_map = save_data.current_map
+	run_startup.current_act = save_data.current_act
+	_setup_top_bar()
+	_setup_event_connections()
+	
+	map.load_map(save_data.map_data, save_data.floors_climbed, save_data.last_room)
+	if save_data.last_room and not save_data.was_on_map:
+		_on_map_exited(save_data.last_room)
 
 func _setup_top_bar() -> void:
 	character.stats_changed.connect(health_ui.update_stats.bind(character))
@@ -80,6 +118,8 @@ func _show_map() -> void:
 	
 	map.show_map()
 	map.unlock_next_rooms()
+	
+	_save_run(true)
 
 func _show_regular_battle_rewards() -> void:
 	var reward_scene := _change_view(BATTLE_REWARD_SCENE) as BattleReward
@@ -96,13 +136,6 @@ func _setup_event_connections() -> void:
 	EventManager.map_exited.connect(_on_map_exited)
 	EventManager.shop_exited.connect(_show_map)
 	EventManager.treasure_room_exited.connect(_on_treasure_room_exited)
-	
-	battle_button.pressed.connect(_change_view.bind(BATTLE_SCENE))
-	battle_reward_button.pressed.connect(_change_view.bind(BATTLE_REWARD_SCENE))
-	campfire_button.pressed.connect(_change_view.bind(CAMPFIRE_SCENE))
-	map_button.pressed.connect(_show_map)
-	shop_button.pressed.connect(_change_view.bind(SHOP_SCENE))
-	treasure_button.pressed.connect(_change_view.bind(TREASURE_SCENE))
 
 func _on_battle_room_entered(room: Room) -> void:
 	var battle_scene: Battle = _change_view(BATTLE_SCENE) as Battle
@@ -146,6 +179,8 @@ func _on_shop_entered() -> void:
 	shop.populate_shop()
 
 func _on_map_exited(room: Room) -> void:
+	_save_run(false)
+	
 	match room.type:
 		Room.Type.MONSTER:
 			_on_battle_room_entered(room)

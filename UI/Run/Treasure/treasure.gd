@@ -17,7 +17,7 @@ func generate_item() -> void:
 			return can_appear and not already_had_it
 	)
 	
-	found_item = available_items.pick_random()
+	found_item = RNG.array_pick_random(available_items)
 
 # Called from the AnimationPlayer,
 # at the end of the 'open' animation.

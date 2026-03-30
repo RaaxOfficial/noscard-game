@@ -73,12 +73,12 @@ stats = SubResource("Resource_avgb2")
 [node name="PlayerHandler" type="Node" parent="." unique_id=2083631594 node_paths=PackedStringArray("player", "hand")]
 script = ExtResource("8_lksgk")
 player = NodePath("../Player")
-hand = NodePath("../BattleUICanvas/Hand")
+hand = NodePath("../BattleUILayer/Hand")
 
-[node name="BattleUICanvas" type="CanvasLayer" parent="." unique_id=2134989780 groups=["ui_layer"]]
+[node name="BattleUILayer" type="CanvasLayer" parent="." unique_id=2134989780 groups=["ui_layer"]]
 script = ExtResource("7_rcrfk")
 
-[node name="Hand" type="HBoxContainer" parent="BattleUICanvas" unique_id=1949105018 node_paths=PackedStringArray("player")]
+[node name="Hand" type="HBoxContainer" parent="BattleUILayer" unique_id=1949105018 node_paths=PackedStringArray("player")]
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
@@ -94,17 +94,17 @@ alignment = 1
 script = ExtResource("2_o5tja")
 player = NodePath("../../Player")
 
-[node name="ManaUI" parent="BattleUICanvas" unique_id=1519675835 instance=ExtResource("11_yrmgv")]
+[node name="ManaUI" parent="BattleUILayer" unique_id=1519675835 instance=ExtResource("11_yrmgv")]
 offset_left = 20.0
 offset_top = -28.0
 offset_right = 38.0
 offset_bottom = -10.0
 
-[node name="TooltipContainer" parent="BattleUICanvas" unique_id=1274529310 instance=ExtResource("12_lksgk")]
+[node name="TooltipContainer" parent="BattleUILayer" unique_id=1274529310 instance=ExtResource("12_lksgk")]
 offset_top = 5.0
 offset_bottom = 41.0
 
-[node name="EndTurnButton" type="Button" parent="BattleUICanvas" unique_id=454564875]
+[node name="EndTurnButton" type="Button" parent="BattleUILayer" unique_id=454564875]
 unique_name_in_owner = true
 anchors_preset = 3
 anchor_left = 1.0
@@ -121,7 +121,7 @@ theme = ExtResource("13_rcrfk")
 theme_override_font_sizes/font_size = 6
 text = "End Turn"
 
-[node name="DrawPileButton" parent="BattleUICanvas" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("17_phvbk")]
+[node name="DrawPileButton" parent="BattleUILayer" unique_id=346522985 node_paths=PackedStringArray("counter") instance=ExtResource("17_phvbk")]
 unique_name_in_owner = true
 anchors_preset = 2
 anchor_top = 1.0
@@ -133,7 +133,7 @@ offset_bottom = -4.0
 grow_vertical = 0
 counter = NodePath("Counter")
 
-[node name="Counter" type="Label" parent="BattleUICanvas/DrawPileButton" unique_id=479873282]
+[node name="Counter" type="Label" parent="BattleUILayer/DrawPileButton" unique_id=479873282]
 layout_mode = 0
 offset_left = 10.0
 offset_top = 12.0
@@ -143,7 +143,7 @@ text = "99"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="DiscardPileButton" parent="BattleUICanvas" unique_id=1858514461 node_paths=PackedStringArray("counter") instance=ExtResource("17_phvbk")]
+[node name="DiscardPileButton" parent="BattleUILayer" unique_id=1858514461 node_paths=PackedStringArray("counter") instance=ExtResource("17_phvbk")]
 unique_name_in_owner = true
 anchors_preset = 3
 anchor_left = 1.0
@@ -159,7 +159,7 @@ grow_vertical = 0
 texture_normal = ExtResource("18_sf8fp")
 counter = NodePath("Counter")
 
-[node name="Counter" type="Label" parent="BattleUICanvas/DiscardPileButton" unique_id=985004390]
+[node name="Counter" type="Label" parent="BattleUILayer/DiscardPileButton" unique_id=985004390]
 layout_mode = 0
 offset_left = -3.0
 offset_top = 12.0

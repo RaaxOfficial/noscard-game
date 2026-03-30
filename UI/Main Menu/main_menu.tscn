@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c7oxkqjy8y15c"]
 
 [ext_resource type="Script" uid="uid://jdl5c101dcw8" path="res://UI/Main Menu/main_menu.gd" id="1_p8ri8"]
+[ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://Entities/Run/Resources/run_startup.tres" id="2_k0v0h"]
 [ext_resource type="SpriteFrames" uid="uid://cquesy7j5vstq" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_sprite_frames.tres" id="2_mqkp3"]
 [ext_resource type="SpriteFrames" uid="uid://cpsu5kgpl3h2b" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_sprite_frames.tres" id="2_vq10u"]
 [ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://UI/Run/Battle/Enemies/Chicken/chiken64.png" id="3_jri5q"]
@@ -26,6 +27,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_p8ri8")
+run_startup = ExtResource("2_k0v0h")
 
 [node name="Background" type="TextureRect" parent="." unique_id=379453451]
 layout_mode = 1
@@ -90,6 +92,7 @@ position = Vector2(66, 209)
 scale = Vector2(2, 2)
 sprite_frames = ExtResource("2_vq10u")
 animation = &"breathing"
+autoplay = "breathing"
 flip_h = true
 
 [node name="HolyMage" type="AnimatedSprite2D" parent="." unique_id=1564077526]
@@ -97,13 +100,15 @@ position = Vector2(147, 198)
 scale = Vector2(2, 2)
 sprite_frames = ExtResource("2_mqkp3")
 animation = &"breathing"
+autoplay = "breathing"
 flip_h = true
 
 [node name="WildKeeper" type="AnimatedSprite2D" parent="." unique_id=1233798072]
 position = Vector2(114, 271)
 scale = Vector2(2, 2)
 sprite_frames = ExtResource("3_vq10u")
-animation = &"blinking"
+animation = &"breathing"
+autoplay = "breathing"
 flip_h = true
 
 [node name="Chicken" type="Sprite2D" parent="." unique_id=657831586]
