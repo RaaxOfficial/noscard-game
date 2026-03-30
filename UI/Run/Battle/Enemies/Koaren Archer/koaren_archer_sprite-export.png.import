@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://lt3cgvn7sgnv"
-path="res://.godot/imported/koaren_archer_sprite-export.png-545b99570cc29a9612b25279c20531e0.ctex"
+path="res://.godot/imported/koaren_archer_sprite-export.png-3e615a7f4a5dbfca1a34bbf7ae264424.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Koaren archer/koaren_archer_sprite-export.png"
-dest_files=["res://.godot/imported/koaren_archer_sprite-export.png-545b99570cc29a9612b25279c20531e0.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Koaren Archer/koaren_archer_sprite-export.png"
+dest_files=["res://.godot/imported/koaren_archer_sprite-export.png-3e615a7f4a5dbfca1a34bbf7ae264424.ctex"]
 
 [params]
 
