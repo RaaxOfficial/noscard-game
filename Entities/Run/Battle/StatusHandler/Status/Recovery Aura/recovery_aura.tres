@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RecoveryAuraStatus" format=3 uid="uid://dln7276kbgh7n"]
+
+[ext_resource type="Texture2D" uid="uid://hw67xul7622s" path="res://UI/Run/Battle/Status/Sprites/recovery_aura_icon_x64.png" id="1_7dubs"]
+[ext_resource type="Script" uid="uid://bgavok4ibd46u" path="res://Entities/Run/Battle/StatusHandler/Status/Recovery Aura/recovery_aura.gd" id="2_8gtt0"]
+
+[resource]
+script = ExtResource("2_8gtt0")
+id = "recovery_aura"
+stack_type = 2
+can_expire = true
+duration = 3
+icon = ExtResource("1_7dubs")
+tooltip = "Restore %s HP every turn."
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

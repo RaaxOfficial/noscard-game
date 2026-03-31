@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cjcc13n0xdyv4"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_uib1g"]
+[ext_resource type="Resource" uid="uid://du0tcpy2rv736" path="res://Entities/Run/Battle/Enemies/Wooly/wooly_enemy.tres" id="2_cavmy"]
+[ext_resource type="Resource" uid="uid://bjey8ns4v4jf" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_enemy.tres" id="3_yt7j5"]
+
+[node name="Tier1SeedleWooly" type="Node2D" unique_id=519215925]
+
+[node name="Wooly" parent="." unique_id=1381364638 instance=ExtResource("1_uib1g")]
+position = Vector2(458, 291)
+stats = ExtResource("2_cavmy")
+
+[node name="Seedle" parent="." unique_id=1116830261 instance=ExtResource("1_uib1g")]
+position = Vector2(508, 307)
+stats = ExtResource("3_yt7j5")

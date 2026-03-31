@@ -40,7 +40,12 @@ func populate_shop() -> void:
 
 func _generate_shop_cards() -> void:
 	var shop_card_array: Array[Card] = []
-	var available_cards := char_stats.draftable_cards.cards.duplicate(true)
+	
+	# We need to use this method because of a Godot issue
+	# reported here:
+	# https://github.com/godotengine/godot/issues/74918
+	var available_cards := char_stats.draftable_cards.duplicate_cards()
+	#var available_cards := char_stats.draftable_cards.cards.duplicate_deep(Resource.DeepDuplicateMode.DEEP_DUPLICATE_ALL)
 	RNG.array_shuffle(available_cards)
 	shop_card_array = available_cards.slice(0, 4)
 	

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://bjey8ns4v4jf"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_4fbal"]
+[ext_resource type="PackedScene" uid="uid://bke05oofp8bja" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_enemy_ai.tscn" id="1_eyw6t"]
+[ext_resource type="Texture2D" uid="uid://dmsx7gdr5vwn6" path="res://UI/Run/Battle/Enemies/Seedle/seedle_sprite.png" id="2_a75rn"]
+
+[resource]
+script = ExtResource("1_4fbal")
+ai = ExtResource("1_eyw6t")
+max_health = 20
+art = ExtResource("2_a75rn")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

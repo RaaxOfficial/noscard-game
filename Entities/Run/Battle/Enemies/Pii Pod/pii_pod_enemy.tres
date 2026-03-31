@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://sib56qharlk4"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_gaj36"]
+[ext_resource type="PackedScene" uid="uid://dt465eqxn5p1v" path="res://Entities/Run/Battle/Enemies/Pii Pod/pii_pod_enemy_ai.tscn" id="1_jtrm4"]
+[ext_resource type="Texture2D" uid="uid://clsq5ghkjp7tm" path="res://UI/Run/Battle/Enemies/Pii Pod/pii_pod_sprite.png" id="2_hnhtv"]
+
+[resource]
+script = ExtResource("1_gaj36")
+ai = ExtResource("1_jtrm4")
+max_health = 25
+art = ExtResource("2_hnhtv")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://bukubovol21nw"]
+
+[ext_resource type="Texture2D" uid="uid://my7t76a0sep2" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_elemental_shining_icon_x64.png" id="1_kgscf"]
+[ext_resource type="Script" uid="uid://xumapm4r3evf" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_elemental_shining_card.gd" id="2_v5kcx"]
+[ext_resource type="AudioStream" uid="uid://df64e7qat73gs" path="res://Assets/Audio/SFX/block.ogg" id="3_ik4r7"]
+
+[resource]
+script = ExtResource("2_v5kcx")
+id = "wild_keeper_elemental_shining_card"
+type = 1
+amount = 5
+cost = 1
+icon = ExtResource("1_kgscf")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
+sound = ExtResource("3_ik4r7")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

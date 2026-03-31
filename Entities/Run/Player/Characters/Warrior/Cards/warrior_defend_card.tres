@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3 uid="uid://dgq1wajamorff"]
+
+[ext_resource type="Resource" uid="uid://cs6g51d7oplgg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_basic_card.tres" id="1_1obcb"]
+[ext_resource type="Texture2D" uid="uid://c5dajssiwivrm" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_iron_skin_icon_x64.png" id="2_1obcb"]
+[ext_resource type="Script" uid="uid://b4mj720rsli3d" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_defend_card.gd" id="2_efiof"]
+[ext_resource type="AudioStream" uid="uid://df64e7qat73gs" path="res://Assets/Audio/SFX/block.ogg" id="3_xlfk5"]
+
+[resource]
+script = ExtResource("2_efiof")
+card = ExtResource("1_1obcb")
+id = "warrior_defend_card"
+type = 1
+amount = 5
+cost = 1
+icon = ExtResource("2_1obcb")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block. Apply [color=\"d3aa17\"]Counter[/color] to yourself.[/center]"
+sound = ExtResource("3_xlfk5")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://dostf37ntu0n2"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_b4lng"]
+[ext_resource type="PackedScene" uid="uid://dua2dbmyliku8" path="res://Entities/Run/Battle/Enemies/Mandragorayear/mandragorayear_enemy_ai.tscn" id="1_nufwt"]
+[ext_resource type="Texture2D" uid="uid://vrcbrq654aaq" path="res://UI/Run/Battle/Enemies/Mandragorayear/boss_mandragora_sprite.png" id="2_hc5xj"]
+
+[resource]
+script = ExtResource("1_b4lng")
+ai = ExtResource("1_nufwt")
+max_health = 100
+art = ExtResource("2_hc5xj")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

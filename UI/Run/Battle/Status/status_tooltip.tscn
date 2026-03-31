@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://di0v1od0xm6bd"]
 
-[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="1_l0vtb"]
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Run/Card/Sprites/alts_icon_x64.png" id="1_l0vtb"]
 [ext_resource type="Script" uid="uid://dvsymy66tujfl" path="res://UI/Run/Battle/Status/status_tooltip.gd" id="1_l24hl"]
 
 [node name="StatusTooltip" type="PanelContainer" unique_id=1327870707]

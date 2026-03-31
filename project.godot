@@ -27,6 +27,10 @@ MusicManager="*uid://fjmh2iwxcx7a"
 SFXManager="*uid://s8jp58evyn8h"
 RNG="*uid://chew1s340f20u"
 
+[debug]
+
+gdscript/warnings/unused_signal=0
+
 [display]
 
 window/size/viewport_width=640

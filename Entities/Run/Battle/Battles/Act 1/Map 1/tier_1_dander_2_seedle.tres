@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://vpjdhnv2usx2"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_cebws"]
+[ext_resource type="PackedScene" uid="uid://bw4hqkp5uho0s" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_1_dander_2_seedle.tscn" id="1_sluyl"]
+
+[resource]
+script = ExtResource("1_cebws")
+battle_tier = 1
+weight = 4.0
+gold_reward_min = 23
+gold_reward_max = 34
+enemies = ExtResource("1_sluyl")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

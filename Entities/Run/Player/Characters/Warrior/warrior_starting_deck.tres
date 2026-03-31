@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="CardPile" format=3 uid="uid://bk7txja3x83th"]
+
+[ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Run/Card/card.gd" id="1_fniym"]
+[ext_resource type="Resource" uid="uid://cs6g51d7oplgg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_basic_card.tres" id="2_bsnla"]
+[ext_resource type="Resource" uid="uid://dprkxjul3a0su" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_fury_card.tres" id="2_i8s5g"]
+[ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Run/Card/Card Pile/card_pile.gd" id="2_tsoqv"]
+[ext_resource type="Resource" uid="uid://dgq1wajamorff" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_defend_card.tres" id="3_m4l13"]
+[ext_resource type="Resource" uid="uid://b841ww6xm3lob" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_shoulder_charge_card.tres" id="3_umknt"]
+[ext_resource type="Resource" uid="uid://ut60oqajtmqd" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_whirlwind_card.tres" id="4_m4l13"]
+[ext_resource type="Resource" uid="uid://c0jhsmpvdiuik" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_rising_dragon_card.tres" id="6_awv71"]
+
+[resource]
+script = ExtResource("2_tsoqv")
+cards = Array[ExtResource("1_fniym")]([ExtResource("2_i8s5g"), ExtResource("2_i8s5g"), ExtResource("3_umknt"), ExtResource("2_bsnla"), ExtResource("2_bsnla"), ExtResource("3_m4l13"), ExtResource("3_m4l13"), ExtResource("6_awv71"), ExtResource("6_awv71"), ExtResource("4_m4l13")])
+metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

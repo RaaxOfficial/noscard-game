@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ceqa1q76ls1ug"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_8if1s"]
+[ext_resource type="Script" uid="uid://c5rpvwjs5qekj" path="res://Entities/Run/Battle/Enemies/Wooly/wooly_attack_action.gd" id="2_8if1s"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_7h2j6"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_bermd"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_n88w5"]
+[ext_resource type="Script" uid="uid://qumpsvfudyyo" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_block_action.gd" id="6_ifyu7"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_785bq"]
+[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_uk1fh"]
+[ext_resource type="Script" uid="uid://c8fh8o3g561xc" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_skip_action.gd" id="9_fmlka"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="10_t6js7"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_bermd")
+base_text = "%s"
+icon = ExtResource("3_7h2j6")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_bermd")
+base_text = "%s"
+icon = ExtResource("7_785bq")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_bermd")
+icon = ExtResource("10_t6js7")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="WoolyEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_8if1s")
+
+[node name="WoolyAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_8if1s")
+damage = 10
+intent = SubResource("Resource_kp58c")
+sound = ExtResource("5_n88w5")
+type = 1
+chance_weight = 1.0
+
+[node name="WoolyBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_ifyu7")
+block = 7
+intent = SubResource("Resource_vwp8o")
+sound = ExtResource("8_uk1fh")
+type = 1
+chance_weight = 1.0
+
+[node name="WoolySkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_fmlka")
+intent = SubResource("Resource_jqmxn")

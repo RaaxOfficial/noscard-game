@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bcr65k7uhj82"]
 
 [ext_resource type="Script" uid="uid://cifyjv81hqfuc" path="res://UI/Run/Items/item_tooltip.gd" id="1_amney"]
-[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Card/Sprites/alts_icon_x64.png" id="2_lso4v"]
+[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Run/Card/Sprites/alts_icon_x64.png" id="2_lso4v"]
 
 [node name="ItemTooltip" type="PanelContainer" unique_id=1327870707]
 offset_right = 156.0

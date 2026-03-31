@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b2f0m5nkh8w75"]
 
 [ext_resource type="Script" uid="uid://bjmw8m64a5ink" path="res://UI/Run/Shop/shop_card.gd" id="1_dogxq"]
-[ext_resource type="PackedScene" uid="uid://duwfq02dcc7qb" path="res://Entities/Card/card_menu_ui.tscn" id="1_pioxx"]
-[ext_resource type="Resource" uid="uid://dm1cqfxvrtdqk" path="res://Entities/Player/Characters/Holy Mage/Cards/holy_mage_holy_light_card.tres" id="2_5utqi"]
+[ext_resource type="PackedScene" uid="uid://duwfq02dcc7qb" path="res://Entities/Run/Card/card_menu_ui.tscn" id="1_pioxx"]
+[ext_resource type="Resource" uid="uid://dm1cqfxvrtdqk" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_light_card.tres" id="2_5utqi"]
 [ext_resource type="Texture2D" uid="uid://dt0vxcdp6krdv" path="res://art/gold.png" id="2_dogxq"]
 
 [node name="ShopCard" type="VBoxContainer" unique_id=1553109964]

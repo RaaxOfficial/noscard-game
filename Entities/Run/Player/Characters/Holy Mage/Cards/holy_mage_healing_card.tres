@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://bocxjlf82vxqr"]
+
+[ext_resource type="Texture2D" uid="uid://dgmcakg8qukkd" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_healing_icon_x64.png" id="1_5sto8"]
+[ext_resource type="Script" uid="uid://3wda0cqjtnxc" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_healing_card.gd" id="2_gwjsu"]
+[ext_resource type="AudioStream" uid="uid://bq0xce0o1w8ys" path="res://Assets/Audio/SFX/true_strength.ogg" id="3_dnmv2"]
+
+[resource]
+script = ExtResource("2_gwjsu")
+id = "holy_mage_healing_card"
+type = 1
+amount = 5
+cost = 2
+icon = ExtResource("1_5sto8")
+tooltip_text = "[center]Recover [color=\"80cca3\"]%s[/color] HP.[/center]"
+sound = ExtResource("3_dnmv2")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

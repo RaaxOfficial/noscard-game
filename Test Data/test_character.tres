@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://d4f5j7wqv8tvr"]
+
+[ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Run/Player/Characters/character_stats.gd" id="1_3r43n"]
+
+[resource]
+script = ExtResource("1_3r43n")
+character_name = "Bob"
+description = "Test character"
+metadata/_custom_type_script = "uid://ct3m4uqtcbqtc"

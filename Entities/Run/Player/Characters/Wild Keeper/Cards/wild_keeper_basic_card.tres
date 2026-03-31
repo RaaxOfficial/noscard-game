@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://bstia0ddn1dpj"]
+
+[ext_resource type="Texture2D" uid="uid://muff578ichun" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_basic_icon_x64.png" id="1_yxaie"]
+[ext_resource type="Script" uid="uid://cxiitfftdco6b" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_basic_card.gd" id="2_vewuv"]
+[ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://Assets/Audio/SFX/axe.ogg" id="3_plopv"]
+
+[resource]
+script = ExtResource("2_vewuv")
+id = "wild_keeper_basic_card"
+target = 2
+amount = 100
+cost = 1
+icon = ExtResource("1_yxaie")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"
+sound = ExtResource("3_plopv")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

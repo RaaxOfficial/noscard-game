@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3 uid="uid://gtbh37in2l6h"]
+
+[ext_resource type="Texture2D" uid="uid://deus4ebvlrrlf" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_forest_power_icon_x64.png" id="1_o2tcs"]
+[ext_resource type="Script" uid="uid://cwgdaxc43e1lj" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_forest_power_card.gd" id="2_o2iuw"]
+[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="3_o2iuw"]
+
+[resource]
+script = ExtResource("2_o2iuw")
+id = "wild_keeper_forest_power_card"
+rarity = 2
+target = 2
+amount = 3
+cost = 3
+exhaustable = true
+icon = ExtResource("1_o2tcs")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 4 times to all enemies. Apply [color=\"d3aa17\"]Cut[/color]. [color=\"8e2818\"]Exhaust[/color].[/center]"
+sound = ExtResource("3_o2iuw")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

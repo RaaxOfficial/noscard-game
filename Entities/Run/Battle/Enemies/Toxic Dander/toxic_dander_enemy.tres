@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://c4byxifva466q"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_028rs"]
+[ext_resource type="PackedScene" uid="uid://uirpgiu0v0ke" path="res://Entities/Run/Battle/Enemies/Toxic Dander/toxic_dander_enemy_ai.tscn" id="1_bh4ua"]
+[ext_resource type="Texture2D" uid="uid://cwc30kbskcw75" path="res://UI/Run/Battle/Enemies/Toxic Dander/toxic_dander_sprite.png" id="2_y4u4h"]
+
+[resource]
+script = ExtResource("1_028rs")
+ai = ExtResource("1_bh4ua")
+max_health = 15
+art = ExtResource("2_y4u4h")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://duwfq02dcc7qb"]
+
+[ext_resource type="Script" uid="uid://bja4n6p3w4wvp" path="res://Entities/Run/Card/card_menu_ui.gd" id="1_kt1iu"]
+[ext_resource type="Resource" uid="uid://bvmpy826aefsm" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_snake_rush_card.tres" id="2_w2fin"]
+[ext_resource type="PackedScene" uid="uid://gliubhdf0s0" path="res://UI/Run/Card/card_visuals.tscn" id="3_b5ore"]
+
+[node name="CardMenuUI" type="CenterContainer" unique_id=123346407]
+offset_right = 25.0
+offset_bottom = 30.0
+size_flags_horizontal = 3
+script = ExtResource("1_kt1iu")
+card = ExtResource("2_w2fin")
+
+[node name="Visuals" parent="." unique_id=748695514 instance=ExtResource("3_b5ore")]
+layout_mode = 2
+
+[connection signal="gui_input" from="Visuals" to="." method="_on_visuals_gui_input"]
+[connection signal="mouse_entered" from="Visuals" to="." method="_on_visuals_mouse_entered"]
+[connection signal="mouse_exited" from="Visuals" to="." method="_on_visuals_mouse_exited"]

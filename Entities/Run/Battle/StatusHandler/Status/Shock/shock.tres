@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Status" format=3 uid="uid://kjch13ysqafu"]
+
+[ext_resource type="Script" uid="uid://dx0is2tc5dfi6" path="res://Entities/Run/Battle/StatusHandler/Status/status.gd" id="1_77kdo"]
+[ext_resource type="Texture2D" uid="uid://dr3mk1tj3fj0" path="res://UI/Run/Battle/Status/Sprites/shock_icon_x64.png" id="1_o4tc8"]
+
+[resource]
+script = ExtResource("1_77kdo")
+id = "shock"
+type = 2
+stack_type = 2
+can_expire = true
+duration = 1
+icon = ExtResource("1_o4tc8")
+tooltip = "50% chance to skip action."
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

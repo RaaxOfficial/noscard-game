@@ -8,9 +8,9 @@ extends Control
 
 
 func _on_rest_button_pressed() -> void:
+	rest_button.disabled = true
 	char_stats.heal(ceili(char_stats.max_health * 0.3))
 	animation_player.play("fade_out")
-	rest_button.disabled = true
 
 # Called from the AnimationPlayer
 # at the end of 'fade-out'.

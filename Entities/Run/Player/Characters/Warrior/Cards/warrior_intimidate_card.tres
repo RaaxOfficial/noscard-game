@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3 uid="uid://7bo2sukiex2s"]
+
+[ext_resource type="Texture2D" uid="uid://c0blu783r31xe" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_intimidate_icon_x64.png" id="1_hqojt"]
+[ext_resource type="Script" uid="uid://55hxduu1fk0l" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_intimidate_card.gd" id="1_ilr8h"]
+[ext_resource type="AudioStream" uid="uid://bq0xce0o1w8ys" path="res://Assets/Audio/SFX/true_strength.ogg" id="3_c7i78"]
+
+[resource]
+script = ExtResource("1_ilr8h")
+id = "warrior_intimidate_card"
+type = 2
+rarity = 2
+target = 2
+cost = 2
+icon = ExtResource("1_hqojt")
+tooltip_text = "[center]Apply [color=\"d3aa17\"]Shock[/color]to all enemies for 2 turns. [color=\"8e2818\"]Exhaust[/color].[/center]"
+sound = ExtResource("3_c7i78")
+metadata/_custom_type_script = "uid://yhnspsq248rn"

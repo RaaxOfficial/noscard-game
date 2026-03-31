@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://v2uwtsply7kf" path="res://UI/Run/Map/map.tscn" id="1_6y1hf"]
 [ext_resource type="Script" uid="uid://bqywishr0k410" path="res://Entities/Run/run.gd" id="1_wkui6"]
 [ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://Entities/Run/Resources/run_startup.tres" id="2_badgd"]
-[ext_resource type="PackedScene" uid="uid://bg311u3cjume4" path="res://UI/Run/Player/health_ui.tscn" id="4_88h0l"]
-[ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://Entities/Card/Card Pile/card_pile_opener.tscn" id="4_irdq8"]
-[ext_resource type="PackedScene" uid="uid://b8q2qgacswmyx" path="res://UI/Run/Player/gold_ui.tscn" id="4_k8enk"]
+[ext_resource type="PackedScene" uid="uid://bg311u3cjume4" path="res://UI/Run/Top Bar/health_ui.tscn" id="4_88h0l"]
+[ext_resource type="PackedScene" uid="uid://fuf3vtotlquo" path="res://Entities/Run/Card/Card Pile/card_pile_opener.tscn" id="4_irdq8"]
+[ext_resource type="PackedScene" uid="uid://b8q2qgacswmyx" path="res://UI/Run/Top Bar/gold_ui.tscn" id="4_k8enk"]
 [ext_resource type="Texture2D" uid="uid://1jxkrrqj5h18" path="res://art/deck.png" id="5_io1fk"]
-[ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://Entities/Card/Card Pile/card_pile_view.tscn" id="6_6x33b"]
-[ext_resource type="PackedScene" uid="uid://deymt72xlraw7" path="res://Entities/Item Handler/item_handler.tscn" id="6_7mfdl"]
+[ext_resource type="PackedScene" uid="uid://c7nx0ac3lttu3" path="res://Entities/Run/Card/Card Pile/card_pile_view.tscn" id="6_6x33b"]
+[ext_resource type="PackedScene" uid="uid://deymt72xlraw7" path="res://Entities/Run/Item Handler/item_handler.tscn" id="6_7mfdl"]
 [ext_resource type="PackedScene" uid="uid://csws0ftpge6hn" path="res://UI/Run/Items/item_view.tscn" id="10_5a0l6"]
 [ext_resource type="Script" uid="uid://h42syc2hs2ha" path="res://Entities/Run/pause_menu.gd" id="11_upr1w"]
 
@@ -99,6 +99,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 color = Color(0.078431375, 0.078431375, 0.078431375, 0.78431374)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PauseLayer" unique_id=711624148]

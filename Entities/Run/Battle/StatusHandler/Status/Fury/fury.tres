@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FuryStatus" format=3 uid="uid://dtu8bbhrd4rr6"]
+
+[ext_resource type="Texture2D" uid="uid://csxqwhvd4vodu" path="res://UI/Run/Battle/Status/Sprites/fury_icon_x64.png" id="1_muo2w"]
+[ext_resource type="Script" uid="uid://7jqlbepro4n7" path="res://Entities/Run/Battle/StatusHandler/Status/Fury/fury.gd" id="2_n0gcc"]
+
+[resource]
+script = ExtResource("2_n0gcc")
+id = "fury"
+icon = ExtResource("1_muo2w")
+tooltip = "At the start of your turn, gain %s stacks of Attack Power Increase."
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

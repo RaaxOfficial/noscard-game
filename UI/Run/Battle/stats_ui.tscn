@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_inad3"]
 [ext_resource type="Script" uid="uid://cf21yynumye43" path="res://UI/Run/Battle/stats_ui.gd" id="2_k0jlt"]
 [ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="2_ka01j"]
-[ext_resource type="PackedScene" uid="uid://bg311u3cjume4" path="res://UI/Run/Player/health_ui.tscn" id="4_n0l4e"]
+[ext_resource type="PackedScene" uid="uid://bg311u3cjume4" path="res://UI/Run/Top Bar/health_ui.tscn" id="4_n0l4e"]
 
 [node name="StatsUI" type="HBoxContainer" unique_id=1695982680]
 offset_right = 90.0

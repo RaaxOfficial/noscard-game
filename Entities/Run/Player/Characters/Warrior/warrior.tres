@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CharacterStats" format=3 uid="uid://ec65km0arx71"]
+
+[ext_resource type="Texture2D" uid="uid://dr4e0227j8ymn" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_portrait.png" id="1_o6dw5"]
+[ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Run/Player/Characters/character_stats.gd" id="1_s1pb3"]
+[ext_resource type="Resource" uid="uid://ckqscnsae8pwi" path="res://Entities/Run/Player/Characters/Warrior/warrior_draftable_cards.tres" id="2_wgifn"]
+[ext_resource type="Resource" uid="uid://bk7txja3x83th" path="res://Entities/Run/Player/Characters/Warrior/warrior_starting_deck.tres" id="3_yy12i"]
+[ext_resource type="Resource" uid="uid://bo465qjyu2uj2" path="res://Entities/Run/Item Handler/Items/Healing Potion/healing_potion.tres" id="5_4u1vn"]
+
+[resource]
+script = ExtResource("1_s1pb3")
+character_name = "Warrior"
+description = "ToDo: Warrior description."
+portrait = ExtResource("1_o6dw5")
+starting_deck = ExtResource("3_yy12i")
+draftable_cards = ExtResource("2_wgifn")
+cards_per_turn = 5
+max_mana = 3
+starting_item = ExtResource("5_4u1vn")
+max_health = 35
+art = ExtResource("1_o6dw5")
+metadata/_custom_type_script = "uid://ct3m4uqtcbqtc"
