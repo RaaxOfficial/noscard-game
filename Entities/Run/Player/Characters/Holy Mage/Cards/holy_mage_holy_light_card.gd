@@ -4,11 +4,12 @@ const BLIND_STATUS = preload("uid://dh0t1hba5vo5v")
 
 @export var blind_duration := 2
 
-func apply_effects(targets: Array[Node], _modifiers: ModifierHandler, _from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from = modifiers.get_parent()
 	var damage_effect := DamageEffect.new()
-	damage_effect.amount = amount
+	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 	
 	var status_effect := StatusEffect.new()
 	var blind := BLIND_STATUS.duplicate()

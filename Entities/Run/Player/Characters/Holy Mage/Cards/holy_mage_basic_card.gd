@@ -1,11 +1,12 @@
 extends Card
 
 
-func apply_effects(targets: Array[Node], _modifiers: ModifierHandler, _from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from = modifiers.get_parent()
 	var damage_effect := DamageEffect.new()
-	damage_effect.amount = amount
+	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount

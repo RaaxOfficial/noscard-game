@@ -103,9 +103,10 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 	
 	sprite_2d.material = WHITE_SPRITE_MATERIAL
 	var modified_damage := modifier_handler.get_modified_value(damage, which_modifier)
+	
 	var is_critical = from.stats.crit_chance > randf()
 	if is_critical:
-		modified_damage *= 1.5
+		modified_damage *= from.stats.crit_damage
 	
 	var tween := create_tween()
 	tween.tween_callback(ShakeManager.shake.bind(self, 16, 0.15))

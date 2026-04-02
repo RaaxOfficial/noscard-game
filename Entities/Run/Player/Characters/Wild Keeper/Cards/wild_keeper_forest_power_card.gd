@@ -1,18 +1,19 @@
 extends Card
 
 
-func apply_effects(targets: Array[Node], _modifiers: ModifierHandler, _from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from = modifiers.get_parent()
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = amount
 	damage_effect.sound = sound
 	
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 	await Engine.get_main_loop().create_timer(0.25).timeout
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 	await Engine.get_main_loop().create_timer(0.25).timeout
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 	await Engine.get_main_loop().create_timer(0.25).timeout
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 	
 	print("TODO: Apply Cut debuff.")
 

@@ -1,6 +1,8 @@
 class_name CharacterStats
 extends Stats
 
+const BASE_CRIT_DAMAGE: float = 1.5
+
 @export_group("Visuals")
 @export var character_name: String
 @export_multiline var description: String
@@ -16,6 +18,7 @@ extends Stats
 
 var mana: int : set = set_mana
 var crit_chance: float : set = set_crit_chance
+var crit_damage: float : set = set_crit_damage
 var deck: CardPile
 var discard: CardPile
 var draw_pile: CardPile
@@ -35,6 +38,15 @@ func set_crit_chance(value: float) -> void:
 func reset_crit_chance() -> void:
 	crit_chance = base_crit_chance
 
+func set_crit_damage(value: float) -> void:
+	var new_value = value / 100
+	clampf(new_value, 0.0, new_value)
+	crit_damage = BASE_CRIT_DAMAGE + clampf(new_value, 0.0, new_value)
+	stats_changed.emit()
+
+func reset_crit_damage() -> void:
+	crit_damage = BASE_CRIT_DAMAGE
+
 func take_damage(damage: int, _from: Node = null) -> void:
 	var initial_health := health
 	super.take_damage(damage) # Call the take_damage func from the base class Stats
@@ -50,8 +62,8 @@ func create_instance() -> Resource:
 	instance.block = 0
 	instance.reset_mana()
 	instance.reset_crit_chance()
+	instance.reset_crit_damage()
 	instance.deck = instance.starting_deck.duplicate()
 	instance.draw_pile = CardPile.new()
 	instance.discard = CardPile.new()
-	print("Character instance created")
 	return instance
