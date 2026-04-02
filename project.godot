@@ -26,6 +26,7 @@ ShakeManager="*uid://crd0u5mrfcx4i"
 MusicManager="*uid://fjmh2iwxcx7a"
 SFXManager="*uid://s8jp58evyn8h"
 RNG="*uid://chew1s340f20u"
+GlobalManager="*uid://xpsklfekcn3e"
 
 [debug]
 

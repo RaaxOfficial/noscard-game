@@ -11,9 +11,11 @@ extends Stats
 @export var draftable_cards: CardPile
 @export var cards_per_turn: int
 @export var max_mana: int
+@export_range(0.0, 1.0) var base_crit_chance: float
 @export var starting_item: Item
 
 var mana: int : set = set_mana
+var crit_chance: float : set = set_crit_chance
 var deck: CardPile
 var discard: CardPile
 var draw_pile: CardPile
@@ -25,13 +27,18 @@ func set_mana(value: int) -> void:
 func reset_mana() -> void:
 	mana = max_mana
 
-func take_damage(damage: int, from: Node = null) -> void:
+func set_crit_chance(value: float) -> void:
+	crit_chance = clampf(value, 0.0, 1.0)
+	stats_changed.emit()
+
+func reset_crit_chance() -> void:
+	crit_chance = base_crit_chance
+
+func take_damage(damage: int, _from: Node = null) -> void:
 	var initial_health := health
 	super.take_damage(damage) # Call the take_damage func from the base class Stats
 	if initial_health > health:
-		EventManager.player_hurt.emit()
-	
-	EventManager.player_hit.emit(from)
+		EventManager.player_hurt.emit(damage)
 
 func can_play_card(card: Card) -> bool:
 	return mana >= card.cost
@@ -41,6 +48,7 @@ func create_instance() -> Resource:
 	instance.health = max_health
 	instance.block = 0
 	instance.reset_mana()
+	instance.crit_chance = base_crit_chance
 	instance.deck = instance.starting_deck.duplicate()
 	instance.draw_pile = CardPile.new()
 	instance.discard = CardPile.new()

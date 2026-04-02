@@ -7,7 +7,7 @@ func _ready() -> void:
 	EventManager.player_hurt.connect(_on_player_hurt)
 	timer.timeout.connect(_on_timer_timeout)
 
-func _on_player_hurt() -> void:
+func _on_player_hurt(_damage: int) -> void:
 	color_rect.color.a = 0.25
 	timer.start()
 

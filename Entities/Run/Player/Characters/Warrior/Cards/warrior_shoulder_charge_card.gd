@@ -4,10 +4,11 @@ const BLACKOUT_STATUS = preload("uid://y3cuw8vip86y")
 
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from = modifiers.get_parent()
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
-	damage_effect.execute(targets)
+	damage_effect.execute(targets, from)
 	
 	var status_effect := StatusEffect.new()
 	var blackout := BLACKOUT_STATUS.duplicate()

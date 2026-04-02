@@ -97,16 +97,19 @@ func do_turn() -> void:
 	
 	current_action.perform_action()
 
-func take_damage(damage: int, which_modifier: Modifier.Type, _from: Node = null) -> void:
+func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) -> void:
 	if stats.health <= 0:
 		return
 	
 	sprite_2d.material = WHITE_SPRITE_MATERIAL
 	var modified_damage := modifier_handler.get_modified_value(damage, which_modifier)
+	var is_critical = from.stats.crit_chance > randf()
+	if is_critical:
+		modified_damage *= 1.5
 	
 	var tween := create_tween()
 	tween.tween_callback(ShakeManager.shake.bind(self, 16, 0.15))
-	tween.tween_callback(stats.take_damage.bind(modified_damage))
+	tween.tween_callback(stats.take_damage.bind(modified_damage, self, from, is_critical))
 	tween.tween_interval(0.17)
 	
 	tween.finished.connect(func():

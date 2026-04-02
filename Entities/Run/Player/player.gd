@@ -62,6 +62,8 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 			EventManager.player_died.emit()
 			queue_free()
 		)
+	
+	EventManager.player_hit.emit(from, self)
 
 func gain_block(amount: int, which_modifier: Modifier.Type) -> void:
 	var modified_block := modifier_handler.get_modified_value(amount, which_modifier)
@@ -73,11 +75,16 @@ func heal(amount: int) -> void:
 	
 	stats.heal(amount)
 
+func change_crit_chance(value: float) -> void:
+	stats.crit_chance = value
+
 func skip_turn() -> void:
 	print("Player has skipped turn")
 
-func _on_player_hurt() -> void:
+func _on_player_hurt(damage: int) -> void:
 	print("ToDo: anim.play(hurt)")
+	GlobalManager.display_number(damage, global_position, 32)
+
 
 func _on_blink_timer_timeout() -> void:
 	if anim.is_playing():
