@@ -40,6 +40,6 @@ status_owner = NodePath("..")
 type = 1
 
 [node name="CardCostModifier" parent="ModifierHandler" unique_id=2004795329 instance=ExtResource("6_4wf4l")]
-type = 2
+type = 4
 
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]
