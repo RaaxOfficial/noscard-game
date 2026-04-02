@@ -25,18 +25,12 @@ func display_number(value: int, position: Vector2, offset: int, is_critical: boo
 	
 	await number.resized
 	number.pivot_offset = Vector2(number.size / 2)
+	var variance := Vector2(randf_range(-1,1), -randf()) * 16
 	
 	var tween = get_tree().create_tween()
 	tween.set_parallel(true)
-	tween.tween_property(
-		number, "position:y", number.position.y - 32, 0.15
-	).set_ease(Tween.EASE_OUT)
-	tween.tween_property(
-		number, "position:y", number.position.y, 0.25
-	).set_ease(Tween.EASE_IN).set_delay(0.15)
-	tween.tween_property(
-		number, "scale", Vector2.ZERO, 0.25
-	).set_ease(Tween.EASE_IN).set_delay(0.25)
+	tween.tween_property(number, "position", number.global_position + variance, 0.15).set_ease(Tween.EASE_OUT)
+	tween.tween_property(number, "scale", Vector2.ZERO, 0.25).set_ease(Tween.EASE_IN).set_delay(0.25)
 	
 	await tween.finished
 	number.queue_free()
