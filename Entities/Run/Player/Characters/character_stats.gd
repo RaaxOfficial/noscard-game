@@ -20,6 +20,7 @@ var deck: CardPile
 var discard: CardPile
 var draw_pile: CardPile
 
+
 func set_mana(value: int) -> void:
 	mana = value
 	stats_changed.emit()
@@ -48,8 +49,9 @@ func create_instance() -> Resource:
 	instance.health = max_health
 	instance.block = 0
 	instance.reset_mana()
-	instance.crit_chance = base_crit_chance
+	instance.reset_crit_chance()
 	instance.deck = instance.starting_deck.duplicate()
 	instance.draw_pile = CardPile.new()
 	instance.discard = CardPile.new()
+	print("Character instance created")
 	return instance

@@ -21,6 +21,7 @@ func _ready() -> void:
 
 func set_character_stats(value: CharacterStats) -> void:
 	stats = value
+	change_crit_chance(value.base_crit_chance)
 	
 	if not stats.stats_changed.is_connected(update_stats):
 		stats.stats_changed.connect(update_stats)
