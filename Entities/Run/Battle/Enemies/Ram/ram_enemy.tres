@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_daw52"]
 [ext_resource type="PackedScene" uid="uid://8lqyffxr5vb6" path="res://Entities/Run/Battle/Enemies/Ram/ram_enemy_ai.tscn" id="1_kahnq"]
-[ext_resource type="Texture2D" uid="uid://bilol4giyrn71" path="res://UI/Run/Battle/Enemies/Ram/ram_sprite.png" id="2_o2iox"]
+[ext_resource type="Texture2D" uid="uid://bilol4giyrn71" path="res://UI/Run/Battle/Enemies/Ram/ram.png" id="2_o2iox"]
+
 
 [resource]
 script = ExtResource("1_daw52")

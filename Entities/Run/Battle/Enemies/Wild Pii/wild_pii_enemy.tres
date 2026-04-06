@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_jqstw"]
 [ext_resource type="PackedScene" uid="uid://dvfegxplwq4u5" path="res://Entities/Run/Battle/Enemies/Wild Pii/wild_pii_enemy_ai.tscn" id="1_r82nb"]
-[ext_resource type="Texture2D" uid="uid://cco0ghmwvqv7e" path="res://UI/Run/Battle/Enemies/Pii/wild_pii_sprite.png" id="2_d2y0n"]
+[ext_resource type="Texture2D" uid="uid://cco0ghmwvqv7e" path="res://UI/Run/Battle/Enemies/Pii/wild_pii.png" id="2_d2y0n"]
+
 
 [resource]
 script = ExtResource("1_jqstw")

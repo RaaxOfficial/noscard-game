@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://dakk06icfwq5" path="res://Entities/Run/Battle/Enemies/Fox/fox_enemy_ai.tscn" id="1_t0lqw"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_w62q2"]
-[ext_resource type="Texture2D" uid="uid://c3s6fl1fymbs1" path="res://UI/Run/Battle/Enemies/Fox/fox_sprite.png" id="2_wnuyt"]
+[ext_resource type="Texture2D" uid="uid://c3s6fl1fymbs1" path="res://UI/Run/Battle/Enemies/Fox/fox.png" id="2_wnuyt"]
+
 
 [resource]
 script = ExtResource("1_w62q2")
