@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_8xvvc"]
 [ext_resource type="PackedScene" uid="uid://bytk5supskd8b" path="res://Entities/Run/Battle/Enemies/Mandra/mandra_enemy_ai.tscn" id="1_s7rh8"]
-[ext_resource type="Texture2D" uid="uid://bicmgayqnfh3u" path="res://UI/Run/Battle/Enemies/Mandra/mandra_sprite.png" id="2_mjw72"]
+[ext_resource type="Texture2D" uid="uid://bicmgayqnfh3u" path="res://UI/Run/Battle/Enemies/Mandra/mandra.png" id="2_mjw72"]
+
 
 [resource]
 script = ExtResource("1_8xvvc")

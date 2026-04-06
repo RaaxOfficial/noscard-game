@@ -2,7 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://nxvuxj2yhb5w" path="res://Entities/Run/Battle/Enemies/Koaren Sword/koaren_sword_enemy_ai.tscn" id="1_msu6h"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_ntu6i"]
-[ext_resource type="Texture2D" uid="uid://2s4k5t8px8y5" path="res://UI/Run/Battle/Enemies/Koaren Sword/koaren_sword_sprite.png" id="2_fyb47"]
+[ext_resource type="Texture2D" uid="uid://2s4k5t8px8y5" path="res://UI/Run/Battle/Enemies/Koaren sword/koaren_sword.png" id="2_fyb47"]
+
 
 [resource]
 script = ExtResource("1_ntu6i")
