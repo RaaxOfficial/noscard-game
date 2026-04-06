@@ -61,6 +61,8 @@ func create_instance() -> Resource:
 	instance.health = max_health
 	instance.block = 0
 	instance.reset_mana()
+	instance.reset_dodge()
+	instance.reset_accuracy()
 	instance.reset_crit_chance()
 	instance.reset_crit_damage()
 	instance.deck = instance.starting_deck.duplicate()

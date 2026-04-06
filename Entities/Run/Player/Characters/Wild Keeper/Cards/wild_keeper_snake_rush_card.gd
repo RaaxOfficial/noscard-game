@@ -8,7 +8,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	damage_effect.sound = sound
 	
 	damage_effect.execute(targets, from)
-	await Engine.get_main_loop().create_timer(0.25).timeout
+	await Engine.get_main_loop().create_timer(0.2).timeout
 	damage_effect.execute(targets, from)
 	
 	print("TODO: Apply Blackout debuff with 25% chance.")

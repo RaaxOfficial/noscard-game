@@ -52,6 +52,11 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 	if stats.health <= 0:
 		return
 	
+	var source = from as Enemy
+	var is_hit = source.stats.accuracy - stats.dodge > randf()
+	if not is_hit:
+		return
+	
 	var modified_damage := modifier_handler.get_modified_value(damage, which_modifier)
 	
 	var tween := create_tween()
