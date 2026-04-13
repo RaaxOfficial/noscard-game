@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CustomStatus" format=3 uid="uid://bhsimd4s0l481"]
+
+[ext_resource type="Texture2D" uid="uid://cotwxmqktoxnj" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_wolf_spirit_icon_x64.png" id="1_lggq5"]
+[ext_resource type="Script" uid="uid://dbgforkm3tdto" path="res://Entities/Run/Battle/StatusHandler/Status/Wolf Spirit/wolf_spirit.gd" id="2_n4vic"]
+
+[resource]
+script = ExtResource("2_n4vic")
+id = "Wolf Spirit"
+stack_type = 2
+can_expire = true
+icon = ExtResource("1_lggq5")
+tooltip = "[center]Increase your damage by %s.[/center]"
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

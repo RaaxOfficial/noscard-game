@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://bkc0cxcafh2ee"]
+
+[ext_resource type="Texture2D" uid="uid://cotwxmqktoxnj" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_wolf_spirit_icon_x64.png" id="1_1nh4h"]
+[ext_resource type="Script" uid="uid://b6443mwr7vk34" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_wolf_spirit_card.gd" id="2_v5p8v"]
+
+[resource]
+script = ExtResource("2_v5p8v")
+id = "Wolf Spirit"
+type = 2
+rarity = 2
+cost = 2
+icon = ExtResource("1_1nh4h")
+tooltip_text = "[center]Apply [color=\"d3aa17\"]Wolf Spirit[/color] to yourself.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"
