@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("2_o2iuw")
-id = "wild_keeper_forest_power_card"
+id = "Forest Power"
 rarity = 2
 target = 2
 amount = 3

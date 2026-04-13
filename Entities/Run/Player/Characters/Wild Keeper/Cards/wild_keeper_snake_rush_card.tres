@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_kk756")
-id = "wild_keeper_snake_rush_card"
+id = "Snake Rush"
 target = 2
 amount = 3
 cost = 2

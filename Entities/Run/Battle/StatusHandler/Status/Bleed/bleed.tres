@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BleedStatus" format=3 uid="uid://grt8ldamp306"]
+
+[ext_resource type="Texture2D" uid="uid://b3kyl4e6suagx" path="res://UI/Run/Battle/Status/Sprites/bleed_icon_x64.png" id="1_11gjg"]
+[ext_resource type="Script" uid="uid://d34cug33tfkwv" path="res://Entities/Run/Battle/StatusHandler/Status/Bleed/bleed.gd" id="1_88a1a"]
+
+[resource]
+script = ExtResource("1_88a1a")
+id = "Bleed"
+stack_type = 1
+icon = ExtResource("1_11gjg")
+tooltip = "[center]Take [color=\"ff0000\"]%s[/color] damage at the start of your turn.[/center]"
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

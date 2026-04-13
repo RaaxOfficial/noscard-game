@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_3qrdx")
-id = "wild_keeper_ivy_card"
+id = "Ivy"
 rarity = 1
 target = 2
 amount = 9

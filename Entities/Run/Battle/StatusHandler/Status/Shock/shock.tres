@@ -1,15 +1,13 @@
-[gd_resource type="Resource" script_class="Status" format=3 uid="uid://kjch13ysqafu"]
+[gd_resource type="Resource" script_class="ShockStatus" format=3 uid="uid://c0tu7ov0lgrpk"]
 
-[ext_resource type="Script" uid="uid://dx0is2tc5dfi6" path="res://Entities/Run/Battle/StatusHandler/Status/status.gd" id="1_77kdo"]
-[ext_resource type="Texture2D" uid="uid://dr3mk1tj3fj0" path="res://UI/Run/Battle/Status/Sprites/shock_icon_x64.png" id="1_o4tc8"]
+[ext_resource type="Texture2D" uid="uid://dr3mk1tj3fj0" path="res://UI/Run/Battle/Status/Sprites/shock_icon_x64.png" id="1_143g4"]
+[ext_resource type="Script" uid="uid://c5t575r26mxur" path="res://Entities/Run/Battle/StatusHandler/Status/Shock/shock.gd" id="1_pia28"]
 
 [resource]
-script = ExtResource("1_77kdo")
-id = "shock"
-type = 2
+script = ExtResource("1_pia28")
+id = "Shock"
 stack_type = 2
 can_expire = true
-duration = 1
-icon = ExtResource("1_o4tc8")
-tooltip = "50% chance to skip action."
+icon = ExtResource("1_143g4")
+tooltip = "[center]There's a 50% chance of skipping turn.[/center]"
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"
