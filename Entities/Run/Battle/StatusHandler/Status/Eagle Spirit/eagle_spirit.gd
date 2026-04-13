@@ -1,19 +1,28 @@
 class_name EagleSpiritStatus
 extends Status
 
-@export var amount: float
+@export var crit_chance: float
+@export var crit_damage: float
+
+
+var player: Player
 
 func initialize_status(target: Node) -> void:
-	var crit_damage_effect := CritDamageEffect.new()
-	crit_damage_effect.amount = amount
-	crit_damage_effect.execute([target])
+	if not target:
+		return
+	
+	player = target as Player
+	player.update_crit_chance(crit_chance)
+	player.update_crit_damage(crit_damage)
 
 func apply_status(target: Node) -> void:
-	var crit_damage_effect := CritDamageEffect.new()
-	crit_damage_effect.amount = amount
-	crit_damage_effect.execute([target])
+	if not target:
+		return
+	
+	player.update_crit_chance(crit_chance)
+	player.update_crit_damage(crit_damage)
 	
 	status_applied.emit(self)
 
 func get_tooltip() -> String:
-	return tooltip % int(amount)
+	return tooltip % [int(crit_damage), int(crit_chance)]

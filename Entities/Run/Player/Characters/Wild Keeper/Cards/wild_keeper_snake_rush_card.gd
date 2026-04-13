@@ -1,5 +1,8 @@
 extends Card
 
+const BLACKOUT = preload("uid://y3cuw8vip86y")
+
+@export var blackout_chance: float = 0.25
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var from = modifiers.get_parent()
@@ -11,7 +14,12 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	await Engine.get_main_loop().create_timer(0.2).timeout
 	damage_effect.execute(targets, from)
 	
-	print("TODO: Apply Blackout debuff with 25% chance.")
+	var is_blackout := blackout_chance > randf()
+	if is_blackout:
+		var status_effect := StatusEffect.new()
+		var blackout := BLACKOUT.duplicate()
+		status_effect.status = blackout
+		status_effect.execute(targets)
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount

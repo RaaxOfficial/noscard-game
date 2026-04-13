@@ -5,10 +5,11 @@
 
 [resource]
 script = ExtResource("1_fgbil")
-amount = 20.0
+crit_chance = 5.0
+crit_damage = 20.0
 id = "Eagle Spirit"
 stack_type = 2
 can_expire = true
 icon = ExtResource("1_s6ruy")
-tooltip = "Increase your crit damage by %s%%."
+tooltip = "Increase your crit damage by %s%% and your crit chance by %s%%."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

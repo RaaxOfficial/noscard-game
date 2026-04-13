@@ -8,5 +8,5 @@ func execute(targets: Array[Node], _from: Node = null) -> void:
 		if not target:
 			continue
 		if target is Enemy or target is Player:
-			target.update_crit_channce(amount)
+			target.update_crit_chance(amount)
 			SFXManager.play(sound)
