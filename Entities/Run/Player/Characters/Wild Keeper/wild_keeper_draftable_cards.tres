@@ -7,9 +7,10 @@
 [ext_resource type="Resource" uid="uid://4olsvcwpt1hx" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_ivy_card.tres" id="3_0h0wq"]
 [ext_resource type="Resource" uid="uid://bvmpy826aefsm" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_snake_rush_card.tres" id="3_jmeu4"]
 [ext_resource type="Resource" uid="uid://bkpyp4p547xdv" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_eagle_spirit_card.tres" id="3_xl8rt"]
-[ext_resource type="Resource" uid="uid://gtbh37in2l6h" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_forest_power_card.tres" id="4_2gh8u"]
+[ext_resource type="Resource" uid="uid://bkuul7g3xl5rl" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_forest_power_card.tres" id="4_2gh8u"]
+[ext_resource type="Resource" uid="uid://bq7r62kjm3fia" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_boomerang_throw_card.tres" id="6_4ujip"]
 
 [resource]
 script = ExtResource("2_ajlgb")
-cards = Array[ExtResource("1_js2o0")]([ExtResource("2_xl8rt"), ExtResource("2_xl8rt"), ExtResource("2_8260c"), ExtResource("2_8260c"), ExtResource("3_xl8rt"), ExtResource("3_xl8rt"), ExtResource("3_jmeu4"), ExtResource("3_jmeu4"), ExtResource("3_jmeu4"), ExtResource("3_0h0wq"), ExtResource("3_0h0wq"), ExtResource("3_0h0wq"), ExtResource("4_2gh8u"), ExtResource("4_2gh8u"), ExtResource("4_2gh8u")])
+cards = Array[ExtResource("1_js2o0")]([ExtResource("2_xl8rt"), ExtResource("2_xl8rt"), ExtResource("3_jmeu4"), ExtResource("3_jmeu4"), ExtResource("2_8260c"), ExtResource("2_8260c"), ExtResource("3_xl8rt"), ExtResource("3_xl8rt"), ExtResource("6_4ujip"), ExtResource("6_4ujip"), ExtResource("3_0h0wq"), ExtResource("3_0h0wq"), ExtResource("4_2gh8u"), ExtResource("4_2gh8u")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

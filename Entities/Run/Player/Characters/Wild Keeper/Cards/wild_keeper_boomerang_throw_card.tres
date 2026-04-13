@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://bq7r62kjm3fia"]
+
+[ext_resource type="Texture2D" uid="uid://d2n5iqg2ca7j" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_boomerang_throw_icon_x64.png" id="1_eu8u1"]
+[ext_resource type="Script" uid="uid://b23x6phrcgmbl" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_boomerang_throw_card.gd" id="2_eerhh"]
+
+[resource]
+script = ExtResource("2_eerhh")
+id = "Boomerang Throw"
+rarity = 1
+target = 2
+amount = 2
+cost = 2
+icon = ExtResource("1_eu8u1")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 4 times to all enemies.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

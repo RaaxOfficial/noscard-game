@@ -9,6 +9,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
+	
 	damage_effect.execute(targets, source)
 	await Engine.get_main_loop().create_timer(0.2).timeout
 	damage_effect.execute(targets, source)
