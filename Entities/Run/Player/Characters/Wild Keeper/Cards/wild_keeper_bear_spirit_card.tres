@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://cgsejoasllght"]
+
+[ext_resource type="Texture2D" uid="uid://crfd324am87xs" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_bear_spirit_icon_x64.png" id="1_yjgcg"]
+[ext_resource type="Script" uid="uid://bshvbh7xk7wy6" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_bear_spirit_card.gd" id="2_6unsy"]
+
+[resource]
+script = ExtResource("2_6unsy")
+id = "Bear Spirit"
+type = 2
+amount = 2
+cost = 2
+icon = ExtResource("1_yjgcg")
+tooltip_text = "[center]Apply [color=\"d3aa17\"]Bear Spirit[/color] to yourself.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

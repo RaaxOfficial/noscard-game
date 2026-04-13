@@ -42,4 +42,7 @@ type = 1
 [node name="CardCostModifier" parent="ModifierHandler" unique_id=2004795329 instance=ExtResource("6_4wf4l")]
 type = 4
 
+[node name="BlockGainModifier" parent="ModifierHandler" unique_id=1331483379 instance=ExtResource("6_4wf4l")]
+type = 2
+
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]

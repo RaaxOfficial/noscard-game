@@ -1,4 +1,4 @@
-class_name CustomStatus
+class_name WolfSpiritStatus
 extends Status
 
 @export var amount := 2
@@ -26,7 +26,7 @@ func _on_status_changed(target: Node) -> void:
 	damage_dealt_modifier.add_new_value(attack_modifier_value)
 
 func _on_status_applied(status: Status, target: Node) -> void:
-	if not status.id == "Wolf Spirit" and status.duration <= 0:
+	if not status.duration <= 0:
 		return
 	
 	assert(target.get("modifier_handler"), "No modifiers on %s" % target)

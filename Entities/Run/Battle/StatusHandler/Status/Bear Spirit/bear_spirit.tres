@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BearSpiritStatus" format=3 uid="uid://dbd50s4bgq2f7"]
+
+[ext_resource type="Texture2D" uid="uid://crfd324am87xs" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_bear_spirit_icon_x64.png" id="1_hp0h6"]
+[ext_resource type="Script" uid="uid://bvtgfl802x4xj" path="res://Entities/Run/Battle/StatusHandler/Status/Bear Spirit/bear_spirit.gd" id="2_ffbjm"]
+
+[resource]
+script = ExtResource("2_ffbjm")
+id = "Bear Spirit"
+stack_type = 2
+can_expire = true
+icon = ExtResource("1_hp0h6")
+tooltip = "[center]Gain %s%% more block.[/center]"
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

@@ -7,7 +7,6 @@ func activate_item(owner: ItemUI) -> void:
 	var player := owner.get_tree().get_nodes_in_group("player")
 	var block_effect = BlockEffect.new()
 	block_effect.amount = block_amount
-	block_effect.receiver_modifier_type = Modifier.Type.NO_MODIFIER
 	block_effect.execute(player)
 	
 	owner.flash()
