@@ -32,7 +32,9 @@ func reset_mana() -> void:
 	mana = max_mana
 
 func set_crit_chance(value: float) -> void:
-	crit_chance = clampf(value, 0.0, 1.0)
+	var new_value = value / 100
+	clampf(new_value, 0.0, new_value)
+	crit_chance = new_value
 	stats_changed.emit()
 
 func reset_crit_chance() -> void:
@@ -40,7 +42,6 @@ func reset_crit_chance() -> void:
 
 func set_crit_damage(value: float) -> void:
 	var new_value = value / 100
-	clampf(new_value, 0.0, new_value)
 	crit_damage = BASE_CRIT_DAMAGE + clampf(new_value, 0.0, new_value)
 	stats_changed.emit()
 

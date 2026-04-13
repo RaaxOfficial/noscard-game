@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://cav0ls244bb4x"]
+
+[ext_resource type="Texture2D" uid="uid://dgmonqeosqaox" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_defend_icon_x64.png" id="1_8oj3c"]
+[ext_resource type="Script" uid="uid://dbexufnbaivub" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_defend_card.gd" id="1_ui556"]
+
+[resource]
+script = ExtResource("1_ui556")
+id = "Defend"
+type = 1
+amount = 5
+cost = 1
+icon = ExtResource("1_8oj3c")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

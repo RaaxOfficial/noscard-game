@@ -102,16 +102,19 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 		return
 	
 	var source = from as Player
-	var is_hit = source.stats.accuracy - stats.dodge > randf()
-	if not is_hit:
-		return
+	if source:
+		var is_hit = source.stats.accuracy - stats.dodge > randf()
+		if not is_hit:
+			return
 	
 	sprite_2d.material = WHITE_SPRITE_MATERIAL
 	var modified_damage := modifier_handler.get_modified_value(damage, which_modifier)
 	
-	var is_critical = from.stats.crit_chance > randf()
-	if is_critical:
-		modified_damage *= from.stats.crit_damage
+	var is_critical = false
+	if from as Player:
+		is_critical = from.stats.crit_chance > randf()
+		if is_critical:
+			modified_damage *= from.stats.crit_damage
 	
 	var tween := create_tween()
 	tween.tween_callback(ShakeManager.shake.bind(self, 16, 0.15))

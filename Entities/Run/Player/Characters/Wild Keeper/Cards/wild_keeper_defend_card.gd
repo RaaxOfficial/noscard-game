@@ -1,9 +1,5 @@
 extends Card
 
-const ELEMENTAL_SHINING = preload("uid://blfu67ggrkw1w")
-
-@export var duration = 1
-
 var modified_block := 0
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
@@ -12,12 +8,6 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	block_effect.amount = modified_block
 	block_effect.sound = sound
 	block_effect.execute(targets)
-	
-	var status_effect := StatusEffect.new()
-	var elemental_shining := ELEMENTAL_SHINING.duplicate()
-	elemental_shining.duration = duration
-	status_effect.status = elemental_shining
-	status_effect.execute(targets)
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount

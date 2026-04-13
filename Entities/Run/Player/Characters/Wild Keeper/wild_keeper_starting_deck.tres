@@ -3,10 +3,9 @@
 [ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Run/Card/card.gd" id="1_u7ouk"]
 [ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Run/Card/Card Pile/card_pile.gd" id="2_33418"]
 [ext_resource type="Resource" uid="uid://bstia0ddn1dpj" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_basic_card.tres" id="2_m8222"]
-[ext_resource type="Resource" uid="uid://bukubovol21nw" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_elemental_shining_card.tres" id="3_7kqv0"]
-[ext_resource type="Resource" uid="uid://bkpyp4p547xdv" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_eagle_spirit_card.tres" id="3_cwo6k"]
+[ext_resource type="Resource" uid="uid://cav0ls244bb4x" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_defend_card.tres" id="3_wemj3"]
 
 [resource]
 script = ExtResource("2_33418")
-cards = Array[ExtResource("1_u7ouk")]([ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("3_cwo6k"), ExtResource("3_cwo6k"), ExtResource("3_7kqv0"), ExtResource("3_7kqv0"), ExtResource("3_7kqv0")])
+cards = Array[ExtResource("1_u7ouk")]([ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("2_m8222"), ExtResource("3_wemj3"), ExtResource("3_wemj3"), ExtResource("3_wemj3"), ExtResource("3_wemj3"), ExtResource("3_wemj3")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

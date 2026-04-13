@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ElementalShiningStatus" format=3 uid="uid://blfu67ggrkw1w"]
+
+[ext_resource type="Script" uid="uid://chdn0pcwlwe51" path="res://Entities/Run/Battle/StatusHandler/Status/Elemental Shining/elemental_shining.gd" id="1_b2stc"]
+[ext_resource type="Texture2D" uid="uid://my7t76a0sep2" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_elemental_shining_icon_x64.png" id="1_qj3h0"]
+
+[resource]
+script = ExtResource("1_b2stc")
+amount = 0.2
+id = "Elemental Shining"
+stack_type = 2
+can_expire = true
+icon = ExtResource("1_qj3h0")
+tooltip = "[center] Gain %s%% dodge chance.[/center]"
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

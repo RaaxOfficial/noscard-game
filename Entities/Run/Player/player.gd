@@ -21,8 +21,11 @@ func _ready() -> void:
 
 func set_character_stats(value: CharacterStats) -> void:
 	stats = value
-	change_crit_chance(value.base_crit_chance)
-	change_crit_damage(value.BASE_CRIT_DAMAGE)
+	
+	stats.reset_dodge()
+	stats.reset_accuracy()
+	update_crit_channce(value.base_crit_chance)
+	update_crit_damage(value.BASE_CRIT_DAMAGE)
 	
 	if not stats.stats_changed.is_connected(update_stats):
 		stats.stats_changed.connect(update_stats)
@@ -82,10 +85,10 @@ func heal(amount: int) -> void:
 	
 	stats.heal(amount)
 
-func change_crit_chance(value: float) -> void:
+func update_crit_channce(value: float) -> void:
 	stats.crit_chance = value
 
-func change_crit_damage(value: float) -> void:
+func update_crit_damage(value: float) -> void:
 	stats.crit_damage = value
 
 func skip_turn() -> void:

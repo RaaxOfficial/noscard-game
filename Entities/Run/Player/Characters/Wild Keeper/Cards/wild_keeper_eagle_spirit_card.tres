@@ -5,11 +5,11 @@
 
 [resource]
 script = ExtResource("2_jxsy4")
-duration = 3
+duration = 2
 id = "Eagle Spirit"
 type = 2
 rarity = 1
 cost = 2
 icon = ExtResource("1_cg41c")
-tooltip_text = "[center]Apply  [color=\"d3aa17\"] Eagle Spirit[/color] to yourself.[/center]"
+tooltip_text = "[center]Apply  [color=\"d3aa17\"]Eagle Spirit[/color] to yourself.[/center]"
 metadata/_custom_type_script = "uid://yhnspsq248rn"

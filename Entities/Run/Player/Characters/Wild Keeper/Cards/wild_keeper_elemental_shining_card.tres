@@ -6,11 +6,13 @@
 
 [resource]
 script = ExtResource("2_v5kcx")
-id = "wild_keeper_elemental_shining_card"
+duration = 2
+id = "Elemental Shining"
 type = 1
-amount = 5
+rarity = 1
+amount = 4
 cost = 1
 icon = ExtResource("1_kgscf")
-tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block. Apply [color=\"d3aa17\"]Elemental Shining[/color] to yourself.[/center]"
 sound = ExtResource("3_ik4r7")
 metadata/_custom_type_script = "uid://yhnspsq248rn"
