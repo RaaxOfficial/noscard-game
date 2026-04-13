@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://bynxrdjh64juj"]
+
+[ext_resource type="Texture2D" uid="uid://ds03hd4imxhc4" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_elemental_leech_icon_x64.png" id="1_nowdn"]
+[ext_resource type="Script" uid="uid://wvtwq26wq57k" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_elemental_leech_card.gd" id="2_66yad"]
+
+[resource]
+script = ExtResource("2_66yad")
+id = "Elemental Leech"
+type = 2
+rarity = 2
+target = 2
+amount = 2
+cost = 1
+icon = ExtResource("1_nowdn")
+tooltip_text = "[center]Apply [color=\"d3aa17\"]Elemental Leech[/color] to all enemies. Increase the duration of all debuffs by 1. [color=\"8e2818\"]Exhaust[/color].[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

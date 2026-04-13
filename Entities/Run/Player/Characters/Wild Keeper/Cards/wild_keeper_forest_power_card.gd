@@ -18,11 +18,13 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, from: Node 
 	await Engine.get_main_loop().create_timer(0.2).timeout
 	damage_effect.execute(targets, from)
 	
-	var status_effect := StatusEffect.new()
-	var weaken_def_power := WEAKEN_DEFENSE_POWER.duplicate()
-	weaken_def_power.duration = duration
-	status_effect.status = weaken_def_power
-	status_effect.execute(targets)
+	@warning_ignore("shadowed_variable_base_class")
+	for target in targets:
+		var status_effect := StatusEffect.new()
+		var weaken_def_power := WEAKEN_DEFENSE_POWER.duplicate()
+		weaken_def_power.duration = duration
+		status_effect.status = weaken_def_power
+		status_effect.execute([target])
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount

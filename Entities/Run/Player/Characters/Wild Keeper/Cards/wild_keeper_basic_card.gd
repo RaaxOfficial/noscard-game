@@ -1,5 +1,6 @@
 extends Card
 
+const BLEED = preload("uid://grt8ldamp306")
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var source = modifiers.get_parent()
@@ -7,6 +8,12 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
 	damage_effect.execute(targets, source)
+	
+	var status_effect := StatusEffect.new()
+	var bleed := BLEED.duplicate()
+	bleed.stacks = 1
+	status_effect.status = bleed
+	status_effect.execute(targets)
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount
