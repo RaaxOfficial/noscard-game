@@ -6,10 +6,10 @@ const WEAKEN_DEFENSE_POWER = preload("uid://bps5o6dkp3oyh")
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var from = modifiers.get_parent()
-	var damage_effect := DamageEffect.new()
-	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
-	damage_effect.sound = sound
-	damage_effect.execute(targets, from)
+	var piercing_effect := PiercingEffect.new()
+	piercing_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
+	piercing_effect.sound = sound
+	piercing_effect.execute(targets, from)
 	
 	var status_effect := StatusEffect.new()
 	var weaken_def_power := WEAKEN_DEFENSE_POWER.duplicate()

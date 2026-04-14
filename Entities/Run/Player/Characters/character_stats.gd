@@ -48,9 +48,12 @@ func set_crit_damage(value: float) -> void:
 func reset_crit_damage() -> void:
 	crit_damage = BASE_CRIT_DAMAGE
 
-func take_damage(damage: int, _from: Node = null) -> void:
+func take_damage(damage: int, _from: Node = null, is_piercing: bool = false) -> void:
 	var initial_health := health
-	super.take_damage(damage) # Call the take_damage func from the base class Stats
+	if not is_piercing:
+		super.take_damage(damage)
+	else:
+		super.take_piercing_damage(damage)
 	if initial_health > health:
 		EventManager.player_hurt.emit(damage)
 

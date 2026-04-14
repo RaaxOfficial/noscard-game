@@ -51,7 +51,7 @@ func update_player() -> void:
 func update_stats() -> void:
 	stats_ui.update_stats(stats)
 
-func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) -> void:
+func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null, is_piercing: bool = false) -> void:
 	if stats.health <= 0:
 		return
 	
@@ -64,7 +64,7 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 	
 	var tween := create_tween()
 	tween.tween_callback(ShakeManager.shake.bind(self, 16, 0.15))
-	tween.tween_callback(stats.take_damage.bind(modified_damage, from))
+	tween.tween_callback(stats.take_damage.bind(modified_damage, from, is_piercing))
 	tween.tween_interval(0.17)
 	
 	tween.finished.connect(func():
@@ -72,7 +72,6 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null) 
 			EventManager.player_died.emit()
 			queue_free()
 		)
-	
 	EventManager.player_hit.emit(from, self)
 
 func gain_block(amount: int) -> void:
