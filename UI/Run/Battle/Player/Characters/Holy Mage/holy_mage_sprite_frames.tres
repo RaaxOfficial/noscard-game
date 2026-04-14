@@ -1,37 +1,47 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://cquesy7j5vstq"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_myd0w"]
+[ext_resource type="Texture2D" uid="uid://cnp186xhaouj4" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_blinking.png" id="1_emsm1"]
+[ext_resource type="Texture2D" uid="uid://b5hev7jjytupv" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_breathing.png" id="1_tbtx6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bl2pc"]
+atlas = ExtResource("1_emsm1")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fcgqy"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_35lfb"]
+atlas = ExtResource("1_emsm1")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_alsx6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjwuk"]
+atlas = ExtResource("1_emsm1")
 region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_laeh5"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_emsm1"]
+atlas = ExtResource("1_tbtx6")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7q5f"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_xe7yq"]
+atlas = ExtResource("1_tbtx6")
 region = Rect2(64, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r5pje"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5sgi"]
+atlas = ExtResource("1_tbtx6")
 region = Rect2(128, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_akiqh"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_dyqja"]
+atlas = ExtResource("1_tbtx6")
 region = Rect2(192, 0, 64, 64)
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_myd0w")
+"texture": SubResource("AtlasTexture_bl2pc")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_fcgqy")
+"texture": SubResource("AtlasTexture_35lfb")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_alsx6")
+"texture": SubResource("AtlasTexture_xjwuk")
 }],
 "loop": false,
 "name": &"blinking",
@@ -39,16 +49,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_laeh5")
+"texture": SubResource("AtlasTexture_emsm1")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_s7q5f")
+"texture": SubResource("AtlasTexture_xe7yq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_r5pje")
+"texture": SubResource("AtlasTexture_y5sgi")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_akiqh")
+"texture": SubResource("AtlasTexture_dyqja")
 }],
 "loop": true,
 "name": &"breathing",
