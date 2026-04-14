@@ -5,8 +5,7 @@
 
 [resource]
 script = ExtResource("2_c3tmg")
-override_duration = 3
-id = "warrior_rising_dragon_card"
+id = "Rising Dragon"
 rarity = 2
 target = 1
 amount = 12

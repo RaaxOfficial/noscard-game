@@ -1,13 +1,19 @@
 [gd_resource type="Resource" script_class="CardPile" format=3 uid="uid://ckqscnsae8pwi"]
 
 [ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Run/Card/card.gd" id="1_ads5s"]
+[ext_resource type="Resource" uid="uid://ckmdav0jbncd2" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_provoke_card.tres" id="2_4kshi"]
 [ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Run/Card/Card Pile/card_pile.gd" id="2_fcyjj"]
 [ext_resource type="Resource" uid="uid://ut60oqajtmqd" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_whirlwind_card.tres" id="2_mw2xb"]
+[ext_resource type="Resource" uid="uid://b4g53fo4ifukg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_triple_slash_card.tres" id="2_w3yje"]
 [ext_resource type="Resource" uid="uid://b841ww6xm3lob" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_shoulder_charge_card.tres" id="3_01wkr"]
+[ext_resource type="Resource" uid="uid://dgq1wajamorff" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_iron_skin_card.tres" id="3_gk0er"]
 [ext_resource type="Resource" uid="uid://7bo2sukiex2s" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_intimidate_card.tres" id="4_11m5d"]
 [ext_resource type="Resource" uid="uid://c0jhsmpvdiuik" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_rising_dragon_card.tres" id="5_ypb8s"]
+[ext_resource type="Resource" uid="uid://brdlub2i2nup4" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_finishing_blow_card.tres" id="6_8qu5i"]
+[ext_resource type="Resource" uid="uid://dprkxjul3a0su" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_fury_card.tres" id="9_8qu5i"]
+[ext_resource type="Resource" uid="uid://dx4a028ifn2yk" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_earth_shock_card.tres" id="9_gk0er"]
 
 [resource]
 script = ExtResource("2_fcyjj")
-cards = Array[ExtResource("1_ads5s")]([ExtResource("2_mw2xb"), ExtResource("2_mw2xb"), ExtResource("2_mw2xb"), ExtResource("3_01wkr"), ExtResource("3_01wkr"), ExtResource("3_01wkr"), ExtResource("4_11m5d"), ExtResource("5_ypb8s"), ExtResource("5_ypb8s")])
+cards = Array[ExtResource("1_ads5s")]([ExtResource("2_w3yje"), ExtResource("2_w3yje"), ExtResource("3_gk0er"), ExtResource("3_gk0er"), ExtResource("2_mw2xb"), ExtResource("2_mw2xb"), ExtResource("2_4kshi"), ExtResource("2_4kshi"), ExtResource("6_8qu5i"), ExtResource("6_8qu5i"), ExtResource("4_11m5d"), ExtResource("4_11m5d"), ExtResource("3_01wkr"), ExtResource("3_01wkr"), ExtResource("9_8qu5i"), ExtResource("9_8qu5i"), ExtResource("9_gk0er"), ExtResource("9_gk0er"), ExtResource("5_ypb8s"), ExtResource("5_ypb8s")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

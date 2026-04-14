@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3 uid="uid://ckmdav0jbncd2"]
+
+[ext_resource type="Resource" uid="uid://cs6g51d7oplgg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_basic_card.tres" id="1_44hg0"]
+[ext_resource type="Texture2D" uid="uid://dqg2yvq5nk18d" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_provoke_icon_x64.png" id="1_omjqg"]
+[ext_resource type="Script" uid="uid://c7s8ss66xgcjb" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_provoke_card.gd" id="2_44hg0"]
+
+[resource]
+script = ExtResource("2_44hg0")
+counter_card = ExtResource("1_44hg0")
+id = "Provoke"
+type = 1
+rarity = 1
+target = 2
+amount = 4
+cost = 3
+icon = ExtResource("1_omjqg")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block and apply [color=\"d3aa17\"] Counter[/color] to yourself for each enemy on the field.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Run/Card/card.gd" id="2_lqqnu"]
 [ext_resource type="Resource" uid="uid://bvmpy826aefsm" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_snake_rush_card.tres" id="3_p3fln"]
 [ext_resource type="Resource" uid="uid://4olsvcwpt1hx" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_ivy_card.tres" id="4_6n3ab"]
-[ext_resource type="Resource" uid="uid://gtbh37in2l6h" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_forest_power_card.tres" id="5_wmuch"]
+[ext_resource type="Resource" uid="uid://bkuul7g3xl5rl" path="res://Entities/Run/Player/Characters/Wild Keeper/Cards/wild_keeper_forest_power_card.tres" id="5_wmuch"]
 
 [node name="CardRewards" type="ColorRect" unique_id=120003861]
 anchors_preset = 15

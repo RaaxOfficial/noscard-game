@@ -6,7 +6,6 @@
 
 [resource]
 script = ExtResource("2_2f8b8")
-blackout_duration = 2
 id = "warrior_shoulder_charge_card"
 rarity = 1
 target = 1

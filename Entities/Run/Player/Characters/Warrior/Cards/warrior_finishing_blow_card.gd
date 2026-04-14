@@ -2,7 +2,7 @@ extends Card
 
 const WEAKEN_DEFENSE_POWER = preload("uid://bps5o6dkp3oyh")
 
-@export var duration := 2
+@export var duration := 1
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var from = modifiers.get_parent()
@@ -16,10 +16,9 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	weaken_def_power.duration = duration
 	status_effect.status = weaken_def_power
 	status_effect.execute(targets)
-	
 
 func get_default_tooltip() -> String:
-	return tooltip_text % amount
+	return tooltip_text % [amount, duration]
 
 func get_updated_tooltip(player_modifiers: ModifierHandler, enemy_modifiers: ModifierHandler) -> String:
 	var modified_damage := player_modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
@@ -27,4 +26,4 @@ func get_updated_tooltip(player_modifiers: ModifierHandler, enemy_modifiers: Mod
 	if enemy_modifiers:
 		modified_damage = enemy_modifiers.get_modified_value(modified_damage, Modifier.Type.DAMAGE_TAKEN)
 	
-	return tooltip_text % modified_damage
+	return tooltip_text % [modified_damage, duration]

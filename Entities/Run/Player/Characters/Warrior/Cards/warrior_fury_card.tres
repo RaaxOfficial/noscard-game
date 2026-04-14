@@ -5,10 +5,9 @@
 
 [resource]
 script = ExtResource("2_drhpa")
-id = "warrior_fury_card"
+id = "Fury"
 type = 2
 rarity = 2
-amount = 2
 cost = 2
 icon = ExtResource("1_jffwk")
 tooltip_text = "[center]Apply  [color=\"d3aa17\"] Fury[/color] to yourself. [color=\"8e2818\"]Exhaust[/color].[/center]"

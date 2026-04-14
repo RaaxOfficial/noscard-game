@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://dx4a028ifn2yk"]
+
+[ext_resource type="Texture2D" uid="uid://cmbueqbe8hpah" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_earth_shock_icon_x64.png" id="1_hah3e"]
+[ext_resource type="Script" uid="uid://biwx72nh4ta6m" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_earth_shock_card.gd" id="2_8x1d4"]
+
+[resource]
+script = ExtResource("2_8x1d4")
+id = "Earth Shock"
+rarity = 2
+target = 2
+amount = 5
+cost = 2
+icon = ExtResource("1_hah3e")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 2 times to all enemies. Apply [color=\"d3aa17\"]Shock[/color] for %s turn.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"
