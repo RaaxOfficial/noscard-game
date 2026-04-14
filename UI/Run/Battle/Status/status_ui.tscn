@@ -2,14 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://cltd7vwvruan8" path="res://UI/Run/Battle/Status/Sprites/counter_icon_x64.png" id="1_komeg"]
 [ext_resource type="Script" uid="uid://d2i6ljqw2s52i" path="res://UI/Run/Battle/Status/status_ui.gd" id="1_lx1rq"]
-[ext_resource type="Resource" uid="uid://bew6xrjxi55hq" path="res://Entities/Run/Battle/StatusHandler/Status/Weaken Attack Power/weaken_attack_power.tres" id="2_0jsg0"]
 
 [node name="StatusUI" type="Control" unique_id=1330886063]
 layout_mode = 3
 anchors_preset = 0
 mouse_filter = 1
 script = ExtResource("1_lx1rq")
-status = ExtResource("2_0jsg0")
 
 [node name="Icon" type="TextureRect" parent="." unique_id=137133655]
 layout_mode = 0
