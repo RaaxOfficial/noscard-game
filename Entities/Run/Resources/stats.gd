@@ -23,11 +23,9 @@ func set_block(value: int) -> void:
 
 func set_dodge(value: float) -> void:
 	dodge = clampf(value, 0.0, 1.0)
-	stats_changed.emit()
 
 func set_accuracy(value: float) -> void:
 	accuracy = clampf(value, 0.0, 1.0)
-	stats_changed.emit()
 
 func reset_dodge() -> void:
 	dodge = base_dodge

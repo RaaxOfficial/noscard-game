@@ -13,7 +13,7 @@ func initialize_status(target: Node) -> void:
 	
 	if not weaken_atk_power_modifier_value:
 		weaken_atk_power_modifier_value = ModifierValue.create_new_modifier("weaken_attack_power", ModifierValue.Type.PERCENT_BASED)
-		weaken_atk_power_modifier_value.percent_value = modifier_amount
+		weaken_atk_power_modifier_value.percent_value = -modifier_amount
 		damage_dealt_modifier.add_new_value(weaken_atk_power_modifier_value)
 	
 	if not status_changed.is_connected(_on_status_changed):
