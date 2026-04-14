@@ -6,13 +6,14 @@
 
 [resource]
 script = ExtResource("2_vverj")
-id = "holy_mage_holy_hammer_card"
+duration = 3
+id = "Holy Hammer"
 rarity = 2
 target = 2
-amount = 10
+amount = 12
 cost = 3
 exhaustable = true
 icon = ExtResource("1_2pfls")
-tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies. Apply [color=\"d3aa17\"]Weaken Attack Power[/color]. [color=\"8e2818\"]Exhaust[/color].[/center]"
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies. Apply [color=\"d3aa17\"]Weaken Attack Power[/color] for %s turns. [color=\"8e2818\"]Exhaust[/color].[/center]"
 sound = ExtResource("3_vverj")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

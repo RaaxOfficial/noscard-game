@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://cw30vnv7fcyen"]
+
+[ext_resource type="Texture2D" uid="uid://4wsonk7vxyat" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_group_healing_icon_x64.png" id="1_hnvyr"]
+[ext_resource type="Script" uid="uid://c5sh5sl3ajqxe" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_group_healing_card.gd" id="2_e4ii6"]
+
+[resource]
+script = ExtResource("2_e4ii6")
+heal_amount = 8
+id = "Group Healing"
+type = 1
+rarity = 2
+amount = 8
+cost = 3
+icon = ExtResource("1_hnvyr")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block and restore [color=\"80cca3\"]%s[/color] HP.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

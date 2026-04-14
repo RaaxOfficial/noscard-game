@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="CustomStatus" format=3 uid="uid://d17mx1rkt1q2i"]
+
+[ext_resource type="Texture2D" uid="uid://c78aoimk672q1" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_mana_shield_icon_x64.png" id="1_l0xgc"]
+[ext_resource type="Script" uid="uid://dtbydjesigncy" path="res://Entities/Run/Battle/StatusHandler/Status/Mana Shield/mana_shield.gd" id="2_e6u52"]
+
+[resource]
+script = ExtResource("2_e6u52")
+hp_threshold = 5
+id = "Mana Shield"
+icon = ExtResource("1_l0xgc")
+tooltip = "[center]If you were to receive [color=\"ff0000\"]%s[/color] damage or less, take 1 damage instead.[/center]"
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

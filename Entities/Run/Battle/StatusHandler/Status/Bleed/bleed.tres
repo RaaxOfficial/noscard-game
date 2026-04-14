@@ -7,6 +7,7 @@
 script = ExtResource("1_88a1a")
 id = "Bleed"
 stack_type = 1
+is_debuff = true
 icon = ExtResource("1_11gjg")
 tooltip = "[center]Take [color=\"ff0000\"]%s[/color] damage at the start of your turn.[/center]"
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

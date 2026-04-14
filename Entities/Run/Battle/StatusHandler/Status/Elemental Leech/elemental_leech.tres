@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="CustomStatus" format=3 uid="uid://daf7v31ysqjob"]
+[gd_resource type="Resource" script_class="ElementalLeechStatus" format=3 uid="uid://daf7v31ysqjob"]
 
 [ext_resource type="Texture2D" uid="uid://ds03hd4imxhc4" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_elemental_leech_icon_x64.png" id="1_acey2"]
 [ext_resource type="Script" uid="uid://bvog5nmpjha7y" path="res://Entities/Run/Battle/StatusHandler/Status/Elemental Leech/elemental_leech.gd" id="2_cs2ii"]
@@ -8,6 +8,7 @@ script = ExtResource("2_cs2ii")
 id = "Elemental Leech"
 stack_type = 2
 can_expire = true
+is_debuff = true
 icon = ExtResource("1_acey2")
 tooltip = "[center]You receive crits with a %s%% chance."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

@@ -1,18 +1,11 @@
 extends Card
 
-const MANA_SHIELD = preload("uid://d17mx1rkt1q2i")
-
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var block_effect := BlockEffect.new()
 	block_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.BLOCK_GAINED)
 	block_effect.sound = sound
 	block_effect.execute(targets)
-	
-	var status_effect := StatusEffect.new()
-	var mana_shield := MANA_SHIELD.duplicate()
-	status_effect.status = mana_shield
-	status_effect.execute(targets)
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount

@@ -6,9 +6,9 @@
 
 [resource]
 script = ExtResource("2_ydevx")
-id = "holy_mage_basic_card"
-target = 2
-amount = 100
+id = "Basic"
+target = 1
+amount = 6
 cost = 1
 icon = ExtResource("1_qc6f0")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"

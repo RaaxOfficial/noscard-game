@@ -9,3 +9,8 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount
+
+func get_updated_tooltip(player_modifiers: ModifierHandler, _enemy_modifiers: ModifierHandler) -> String:
+	var modified_amount := player_modifiers.get_modified_value(amount, Modifier.Type.HEAL_AMOUNT)
+	
+	return tooltip_text % modified_amount

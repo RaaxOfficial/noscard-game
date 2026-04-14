@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_tn7rb")
-id = "holy_mage_cure_all_card"
+id = "Cure All"
 type = 1
 rarity = 2
 amount = 2

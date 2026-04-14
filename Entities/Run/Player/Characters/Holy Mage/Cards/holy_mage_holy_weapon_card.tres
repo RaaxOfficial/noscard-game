@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://d1vp7qihs2pmh"]
+
+[ext_resource type="Texture2D" uid="uid://bqrlkgdcv14t8" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_holy_weapon_icon_x64.png" id="1_eaygn"]
+[ext_resource type="Script" uid="uid://cxbrq5vwutns3" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_weapon_card.gd" id="2_c3bx0"]
+
+[resource]
+script = ExtResource("2_c3bx0")
+id = "Holy Weapon"
+type = 2
+rarity = 1
+amount = 3
+cost = 2
+icon = ExtResource("1_eaygn")
+tooltip_text = "[center]Apply %s stacks of [color=\"d3aa17\"]Attack Power Increase[/color] to yourself.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

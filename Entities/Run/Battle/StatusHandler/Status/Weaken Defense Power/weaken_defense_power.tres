@@ -11,6 +11,7 @@ type = 1
 stack_type = 2
 can_expire = true
 duration = 1
+is_debuff = true
 icon = ExtResource("1_lwch6")
 tooltip = "Damage taken is increased by 30%."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

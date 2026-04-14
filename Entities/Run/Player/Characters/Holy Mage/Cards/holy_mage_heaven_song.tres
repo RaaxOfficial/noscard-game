@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://chmmg3n8b1tss"]
+
+[ext_resource type="Texture2D" uid="uid://wc4oh4fv71wg" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_heaven_song_icon_x64.png" id="1_hxaho"]
+[ext_resource type="Script" uid="uid://chkw24buek6w4" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_heaven_song.gd" id="2_7ywfw"]
+
+[resource]
+script = ExtResource("2_7ywfw")
+id = "Heaven Song"
+type = 2
+rarity = 1
+target = 2
+amount = 4
+cost = 2
+icon = ExtResource("1_hxaho")
+tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies. Apply [color=\"d3aa17\"]Shock[/color] for %s turns."
+metadata/_custom_type_script = "uid://yhnspsq248rn"

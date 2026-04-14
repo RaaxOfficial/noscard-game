@@ -1,7 +1,7 @@
 class_name WeakenDefensePowerStatus
 extends Status
 
-@export var modifier_amount := 0.2
+@export var modifier_amount := 0.3
 
 func initialize_status(target: Node) -> void:
 	assert(target.get("modifier_handler"), "No modifiers on %s" % target)

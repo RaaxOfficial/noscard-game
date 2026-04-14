@@ -5,10 +5,10 @@
 
 [resource]
 script = ExtResource("2_8gtt0")
-id = "recovery_aura"
+id = "Recovery Aura"
 stack_type = 2
 can_expire = true
 duration = 3
 icon = ExtResource("1_7dubs")
-tooltip = "Restore %s HP every turn."
+tooltip = "Recover %s HP every turn."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

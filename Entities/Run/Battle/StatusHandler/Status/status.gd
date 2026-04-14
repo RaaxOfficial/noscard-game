@@ -14,6 +14,7 @@ enum StackType {NONE, INTENSITY, DURATION, BOTH}
 @export var can_expire: bool
 @export var duration: int : set = set_duration
 @export var stacks: int : set = set_stacks
+@export var is_debuff: bool = false
 
 @export_group("Status Visuals")
 @export var icon: Texture

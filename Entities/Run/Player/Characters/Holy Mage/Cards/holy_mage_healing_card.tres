@@ -6,10 +6,10 @@
 
 [resource]
 script = ExtResource("2_gwjsu")
-id = "holy_mage_healing_card"
+id = "Healing"
 type = 1
 amount = 5
-cost = 2
+cost = 1
 icon = ExtResource("1_5sto8")
 tooltip_text = "[center]Recover [color=\"80cca3\"]%s[/color] HP.[/center]"
 sound = ExtResource("3_dnmv2")

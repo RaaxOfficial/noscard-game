@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://bs5arqj4jfw75"]
+
+[ext_resource type="Texture2D" uid="uid://dixlawppfgt65" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_defend_icon_x64.png" id="1_mw21l"]
+[ext_resource type="Script" uid="uid://b3p7k71lohna1" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_defend_card.gd" id="2_axsim"]
+
+[resource]
+script = ExtResource("2_axsim")
+id = "Defend"
+type = 1
+amount = 5
+cost = 1
+icon = ExtResource("1_mw21l")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"

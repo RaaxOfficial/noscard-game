@@ -80,6 +80,11 @@ func _get_all_statuses() -> Array[Status]:
 	
 	return statuses
 
+func _remove_all_debuffs() -> void:
+	for status_ui: StatusUI in get_children():
+		if status_ui.status.is_debuff:
+			status_ui.queue_free()
+
 func _on_status_applied(status: Status) -> void:
 	if status.can_expire:
 		status.duration -= 1

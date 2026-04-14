@@ -1,7 +1,7 @@
 class_name RecoveryAuraStatus
 extends Status
 
-var heal_amount := 0
+@export var heal_amount := 0
 
 
 func apply_status(target: Node) -> void:
@@ -10,3 +10,6 @@ func apply_status(target: Node) -> void:
 	heal_effect.execute([target])
 	
 	status_applied.emit(self)
+
+func get_tooltip() -> String:
+	return tooltip % heal_amount
