@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BlessingStatus" format=3 uid="uid://bgaj72883ypav"]
+
+[ext_resource type="Texture2D" uid="uid://rmhmwgd3yeb5" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_blessing_icon_x64.png" id="1_qprj7"]
+[ext_resource type="Script" uid="uid://jqegrwkm4vs6" path="res://Entities/Run/Battle/StatusHandler/Status/Blessing/blessing.gd" id="2_ucupp"]
+
+[resource]
+script = ExtResource("2_ucupp")
+block_efficency = 50
+id = "Blessing"
+icon = ExtResource("1_qprj7")
+tooltip = "[center]Gain %s%% more block.[/center]"
+metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

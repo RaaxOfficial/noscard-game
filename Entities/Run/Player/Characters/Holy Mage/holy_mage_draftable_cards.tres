@@ -10,8 +10,10 @@
 [ext_resource type="Resource" uid="uid://b0nx8dsqs3y7p" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_hammer_card.tres" id="5_haxk3"]
 [ext_resource type="Resource" uid="uid://d1vp7qihs2pmh" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_weapon_card.tres" id="7_1vgm8"]
 [ext_resource type="Resource" uid="uid://cw30vnv7fcyen" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_group_healing_card.tres" id="7_78nh3"]
+[ext_resource type="Resource" uid="uid://oflb40523gwc" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_blessing_card.tres" id="9_cy3g7"]
+[ext_resource type="Resource" uid="uid://bk35cxfnkepyj" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_totem_card.tres" id="10_i2pvf"]
 
 [resource]
 script = ExtResource("2_ltrjm")
-cards = Array[ExtResource("1_wjpcn")]([ExtResource("2_nsetj"), ExtResource("2_nsetj"), ExtResource("3_wwfpg"), ExtResource("3_wwfpg"), ExtResource("3_dqn8a"), ExtResource("3_dqn8a"), ExtResource("5_1vgm8"), ExtResource("5_1vgm8"), ExtResource("4_sc68a"), ExtResource("4_sc68a"), ExtResource("7_78nh3"), ExtResource("7_78nh3"), ExtResource("7_1vgm8"), ExtResource("7_1vgm8"), ExtResource("5_haxk3"), ExtResource("5_haxk3")])
+cards = Array[ExtResource("1_wjpcn")]([ExtResource("2_nsetj"), ExtResource("2_nsetj"), ExtResource("3_wwfpg"), ExtResource("3_wwfpg"), ExtResource("3_dqn8a"), ExtResource("3_dqn8a"), ExtResource("5_1vgm8"), ExtResource("5_1vgm8"), ExtResource("4_sc68a"), ExtResource("4_sc68a"), ExtResource("7_78nh3"), ExtResource("7_78nh3"), ExtResource("7_1vgm8"), ExtResource("7_1vgm8"), ExtResource("9_cy3g7"), ExtResource("9_cy3g7"), ExtResource("10_i2pvf"), ExtResource("10_i2pvf"), ExtResource("5_haxk3"), ExtResource("5_haxk3")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

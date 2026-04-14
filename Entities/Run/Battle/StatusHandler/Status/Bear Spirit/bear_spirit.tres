@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("2_ffbjm")
+block_efficency = 50
 id = "Bear Spirit"
 stack_type = 2
 can_expire = true

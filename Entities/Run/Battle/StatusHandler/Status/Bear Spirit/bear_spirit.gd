@@ -1,7 +1,7 @@
 class_name BearSpiritStatus
 extends Status
 
-@export var block_efficency: float = 0.5
+@export var block_efficency: int
 
 func initialize_status(target: Node) -> void:
 	status_changed.connect(_on_status_changed.bind(target))
@@ -9,8 +9,7 @@ func initialize_status(target: Node) -> void:
 	_on_status_changed(target)
 
 func get_tooltip() -> String:
-	var formatted_block := int(block_efficency * 100)
-	return tooltip % formatted_block
+	return tooltip % block_efficency
 
 func _on_status_changed(target: Node) -> void:
 	assert(target.get("modifier_handler"), "No modifiers on %s" % target)
@@ -23,7 +22,7 @@ func _on_status_changed(target: Node) -> void:
 	if not block_modifier_value:
 		block_modifier_value = ModifierValue.create_new_modifier("bear_spirit", ModifierValue.Type.PERCENT_BASED)
 	
-	block_modifier_value.percent_value = block_efficency
+	block_modifier_value.percent_value = block_efficency / 100.0
 	block_gain_modifier.add_new_value(block_modifier_value)
 
 func _on_status_applied(status: Status, target: Node) -> void:

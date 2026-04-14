@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://oflb40523gwc"]
+
+[ext_resource type="Texture2D" uid="uid://rmhmwgd3yeb5" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_blessing_icon_x64.png" id="1_2fax4"]
+[ext_resource type="Script" uid="uid://wk6po1umsm6f" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_blessing_card.gd" id="2_hr6bo"]
+
+[resource]
+script = ExtResource("2_hr6bo")
+id = "Blessing"
+type = 2
+rarity = 2
+cost = 1
+icon = ExtResource("1_2fax4")
+tooltip_text = "[center]Apply [color=\"d3aa17\"]Blessing[/color] to yourself."
+metadata/_custom_type_script = "uid://yhnspsq248rn"

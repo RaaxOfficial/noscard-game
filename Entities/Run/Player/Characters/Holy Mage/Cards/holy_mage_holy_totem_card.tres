@@ -1,0 +1,17 @@
+[gd_resource type="Resource" format=3 uid="uid://bk35cxfnkepyj"]
+
+[ext_resource type="Texture2D" uid="uid://baiy0j8w1emnk" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_holy_totem_icon_x64.png" id="1_injoy"]
+[ext_resource type="Script" uid="uid://2uj5oc6e7yy4" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_totem_card.gd" id="2_3ah8i"]
+
+[resource]
+script = ExtResource("2_3ah8i")
+damage = 2
+id = "Holy Totem"
+type = 1
+rarity = 2
+amount = 4
+cost = 2
+exhaustable = true
+icon = ExtResource("1_injoy")
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block. Summon a totem on the battlefield. Each turn deal [color=\"ff0000\"]%s[/color] damage to ALL enemies.[/center]"
+metadata/_custom_type_script = "uid://yhnspsq248rn"
