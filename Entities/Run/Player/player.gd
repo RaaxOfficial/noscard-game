@@ -92,10 +92,15 @@ func update_crit_damage(value: float) -> void:
 func skip_turn() -> void:
 	print("Player has skipped turn")
 
-func _on_player_hurt(damage: int) -> void:
+func _on_player_hurt(health_lost: int) -> void:
 	print("ToDo: anim.play(hurt)")
-	GlobalManager.display_number(damage, global_position, 32)
-
+	
+	if status_handler._has_status("Mana Shield"):
+		var status = status_handler._get_status("Mana Shield") as ManaShieldStatus
+		if health_lost >= status.hp_threshold:
+			health_lost = 1
+	
+	GlobalManager.display_number(health_lost, global_position, 32)
 
 func _on_blink_timer_timeout() -> void:
 	if anim.is_playing():

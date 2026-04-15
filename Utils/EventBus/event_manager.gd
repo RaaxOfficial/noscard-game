@@ -14,7 +14,7 @@ signal player_hand_drawn
 signal player_hand_discarded
 signal player_turn_ended
 signal player_hit(from: Node, player_hit: Node)
-signal player_hurt(damage: int)
+signal player_hurt(health_lost: int)
 signal player_died
 signal player_countered
 

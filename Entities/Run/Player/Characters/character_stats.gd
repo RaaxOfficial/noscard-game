@@ -55,7 +55,8 @@ func take_damage(damage: int, _from: Node = null, is_piercing: bool = false) -> 
 	else:
 		super.take_piercing_damage(damage)
 	if initial_health > health:
-		EventManager.player_hurt.emit(damage)
+		var health_lost := initial_health - health
+		EventManager.player_hurt.emit(health_lost)
 
 func can_play_card(card: Card) -> bool:
 	return mana >= card.cost
