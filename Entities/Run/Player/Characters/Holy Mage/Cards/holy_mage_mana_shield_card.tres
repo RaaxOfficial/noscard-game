@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_ftg3w")
-duration = 3
+stacks = 3
 id = "Mana Shield"
 type = 1
 amount = 3

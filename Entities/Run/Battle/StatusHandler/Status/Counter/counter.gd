@@ -13,7 +13,6 @@ func apply_status(target: Node) -> void:
 	damage_effect.amount = card.amount
 	damage_effect.sound = card.sound
 	damage_effect.execute([target], player)
-	stacks -= 1
 	status_applied.emit(self)
 
 func get_tooltip() -> String:

@@ -8,8 +8,7 @@ script = ExtResource("2_e6u52")
 hp_threshold = 5
 id = "Mana Shield"
 type = 2
-stack_type = 2
-can_expire = true
+stack_type = 1
 icon = ExtResource("1_l0xgc")
 tooltip = "[center]If you were to receive [color=\"ff0000\"]%s[/color] damage or less, take 1 damage instead.[/center]"
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

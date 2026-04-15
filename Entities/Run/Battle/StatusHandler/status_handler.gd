@@ -88,3 +88,5 @@ func _remove_all_debuffs() -> void:
 func _on_status_applied(status: Status) -> void:
 	if status.can_expire:
 		status.duration -= 1
+	if status.stack_type == Status.StackType.INTENSITY:
+		status.stacks -= 1
