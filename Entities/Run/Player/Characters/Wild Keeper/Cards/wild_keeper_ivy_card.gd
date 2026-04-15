@@ -11,13 +11,12 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	damage_effect.sound = sound
 	damage_effect.execute(targets, from)
 	
-	@warning_ignore("shadowed_variable_base_class")
-	for target in targets:
+	for each in targets:
 		var status_effect := StatusEffect.new()
 		var shock := SHOCK.duplicate()
 		shock.duration = duration
 		status_effect.status = shock
-		status_effect.execute([target])
+		status_effect.execute([each])
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount

@@ -12,7 +12,8 @@ func take_damage(damage: int, source: Enemy = null, from: Node = null, is_critic
 	else:
 		super.take_piercing_damage(damage)
 	if initial_health > health:
-		EventManager.enemy_hurt.emit(source, damage)
-		GlobalManager.display_number(damage, source.global_position, 32, is_critical)
+		var health_lost := initial_health - health
+		EventManager.enemy_hurt.emit(source, health_lost)
+		GlobalManager.display_number(health_lost, source.global_position, 32, is_critical)
 	
 	EventManager.enemy_hit.emit(source, from)

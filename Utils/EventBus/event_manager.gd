@@ -22,7 +22,7 @@ signal player_countered
 signal enemy_action_completed(enemy: Enemy)
 signal enemy_turn_ended
 signal enemy_hit(enemy: Enemy, from: Node)
-signal enemy_hurt(enemy: Enemy, damage: int)
+signal enemy_hurt(enemy: Enemy, health_lost: int)
 signal enemy_died(enemy: Enemy)
 
 # Item-related events

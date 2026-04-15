@@ -113,8 +113,10 @@ func take_damage(damage: int, which_modifier: Modifier.Type, from: Node = null, 
 	var is_critical = false
 	if from as Player:
 		is_critical = from.stats.crit_chance > randf()
+		
 		if is_critical:
 			modified_damage *= from.stats.crit_damage
+			ShakeManager.shake(get_parent().get_parent(), 8, 0.15)
 	
 	var tween := create_tween()
 	tween.tween_callback(ShakeManager.shake.bind(self, 16, 0.15))

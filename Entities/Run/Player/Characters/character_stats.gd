@@ -13,7 +13,7 @@ const BASE_CRIT_DAMAGE: float = 1.5
 @export var draftable_cards: CardPile
 @export var cards_per_turn: int
 @export var max_mana: int
-@export_range(0.0, 1.0) var base_crit_chance: float
+@export_range(0.0, 100.0) var base_crit_chance: float
 @export var starting_item: Item
 
 var mana: int : set = set_mana
@@ -35,7 +35,6 @@ func set_crit_chance(value: float) -> void:
 	var new_value = value / 100
 	clampf(new_value, 0.0, new_value)
 	crit_chance = new_value
-	stats_changed.emit()
 
 func reset_crit_chance() -> void:
 	crit_chance = base_crit_chance
@@ -43,7 +42,6 @@ func reset_crit_chance() -> void:
 func set_crit_damage(value: float) -> void:
 	var new_value = value / 100
 	crit_damage = BASE_CRIT_DAMAGE + clampf(new_value, 0.0, new_value)
-	stats_changed.emit()
 
 func reset_crit_damage() -> void:
 	crit_damage = BASE_CRIT_DAMAGE

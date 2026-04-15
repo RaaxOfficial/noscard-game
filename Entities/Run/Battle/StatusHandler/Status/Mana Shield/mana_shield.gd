@@ -17,4 +17,4 @@ func _on_player_hurt(health_lost: int, target: Node) -> void:
 	
 	if health_lost >= hp_threshold:
 		player.stats.heal(health_lost - 1)
-	
+		status_applied.emit(self)

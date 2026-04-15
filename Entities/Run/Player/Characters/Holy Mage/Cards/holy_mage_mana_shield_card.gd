@@ -2,6 +2,8 @@ extends Card
 
 const MANA_SHIELD = preload("uid://d17mx1rkt1q2i")
 
+@export var duration := 1
+
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var block_effect := BlockEffect.new()
@@ -11,13 +13,14 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	
 	var status_effect := StatusEffect.new()
 	var mana_shield := MANA_SHIELD.duplicate()
+	mana_shield.duration = duration
 	status_effect.status = mana_shield
 	status_effect.execute(targets)
 
 func get_default_tooltip() -> String:
-	return tooltip_text % amount
+	return tooltip_text % [amount, duration]
 
 func get_updated_tooltip(player_modifiers: ModifierHandler, _enemy_modifiers: ModifierHandler) -> String:
 	var modified_block := player_modifiers.get_modified_value(amount, Modifier.Type.BLOCK_GAINED)
 	
-	return tooltip_text % modified_block
+	return tooltip_text % [modified_block, duration]

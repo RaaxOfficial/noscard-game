@@ -37,7 +37,6 @@ metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 [node name="Battle" type="Node2D" unique_id=1162226834]
 script = ExtResource("1_4m2ey")
 music = ExtResource("3_dxsh4")
-metadata/_edit_lock_ = true
 
 [node name="BackgroundSprite" type="Sprite2D" parent="." unique_id=300430850]
 modulate = Color(0.6748146, 0.67481464, 0.6748144, 1)

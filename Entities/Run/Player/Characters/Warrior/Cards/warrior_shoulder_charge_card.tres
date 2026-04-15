@@ -6,7 +6,7 @@
 
 [resource]
 script = ExtResource("2_2f8b8")
-id = "warrior_shoulder_charge_card"
+id = "Shoulder Charge"
 rarity = 1
 target = 1
 amount = 4

@@ -12,5 +12,5 @@ target = 2
 amount = 2
 cost = 1
 icon = ExtResource("1_nowdn")
-tooltip_text = "[center]Apply [color=\"d3aa17\"]Elemental Leech[/color] to all enemies. Increase the duration of all debuffs by 1. [color=\"8e2818\"]Exhaust[/color].[/center]"
+tooltip_text = "[center]Apply [color=\"d3aa17\"]Elemental Leech[/color] to all enemies. Increase the duration of all debuffs by %s. [color=\"8e2818\"]Exhaust[/color].[/center]"
 metadata/_custom_type_script = "uid://yhnspsq248rn"

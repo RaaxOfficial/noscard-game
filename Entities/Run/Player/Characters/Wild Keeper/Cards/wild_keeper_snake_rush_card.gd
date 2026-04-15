@@ -16,14 +16,13 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	
 	var is_blackout := blackout_chance > randf()
 	if is_blackout:
-		@warning_ignore("shadowed_variable_base_class")
-		for target in targets:
-			if not target:
+		for each in targets:
+			if not each:
 				return
 			var status_effect := StatusEffect.new()
 			var blackout := BLACKOUT.duplicate()
 			status_effect.status = blackout
-			status_effect.execute([target])
+			status_effect.execute([each])
 
 func get_default_tooltip() -> String:
 	return tooltip_text % amount
