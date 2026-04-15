@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dj6ttcxbusg2k"
-path="res://.godot/imported/border_buf_common.png-ea16b39f49563bbfe2258d1a3257e9b2.ctex"
+uid="uid://chrowgal68iv3"
+path="res://.godot/imported/border_atk_uncommon_42x60.png-9f35a6d9d33e7750ede36cf61b338fbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Card/Sprites/border_buf_common.png"
-dest_files=["res://.godot/imported/border_buf_common.png-ea16b39f49563bbfe2258d1a3257e9b2.ctex"]
+source_file="res://UI/Run/Card/Sprites/border_atk_uncommon_42x60.png"
+dest_files=["res://.godot/imported/border_atk_uncommon_42x60.png-9f35a6d9d33e7750ede36cf61b338fbc.ctex"]
 
 [params]
 
