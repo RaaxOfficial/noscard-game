@@ -3,16 +3,16 @@
 [ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_8uwpd"]
 [ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://UI/Run/Card/Stylebox/card_base_style_box_flat.tres" id="2_nus08"]
 [ext_resource type="Script" uid="uid://ch5ojwrnlswiq" path="res://UI/Run/Card/card_visuals.gd" id="2_ofefm"]
-[ext_resource type="Texture2D" uid="uid://e2h0gwwvmi24" path="res://art/rarity.png" id="4_56qiq"]
-[ext_resource type="Texture2D" uid="uid://cbframnl8bhhb" path="res://UI/Run/Card/Sprites/border_atk_common_42x60.png" id="4_unigf"]
-[ext_resource type="Texture2D" uid="uid://muff578ichun" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_basic_icon_x64.png" id="5_qvmsx"]
-[ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Run/Card/Sprites/alts_icon_x64.png" id="7_1f7ro"]
+[ext_resource type="Texture2D" uid="uid://d33fhl0d4xecf" path="res://UI/Run/Card/Sprites/test_icon_36x33.png" id="4_ho3cq"]
+[ext_resource type="Texture2D" uid="uid://c3aovharnsde2" path="res://UI/Run/Card/Sprites/test_border_def_uncommon_40x60.png" id="5_ho3cq"]
 [ext_resource type="FontFile" uid="uid://6b8t4namiu47" path="res://Assets/Fonts/Glory-Regular.ttf" id="8_ikvrm"]
 
 [node name="CardVisuals" type="Control" unique_id=748695514]
-custom_minimum_size = Vector2(25, 30)
+custom_minimum_size = Vector2(32, 45)
 layout_mode = 3
 anchors_preset = 0
+offset_right = 32.0
+offset_bottom = 45.0
 theme = ExtResource("1_8uwpd")
 script = ExtResource("2_ofefm")
 
@@ -26,59 +26,78 @@ grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = ExtResource("2_nus08")
 
-[node name="Background" type="TextureRect" parent="." unique_id=759874570]
-layout_mode = 0
-offset_right = 44.0
-offset_bottom = 64.0
-texture = ExtResource("4_unigf")
-expand_mode = 1
-stretch_mode = 5
-
 [node name="Icon" type="TextureRect" parent="." unique_id=1123209512]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 7.0
+offset_right = -2.0
+offset_bottom = -13.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-texture = ExtResource("5_qvmsx")
-expand_mode = 1
-
-[node name="Rarity" type="TextureRect" parent="." unique_id=584637484]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -8.0
-offset_top = 2.0
-offset_right = -2.0
-offset_bottom = 8.0
-grow_horizontal = 0
-texture = ExtResource("4_56qiq")
+texture = ExtResource("4_ho3cq")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=793884480]
-layout_mode = 0
-offset_left = -2.0
-offset_top = -2.0
-offset_right = 8.0
-offset_bottom = 8.0
-texture = ExtResource("7_1f7ro")
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Cost" type="Label" parent="TextureRect" unique_id=1712791057]
+[node name="Background" type="TextureRect" parent="." unique_id=759874570]
 unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 8.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ho3cq")
+
+[node name="Cost" type="Label" parent="." unique_id=1712791057]
+unique_name_in_owner = true
+texture_filter = 1
 layout_mode = 0
-offset_right = 10.0
+offset_left = 14.0
+offset_top = 1.0
+offset_right = 18.0
 offset_bottom = 10.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_ikvrm")
+theme_override_font_sizes/font_size = 7
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardType" type="Label" parent="." unique_id=333068782]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 0
+offset_left = 8.0
+offset_top = 29.0
+offset_right = 24.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_ikvrm")
+theme_override_font_sizes/font_size = 6
+text = "Attack"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CardValue" type="Label" parent="." unique_id=1549512359]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 5.0
+offset_top = 36.0
+offset_right = 8.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
 theme_override_fonts/font = ExtResource("8_ikvrm")
 theme_override_font_sizes/font_size = 6
-text = "0"
+text = "2"
 horizontal_alignment = 1
 vertical_alignment = 1

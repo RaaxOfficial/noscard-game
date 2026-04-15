@@ -13,7 +13,6 @@ config_version=5
 config/name="NosBit"
 run/main_scene="uid://c7oxkqjy8y15c"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="uid://cfmdsuti4aqft"
 
 [audio]
 

@@ -6,9 +6,9 @@ enum Rarity {COMMON, UNCOMMON, RARE}
 enum Target {SELF, SINGLE_ENEMY, ALL_ENEMIES, EVERYONE}
 
 const RARITY_COLORS := {
-	Card.Rarity.COMMON: Color.GRAY,
-	Card.Rarity.UNCOMMON: Color.CORNFLOWER_BLUE,
-	Card.Rarity.RARE: Color.GOLD,
+	Card.Rarity.COMMON: "Common",
+	Card.Rarity.UNCOMMON: "Uncommon",
+	Card.Rarity.RARE: "Rare",
 }
 
 @export_group("Card Attributes")

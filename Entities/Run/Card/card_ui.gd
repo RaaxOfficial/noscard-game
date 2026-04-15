@@ -57,7 +57,7 @@ func _set_playable(value: bool) -> void:
 		card_visuals.cost.add_theme_color_override("font_color", Color.DARK_RED)
 		card_visuals.icon.modulate = Color(1, 1, 1, 0.5)
 	else:
-		card_visuals.cost.remove_theme_color_override("font_color")
+		card_visuals.cost.add_theme_color_override("font_color", Color.BLACK)
 		card_visuals.icon.modulate = Color(1, 1, 1, 1)
 
 func _set_char_stats(value: CharacterStats) -> void:
