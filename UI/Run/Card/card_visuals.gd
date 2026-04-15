@@ -30,25 +30,25 @@ func set_card(value: Card) -> void:
 	card_type.text = Card.Type.keys()[card.type]
 	card_value.text = str(card.amount)
 	
-	match card.type:
-		Card.Type.ATTACK:
-			if Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[0]:
-				background.texture = BORDER_ATK_COMMON
-			elif Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[1]:
-				background.texture = BORDER_ATK_UNCOMMON
-			else:
-				background.texture = BORDER_ATK_RARE
-		Card.Type.DEFEND:
-			if Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[0]:
-				background.texture = BORDER_DEF_COMMON
-			elif Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[1]:
-				background.texture = BORDER_DEF_UNCOMMON
-			else:
-				background.texture = BORDER_DEF_RARE
-		Card.Type.POWER:
-			if Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[0]:
-				background.texture = BORDER_BUF_COMMON
-			elif Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[1]:
-				background.texture = BORDER_BUF_UNCOMMON
-			else:
-				background.texture = BORDER_BUF_RARE
+	#match card.type:
+		#Card.Type.ATTACK:
+			#if Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[0]:
+				#background.texture = BORDER_ATK_COMMON
+			#elif Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[1]:
+				#background.texture = BORDER_ATK_UNCOMMON
+			#else:
+				#background.texture = BORDER_ATK_RARE
+		#Card.Type.DEFEND:
+			#if Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[0]:
+				#background.texture = BORDER_DEF_COMMON
+			#elif Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[1]:
+				#background.texture = BORDER_DEF_UNCOMMON
+			#else:
+				#background.texture = BORDER_DEF_RARE
+		#Card.Type.POWER:
+			#if Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[0]:
+				#background.texture = BORDER_BUF_COMMON
+			#elif Card.Rarity.keys()[card.rarity] == Card.RARITY_COLORS[1]:
+				#background.texture = BORDER_BUF_UNCOMMON
+			#else:
+				#background.texture = BORDER_BUF_RARE

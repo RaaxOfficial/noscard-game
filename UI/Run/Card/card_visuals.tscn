@@ -3,16 +3,16 @@
 [ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="1_8uwpd"]
 [ext_resource type="StyleBox" uid="uid://bpuidup1gge53" path="res://UI/Run/Card/Stylebox/card_base_style_box_flat.tres" id="2_nus08"]
 [ext_resource type="Script" uid="uid://ch5ojwrnlswiq" path="res://UI/Run/Card/card_visuals.gd" id="2_ofefm"]
-[ext_resource type="Texture2D" uid="uid://d33fhl0d4xecf" path="res://UI/Run/Card/Sprites/test_icon_36x33.png" id="4_ho3cq"]
-[ext_resource type="Texture2D" uid="uid://c3aovharnsde2" path="res://UI/Run/Card/Sprites/test_border_def_uncommon_40x60.png" id="5_ho3cq"]
+[ext_resource type="Texture2D" uid="uid://mb7nx2nylhsk" path="res://UI/Run/Card/Sprites/test_icon_34x28.png" id="4_ho3cq"]
+[ext_resource type="Texture2D" uid="uid://k5cssvgy4fkf" path="res://UI/Run/Card/Sprites/test_border_def_uncommon_40x60.png" id="5_ho3cq"]
 [ext_resource type="FontFile" uid="uid://6b8t4namiu47" path="res://Assets/Fonts/Glory-Regular.ttf" id="8_ikvrm"]
 
 [node name="CardVisuals" type="Control" unique_id=748695514]
-custom_minimum_size = Vector2(32, 45)
+custom_minimum_size = Vector2(37, 52)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 32.0
-offset_bottom = 45.0
+offset_right = 38.0
+offset_bottom = 52.0
 theme = ExtResource("1_8uwpd")
 script = ExtResource("2_ofefm")
 
@@ -21,6 +21,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -32,9 +33,9 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 2.0
-offset_top = 7.0
+offset_top = 8.0
 offset_right = -2.0
-offset_bottom = -13.0
+offset_bottom = -16.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -48,22 +49,23 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 8.0
-offset_bottom = 15.0
+offset_right = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("5_ho3cq")
+expand_mode = 1
 
 [node name="Cost" type="Label" parent="." unique_id=1712791057]
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 14.0
-offset_top = 1.0
-offset_right = 18.0
-offset_bottom = 10.0
+offset_left = 16.0
+offset_top = 2.0
+offset_right = 21.0
+offset_bottom = 12.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
 theme_override_fonts/font = ExtResource("8_ikvrm")
 theme_override_font_sizes/font_size = 7
 text = "0"
@@ -74,14 +76,15 @@ vertical_alignment = 1
 unique_name_in_owner = true
 texture_filter = 1
 layout_mode = 0
-offset_left = 8.0
-offset_top = 29.0
-offset_right = 24.0
-offset_bottom = 37.0
+offset_left = 10.0
+offset_top = 34.0
+offset_right = 26.0
+offset_bottom = 42.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
 theme_override_fonts/font = ExtResource("8_ikvrm")
-theme_override_font_sizes/font_size = 6
+theme_override_font_sizes/font_size = 5
 text = "Attack"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -89,10 +92,10 @@ vertical_alignment = 1
 [node name="CardValue" type="Label" parent="." unique_id=1549512359]
 unique_name_in_owner = true
 layout_mode = 0
-offset_left = 5.0
-offset_top = 36.0
-offset_right = 8.0
-offset_bottom = 44.0
+offset_left = 6.0
+offset_top = 41.0
+offset_right = 9.0
+offset_bottom = 49.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 1
