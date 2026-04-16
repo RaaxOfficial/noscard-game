@@ -25,7 +25,7 @@
 [ext_resource type="PackedScene" uid="uid://vppymdpx8fbm" path="res://UI/Run/Battle/Status/status_view.tscn" id="23_pleq6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac2hh"]
-size = Vector2(640, 171)
+size = Vector2(640, 153)
 
 [sub_resource type="Resource" id="Resource_avgb2"]
 script = ExtResource("11_y3s6e")
@@ -48,7 +48,7 @@ metadata/_edit_lock_ = true
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CardDropArea" unique_id=1278330235]
-position = Vector2(320, 228.5)
+position = Vector2(320, 219.5)
 shape = SubResource("RectangleShape2D_ac2hh")
 debug_color = Color(0, 0.6, 0.69803923, 0.1764706)
 
@@ -84,12 +84,12 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -75.0
-offset_top = -55.0
+offset_top = -61.0
 offset_right = 75.0
-offset_bottom = -25.0
+offset_bottom = -31.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 14
+theme_override_constants/separation = 18
 alignment = 1
 script = ExtResource("2_o5tja")
 player = NodePath("../../Player")
