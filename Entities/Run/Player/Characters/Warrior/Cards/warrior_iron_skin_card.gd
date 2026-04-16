@@ -13,6 +13,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	var status_effect := StatusEffect.new()
 	var counter := COUNTER.duplicate()
 	counter.card = counter_card
+	counter.stacks = 1
 	status_effect.status = counter
 	status_effect.execute(targets)
 

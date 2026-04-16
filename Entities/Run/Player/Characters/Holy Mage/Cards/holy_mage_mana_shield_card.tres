@@ -12,6 +12,6 @@ type = 1
 amount = 3
 cost = 2
 icon = ExtResource("1_etxtv")
-tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block. Apply [color=\"d3aa17\"]Mana Shield[/color] to yourself for %s turns.[/center]"
+tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block. Apply %s stacks of [color=\"d3aa17\"]Mana Shield[/color].[/center]"
 sound = ExtResource("3_t6bhb")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

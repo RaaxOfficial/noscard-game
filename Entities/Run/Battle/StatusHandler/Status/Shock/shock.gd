@@ -1,7 +1,7 @@
 class_name ShockStatus
 extends Status
 
-var skip_chance: float = 0.5
+@export var skip_chance: float = 0.5
 
 func apply_status(target: Node) -> void:
 	var skip = skip_chance > randf()
@@ -10,3 +10,6 @@ func apply_status(target: Node) -> void:
 		target.skip_turn()
 	
 	status_applied.emit(self)
+
+func get_tooltip() -> String:
+	return tooltip % int(skip_chance * 100)

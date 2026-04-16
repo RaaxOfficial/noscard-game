@@ -10,5 +10,5 @@ stack_type = 2
 can_expire = true
 is_debuff = true
 icon = ExtResource("1_143g4")
-tooltip = "[center]There's a 50% chance of skipping turn.[/center]"
+tooltip = "[center]There's a %s%% chance of skipping turn.[/center]"
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

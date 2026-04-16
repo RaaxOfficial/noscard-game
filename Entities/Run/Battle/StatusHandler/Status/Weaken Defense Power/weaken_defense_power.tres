@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("2_u7skr")
+modifier_amount = 0.5
 id = "weaken_defense_power"
 type = 1
 stack_type = 2
@@ -12,5 +13,5 @@ can_expire = true
 duration = 1
 is_debuff = true
 icon = ExtResource("1_lwch6")
-tooltip = "Damage taken is increased by 30%."
+tooltip = "Damage taken is increased by %s%%."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

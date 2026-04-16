@@ -10,5 +10,5 @@ stack_type = 2
 can_expire = true
 duration = 3
 icon = ExtResource("1_7dubs")
-tooltip = "Recover %s HP every turn."
+tooltip = "[center]Recover [color=\"80cca3\"]%s[/color] HP every turn.[/center]"
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

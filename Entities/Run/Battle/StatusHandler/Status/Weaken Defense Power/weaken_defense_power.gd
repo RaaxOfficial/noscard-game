@@ -19,6 +19,9 @@ func initialize_status(target: Node) -> void:
 	if not status_changed.is_connected(_on_status_changed):
 		status_changed.connect(_on_status_changed.bind(damage_taken_modifier))
 
+func get_tooltip() -> String:
+	return tooltip % int(modifier_amount * 100)
+
 func _on_status_changed(damage_taken_modifier: Modifier) -> void:
 	if duration <= 0 and damage_taken_modifier:
 		damage_taken_modifier.remove_value("weaken_defense_power")
