@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://26xgspw6a8uq"]
+
+[ext_resource type="Texture2D" uid="uid://brda8fp56fs87" path="res://UI/Run/Items/Sprites/splendid_defender_icon_x64.png" id="1_uxbdd"]
+[ext_resource type="Script" uid="uid://kxeajcbgccwc" path="res://Entities/Run/Item Handler/Items/Warrior/Splendid Defender/splendid_defender.gd" id="2_d4rp7"]
+
+[resource]
+script = ExtResource("2_d4rp7")
+item_name = "Splendid Defender"
+id = "splendid_defender"
+type = 4
+character_type = 1
+starter_item = true
+icon = ExtResource("1_uxbdd")
+tooltip = "[center]Mitigate damage received with a %s%% chance.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

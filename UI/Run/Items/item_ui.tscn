@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dg4icaoybjneg" path="res://UI/Run/Card/Sprites/alts_icon_x64.png" id="1_4yuhw"]
 [ext_resource type="Script" uid="uid://1t6larms3sto" path="res://UI/Run/Items/item_ui.gd" id="1_qglkf"]
 [ext_resource type="Material" uid="uid://d30aqi80c1nrc" path="res://art/white_sprite_material.tres" id="1_ytmnf"]
-[ext_resource type="Resource" uid="uid://bo465qjyu2uj2" path="res://Entities/Run/Item Handler/Items/Healing Potion/healing_potion.tres" id="2_oufo4"]
+[ext_resource type="Resource" uid="uid://bo465qjyu2uj2" path="res://Entities/Run/Item Handler/Items/Warrior/Healing Potion/healing_potion.tres" id="2_oufo4"]
 
 [sub_resource type="Animation" id="Animation_qglkf"]
 length = 0.001

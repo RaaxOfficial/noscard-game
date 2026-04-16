@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://dn65iai4rofq"]
+
+[ext_resource type="Texture2D" uid="uid://dr81uy02m0dng" path="res://UI/Run/Items/Sprites/hero's_magic_wand_icon_x64.png" id="1_54c3w"]
+[ext_resource type="Script" uid="uid://b0vb8nxy77cgo" path="res://Entities/Run/Item Handler/Items/Holy Mage/Hero's Magic Wand/heros_magic_wand.gd" id="2_ejioo"]
+
+[resource]
+script = ExtResource("2_ejioo")
+item_name = "Hero's Magic Wand"
+id = "heros_magic_wand"
+type = 4
+character_type = 3
+starter_item = true
+icon = ExtResource("1_54c3w")
+tooltip = "[center]Deal [color=\"ff0000\"]%s[/color]damage to ALL enemies each time you heal.[/center]."
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

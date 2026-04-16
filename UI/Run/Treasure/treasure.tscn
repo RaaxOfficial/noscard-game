@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://cp2ct78m7tpxs" path="res://UI/Run/Battle/Sprites/prados_soleados_bg_x640.png" id="2_jd0en"]
 [ext_resource type="Script" uid="uid://covkxd7ci3fp1" path="res://Entities/Run/Item Handler/item.gd" id="2_m542u"]
 [ext_resource type="Texture2D" uid="uid://ch0fsgvi65ru8" path="res://UI/Run/Treasure/treasure_chest_icon_x64.png" id="3_nembe"]
-[ext_resource type="Resource" uid="uid://cf4rwn2w85sno" path="res://Entities/Run/Item Handler/Items/Reinforced Armor/reinforced_armor.tres" id="3_vin5t"]
+[ext_resource type="Resource" uid="uid://cf4rwn2w85sno" path="res://Entities/Run/Item Handler/Items/Globals/Reinforced Armor/reinforced_armor.tres" id="3_vin5t"]
 [ext_resource type="Texture2D" uid="uid://dloy1xjgl1dgh" path="res://UI/Run/Treasure/treasure_chest_open_icon_x64.png" id="4_j3rw4"]
 [ext_resource type="Texture2D" uid="uid://dt0vxcdp6krdv" path="res://art/gold.png" id="4_ptjjw"]
-[ext_resource type="Resource" uid="uid://dn6xvd43amiww" path="res://Entities/Run/Item Handler/Items/Firework/firework.tres" id="4_vin5t"]
+[ext_resource type="Resource" uid="uid://dn6xvd43amiww" path="res://Entities/Run/Item Handler/Items/Globals/Firework/firework.tres" id="4_vin5t"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ptjjw"]
 font_size = 24

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://ck65kuevterwv"]
+
+[ext_resource type="Texture2D" uid="uid://dbjdnnyitdrle" path="res://UI/Run/Items/Sprites/archery_icon_x64.png" id="1_l2dru"]
+[ext_resource type="Script" uid="uid://d3hi8mphpxwam" path="res://Entities/Run/Item Handler/Items/Wild Keeper/Archery/archery.gd" id="2_tc8d2"]
+
+[resource]
+script = ExtResource("2_tc8d2")
+item_name = "Archery"
+id = "archery"
+type = 4
+character_type = 2
+starter_item = true
+icon = ExtResource("1_l2dru")
+tooltip = "[center]When you play a \"Basic\" card, there's a %s%% chance to play it again at no cost. Each subsequent play reduces the chance.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

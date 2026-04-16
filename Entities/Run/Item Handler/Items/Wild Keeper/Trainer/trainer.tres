@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://7wkdy2pon2jm"]
+
+[ext_resource type="Texture2D" uid="uid://c1fl1sob45oku" path="res://UI/Run/Items/Sprites/trainer_icon_x64.png" id="1_jprbf"]
+[ext_resource type="Script" uid="uid://dph1ijofkjah5" path="res://Entities/Run/Item Handler/Items/Wild Keeper/Trainer/trainer.gd" id="2_13q4q"]
+
+[resource]
+script = ExtResource("2_13q4q")
+item_name = "Trainer"
+id = "trainer"
+type = 1
+character_type = 2
+starter_item = true
+icon = ExtResource("1_jprbf")
+tooltip = "[center]Your pets & partners deal increased damage & healing.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

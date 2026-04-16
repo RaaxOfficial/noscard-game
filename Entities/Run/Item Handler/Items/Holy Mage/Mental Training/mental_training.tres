@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://df1prb3f3hvjd"]
+
+[ext_resource type="Texture2D" uid="uid://ddeinf6lhej6w" path="res://UI/Run/Items/Sprites/mental_training_icon_x64.png" id="1_36fnj"]
+[ext_resource type="Script" uid="uid://cv5ptehurlf4c" path="res://Entities/Run/Item Handler/Items/Holy Mage/Mental Training/mental_training.gd" id="2_d52hv"]
+
+[resource]
+script = ExtResource("2_d52hv")
+item_name = "Mental Training"
+id = "mental_training"
+type = 4
+character_type = 3
+starter_item = true
+icon = ExtResource("1_36fnj")
+tooltip = "[center]There's a %s%% chance to play Attack cards again.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

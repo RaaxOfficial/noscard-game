@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://c83i0nd0mh2ip"]
+
+[ext_resource type="Texture2D" uid="uid://bnkbl7eshyjc8" path="res://UI/Run/Items/Sprites/poisoned_arrowhead_iocn_x64.png" id="1_q7jp0"]
+[ext_resource type="Script" uid="uid://u3nairvwppyu" path="res://Entities/Run/Item Handler/Items/Wild Keeper/Poisoned Arrowhead/poisoned_arrowhead.gd" id="2_u6f6p"]
+
+[resource]
+script = ExtResource("2_u6f6p")
+item_name = "Poisoned Arrowhead"
+id = "poisoned_arrowhead"
+type = 1
+character_type = 2
+starter_item = true
+icon = ExtResource("1_q7jp0")
+tooltip = "[center]All your Attacks inflict[color=\"d3aa17\"]Bleed[/color].[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

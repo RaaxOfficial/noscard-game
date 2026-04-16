@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://bo4du2pcgmb4c"]
+
+[ext_resource type="Texture2D" uid="uid://q2idi2cjpnts" path="res://UI/Run/Items/Sprites/countermeasures_icon_x64.png" id="1_oqjy0"]
+[ext_resource type="Script" uid="uid://bdhisxbcg48mk" path="res://Entities/Run/Item Handler/Items/Warrior/Countermeasures/countermeasures.gd" id="2_j5v34"]
+
+[resource]
+script = ExtResource("2_j5v34")
+item_name = "Countermeasures"
+id = "countermeasures"
+type = 4
+character_type = 1
+starter_item = true
+icon = ExtResource("1_oqjy0")
+tooltip = "[center]There's a %s%% chance to counter when defending.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

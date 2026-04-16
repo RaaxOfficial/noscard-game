@@ -1,0 +1,14 @@
+[gd_resource type="Resource" format=3 uid="uid://0je1ysfbpbh"]
+
+[ext_resource type="Texture2D" uid="uid://d8361dnq8oxu" path="res://UI/Run/Items/Sprites/berserker_icon_x64.png" id="1_tfxnd"]
+[ext_resource type="Script" uid="uid://bd2bajl2c5t8j" path="res://Entities/Run/Item Handler/Items/Warrior/Berserker/berserker.gd" id="2_kb8rj"]
+
+[resource]
+script = ExtResource("2_kb8rj")
+item_name = "Berserker"
+id = "berserker"
+character_type = 1
+starter_item = true
+icon = ExtResource("1_tfxnd")
+tooltip = "[center]Deal increased damage at the expense of your defense.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"

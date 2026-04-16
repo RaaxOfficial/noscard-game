@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ckvrnjrany2cf" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_portrait.png" id="1_oc247"]
 [ext_resource type="Resource" uid="uid://cj7y7rw7nyorl" path="res://Entities/Run/Player/Characters/Holy Mage/holy_mage_draftable_cards.tres" id="2_qhbow"]
 [ext_resource type="Resource" uid="uid://bi5ohdrku38ba" path="res://Entities/Run/Player/Characters/Holy Mage/holy_mage_starting_deck.tres" id="3_mb8vu"]
-[ext_resource type="Resource" uid="uid://t2h7e5ha1vv" path="res://Entities/Run/Item Handler/Items/Mana Potion/mana_potion.tres" id="5_34tfl"]
+[ext_resource type="Resource" uid="uid://t2h7e5ha1vv" path="res://Entities/Run/Item Handler/Items/Holy Mage/Mana Potion/mana_potion.tres" id="5_34tfl"]
 
 [resource]
 script = ExtResource("1_jthx8")

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" format=3 uid="uid://glfkgl5otk3y"]
+
+[ext_resource type="Texture2D" uid="uid://dba3wby5jrmpe" path="res://UI/Run/Items/Sprites/cylloan_spring_water_icon_x64.png" id="1_o3wbu"]
+[ext_resource type="Script" uid="uid://bv41q5tioqoe" path="res://Entities/Run/Item Handler/Items/Holy Mage/Cylloan Spring Water/cylloan_spring_water.gd" id="2_wl51b"]
+
+[resource]
+script = ExtResource("2_wl51b")
+item_name = "Cylloan Spring Water"
+id = "cylloan_spring_water"
+type = 1
+character_type = 3
+starter_item = true
+icon = ExtResource("1_o3wbu")
+tooltip = "[center]Your heals are %s%% more effective.[/center]"
+metadata/_custom_type_script = "uid://covkxd7ci3fp1"
