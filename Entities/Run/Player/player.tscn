@@ -26,9 +26,9 @@ wait_time = 3.0
 autostart = true
 
 [node name="StatusHandler" parent="." unique_id=662056357 node_paths=PackedStringArray("status_owner") instance=ExtResource("4_tekja")]
-offset_left = -41.0
+offset_left = -6.0
 offset_top = 48.0
-offset_right = -41.0
+offset_right = -6.0
 offset_bottom = 48.0
 status_owner = NodePath("..")
 

@@ -3,8 +3,10 @@
 [ext_resource type="Script" uid="uid://1m6oijtkq14l" path="res://Entities/Run/Battle/StatusHandler/status_handler.gd" id="1_q7mhj"]
 
 [node name="StatusHandler" type="GridContainer" unique_id=662056357]
+offset_right = 10.0
+offset_bottom = 2.0
 mouse_filter = 0
 theme_override_constants/h_separation = 2
 theme_override_constants/v_separation = 2
-columns = 6
+columns = 5
 script = ExtResource("1_q7mhj")

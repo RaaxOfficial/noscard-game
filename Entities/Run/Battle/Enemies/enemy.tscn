@@ -43,9 +43,9 @@ offset_bottom = -4.0
 grow_vertical = 0
 
 [node name="StatusHandler" parent="." unique_id=662056357 node_paths=PackedStringArray("status_owner") instance=ExtResource("6_ftopr")]
-offset_left = -75.0
+offset_left = -4.0
 offset_top = 16.0
-offset_right = -69.0
+offset_right = 2.0
 offset_bottom = 16.0
 status_owner = NodePath("..")
 

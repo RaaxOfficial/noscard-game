@@ -88,7 +88,5 @@ func _remove_all_debuffs() -> void:
 func _on_status_applied(status: Status) -> void:
 	if status.can_expire and status.stack_type == Status.StackType.DURATION:
 		status.duration -= 1
-		print("Status applied: -1 duration")
 	else:
 		status.stacks -= 1
-		print("Status applied: -1 stack")
