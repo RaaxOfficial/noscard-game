@@ -5,6 +5,7 @@
 
 [resource]
 script = ExtResource("2_d4rp7")
+chance = 1.0
 item_name = "Splendid Defender"
 id = "splendid_defender"
 type = 4

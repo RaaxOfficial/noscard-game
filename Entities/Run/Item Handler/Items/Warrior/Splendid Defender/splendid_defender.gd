@@ -1,18 +1,24 @@
 extends Item
 
-var member_var := 0
+@export var chance := 0.25
 
+var item_ui: ItemUI
+var player: Player
 
-func initialize_item(_owner: ItemUI) -> void:
-	print("This happens once when we acquire an item.")
-
-func activate_item(_owner: ItemUI) -> void:
-	print("This happens at specific times based on the Item.Type property.")
+func initialize_item(owner: ItemUI) -> void:
+	EventManager.player_hurt.connect(_on_player_hurt)
+	item_ui = owner
 
 func deactivate_item(_onwer: ItemUI) -> void:
-	print("This gets called when an ItemUI is exiting the SceneTree i.e. getting deleted.")
-	print("Event-based Items should disconnect from the EventManager here.")
+	if not EventManager.player_hurt.is_connected(_on_player_hurt):
+		return
+	EventManager.player_hurt.disconnect(_on_player_hurt)
 
-# We can provide unique tooltips per item if we want to
+func _on_player_hurt(health_lost: int) -> void:
+	player = item_ui.get_tree().get_first_node_in_group("player") as Player
+	if chance > randf():
+		player.stats.heal(health_lost - 1)
+		item_ui.flash()
+
 func get_tooltip() -> String:
-	return tooltip
+	return tooltip % int(chance * 100)
