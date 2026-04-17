@@ -1,18 +1,31 @@
 extends Item
 
-var member_var := 0
+@export var duration_extend := 1
 
+var status_handler: StatusHandler
+var card_played: Card
+var item_ui: ItemUI
 
-func initialize_item(_owner: ItemUI) -> void:
-	print("This happens once when we acquire an item.")
+func initialize_item(owner: ItemUI) -> void:
+	EventManager.card_played.connect(_on_card_played)
+	item_ui = owner
 
-func activate_item(_owner: ItemUI) -> void:
-	print("This happens at specific times based on the Item.Type property.")
+func activate_item(owner: ItemUI) -> void:
+	status_handler = owner.get_tree().get_first_node_in_group("player").find_child("StatusHandler") as StatusHandler
+	if card_played:
+		status_handler._get_status(card_played.id).duration += duration_extend
 
 func deactivate_item(_onwer: ItemUI) -> void:
-	print("This gets called when an ItemUI is exiting the SceneTree i.e. getting deleted.")
-	print("Event-based Items should disconnect from the EventManager here.")
+	if not EventManager.card_played.is_connected(_on_card_played):
+		return
+	EventManager.card_played.disconnect(_on_card_played)
 
-# We can provide unique tooltips per item if we want to
+func _on_card_played(card: Card, _targets: Array[Node]) -> void:
+	if not card.type == Card.Type.POWER:
+		return
+	
+	card_played = card
+	activate_item(item_ui)
+
 func get_tooltip() -> String:
-	return tooltip
+	return tooltip % duration_extend
