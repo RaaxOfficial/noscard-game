@@ -10,6 +10,7 @@ card = ExtResource("1_wckqq")
 id = "Counter"
 type = 2
 stack_type = 1
+can_expire = true
 icon = ExtResource("1_817x3")
 tooltip = "Reflect %s damage while defending."
 metadata/_custom_type_script = "uid://dx0is2tc5dfi6"

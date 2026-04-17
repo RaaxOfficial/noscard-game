@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dmd6nluhejqas"]
 
 [ext_resource type="Script" uid="uid://s8x57kv327c1" path="res://UI/Run/Battle/Battle Rewards/battle_reward.gd" id="1_3fggn"]
-[ext_resource type="Texture2D" uid="uid://cp2ct78m7tpxs" path="res://UI/Run/Battle/Sprites/prados_soleados_bg_x640.png" id="2_7inlq"]
+[ext_resource type="Texture2D" uid="uid://5o0jwgpria4p" path="res://UI/Run/Battle/Sprites/prados_nosville_bg_x640.png" id="2_7inlq"]
 [ext_resource type="PackedScene" uid="uid://bjujdjie78od8" path="res://UI/Run/Rewards/reward_button.tscn" id="3_ugapt"]
 [ext_resource type="Texture2D" uid="uid://dt0vxcdp6krdv" path="res://art/gold.png" id="4_xa6bv"]
 [ext_resource type="Texture2D" uid="uid://e2h0gwwvmi24" path="res://art/rarity.png" id="5_ks0yo"]

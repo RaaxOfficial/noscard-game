@@ -45,13 +45,16 @@ func _get_targets(targets: Array[Node]) -> Array[Node]:
 			return []
 
 func play(targets: Array[Node], char_stats: CharacterStats, modifiers: ModifierHandler) -> void:
-	EventManager.card_played.emit(self)
 	char_stats.mana -= cost
 	
+	var objectives := targets
 	if is_single_target():
 		apply_effects(targets, modifiers)
 	else:
-		apply_effects(_get_targets(targets), modifiers)
+		objectives = _get_targets(targets)
+		apply_effects(objectives, modifiers)
+	
+	EventManager.card_played.emit(self, objectives)
 
 func apply_effects(_targets: Array[Node], _modifiers: ModifierHandler, _from: Node = null) -> void:
 	pass

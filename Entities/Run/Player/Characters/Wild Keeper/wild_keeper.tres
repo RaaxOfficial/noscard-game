@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://ct3m4uqtcbqtc" path="res://Entities/Run/Player/Characters/character_stats.gd" id="1_8ujwr"]
 [ext_resource type="Resource" uid="uid://dtbtov0o58ebl" path="res://Entities/Run/Player/Characters/Wild Keeper/wild_keeper_draftable_cards.tres" id="2_fwkwx"]
 [ext_resource type="Resource" uid="uid://bj15tf82k7y4c" path="res://Entities/Run/Player/Characters/Wild Keeper/wild_keeper_starting_deck.tres" id="3_y3ftm"]
-[ext_resource type="Resource" uid="uid://cf4rwn2w85sno" path="res://Entities/Run/Item Handler/Items/Globals/Reinforced Armor/reinforced_armor.tres" id="5_wrt7b"]
+[ext_resource type="Resource" uid="uid://c83i0nd0mh2ip" path="res://Entities/Run/Item Handler/Items/Wild Keeper/Poisoned Arrowhead/poisoned_arrowhead.tres" id="5_wrt7b"]
 
 [resource]
 script = ExtResource("1_8ujwr")

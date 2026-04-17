@@ -81,7 +81,7 @@ func reshuffle_deck_from_discard() -> void:
 	
 	character.draw_pile.shuffle()
 
-func _on_card_played(card: Card) -> void:
+func _on_card_played(card: Card, _targets: Array[Node]) -> void:
 	if card.exhaustable or card.type == Card.Type.POWER:
 		return
 	

@@ -11,5 +11,5 @@ type = 4
 character_type = 2
 starter_item = true
 icon = ExtResource("1_l2dru")
-tooltip = "[center]When you play a \"Basic\" card, there's a %s%% chance to play it again at no cost. Each subsequent play reduces the chance.[/center]"
+tooltip = "[center]When you play a \"Basic\" card, there's a %s%% chance to play it again at no cost. Each subsequent play reduces the chance by %s%%.[/center]"
 metadata/_custom_type_script = "uid://covkxd7ci3fp1"
