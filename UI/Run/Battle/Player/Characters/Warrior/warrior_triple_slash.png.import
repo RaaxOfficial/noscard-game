@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cclif7d4p8sbs"
-path="res://.godot/imported/warrior_basic.png-d4d11e378d2f21fda641230fece0e277.ctex"
+uid="uid://ckrsph660dace"
+path="res://.godot/imported/warrior_triple_slash.png-1806fe9f34a4e294a0a6828caf591ad1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Player/Characters/Warrior/warrior_basic.png"
-dest_files=["res://.godot/imported/warrior_basic.png-d4d11e378d2f21fda641230fece0e277.ctex"]
+source_file="res://UI/Run/Battle/Player/Characters/Warrior/warrior_triple_slash.png"
+dest_files=["res://.godot/imported/warrior_triple_slash.png-1806fe9f34a4e294a0a6828caf591ad1.ctex"]
 
 [params]
 
