@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bj3hi7fu6rpmc" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_basic_icon_x64.png" id="1_obyjn"]
 [ext_resource type="Script" uid="uid://cuq7t2xyxqjlt" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_basic_card.gd" id="2_2jjii"]
 [ext_resource type="AudioStream" uid="uid://b1vpjjmi5cj3n" path="res://Assets/Audio/SFX/axe.ogg" id="3_tf27e"]
+[ext_resource type="SpriteFrames" uid="uid://dmexhho1yjybs" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_basic_card_sprite_frames.tres" id="4_4rtd3"]
 
 [resource]
 script = ExtResource("2_2jjii")
@@ -12,5 +13,6 @@ amount = 6
 cost = 1
 icon = ExtResource("1_obyjn")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"
+sprite_frames = ExtResource("4_4rtd3")
 sound = ExtResource("3_tf27e")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

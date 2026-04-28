@@ -23,6 +23,7 @@ const RARITY_COLORS := {
 @export_group("Card Visuals")
 @export var icon: Texture
 @export_multiline var tooltip_text: String
+@export var sprite_frames: SpriteFrames
 @export var sound: AudioStream
 
 func is_single_target() -> bool:

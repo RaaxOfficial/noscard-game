@@ -6,6 +6,11 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
+	
+	if from is Player:
+		from.attack_anim_sprite.sprite_frames = sprite_frames
+		from.play_attack_animation(targets)
+	
 	damage_effect.execute(targets, from)
 
 func get_default_tooltip() -> String:

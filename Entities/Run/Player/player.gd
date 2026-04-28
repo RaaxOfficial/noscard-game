@@ -12,6 +12,7 @@ const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 @onready var blink_timer: Timer = $BlinkTimer
 @onready var status_handler: StatusHandler = $StatusHandler
 @onready var modifier_handler: ModifierHandler = $ModifierHandler
+@onready var attack_anim_sprite: AnimatedSprite2D = $AttackAnimatedSprite
 
 
 func _ready() -> void:
@@ -91,6 +92,17 @@ func update_crit_damage(value: float) -> void:
 
 func skip_turn() -> void:
 	print("Player has skipped turn")
+
+func play_attack_animation(targets: Array[Node]) -> void:
+	for target in targets:
+		if not target:
+			continue
+		if target is Enemy or target is Player:
+			attack_anim_sprite.visible = true
+			attack_anim_sprite.global_position = target.global_position
+			attack_anim_sprite.play()
+			await attack_anim_sprite.animation_finished
+			attack_anim_sprite.visible = false
 
 func _on_player_hurt(health_lost: int) -> void:
 	print("ToDo: anim.play(hurt)")
