@@ -7,7 +7,7 @@ const SHOCK = preload("uid://c0tu7ov0lgrpk")
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
 	var from = modifiers.get_parent()
-	if from is Player:
+	if from is Player and sprite_frames:
 		from.play_animation(targets, sprite_frames, target)
 	for each in targets:
 		var status_effect := StatusEffect.new()

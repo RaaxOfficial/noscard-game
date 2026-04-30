@@ -8,7 +8,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	block_effect.amount = modified_block
 	block_effect.sound = sound
 	
-	if from is Player:
+	if from is Player and sprite_frames:
 		from.play_animation(targets, sprite_frames, target)
 	
 	block_effect.execute(targets)
