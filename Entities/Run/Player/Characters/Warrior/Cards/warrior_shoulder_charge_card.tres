@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cy603waj0wj25" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_shoulder_charge_icon_x64.png" id="1_v1frj"]
 [ext_resource type="Script" uid="uid://dioxr2mbns5sk" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_shoulder_charge_card.gd" id="2_2f8b8"]
 [ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="3_0qfo8"]
+[ext_resource type="SpriteFrames" uid="uid://c6ixv752iiele" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_shoulder_charge_sprite_frames.tres" id="4_ecbrn"]
 
 [resource]
 script = ExtResource("2_2f8b8")
@@ -13,5 +14,6 @@ amount = 4
 cost = 1
 icon = ExtResource("1_v1frj")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage. Apply [color=\"d3aa17\"]Blackout[/color].[/center]"
+sprite_frames = ExtResource("4_ecbrn")
 sound = ExtResource("3_0qfo8")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

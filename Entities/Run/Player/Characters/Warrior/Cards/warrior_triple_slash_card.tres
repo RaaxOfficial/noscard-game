@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cpf16brey2o46" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_triple_slash_icon_x64.png" id="1_liwen"]
 [ext_resource type="Script" uid="uid://7je5i7nc7uka" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_triple_slash_card.gd" id="2_f2xwd"]
+[ext_resource type="SpriteFrames" uid="uid://bgissurdoteyb" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_triple_slash_sprite_frames.tres" id="3_f2xwd"]
 
 [resource]
 script = ExtResource("2_f2xwd")
@@ -11,4 +12,5 @@ amount = 3
 cost = 2
 icon = ExtResource("1_liwen")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 3 times.[/center]"
+sprite_frames = ExtResource("3_f2xwd")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

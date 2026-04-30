@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cb66sxes8v3yp"]
+
+[ext_resource type="Texture2D" uid="uid://ddvoul2ujbgle" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_whirlwind.png" id="1_fygur"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dtcg2"]
+atlas = ExtResource("1_fygur")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gauhe"]
+atlas = ExtResource("1_fygur")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bkj61"]
+atlas = ExtResource("1_fygur")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8a4u"]
+atlas = ExtResource("1_fygur")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qpo06"]
+atlas = ExtResource("1_fygur")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07avy"]
+atlas = ExtResource("1_fygur")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7x1ew"]
+atlas = ExtResource("1_fygur")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7c72"]
+atlas = ExtResource("1_fygur")
+region = Rect2(448, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dtcg2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gauhe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bkj61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8a4u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qpo06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07avy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7x1ew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7c72")
+}],
+"loop": false,
+"name": &"whirlwind",
+"speed": 24.0
+}]

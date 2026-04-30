@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bum2nrejflmb6" path="res://Entities/Run/Battle/StatusHandler/status_handler.tscn" id="4_tekja"]
 [ext_resource type="PackedScene" uid="uid://b30pkyymfiwo1" path="res://Entities/Run/Battle/ModifierHandler/modifier_handler.tscn" id="5_5c2io"]
 [ext_resource type="PackedScene" uid="uid://dt53fguyhj0fr" path="res://Entities/Run/Battle/ModifierHandler/modifier.tscn" id="6_4wf4l"]
-[ext_resource type="SpriteFrames" uid="uid://dmexhho1yjybs" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_basic_card_sprite_frames.tres" id="7_bwxtt"]
+[ext_resource type="SpriteFrames" uid="uid://cb66sxes8v3yp" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_whirlwind_sprite_frames.tres" id="7_bwxtt"]
 
 [node name="Player" type="Node2D" unique_id=1304863896 groups=["player"]]
 script = ExtResource("1_vb825")
@@ -49,6 +49,8 @@ type = 2
 [node name="AttackAnimatedSprite" type="AnimatedSprite2D" parent="." unique_id=1348095929]
 position = Vector2(61, 0)
 sprite_frames = ExtResource("7_bwxtt")
-animation = &"basic"
+animation = &"whirlwind"
+frame = 7
+frame_progress = 1.0
 
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]
