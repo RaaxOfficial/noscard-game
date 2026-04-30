@@ -93,7 +93,7 @@ func update_crit_damage(value: float) -> void:
 func skip_turn() -> void:
 	print("Player has skipped turn")
 
-func play_attack_animation(targets: Array[Node], sprite_frames: SpriteFrames, target_type: Card.Target) -> void:
+func play_animation(targets: Array[Node], sprite_frames: SpriteFrames, target_type: Card.Target) -> void:
 	var is_single_target := false
 	attack_anim_sprite.sprite_frames = sprite_frames
 	

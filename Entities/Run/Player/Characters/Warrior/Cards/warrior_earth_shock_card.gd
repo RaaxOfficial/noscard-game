@@ -10,6 +10,9 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
 	
+	if from is Player:
+		from.play_animation(targets, sprite_frames, target)
+	
 	damage_effect.execute(targets, from)
 	await Engine.get_main_loop().create_timer(0.2).timeout
 	damage_effect.execute(targets, from)

@@ -8,7 +8,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	damage_effect.sound = sound
 	
 	if from is Player:
-		from.play_attack_animation(targets, sprite_frames, target)
+		from.play_animation(targets, sprite_frames, target)
 	
 	damage_effect.execute(targets, from)
 

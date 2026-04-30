@@ -9,6 +9,10 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	var piercing_effect := PiercingEffect.new()
 	piercing_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	piercing_effect.sound = sound
+	
+	if from is Player:
+		from.play_animation(targets, sprite_frames, target)
+	
 	piercing_effect.execute(targets, from)
 	
 	var status_effect := StatusEffect.new()
