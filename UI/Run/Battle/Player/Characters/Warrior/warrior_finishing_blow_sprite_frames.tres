@@ -133,5 +133,5 @@ animations = [{
 }],
 "loop": false,
 "name": &"finishing_blow",
-"speed": 24.0
+"speed": 42.0
 }]

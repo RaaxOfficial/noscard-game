@@ -11,8 +11,7 @@ func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node
 	block_effect.sound = sound
 	
 	if from is Player:
-		from.attack_anim_sprite.sprite_frames = sprite_frames
-		from.play_attack_animation(targets)
+		from.play_attack_animation(targets, sprite_frames, target)
 	
 	block_effect.execute(targets)
 	
