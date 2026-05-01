@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://luhr1nj3j1w1"
-path="res://.godot/imported/warrior_breathing.png-dcce9aa648c1ec23df10ec80fc0474d1.ctex"
+uid="uid://uatv1bbu1ie5"
+path="res://.godot/imported/warrior_defend.png-12d0bae978243ed47bdc932a5e701214.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Player/Characters/Warrior/warrior_breathing.png"
-dest_files=["res://.godot/imported/warrior_breathing.png-dcce9aa648c1ec23df10ec80fc0474d1.ctex"]
+source_file="res://UI/Run/Battle/Player/Characters/Warrior/warrior_defend.png"
+dest_files=["res://.godot/imported/warrior_defend.png-12d0bae978243ed47bdc932a5e701214.ctex"]
 
 [params]
 
