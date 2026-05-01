@@ -93,16 +93,43 @@ func update_crit_damage(value: float) -> void:
 func skip_turn() -> void:
 	print("Player has skipped turn")
 
-func play_attack_animation(targets: Array[Node]) -> void:
-	for target in targets:
-		if not target:
-			continue
-		if target is Enemy or target is Player:
-			attack_anim_sprite.visible = true
-			attack_anim_sprite.global_position = target.global_position
-			attack_anim_sprite.play()
-			await attack_anim_sprite.animation_finished
-			attack_anim_sprite.visible = false
+func play_animation(targets: Array[Node], sprite_frames: SpriteFrames, target_type: Card.Target) -> void:
+	var is_single_target := false
+	
+	attack_anim_sprite.sprite_frames = sprite_frames
+	
+	var tween := create_tween()
+	var start := global_position
+	var end: Vector2 = targets[0].global_position - Vector2.RIGHT * 32
+	
+	match target_type:
+		Card.Target.SELF:
+			is_single_target = true
+			end = global_position
+		Card.Target.SINGLE_ENEMY:
+			is_single_target = true
+		Card.Target.ALL_ENEMIES:
+			is_single_target = false
+		Card.Target.EVERYONE:
+			is_single_target = false
+	
+	if not is_single_target:
+		attack_anim_sprite.global_position = self.global_position
+	else:
+		attack_anim_sprite.global_position = targets[0].global_position
+	
+	tween.tween_property(self, "global_position", end, 0.15).finished.connect(
+	func():
+		if not is_single_target:
+			attack_anim_sprite.global_position = global_position
+		else:
+			attack_anim_sprite.global_position = targets[0].global_position
+		attack_anim_sprite.visible = true
+		attack_anim_sprite.play()
+	)
+	tween.tween_property(self, "global_position", start, 0.15)
+	await attack_anim_sprite.animation_finished
+	attack_anim_sprite.visible = false
 
 func _on_player_hurt(health_lost: int) -> void:
 	print("ToDo: anim.play(hurt)")

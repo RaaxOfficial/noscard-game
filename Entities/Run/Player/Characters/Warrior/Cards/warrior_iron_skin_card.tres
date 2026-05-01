@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c5dajssiwivrm" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_iron_skin_icon_x64.png" id="1_d4lds"]
 [ext_resource type="Script" uid="uid://b4mj720rsli3d" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_iron_skin_card.gd" id="2_7qdbc"]
 [ext_resource type="AudioStream" uid="uid://df64e7qat73gs" path="res://Assets/Audio/SFX/block.ogg" id="3_6pnl8"]
+[ext_resource type="SpriteFrames" uid="uid://co5qd8tkskr1p" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_iron_skin_sprite_frames.tres" id="5_6pnl8"]
 
 [resource]
 script = ExtResource("2_7qdbc")
@@ -14,5 +15,6 @@ amount = 3
 cost = 1
 icon = ExtResource("1_d4lds")
 tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block. Apply [color=\"d3aa17\"]Counter[/color] to yourself.[/center]"
+sprite_frames = ExtResource("5_6pnl8")
 sound = ExtResource("3_6pnl8")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

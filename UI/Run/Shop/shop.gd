@@ -13,8 +13,6 @@ const SHOP_ITEM = preload("uid://cq1t14la2uxiw")
 @onready var items: HBoxContainer = %Items
 @onready var card_tooltip_popup: CardTooltipPopup = %CardTooltipPopup
 @onready var modifier_handler: ModifierHandler = $ModifierHandler
-@onready var blink_timer: Timer = %BlinkTimer
-@onready var animation_player: AnimationPlayer = %AnimationPlayer
 
 
 func _ready() -> void:
@@ -26,9 +24,6 @@ func _ready() -> void:
 	
 	EventManager.shop_card_bought.connect(_on_shop_card_bought)
 	EventManager.shop_item_bought.connect(_on_shop_item_bought)
-	
-	_blink_timer_setup()
-	blink_timer.timeout.connect(_on_blink_timer_timeout)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel") and card_tooltip_popup.visible:
@@ -110,14 +105,6 @@ func _on_shop_item_bought(item: Item, gold_cost: int) -> void:
 		_update_shop_costs()
 	else:
 		_update_items()
-
-func _blink_timer_setup() -> void:
-	blink_timer.wait_time = randf_range(1.0, 5.0)
-	blink_timer.start()
-
-func _on_blink_timer_timeout() -> void:
-	animation_player.play("blink")
-	_blink_timer_setup()
 
 func _on_back_button_pressed() -> void:
 	EventManager.shop_exited.emit()

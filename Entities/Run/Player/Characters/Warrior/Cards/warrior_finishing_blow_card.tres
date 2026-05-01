@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bbplp8gjhnvos" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_finishing_blow_icon_x64.png" id="1_1thu2"]
 [ext_resource type="Script" uid="uid://edpc3woxvbcd" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_finishing_blow_card.gd" id="2_x8rcq"]
+[ext_resource type="SpriteFrames" uid="uid://cy0e8bo2bp2iq" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_finishing_blow_sprite_frames.tres" id="3_x8rcq"]
 
 [resource]
 script = ExtResource("2_x8rcq")
@@ -13,4 +14,5 @@ amount = 9
 cost = 1
 icon = ExtResource("1_1thu2")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage. Apply [color=\"d3aa17\"]Weaken Defense Power[/color] for %s turns."
+sprite_frames = ExtResource("3_x8rcq")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

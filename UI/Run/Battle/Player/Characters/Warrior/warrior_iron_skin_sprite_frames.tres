@@ -1,0 +1,109 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://co5qd8tkskr1p"]
+
+[ext_resource type="Texture2D" uid="uid://7p8g6oqu5n40" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_iron_skin.png" id="1_ldvpl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0327w"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wj8fm"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqbi3"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6mxkw"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc18q"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ch5n"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcqks"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xt7pq"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xi5c1"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1pny"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ylkr"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1yxv0"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(704, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxdwj"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(768, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ws70h"]
+atlas = ExtResource("1_ldvpl")
+region = Rect2(832, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0327w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wj8fm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqbi3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6mxkw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gc18q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ch5n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcqks")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xt7pq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xi5c1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i1pny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ylkr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1yxv0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxdwj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ws70h")
+}],
+"loop": false,
+"name": &"iron_skin",
+"speed": 14.0
+}]
