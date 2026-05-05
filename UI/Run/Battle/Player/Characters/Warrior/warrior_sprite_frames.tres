@@ -1,34 +1,37 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://cpsu5kgpl3h2b"]
 
-[ext_resource type="Texture2D" uid="uid://dvblmx5sdkfmc" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_blinking.png" id="1_ep1rv"]
-[ext_resource type="Texture2D" uid="uid://b45k45adem7ey" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_breathing.png" id="2_y1yvo"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4qrt3"]
+load_path = "res://.godot/imported/warrior_blinking.png-ef3a099feafd8d8804c01d0ba371b006.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4hmo4"]
-atlas = ExtResource("1_ep1rv")
+atlas = SubResource("CompressedTexture2D_4qrt3")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x1k2s"]
-atlas = ExtResource("1_ep1rv")
+atlas = SubResource("CompressedTexture2D_4qrt3")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7hv2f"]
-atlas = ExtResource("1_ep1rv")
+atlas = SubResource("CompressedTexture2D_4qrt3")
 region = Rect2(128, 0, 64, 64)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y86f6"]
+load_path = "res://.godot/imported/warrior_breathing.png-dcce9aa648c1ec23df10ec80fc0474d1.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhh41"]
-atlas = ExtResource("2_y1yvo")
+atlas = SubResource("CompressedTexture2D_y86f6")
 region = Rect2(0, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r0flo"]
-atlas = ExtResource("2_y1yvo")
+atlas = SubResource("CompressedTexture2D_y86f6")
 region = Rect2(64, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lnoop"]
-atlas = ExtResource("2_y1yvo")
+atlas = SubResource("CompressedTexture2D_y86f6")
 region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r4a8l"]
-atlas = ExtResource("2_y1yvo")
+atlas = SubResource("CompressedTexture2D_y86f6")
 region = Rect2(192, 0, 64, 64)
 
 [resource]
