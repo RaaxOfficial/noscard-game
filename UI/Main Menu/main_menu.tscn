@@ -4,8 +4,8 @@
 [ext_resource type="Resource" uid="uid://bwgk87l43oehf" path="res://Entities/Run/Resources/run_startup.tres" id="2_k0v0h"]
 [ext_resource type="SpriteFrames" uid="uid://cquesy7j5vstq" path="res://UI/Run/Battle/Player/Characters/Holy Mage/holy_mage_sprite_frames.tres" id="2_mqkp3"]
 [ext_resource type="SpriteFrames" uid="uid://cpsu5kgpl3h2b" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_sprite_frames.tres" id="2_vq10u"]
-[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://UI/Run/Battle/Enemies/Chicken/chiken64.png" id="3_jri5q"]
 [ext_resource type="SpriteFrames" uid="uid://deowxenm3le3y" path="res://UI/Run/Battle/Player/Characters/Wild Keeper/wild_keeper_sprite_frames.tres" id="3_vq10u"]
+[ext_resource type="Texture2D" uid="uid://dkjrbwlpfy3ma" path="res://UI/Run/Battle/Enemies/Chicken/chiken.png" id="6_k0v0h"]
 
 [sub_resource type="Gradient" id="Gradient_gl0q7"]
 colors = PackedColorArray(0.2, 0.11764706, 0.050980393, 1, 0.05490196, 0, 0.05882353, 1)
@@ -113,7 +113,7 @@ flip_h = true
 
 [node name="Chicken" type="Sprite2D" parent="." unique_id=657831586]
 position = Vector2(558, 303)
-texture = ExtResource("3_jri5q")
+texture = ExtResource("6_k0v0h")
 
 [connection signal="pressed" from="VBoxContainer/Continue" to="." method="_on_continue_pressed"]
 [connection signal="pressed" from="VBoxContainer/NewRun" to="." method="_on_new_run_pressed"]

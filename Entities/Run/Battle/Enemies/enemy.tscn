@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dvfawhc5l7bau"]
 
 [ext_resource type="Script" uid="uid://drkue30paxf81" path="res://Entities/Run/Battle/Enemies/enemy.gd" id="1_572h1"]
-[ext_resource type="Texture2D" uid="uid://c16em7qn7e1oh" path="res://UI/Run/Battle/Enemies/Chicken/chiken32.png" id="2_ihd1f"]
+[ext_resource type="Texture2D" uid="uid://dkjrbwlpfy3ma" path="res://UI/Run/Battle/Enemies/Chicken/chiken.png" id="2_ojck0"]
 [ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="3_rt1x0"]
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Run/Battle/stats_ui.tscn" id="4_8wvsg"]
 [ext_resource type="PackedScene" uid="uid://dx26sgo77cm56" path="res://UI/Run/Battle/Enemies/intent_ui.tscn" id="5_rt1x0"]
@@ -16,7 +16,7 @@ collision_layer = 4
 script = ExtResource("1_572h1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1976874982]
-texture = ExtResource("2_ihd1f")
+texture = ExtResource("2_ojck0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1150611707]
 unique_name_in_owner = true
