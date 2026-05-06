@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://la3y4e5xwbct" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_defend_icon_x64.png" id="1_sfmi6"]
 [ext_resource type="Script" uid="uid://2lhact3e0sma" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_defend_card.gd" id="2_efiof"]
+[ext_resource type="SpriteFrames" uid="uid://bw1ajs6quuhjq" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_defend_sprite_frames.tres" id="3_h4gji"]
 
 [resource]
 script = ExtResource("2_efiof")
@@ -11,4 +12,5 @@ amount = 5
 cost = 1
 icon = ExtResource("1_sfmi6")
 tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block.[/center]"
+sprite_frames = ExtResource("3_h4gji")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

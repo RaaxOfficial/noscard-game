@@ -1,0 +1,74 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bpy1s6u7abd7x"]
+
+[ext_resource type="Texture2D" uid="uid://brfvjx6c1hl15" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_fury.png" id="1_ldlqb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ow4md"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8o6yj"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2duf3"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a24ik"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xhvs1"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8m2et"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j82bk"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ffy3f"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okt1a"]
+atlas = ExtResource("1_ldlqb")
+region = Rect2(512, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ow4md")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8o6yj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2duf3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a24ik")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xhvs1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8m2et")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j82bk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ffy3f")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okt1a")
+}],
+"loop": false,
+"name": &"default",
+"speed": 18.0
+}]

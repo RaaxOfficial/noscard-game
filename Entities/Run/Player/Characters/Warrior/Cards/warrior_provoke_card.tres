@@ -3,6 +3,7 @@
 [ext_resource type="Resource" uid="uid://cs6g51d7oplgg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_basic_card.tres" id="1_44hg0"]
 [ext_resource type="Texture2D" uid="uid://dqg2yvq5nk18d" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_provoke_icon_x64.png" id="1_omjqg"]
 [ext_resource type="Script" uid="uid://c7s8ss66xgcjb" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_provoke_card.gd" id="2_44hg0"]
+[ext_resource type="SpriteFrames" uid="uid://cr55tahcm540r" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_provoke_sprite_frames.tres" id="4_8icqr"]
 
 [resource]
 script = ExtResource("2_44hg0")
@@ -15,4 +16,5 @@ amount = 4
 cost = 3
 icon = ExtResource("1_omjqg")
 tooltip_text = "[center]Gain [color=\"0044ff\"]%s[/color] block and apply [color=\"d3aa17\"] Counter[/color] to yourself for each enemy on the field.[/center]"
+sprite_frames = ExtResource("4_8icqr")
 metadata/_custom_type_script = "uid://yhnspsq248rn"

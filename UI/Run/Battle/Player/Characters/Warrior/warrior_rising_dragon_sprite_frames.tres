@@ -1,0 +1,95 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://xvqmfgwuwqsp"]
+
+[ext_resource type="Texture2D" uid="uid://d8s116mmlta0" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_rising_dragon.png" id="1_hsqoj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1jtf"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j66af"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x78fx"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecm4s"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mfyrh"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ww2kv"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_monv7"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ylym7"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnqxl"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kaf65"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tb83r"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(640, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4qdq"]
+atlas = ExtResource("1_hsqoj")
+region = Rect2(704, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1jtf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j66af")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x78fx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecm4s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mfyrh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ww2kv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_monv7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ylym7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnqxl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kaf65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tb83r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4qdq")
+}],
+"loop": false,
+"name": &"rising_dragon",
+"speed": 24.0
+}]

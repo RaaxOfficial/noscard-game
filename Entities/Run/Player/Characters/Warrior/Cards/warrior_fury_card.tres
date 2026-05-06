@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bxpfmbnlqj126" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_fury_icon_x64.png" id="1_jffwk"]
 [ext_resource type="Script" uid="uid://4vxefbgk2vk1" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_fury_card.gd" id="2_drhpa"]
+[ext_resource type="SpriteFrames" uid="uid://bpy1s6u7abd7x" path="res://UI/Run/Battle/Player/Characters/Warrior/warrior_fury_sprite_frames.tres" id="3_ft8ym"]
 
 [resource]
 script = ExtResource("2_drhpa")
@@ -11,4 +12,5 @@ rarity = 2
 cost = 2
 icon = ExtResource("1_jffwk")
 tooltip_text = "[center]Apply  [color=\"d3aa17\"] Fury[/color] to yourself. [color=\"8e2818\"]Exhaust[/color].[/center]"
+sprite_frames = ExtResource("3_ft8ym")
 metadata/_custom_type_script = "uid://yhnspsq248rn"
