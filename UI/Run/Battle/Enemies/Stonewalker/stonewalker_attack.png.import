@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh5li8qlf8pi8"
-path="res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"
+uid="uid://dg2shl7oq0oya"
+path="res://.godot/imported/stonewalker_attack.png-3e2e2dc13aad1ef7556b57709f859a7a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Koaren warrior/koaren_warrior.png"
-dest_files=["res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Stonewalker/stonewalker_attack.png"
+dest_files=["res://.godot/imported/stonewalker_attack.png-3e2e2dc13aad1ef7556b57709f859a7a.ctex"]
 
 [params]
 

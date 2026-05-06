@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh5li8qlf8pi8"
-path="res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"
+uid="uid://dqk5vpci4pejp"
+path="res://.godot/imported/mandra_idle.png-f16ff23c35b20426306df3eaed557167.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Koaren warrior/koaren_warrior.png"
-dest_files=["res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Mandra/mandra_idle.png"
+dest_files=["res://.godot/imported/mandra_idle.png-f16ff23c35b20426306df3eaed557167.ctex"]
 
 [params]
 

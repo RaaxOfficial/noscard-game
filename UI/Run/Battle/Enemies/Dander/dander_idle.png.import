@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh5li8qlf8pi8"
-path="res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"
+uid="uid://b7n7dphm8bi4y"
+path="res://.godot/imported/dander_idle.png-e9a92474db5416909f195c2eded2057a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Koaren warrior/koaren_warrior.png"
-dest_files=["res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Dander/dander_idle.png"
+dest_files=["res://.godot/imported/dander_idle.png-e9a92474db5416909f195c2eded2057a.ctex"]
 
 [params]
 

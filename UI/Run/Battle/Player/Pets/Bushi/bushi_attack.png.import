@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh5li8qlf8pi8"
-path="res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"
+uid="uid://dx1qkx68tl4wj"
+path="res://.godot/imported/bushi_attack.png-dc26227356bceb9025b25823af81b68b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Koaren warrior/koaren_warrior.png"
-dest_files=["res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"]
+source_file="res://UI/Run/Battle/Player/Pets/Bushi/bushi_attack.png"
+dest_files=["res://.godot/imported/bushi_attack.png-dc26227356bceb9025b25823af81b68b.ctex"]
 
 [params]
 

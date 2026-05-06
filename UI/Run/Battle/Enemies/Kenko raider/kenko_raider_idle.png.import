@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh5li8qlf8pi8"
-path="res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"
+uid="uid://7lscfjlae3cy"
+path="res://.godot/imported/kenko_raider_idle.png-f442fc0196478c3c03ecfe96191dbf1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Koaren warrior/koaren_warrior.png"
-dest_files=["res://.godot/imported/koaren_warrior.png-aa5f21eb0fda37e412f14f09d3749a8b.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Kenko raider/kenko_raider_idle.png"
+dest_files=["res://.godot/imported/kenko_raider_idle.png-f442fc0196478c3c03ecfe96191dbf1b.ctex"]
 
 [params]
 
