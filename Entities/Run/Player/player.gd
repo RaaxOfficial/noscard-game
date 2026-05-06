@@ -113,11 +113,6 @@ func play_animation(targets: Array[Node], sprite_frames: SpriteFrames, target_ty
 		Card.Target.EVERYONE:
 			is_single_target = false
 	
-	if not is_single_target:
-		attack_anim_sprite.global_position = self.global_position
-	else:
-		attack_anim_sprite.global_position = targets[0].global_position
-	
 	tween.tween_property(self, "global_position", end, 0.15).finished.connect(
 	func():
 		if not is_single_target:

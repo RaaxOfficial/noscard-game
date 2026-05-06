@@ -11,9 +11,6 @@
 [ext_resource type="Script" uid="uid://bjmooy4x05e57" path="res://UI/Run/Battle/battle_ui.gd" id="7_rcrfk"]
 [ext_resource type="Resource" uid="uid://twaf8dwpqxes" path="res://Entities/Run/Battle/Enemies/Chicken/chicken_enemy.tres" id="8_h5j6c"]
 [ext_resource type="Script" uid="uid://yp0h3ndgtga3" path="res://Entities/Run/Player/player_handler.gd" id="8_lksgk"]
-[ext_resource type="PackedScene" uid="uid://cexpw05v2vp7j" path="res://Entities/Run/Battle/Enemies/Chicken/chicken_enemy_ai.tscn" id="9_pleq6"]
-[ext_resource type="Texture2D" uid="uid://bdwcnbp1wqy4o" path="res://UI/Run/Battle/Enemies/Chicken/chiken64.png" id="10_pleq6"]
-[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="11_y3s6e"]
 [ext_resource type="PackedScene" uid="uid://d1lk80tnhnt42" path="res://UI/Run/Battle/Player/mana_ui.tscn" id="11_yrmgv"]
 [ext_resource type="PackedScene" uid="uid://dtsvbwjh1sbe1" path="res://UI/Run/Card/Card Tooltip/tooltip_container.tscn" id="12_lksgk"]
 [ext_resource type="Theme" uid="uid://xqhaecxd2rsq" path="res://Themes/main_theme.tres" id="13_rcrfk"]
@@ -26,13 +23,6 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ac2hh"]
 size = Vector2(640, 153)
-
-[sub_resource type="Resource" id="Resource_avgb2"]
-script = ExtResource("11_y3s6e")
-ai = ExtResource("9_pleq6")
-max_health = 12
-art = ExtResource("10_pleq6")
-metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
 
 [node name="Battle" type="Node2D" unique_id=1162226834]
 script = ExtResource("1_4m2ey")
@@ -65,7 +55,7 @@ stats = ExtResource("8_h5j6c")
 
 [node name="ChickenBossEnemy2" parent="EnemyHandler" unique_id=1381364638 instance=ExtResource("4_ihngk")]
 position = Vector2(522, 270)
-stats = SubResource("Resource_avgb2")
+stats = ExtResource("8_h5j6c")
 
 [node name="CardTargetSelector" parent="." unique_id=883950278 instance=ExtResource("3_0lqow")]
 
