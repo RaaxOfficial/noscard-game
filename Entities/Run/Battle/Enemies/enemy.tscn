@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://drkue30paxf81" path="res://Entities/Run/Battle/Enemies/enemy.gd" id="1_572h1"]
 [ext_resource type="Texture2D" uid="uid://dkjrbwlpfy3ma" path="res://UI/Run/Battle/Enemies/Chicken/chiken.png" id="2_ojck0"]
-[ext_resource type="SpriteFrames" uid="uid://c45ur7jue3s5j" path="res://UI/Run/Battle/Enemies/Mimic/mimic_sprite_frames.tres" id="2_y50jg"]
+[ext_resource type="SpriteFrames" uid="uid://bbgwjhn1tle7j" path="res://UI/Run/Battle/Enemies/Wooly/wooly_sprite_frames.tres" id="2_y50jg"]
 [ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="3_rt1x0"]
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Run/Battle/stats_ui.tscn" id="4_8wvsg"]
 [ext_resource type="PackedScene" uid="uid://dx26sgo77cm56" path="res://UI/Run/Battle/Enemies/intent_ui.tscn" id="5_rt1x0"]
@@ -20,8 +20,6 @@ script = ExtResource("1_572h1")
 sprite_frames = ExtResource("2_y50jg")
 animation = &"attack"
 autoplay = "idle"
-frame = 4
-frame_progress = 1.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1976874982]
 visible = false
