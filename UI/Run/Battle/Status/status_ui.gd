@@ -36,7 +36,7 @@ func _on_status_changed() -> void:
 	if not status:
 		return
 	
-	if status.can_expire and status.duration <= 0:
+	if status.stack_type == Status.StackType.DURATION and status.can_expire and status.duration <= 0:
 		queue_free()
 	
 	if status.stack_type == Status.StackType.INTENSITY and status.stacks == 0:
