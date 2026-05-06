@@ -19,6 +19,7 @@ func perform_action() -> void:
 	tween.tween_property(enemy, "global_position", start, 0.4)
 	
 	tween.finished.connect(func():
+		enemy.action_animated_sprite.play("idle")
 		EventManager.enemy_action_completed.emit(enemy)
 		)
 

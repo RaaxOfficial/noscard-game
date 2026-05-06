@@ -9,6 +9,7 @@ const WHITE_SPRITE_MATERIAL := preload("res://art/white_sprite_material.tres")
 var enemy_action_picker: EnemyActionPicker
 var current_action: EnemyAction : set = set_current_action
 
+@onready var action_animated_sprite: AnimatedSprite2D = $ActionAnimatedSprite
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var arrow: Sprite2D = $Arrow
 @onready var collision: CollisionShape2D = %CollisionShape2D
@@ -63,7 +64,8 @@ func update_enemy() -> void:
 	if not is_inside_tree():
 		await ready
 	
-	sprite_2d.texture = stats.art
+	action_animated_sprite.sprite_frames = stats.sprite_frames
+	action_animated_sprite.play("idle")
 	update_ui()
 	setup_ai()
 	update_stats()

@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_ailko"]
 [ext_resource type="PackedScene" uid="uid://dgdoy6to4l5mf" path="res://Entities/Run/Battle/Enemies/Koaren Warrior/koaren_warrior_enemy_ai.tscn" id="1_ktttc"]
-[ext_resource type="Texture2D" uid="uid://bh5li8qlf8pi8" path="res://UI/Run/Battle/Enemies/Koaren warrior/koaren_warrior.png" id="2_pm3fl"]
-
+[ext_resource type="Texture2D" uid="uid://bh5li8qlf8pi8" path="res://UI/Run/Battle/Enemies/Koaren Warrior/koaren_warrior.png" id="2_pm3fl"]
+[ext_resource type="SpriteFrames" uid="uid://coes5rjhah764" path="res://UI/Run/Battle/Enemies/Koaren Warrior/koaren_warrior_sprite_frames.tres" id="4_el7r5"]
 
 [resource]
 script = ExtResource("1_ailko")
 ai = ExtResource("1_ktttc")
 max_health = 32
 art = ExtResource("2_pm3fl")
+sprite_frames = ExtResource("4_el7r5")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

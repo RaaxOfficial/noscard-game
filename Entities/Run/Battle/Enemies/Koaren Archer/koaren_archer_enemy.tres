@@ -3,11 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://ubj6qbn6c7kf" path="res://Entities/Run/Battle/Enemies/Koaren Archer/koaren_archer_enemy_ai.tscn" id="1_t16l5"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_uu4lb"]
 [ext_resource type="Texture2D" uid="uid://lt3cgvn7sgnv" path="res://UI/Run/Battle/Enemies/Koaren archer/koaren_archer64.png" id="2_t16l5"]
-
+[ext_resource type="SpriteFrames" uid="uid://76lmmi53pfd4" path="res://UI/Run/Battle/Enemies/Koaren archer/koaren_archer_sprite_frames.tres" id="4_a0f6g"]
 
 [resource]
 script = ExtResource("1_uu4lb")
 ai = ExtResource("1_t16l5")
 max_health = 25
 art = ExtResource("2_t16l5")
+sprite_frames = ExtResource("4_a0f6g")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

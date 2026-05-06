@@ -3,11 +3,18 @@
 [ext_resource type="Script" uid="uid://yhnspsq248rn" path="res://Entities/Run/Card/card.gd" id="1_iitoy"]
 [ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Run/Card/Card Pile/card_pile.gd" id="2_1o1nu"]
 [ext_resource type="Resource" uid="uid://dj5rtsxgjbivd" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_basic_card.tres" id="2_827qs"]
+[ext_resource type="Resource" uid="uid://oflb40523gwc" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_blessing_card.tres" id="3_hj764"]
 [ext_resource type="Resource" uid="uid://dm1cqfxvrtdqk" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_light_card.tres" id="3_v02u8"]
 [ext_resource type="Resource" uid="uid://bs5arqj4jfw75" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_defend_card.tres" id="4_6uewi"]
+[ext_resource type="Resource" uid="uid://gh7312ufyhgv" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_cure_all_card.tres" id="4_t6keo"]
 [ext_resource type="Resource" uid="uid://bocxjlf82vxqr" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_healing_card.tres" id="5_fqrma"]
+[ext_resource type="Resource" uid="uid://cw30vnv7fcyen" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_group_healing_card.tres" id="6_2d8iw"]
+[ext_resource type="Resource" uid="uid://chmmg3n8b1tss" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_heaven_song.tres" id="8_jus6r"]
+[ext_resource type="Resource" uid="uid://b0nx8dsqs3y7p" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_hammer_card.tres" id="9_ki7q1"]
+[ext_resource type="Resource" uid="uid://d1vp7qihs2pmh" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_holy_weapon_card.tres" id="12_jjfhk"]
+[ext_resource type="Resource" uid="uid://bvm8tepjhrpmx" path="res://Entities/Run/Player/Characters/Holy Mage/Cards/holy_mage_mana_shield_card.tres" id="13_1ixv4"]
 
 [resource]
 script = ExtResource("2_1o1nu")
-cards = Array[ExtResource("1_iitoy")]([ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("2_827qs"), ExtResource("3_v02u8"), ExtResource("4_6uewi"), ExtResource("4_6uewi"), ExtResource("4_6uewi"), ExtResource("4_6uewi"), ExtResource("5_fqrma")])
+cards = Array[ExtResource("1_iitoy")]([ExtResource("2_827qs"), ExtResource("3_hj764"), ExtResource("4_t6keo"), ExtResource("4_6uewi"), ExtResource("6_2d8iw"), ExtResource("5_fqrma"), ExtResource("8_jus6r"), ExtResource("9_ki7q1"), ExtResource("3_v02u8"), ExtResource("12_jjfhk"), ExtResource("13_1ixv4")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

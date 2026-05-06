@@ -2,10 +2,15 @@ extends Card
 
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from := modifiers.get_parent()
 	var source = modifiers.get_parent()
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
+	
+	if from is Player and sprite_frames:
+		from.play_animation(targets, sprite_frames, target)
+	
 	damage_effect.execute(targets, source)
 
 func get_default_tooltip() -> String:

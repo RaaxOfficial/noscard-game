@@ -3,10 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://cexpw05v2vp7j" path="res://Entities/Run/Battle/Enemies/Chicken/chicken_enemy_ai.tscn" id="1_bbbf7"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_j281h"]
 [ext_resource type="Texture2D" uid="uid://dkjrbwlpfy3ma" path="res://UI/Run/Battle/Enemies/Chicken/chiken.png" id="2_bbbf7"]
+[ext_resource type="SpriteFrames" uid="uid://de5y43udg6v6s" path="res://UI/Run/Battle/Enemies/Chicken/chicken_sprite_frames.tres" id="4_3go6b"]
 
 [resource]
 script = ExtResource("1_j281h")
 ai = ExtResource("1_bbbf7")
 max_health = 10
 art = ExtResource("2_bbbf7")
+sprite_frames = ExtResource("4_3go6b")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

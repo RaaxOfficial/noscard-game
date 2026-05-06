@@ -6,9 +6,14 @@ const MANA_SHIELD = preload("uid://d17mx1rkt1q2i")
 
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from := modifiers.get_parent()
 	var block_effect := BlockEffect.new()
 	block_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.BLOCK_GAINED)
 	block_effect.sound = sound
+	
+	if from is Player and sprite_frames:
+		from.play_animation(targets, sprite_frames, target)
+	
 	block_effect.execute(targets)
 	
 	var status_effect := StatusEffect.new()

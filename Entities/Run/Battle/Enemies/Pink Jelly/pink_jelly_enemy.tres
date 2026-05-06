@@ -3,11 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://dou1j7gixdxfl" path="res://Entities/Run/Battle/Enemies/Pink Jelly/pink_jelly_enemy_ai.tscn" id="1_dh51y"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_rwr6r"]
 [ext_resource type="Texture2D" uid="uid://cxj0sxc653wyc" path="res://UI/Run/Battle/Enemies/Pink jelly/pinky_jelly.png" id="2_fcyrn"]
-
+[ext_resource type="SpriteFrames" uid="uid://cr0kkik3vmmja" path="res://UI/Run/Battle/Enemies/Pink jelly/pink_jelly_sprite_frames.tres" id="4_7r3th"]
 
 [resource]
 script = ExtResource("1_rwr6r")
 ai = ExtResource("1_dh51y")
 max_health = 20
 art = ExtResource("2_fcyrn")
+sprite_frames = ExtResource("4_7r3th")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

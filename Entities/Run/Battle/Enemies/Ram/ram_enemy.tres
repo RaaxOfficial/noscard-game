@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_daw52"]
 [ext_resource type="PackedScene" uid="uid://8lqyffxr5vb6" path="res://Entities/Run/Battle/Enemies/Ram/ram_enemy_ai.tscn" id="1_kahnq"]
 [ext_resource type="Texture2D" uid="uid://bilol4giyrn71" path="res://UI/Run/Battle/Enemies/Ram/ram.png" id="2_o2iox"]
-
+[ext_resource type="SpriteFrames" uid="uid://7qujo3c57fm6" path="res://UI/Run/Battle/Enemies/Ram/ram_sprite_frames.tres" id="4_1eg7u"]
 
 [resource]
 script = ExtResource("1_daw52")
 ai = ExtResource("1_kahnq")
 max_health = 28
 art = ExtResource("2_o2iox")
+sprite_frames = ExtResource("4_1eg7u")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

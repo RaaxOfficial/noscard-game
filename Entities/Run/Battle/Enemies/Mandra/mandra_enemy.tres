@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_8xvvc"]
 [ext_resource type="PackedScene" uid="uid://bytk5supskd8b" path="res://Entities/Run/Battle/Enemies/Mandra/mandra_enemy_ai.tscn" id="1_s7rh8"]
 [ext_resource type="Texture2D" uid="uid://bicmgayqnfh3u" path="res://UI/Run/Battle/Enemies/Mandra/mandra.png" id="2_mjw72"]
-
+[ext_resource type="SpriteFrames" uid="uid://uno1xjul4q7c" path="res://UI/Run/Battle/Enemies/Mandra/mandra_sprite_frames.tres" id="4_rqkml"]
 
 [resource]
 script = ExtResource("1_8xvvc")
 ai = ExtResource("1_s7rh8")
 max_health = 12
 art = ExtResource("2_mjw72")
+sprite_frames = ExtResource("4_rqkml")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

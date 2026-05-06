@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://dstd3c1dpc3hj"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_fmg0f"]
+[ext_resource type="PackedScene" uid="uid://c7e7gjk062u6l" path="res://Entities/Run/Battle/Enemies/Boing/boing_enemy_ai.tscn" id="1_yaqrb"]
+[ext_resource type="Texture2D" uid="uid://dkkwttc33unf2" path="res://UI/Run/Battle/Enemies/Boing/boing.png" id="2_bbnbc"]
+[ext_resource type="SpriteFrames" uid="uid://ctj8fim1tgthf" path="res://UI/Run/Battle/Enemies/Boing/boing_sprite_frames.tres" id="4_sfaf7"]
+
+[resource]
+script = ExtResource("1_fmg0f")
+ai = ExtResource("1_yaqrb")
+max_health = 20
+art = ExtResource("2_bbnbc")
+sprite_frames = ExtResource("4_sfaf7")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

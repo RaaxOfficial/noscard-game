@@ -7,10 +7,15 @@ const ELEMENTAL_SHINING = preload("uid://blfu67ggrkw1w")
 var modified_block := 0
 
 func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from := modifiers.get_parent()
 	var block_effect := BlockEffect.new()
 	modified_block = modifiers.get_modified_value(amount, Modifier.Type.BLOCK_GAINED)
 	block_effect.amount = modified_block
 	block_effect.sound = sound
+	
+	if from is Player and sprite_frames:
+		from.play_animation(targets, sprite_frames, target)
+	
 	block_effect.execute(targets)
 	
 	var status_effect := StatusEffect.new()

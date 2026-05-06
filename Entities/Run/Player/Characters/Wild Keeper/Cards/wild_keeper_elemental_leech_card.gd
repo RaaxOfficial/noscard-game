@@ -5,7 +5,10 @@ const ELEMENTAL_LEECH = preload("uid://daf7v31ysqjob")
 @export var duration_extend := 1
 
 
-func apply_effects(targets: Array[Node], _modifiers: ModifierHandler, _from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, _from: Node = null) -> void:
+	var from := modifiers.get_parent()
+	if from is Player and sprite_frames:
+		from.play_animation(targets, sprite_frames, target)
 	for each in targets:
 		var status_effect := StatusEffect.new()
 		var elemental_leech := ELEMENTAL_LEECH.duplicate()

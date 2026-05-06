@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnjjdwblf6rw2"
-path="res://.godot/imported/koaren_archer_idle.png-8326b5ec9e02570e5a6f3b3efed177b6.ctex"
+uid="uid://808o7ifpissa"
+path="res://.godot/imported/mimic_attack.png-1c19b1529980942e3237e3fc4b0feb7e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Kenko spear/koaren_archer_idle.png"
-dest_files=["res://.godot/imported/koaren_archer_idle.png-8326b5ec9e02570e5a6f3b3efed177b6.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Mimic/mimic_attack.png"
+dest_files=["res://.godot/imported/mimic_attack.png-1c19b1529980942e3237e3fc4b0feb7e.ctex"]
 
 [params]
 

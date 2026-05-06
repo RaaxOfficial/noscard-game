@@ -5,18 +5,22 @@ const WEAKEN_DEFENSE_POWER = preload("uid://bps5o6dkp3oyh")
 @export var duration := 2
 
 
-func apply_effects(targets: Array[Node], modifiers: ModifierHandler, from: Node = null) -> void:
+func apply_effects(targets: Array[Node], modifiers: ModifierHandler, source: Node = null) -> void:
+	var from := modifiers.get_parent()
 	var damage_effect := DamageEffect.new()
 	damage_effect.amount = modifiers.get_modified_value(amount, Modifier.Type.DAMAGE_DEALT)
 	damage_effect.sound = sound
 	
-	damage_effect.execute(targets, from)
+	if from is Player and sprite_frames:
+		from.play_animation(targets, sprite_frames, target)
+	
+	damage_effect.execute(targets, source)
 	await Engine.get_main_loop().create_timer(0.2).timeout
-	damage_effect.execute(targets, from)
+	damage_effect.execute(targets, source)
 	await Engine.get_main_loop().create_timer(0.2).timeout
-	damage_effect.execute(targets, from)
+	damage_effect.execute(targets, source)
 	await Engine.get_main_loop().create_timer(0.2).timeout
-	damage_effect.execute(targets, from)
+	damage_effect.execute(targets, source)
 	
 	for each in targets:
 		var status_effect := StatusEffect.new()

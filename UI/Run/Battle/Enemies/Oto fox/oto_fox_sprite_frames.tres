@@ -1,0 +1,80 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://mne2harbq1k0"]
+
+[ext_resource type="Texture2D" uid="uid://d06rtdg5wrpvk" path="res://UI/Run/Battle/Enemies/Oto fox/otto_fox_attack.png" id="1_rgpn4"]
+[ext_resource type="Texture2D" uid="uid://bnsju8y8mlug6" path="res://UI/Run/Battle/Enemies/Oto fox/otto_fox_idle.png" id="2_b2key"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4gpct"]
+atlas = ExtResource("1_rgpn4")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4xte"]
+atlas = ExtResource("1_rgpn4")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_npgc7"]
+atlas = ExtResource("1_rgpn4")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k36ph"]
+atlas = ExtResource("1_rgpn4")
+region = Rect2(108, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0m55u"]
+atlas = ExtResource("1_rgpn4")
+region = Rect2(144, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv3kh"]
+atlas = ExtResource("2_b2key")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dla01"]
+atlas = ExtResource("2_b2key")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecsa0"]
+atlas = ExtResource("2_b2key")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1tu33"]
+atlas = ExtResource("2_b2key")
+region = Rect2(108, 0, 36, 36)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4gpct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4xte")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_npgc7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k36ph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0m55u")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hv3kh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dla01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecsa0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1tu33")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]

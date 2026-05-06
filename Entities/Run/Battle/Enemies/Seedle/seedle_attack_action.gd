@@ -15,10 +15,14 @@ func perform_action() -> void:
 	damage_effect.sound = sound
 	
 	tween.tween_property(enemy, "global_position", end, 0.4)
+	tween.tween_callback(enemy.action_animated_sprite.play.bind("attack"))
+	tween.tween_interval(0.15)
 	tween.tween_callback(damage_effect.execute.bind(target_array, enemy))
+	tween.tween_interval(0.3)
 	tween.tween_property(enemy, "global_position", start, 0.4)
 	
 	tween.finished.connect(func():
+		enemy.action_animated_sprite.play("idle")
 		EventManager.enemy_action_completed.emit(enemy)
 		)
 

@@ -3,11 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://ceqa1q76ls1ug" path="res://Entities/Run/Battle/Enemies/Wooly/wooly_enemy_ai.tscn" id="1_v610w"]
 [ext_resource type="Texture2D" uid="uid://jtvpsrmje4bf" path="res://UI/Run/Battle/Enemies/Wooly/wooly.png" id="2_st02r"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="3_ge56i"]
-
+[ext_resource type="SpriteFrames" uid="uid://bbgwjhn1tle7j" path="res://UI/Run/Battle/Enemies/Wooly/wooly_sprite_frames.tres" id="4_v72gf"]
 
 [resource]
 script = ExtResource("3_ge56i")
 ai = ExtResource("1_v610w")
 max_health = 32
 art = ExtResource("2_st02r")
+sprite_frames = ExtResource("4_v72gf")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

@@ -7,6 +7,7 @@ signal stats_changed
 @export var base_dodge := 0.01
 @export var base_accuracy := 1.0
 @export var art: Texture
+@export var sprite_frames: SpriteFrames
 
 var health: int : set = set_health
 var block: int : set = set_block

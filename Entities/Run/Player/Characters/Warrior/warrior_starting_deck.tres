@@ -4,10 +4,18 @@
 [ext_resource type="Resource" uid="uid://cs6g51d7oplgg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_basic_card.tres" id="2_bsnla"]
 [ext_resource type="Script" uid="uid://t5jf7n4lhn5g" path="res://Entities/Run/Card/Card Pile/card_pile.gd" id="2_tsoqv"]
 [ext_resource type="Resource" uid="uid://buv1j21re4x2t" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_defend_card.tres" id="3_m4l13"]
+[ext_resource type="Resource" uid="uid://dx4a028ifn2yk" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_earth_shock_card.tres" id="4_6pium"]
 [ext_resource type="Resource" uid="uid://dgq1wajamorff" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_iron_skin_card.tres" id="4_tbsen"]
 [ext_resource type="Resource" uid="uid://b4g53fo4ifukg" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_triple_slash_card.tres" id="5_1t3xm"]
+[ext_resource type="Resource" uid="uid://brdlub2i2nup4" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_finishing_blow_card.tres" id="5_gsf74"]
+[ext_resource type="Resource" uid="uid://dprkxjul3a0su" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_fury_card.tres" id="6_v224s"]
+[ext_resource type="Resource" uid="uid://7bo2sukiex2s" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_intimidate_card.tres" id="7_xi2xf"]
+[ext_resource type="Resource" uid="uid://ckmdav0jbncd2" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_provoke_card.tres" id="9_16tjf"]
+[ext_resource type="Resource" uid="uid://c0jhsmpvdiuik" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_rising_dragon_card.tres" id="10_peqjd"]
+[ext_resource type="Resource" uid="uid://b841ww6xm3lob" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_shoulder_charge_card.tres" id="11_j0dug"]
+[ext_resource type="Resource" uid="uid://ut60oqajtmqd" path="res://Entities/Run/Player/Characters/Warrior/Cards/warrior_whirlwind_card.tres" id="13_38nd8"]
 
 [resource]
 script = ExtResource("2_tsoqv")
-cards = Array[ExtResource("1_fniym")]([ExtResource("2_bsnla"), ExtResource("2_bsnla"), ExtResource("2_bsnla"), ExtResource("2_bsnla"), ExtResource("3_m4l13"), ExtResource("3_m4l13"), ExtResource("3_m4l13"), ExtResource("4_tbsen"), ExtResource("4_tbsen"), ExtResource("5_1t3xm")])
+cards = Array[ExtResource("1_fniym")]([ExtResource("2_bsnla"), ExtResource("3_m4l13"), ExtResource("4_6pium"), ExtResource("5_gsf74"), ExtResource("6_v224s"), ExtResource("7_xi2xf"), ExtResource("4_tbsen"), ExtResource("9_16tjf"), ExtResource("10_peqjd"), ExtResource("11_j0dug"), ExtResource("5_1t3xm"), ExtResource("13_38nd8")])
 metadata/_custom_type_script = "uid://t5jf7n4lhn5g"

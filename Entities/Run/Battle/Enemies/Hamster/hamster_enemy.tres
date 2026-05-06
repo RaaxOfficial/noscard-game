@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_6c6sg"]
 [ext_resource type="PackedScene" uid="uid://l7sankv6vcg1" path="res://Entities/Run/Battle/Enemies/Hamster/hamster_enemy_ai.tscn" id="1_c5ndi"]
 [ext_resource type="Texture2D" uid="uid://dah3bsohi8m2f" path="res://UI/Run/Battle/Enemies/Hamster/hamster.png" id="2_y75wg"]
-
+[ext_resource type="SpriteFrames" uid="uid://mnj1xamlknm1" path="res://UI/Run/Battle/Enemies/Hamster/hamster_sprite_frames.tres" id="4_arq17"]
 
 [resource]
 script = ExtResource("1_6c6sg")
 ai = ExtResource("1_c5ndi")
 max_health = 22
 art = ExtResource("2_y75wg")
+sprite_frames = ExtResource("4_arq17")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

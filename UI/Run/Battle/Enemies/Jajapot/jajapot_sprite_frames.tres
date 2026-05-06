@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ckdv3j5u17kts"]
+
+[ext_resource type="Texture2D" uid="uid://cqeu3hx24erox" path="res://UI/Run/Battle/Enemies/Jajapot/jaja_pot_idle.png" id="1_e1hei"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7y1yn"]
+atlas = ExtResource("1_e1hei")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iurss"]
+atlas = ExtResource("1_e1hei")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cyddr"]
+atlas = ExtResource("1_e1hei")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jnvg"]
+atlas = ExtResource("1_e1hei")
+region = Rect2(108, 0, 36, 36)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7y1yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iurss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cyddr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jnvg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

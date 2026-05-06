@@ -1,0 +1,80 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://couxljvq75hsq"]
+
+[ext_resource type="Texture2D" uid="uid://bwrbe561hslas" path="res://UI/Run/Battle/Enemies/Devil vampire/devil_vampire_attack.png" id="1_g0frl"]
+[ext_resource type="Texture2D" uid="uid://drpxyqemvxgni" path="res://UI/Run/Battle/Enemies/Devil vampire/devil_vampire_idle.png" id="2_6gyx5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y0ml5"]
+atlas = ExtResource("1_g0frl")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_snulv"]
+atlas = ExtResource("1_g0frl")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3syj4"]
+atlas = ExtResource("1_g0frl")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svh0v"]
+atlas = ExtResource("1_g0frl")
+region = Rect2(108, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kc3pe"]
+atlas = ExtResource("1_g0frl")
+region = Rect2(144, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vb10u"]
+atlas = ExtResource("2_6gyx5")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dcubt"]
+atlas = ExtResource("2_6gyx5")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tonei"]
+atlas = ExtResource("2_6gyx5")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2nx5"]
+atlas = ExtResource("2_6gyx5")
+region = Rect2(108, 0, 36, 36)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y0ml5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_snulv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3syj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svh0v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kc3pe")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vb10u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcubt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tonei")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2nx5")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 9.0
+}]

@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://lnsi4mmn1p7b"]
+
+[ext_resource type="Texture2D" uid="uid://df55s46r7sg2k" path="res://UI/Run/Battle/Enemies/Pii pod/wild_pii_pod_idle.png" id="1_whb28"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jap75"]
+atlas = ExtResource("1_whb28")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dua0y"]
+atlas = ExtResource("1_whb28")
+region = Rect2(36, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_47emt"]
+atlas = ExtResource("1_whb28")
+region = Rect2(72, 0, 36, 36)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7utii"]
+atlas = ExtResource("1_whb28")
+region = Rect2(108, 0, 36, 36)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jap75")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dua0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_47emt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7utii")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]

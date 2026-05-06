@@ -12,7 +12,7 @@ const HOLY_MAGE_SPRITE_FRAMES = preload("uid://cquesy7j5vstq")
 @onready var blink_timer: Timer = $BlinkTimer
 @onready var status_handler: StatusHandler = $StatusHandler
 @onready var modifier_handler: ModifierHandler = $ModifierHandler
-@onready var attack_anim_sprite: AnimatedSprite2D = $AttackAnimatedSprite
+@onready var card_anim_sprite: AnimatedSprite2D = $CardAnimatedSprite
 
 
 func _ready() -> void:
@@ -94,37 +94,29 @@ func skip_turn() -> void:
 	print("Player has skipped turn")
 
 func play_animation(targets: Array[Node], sprite_frames: SpriteFrames, target_type: Card.Target) -> void:
-	var is_single_target := false
-	
-	attack_anim_sprite.sprite_frames = sprite_frames
+	var is_single_target = false if target_type == Card.Target.ALL_ENEMIES or target_type == Card.Target.EVERYONE else true
+	card_anim_sprite.sprite_frames = sprite_frames
 	
 	var tween := create_tween()
 	var start := global_position
 	var end: Vector2 = targets[0].global_position - Vector2.RIGHT * 32
 	
-	match target_type:
-		Card.Target.SELF:
-			is_single_target = true
-			end = global_position
-		Card.Target.SINGLE_ENEMY:
-			is_single_target = true
-		Card.Target.ALL_ENEMIES:
-			is_single_target = false
-		Card.Target.EVERYONE:
-			is_single_target = false
+	if target_type == Card.Target.SELF:
+		end = global_position
 	
 	tween.tween_property(self, "global_position", end, 0.15).finished.connect(
 	func():
 		if not is_single_target:
-			attack_anim_sprite.global_position = global_position
+			card_anim_sprite.global_position = global_position
 		else:
-			attack_anim_sprite.global_position = targets[0].global_position
-		attack_anim_sprite.visible = true
-		attack_anim_sprite.play()
+			card_anim_sprite.global_position = targets[0].global_position
+		card_anim_sprite.visible = true
+		card_anim_sprite.play()
 	)
+	tween.tween_interval(0.15)
 	tween.tween_property(self, "global_position", start, 0.15)
-	await attack_anim_sprite.animation_finished
-	attack_anim_sprite.visible = false
+	await card_anim_sprite.animation_finished
+	card_anim_sprite.visible = false
 
 func _on_player_hurt(health_lost: int) -> void:
 	print("ToDo: anim.play(hurt)")
