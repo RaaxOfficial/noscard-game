@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bujvcsfxyivyi"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_5jpvu"]
+[ext_resource type="Script" uid="uid://daoxcdetdu2o2" path="res://Entities/Run/Battle/Enemies/Ninja/ninja_attack_action.gd" id="2_5jpvu"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_y1r47"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_wnw6i"]
+[ext_resource type="Script" uid="uid://bj8k842wwb52u" path="res://Entities/Run/Battle/Enemies/Ninja/ninja_block_action.gd" id="5_xgg0y"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="6_eb62s"]
+[ext_resource type="Script" uid="uid://c5rdnumo15qfq" path="res://Entities/Run/Battle/Enemies/Ninja/ninja_skip_action.gd" id="7_y1r47"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="8_w8wln"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_wnw6i")
+base_text = "%s"
+icon = ExtResource("3_y1r47")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_wnw6i")
+base_text = "%s"
+icon = ExtResource("6_eb62s")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_wnw6i")
+icon = ExtResource("8_w8wln")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="NinjaEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_5jpvu")
+
+[node name="NinjaAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_5jpvu")
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 5.0
+
+[node name="NinjaBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("5_xgg0y")
+block = 5
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 5.0
+
+[node name="NinjaSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("7_y1r47")
+intent = SubResource("Resource_jqmxn")

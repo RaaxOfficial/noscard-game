@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://du0upwqe6vved"]
+
+[ext_resource type="PackedScene" uid="uid://bt5prcipgnku0" path="res://Entities/Run/Battle/Enemies/Old Potato/old_potato_enemy_ai.tscn" id="1_s6iq7"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_tl6q1"]
+[ext_resource type="Texture2D" uid="uid://bpmp0c8w2wtae" path="res://UI/Run/Battle/Enemies/Old potato/old_potato.png" id="2_tu472"]
+[ext_resource type="SpriteFrames" uid="uid://clgb4q7mc3rxw" path="res://UI/Run/Battle/Enemies/Old potato/old_potato_sprite_frames.tres" id="4_bxjjk"]
+
+[resource]
+script = ExtResource("1_tl6q1")
+ai = ExtResource("1_s6iq7")
+max_health = 12
+art = ExtResource("2_tu472")
+sprite_frames = ExtResource("4_bxjjk")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

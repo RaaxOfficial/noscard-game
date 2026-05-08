@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://c1fdat0mk6yjk"]
+
+[ext_resource type="PackedScene" uid="uid://bmtux5skgfdte" path="res://Entities/Run/Battle/Enemies/Garg/garg_enemy_ai.tscn" id="1_re44g"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_xbcto"]
+[ext_resource type="Texture2D" uid="uid://c8pwsmg6lpqob" path="res://UI/Run/Battle/Enemies/Gargs/garg.png" id="2_abqjy"]
+[ext_resource type="SpriteFrames" uid="uid://btugypuadeb6a" path="res://UI/Run/Battle/Enemies/Gargs/garg_sprite_frames.tres" id="4_iuj8j"]
+
+[resource]
+script = ExtResource("1_xbcto")
+ai = ExtResource("1_re44g")
+max_health = 19
+art = ExtResource("2_abqjy")
+sprite_frames = ExtResource("4_iuj8j")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

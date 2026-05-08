@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://xwwgivbnobnb"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_mc4vt"]
+[ext_resource type="Script" uid="uid://mgm07xrnv3aa" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_attack_action.gd" id="2_mc4vt"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_1hc71"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_hd6xp"]
+[ext_resource type="Script" uid="uid://c533buvo5lctw" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_block_action.gd" id="5_w6558"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="6_nylcc"]
+[ext_resource type="Script" uid="uid://ltnrg05ml4sm" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_skip_action.gd" id="7_1hc71"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="8_hk3pn"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_hd6xp")
+base_text = "%s"
+icon = ExtResource("3_1hc71")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_hd6xp")
+base_text = "%s"
+icon = ExtResource("6_nylcc")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_hd6xp")
+icon = ExtResource("8_hk3pn")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="KenkoSpearEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_mc4vt")
+
+[node name="KenkoSpearAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_mc4vt")
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 5.0
+
+[node name="KenkoSpearBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("5_w6558")
+block = 5
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 5.0
+
+[node name="KenkoSpearSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("7_1hc71")
+intent = SubResource("Resource_jqmxn")

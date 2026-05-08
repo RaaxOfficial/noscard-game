@@ -1,7 +1,7 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://mne2harbq1k0"]
 
-[ext_resource type="Texture2D" uid="uid://d06rtdg5wrpvk" path="res://UI/Run/Battle/Enemies/Oto fox/otto_fox_attack.png" id="1_rgpn4"]
-[ext_resource type="Texture2D" uid="uid://bnsju8y8mlug6" path="res://UI/Run/Battle/Enemies/Oto fox/otto_fox_idle.png" id="2_b2key"]
+[ext_resource type="Texture2D" uid="uid://d06rtdg5wrpvk" path="res://UI/Run/Battle/Enemies/Oto fox/oto_fox_attack.png" id="1_rgpn4"]
+[ext_resource type="Texture2D" uid="uid://bnsju8y8mlug6" path="res://UI/Run/Battle/Enemies/Oto fox/oto_fox_idle.png" id="2_b2key"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4gpct"]
 atlas = ExtResource("1_rgpn4")

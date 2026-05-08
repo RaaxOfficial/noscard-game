@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://7sc7cbilq6eb"]
+
+[ext_resource type="PackedScene" uid="uid://bsg5et5rv025n" path="res://Entities/Run/Battle/Enemies/Mufflon/mufflon_enemy_ai.tscn" id="1_0odu4"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_ws4fs"]
+[ext_resource type="Texture2D" uid="uid://ba5m4jjiedo0f" path="res://UI/Run/Battle/Enemies/Mufflon/mufflon.png" id="2_qxk1b"]
+[ext_resource type="SpriteFrames" uid="uid://cgnyyayvar70" path="res://UI/Run/Battle/Enemies/Mufflon/mufflon_sprite_frames.tres" id="3_qxk1b"]
+
+[resource]
+script = ExtResource("1_ws4fs")
+ai = ExtResource("1_0odu4")
+max_health = 25
+art = ExtResource("2_qxk1b")
+sprite_frames = ExtResource("3_qxk1b")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

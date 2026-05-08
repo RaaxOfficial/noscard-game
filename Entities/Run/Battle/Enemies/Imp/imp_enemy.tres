@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://bpqk4lbddxm6f"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_8sqo2"]
+[ext_resource type="PackedScene" uid="uid://bp4rrhgydrbt5" path="res://Entities/Run/Battle/Enemies/Imp/imp_enemy_ai.tscn" id="1_rbtua"]
+[ext_resource type="Texture2D" uid="uid://bsfrmks1gbl5u" path="res://UI/Run/Battle/Enemies/Imp/imp.png" id="2_xiee2"]
+[ext_resource type="SpriteFrames" uid="uid://br3jmqp2kkfqh" path="res://UI/Run/Battle/Enemies/Imp/imp_sprite_frames.tres" id="4_kho35"]
+
+[resource]
+script = ExtResource("1_8sqo2")
+ai = ExtResource("1_rbtua")
+max_health = 15
+art = ExtResource("2_xiee2")
+sprite_frames = ExtResource("4_kho35")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

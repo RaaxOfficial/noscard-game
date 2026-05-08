@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://csyjecmtwutvx"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_0o5js"]
+[ext_resource type="PackedScene" uid="uid://lj4d2qe55o82" path="res://Entities/Run/Battle/Enemies/Kenko Raider/kenko_raider_enemy_ai.tscn" id="1_7rhh4"]
+[ext_resource type="Texture2D" uid="uid://dovyo26b6jwt2" path="res://UI/Run/Battle/Enemies/Kenko raider/kenko_rider.png" id="2_hj3kb"]
+[ext_resource type="SpriteFrames" uid="uid://du2s1yqqtj4s1" path="res://UI/Run/Battle/Enemies/Kenko raider/kenko_raider_sprite_frames.tres" id="4_hkq6g"]
+
+[resource]
+script = ExtResource("1_0o5js")
+ai = ExtResource("1_7rhh4")
+max_health = 24
+art = ExtResource("2_hj3kb")
+sprite_frames = ExtResource("4_hkq6g")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

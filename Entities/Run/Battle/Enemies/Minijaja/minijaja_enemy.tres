@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://1qahx5v5po7r"]
+
+[ext_resource type="PackedScene" uid="uid://cl2u5odt6wuty" path="res://Entities/Run/Battle/Enemies/Minijaja/minijaja_enemy_ai.tscn" id="1_f4sye"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_tdrql"]
+[ext_resource type="Texture2D" uid="uid://dowq0sh85urop" path="res://UI/Run/Battle/Enemies/Minijaja/minijaja.png" id="2_btpr4"]
+[ext_resource type="SpriteFrames" uid="uid://dbph2jicclwqr" path="res://UI/Run/Battle/Enemies/Minijaja/minijaja_sprite_frames.tres" id="4_rigqp"]
+
+[resource]
+script = ExtResource("1_tdrql")
+ai = ExtResource("1_f4sye")
+max_health = 12
+art = ExtResource("2_btpr4")
+sprite_frames = ExtResource("4_rigqp")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

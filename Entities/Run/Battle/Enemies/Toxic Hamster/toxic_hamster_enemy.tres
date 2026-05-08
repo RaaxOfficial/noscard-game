@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://cpt5tmm1yr3ri"]
+
+[ext_resource type="PackedScene" uid="uid://ces1rqi3avuui" path="res://Entities/Run/Battle/Enemies/Toxic Hamster/toxic_hamster_enemy_ai.tscn" id="1_cuamk"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_unfm3"]
+[ext_resource type="Texture2D" uid="uid://jr0mwojmy1fg" path="res://UI/Run/Battle/Enemies/ToxicHamster/toxic_hamster.png" id="2_2qu1j"]
+[ext_resource type="SpriteFrames" uid="uid://bjdi344kqqdb8" path="res://UI/Run/Battle/Enemies/ToxicHamster/toxic_hamster_sprite_frames.tres" id="4_vy1xs"]
+
+[resource]
+script = ExtResource("1_unfm3")
+ai = ExtResource("1_cuamk")
+max_health = 16
+art = ExtResource("2_2qu1j")
+sprite_frames = ExtResource("4_vy1xs")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

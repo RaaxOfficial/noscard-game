@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://d0j4ubk50d3we"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_nufru"]
+[ext_resource type="PackedScene" uid="uid://bujvcsfxyivyi" path="res://Entities/Run/Battle/Enemies/Ninja/ninja_enemy_ai.tscn" id="1_qu5gs"]
+[ext_resource type="Texture2D" uid="uid://cbr45veux8hqo" path="res://UI/Run/Battle/Enemies/Ninja/ninja.png" id="2_j2wt3"]
+[ext_resource type="SpriteFrames" uid="uid://cvu2fbsdf6djk" path="res://UI/Run/Battle/Enemies/Ninja/ninja_sprite_frames.tres" id="4_x2oeh"]
+
+[resource]
+script = ExtResource("1_nufru")
+ai = ExtResource("1_qu5gs")
+max_health = 18
+art = ExtResource("2_j2wt3")
+sprite_frames = ExtResource("4_x2oeh")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

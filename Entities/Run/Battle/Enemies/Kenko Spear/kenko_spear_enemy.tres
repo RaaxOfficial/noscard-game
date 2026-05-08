@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://cjsmj3rw41au5"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_0hobs"]
+[ext_resource type="PackedScene" uid="uid://xwwgivbnobnb" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_enemy_ai.tscn" id="1_ebhnr"]
+[ext_resource type="Texture2D" uid="uid://c3m25e2i67weg" path="res://UI/Run/Battle/Enemies/Kenko spear/kenko_spear.png" id="2_3vq8u"]
+[ext_resource type="SpriteFrames" uid="uid://cp5rpw2svggnl" path="res://UI/Run/Battle/Enemies/Kenko spear/kenko_spear_sprite_frames.tres" id="4_w86rg"]
+
+[resource]
+script = ExtResource("1_0hobs")
+ai = ExtResource("1_ebhnr")
+max_health = 23
+art = ExtResource("2_3vq8u")
+sprite_frames = ExtResource("4_w86rg")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://cav85o6ucgmfo"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_4ynhn"]
+[ext_resource type="PackedScene" uid="uid://waw7k3g0mkq6" path="res://Entities/Run/Battle/Enemies/Oto Fox/oto_fox_enemy_ai.tscn" id="1_vuswx"]
+[ext_resource type="Texture2D" uid="uid://jnjass2jfuq5" path="res://UI/Run/Battle/Enemies/Oto fox/oto_fox.png" id="2_t1hyj"]
+[ext_resource type="SpriteFrames" uid="uid://mne2harbq1k0" path="res://UI/Run/Battle/Enemies/Oto fox/oto_fox_sprite_frames.tres" id="4_o68va"]
+
+[resource]
+script = ExtResource("1_4ynhn")
+ai = ExtResource("1_vuswx")
+max_health = 22
+art = ExtResource("2_t1hyj")
+sprite_frames = ExtResource("4_o68va")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

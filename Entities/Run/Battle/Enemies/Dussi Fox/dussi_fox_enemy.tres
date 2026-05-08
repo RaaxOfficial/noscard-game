@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://cfp23h70cxeeu"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_0pbg3"]
+[ext_resource type="PackedScene" uid="uid://bn2te3lu7fgkc" path="res://Entities/Run/Battle/Enemies/Dussi Fox/dussi_fox_enemy_ai.tscn" id="1_a02r1"]
+[ext_resource type="Texture2D" uid="uid://dwtwdgiiyibo5" path="res://UI/Run/Battle/Enemies/Dussi fox/dussi_fox.png" id="2_ofyot"]
+[ext_resource type="SpriteFrames" uid="uid://bjbsvabvuniu" path="res://UI/Run/Battle/Enemies/Dussi fox/dussi_fox_sprite_frames.tres" id="4_utv3j"]
+
+[resource]
+script = ExtResource("1_0pbg3")
+ai = ExtResource("1_a02r1")
+max_health = 16
+art = ExtResource("2_ofyot")
+sprite_frames = ExtResource("4_utv3j")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

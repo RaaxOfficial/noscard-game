@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://ckdv3j5u17kts"]
 
-[ext_resource type="Texture2D" uid="uid://cqeu3hx24erox" path="res://UI/Run/Battle/Enemies/Jajapot/jaja_pot_idle.png" id="1_e1hei"]
+[ext_resource type="Texture2D" uid="uid://cqeu3hx24erox" path="res://UI/Run/Battle/Enemies/Jajapot/jajapot_idle.png" id="1_e1hei"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7y1yn"]
 atlas = ExtResource("1_e1hei")

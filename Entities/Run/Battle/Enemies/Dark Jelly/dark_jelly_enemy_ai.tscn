@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b2ctlu5ypx0ui"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_tvd40"]
+[ext_resource type="Script" uid="uid://khmhlsxa1umr" path="res://Entities/Run/Battle/Enemies/Dark Jelly/dark_jelly_attack_action.gd" id="2_tvd40"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_u8xh4"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_3166x"]
+[ext_resource type="Script" uid="uid://cwb0umv8fhk2h" path="res://Entities/Run/Battle/Enemies/Dark Jelly/dark_jelly_block_action.gd" id="6_8l2mr"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_cd6jv"]
+[ext_resource type="Script" uid="uid://bqk1beqcwecot" path="res://Entities/Run/Battle/Enemies/Dark Jelly/dark_jelly_skip_action.gd" id="9_u8xh4"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="10_02pm7"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_3166x")
+base_text = "%s"
+icon = ExtResource("3_u8xh4")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_3166x")
+base_text = "%s"
+icon = ExtResource("7_cd6jv")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_3166x")
+icon = ExtResource("10_02pm7")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="DarkJellyEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_tvd40")
+
+[node name="DarkJellyAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_tvd40")
+damage = 7
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 1.0
+
+[node name="DarkJellyBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("6_8l2mr")
+block = 5
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 1.0
+
+[node name="DarkJellySkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("9_u8xh4")
+intent = SubResource("Resource_jqmxn")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://ckg6diaqmgo7a"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_42cjx"]
+[ext_resource type="PackedScene" uid="uid://b0kjlu1qidywo" path="res://Entities/Run/Battle/Enemies/Jajapot/jajapot_enemy_ai.tscn" id="1_hj0jk"]
+[ext_resource type="Texture2D" uid="uid://c0uvpm1gvmvp2" path="res://UI/Run/Battle/Enemies/Jajapot/jajapot.png" id="2_0hprx"]
+[ext_resource type="SpriteFrames" uid="uid://ckdv3j5u17kts" path="res://UI/Run/Battle/Enemies/Jajapot/jajapot_sprite_frames.tres" id="4_pmlwm"]
+
+[resource]
+script = ExtResource("1_42cjx")
+ai = ExtResource("1_hj0jk")
+max_health = 20
+art = ExtResource("2_0hprx")
+sprite_frames = ExtResource("4_pmlwm")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

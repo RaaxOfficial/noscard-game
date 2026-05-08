@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://bsg5et5rv025n"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_pl5uy"]
+[ext_resource type="Script" uid="uid://b1e58lh3frtqc" path="res://Entities/Run/Battle/Enemies/Mufflon/mufflon_attack_action.gd" id="2_pl5uy"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_m1ihw"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_tscfd"]
+[ext_resource type="Script" uid="uid://dxsa07as6thpq" path="res://Entities/Run/Battle/Enemies/Mufflon/mufflon_block_action.gd" id="5_nifgx"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="6_3l657"]
+[ext_resource type="Script" uid="uid://ski4jlhjxtix" path="res://Entities/Run/Battle/Enemies/Mufflon/mufflon_skip_action.gd" id="7_m1ihw"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="8_hpv4l"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_tscfd")
+base_text = "%s"
+icon = ExtResource("3_m1ihw")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_tscfd")
+base_text = "%s"
+icon = ExtResource("6_3l657")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_tscfd")
+icon = ExtResource("8_hpv4l")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="MufflonEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_pl5uy")
+
+[node name="MufflonAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_pl5uy")
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 5.0
+
+[node name="MufflonBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("5_nifgx")
+block = 5
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 5.0
+
+[node name="MufflonSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("7_m1ihw")
+intent = SubResource("Resource_jqmxn")

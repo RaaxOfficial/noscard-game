@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://4d47b8nf01cb"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_e4aif"]
+[ext_resource type="Script" uid="uid://bxsos1ob7civx" path="res://Entities/Run/Battle/Enemies/Steel Hamster/steel_hamster_attack_action.gd" id="2_e4aif"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_cafq5"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_lcu3g"]
+[ext_resource type="Script" uid="uid://do1fltqm8agtj" path="res://Entities/Run/Battle/Enemies/Steel Hamster/steel_hamster_block_action.gd" id="5_x4hlk"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="6_s8aay"]
+[ext_resource type="Script" uid="uid://c4541401fbapt" path="res://Entities/Run/Battle/Enemies/Steel Hamster/steel_hamster_skip_action.gd" id="7_cafq5"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="8_8stg7"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_lcu3g")
+base_text = "%s"
+icon = ExtResource("3_cafq5")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_lcu3g")
+base_text = "%s"
+icon = ExtResource("6_s8aay")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_lcu3g")
+icon = ExtResource("8_8stg7")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="SteelHamsterEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_e4aif")
+
+[node name="SteelHamsterAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_e4aif")
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 5.0
+
+[node name="SteelHamsterBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("5_x4hlk")
+block = 5
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 5.0
+
+[node name="SteelHamsterSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("7_cafq5")
+intent = SubResource("Resource_jqmxn")

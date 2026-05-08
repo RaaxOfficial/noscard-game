@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://bacsy4py8bsnb"]
+
+[ext_resource type="PackedScene" uid="uid://b2ctlu5ypx0ui" path="res://Entities/Run/Battle/Enemies/Dark Jelly/dark_jelly_enemy_ai.tscn" id="1_n3lqc"]
+[ext_resource type="Texture2D" uid="uid://bvr3lusng363u" path="res://UI/Run/Battle/Enemies/Dark jelly/dark_jelly.png" id="2_ayi4y"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="3_msa6r"]
+[ext_resource type="SpriteFrames" uid="uid://dtem0uq6huc3s" path="res://UI/Run/Battle/Enemies/Dark jelly/dark_jelly_sprite_frames.tres" id="4_l6lgj"]
+
+[resource]
+script = ExtResource("3_msa6r")
+ai = ExtResource("1_n3lqc")
+max_health = 20
+art = ExtResource("2_ayi4y")
+sprite_frames = ExtResource("4_l6lgj")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

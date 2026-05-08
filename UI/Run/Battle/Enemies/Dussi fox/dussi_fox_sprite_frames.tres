@@ -1,6 +1,6 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://bjbsvabvuniu"]
 
-[ext_resource type="Texture2D" uid="uid://cyi0nmxlpnv5" path="res://UI/Run/Battle/Enemies/Dussi fox/dussy_fox_attack.png" id="1_v7c4j"]
+[ext_resource type="Texture2D" uid="uid://cyi0nmxlpnv5" path="res://UI/Run/Battle/Enemies/Dussi fox/dussi_fox_attack.png" id="1_v7c4j"]
 [ext_resource type="Texture2D" uid="uid://3xhy5m84nbpm" path="res://UI/Run/Battle/Enemies/Dussi fox/dussi_fox_idle.png" id="2_rh5n1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u4we6"]

@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://d0blj0po4fxcp"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_r8en3"]
+[ext_resource type="Script" uid="uid://dl54bblk3qgg5" path="res://Entities/Run/Battle/Enemies/Stonewalker/stonewalker_attack_action.gd" id="2_r8en3"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_lt4v1"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_vendo"]
+[ext_resource type="Script" uid="uid://clc0a4f25ssay" path="res://Entities/Run/Battle/Enemies/Stonewalker/stonewalker_block_action.gd" id="5_knu5g"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="6_pycty"]
+[ext_resource type="Script" uid="uid://bn15y1qojvqyh" path="res://Entities/Run/Battle/Enemies/Stonewalker/stonewalker_skip_action.gd" id="7_lt4v1"]
+[ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="8_v85gr"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_vendo")
+base_text = "%s"
+icon = ExtResource("3_lt4v1")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_vendo")
+base_text = "%s"
+icon = ExtResource("6_pycty")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_jqmxn"]
+script = ExtResource("4_vendo")
+icon = ExtResource("8_v85gr")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="StonewalkerEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_r8en3")
+
+[node name="StonewalkerAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_r8en3")
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 5.0
+
+[node name="StonewalkerBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("5_knu5g")
+block = 5
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 5.0
+
+[node name="StonewalkerSkipAction" type="Node" parent="." unique_id=685896315]
+script = ExtResource("7_lt4v1")
+intent = SubResource("Resource_jqmxn")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://bd6w3tjoi1gqr"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_aon13"]
+[ext_resource type="PackedScene" uid="uid://pknigfx08kk1" path="res://Entities/Run/Battle/Enemies/Devil Vampie/devil_vampie_enemy_ai.tscn" id="1_dhs7y"]
+[ext_resource type="Texture2D" uid="uid://bvohrpg3stygy" path="res://UI/Run/Battle/Enemies/Devil vampire/devil_vampire.png" id="2_xvuig"]
+[ext_resource type="SpriteFrames" uid="uid://couxljvq75hsq" path="res://UI/Run/Battle/Enemies/Devil vampire/devil_vampire_sprite_frames.tres" id="4_7up2k"]
+
+[resource]
+script = ExtResource("1_aon13")
+ai = ExtResource("1_dhs7y")
+max_health = 18
+art = ExtResource("2_xvuig")
+sprite_frames = ExtResource("4_7up2k")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

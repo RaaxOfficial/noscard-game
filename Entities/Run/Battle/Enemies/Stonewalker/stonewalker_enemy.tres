@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://cbm106l20nhy8"]
+
+[ext_resource type="PackedScene" uid="uid://d0blj0po4fxcp" path="res://Entities/Run/Battle/Enemies/Stonewalker/stonewalker_enemy_ai.tscn" id="1_kkl45"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_wcq1h"]
+[ext_resource type="Texture2D" uid="uid://c2rq0qurtnqlt" path="res://UI/Run/Battle/Enemies/Stonewalker/stonewalker.png" id="2_cbrgk"]
+[ext_resource type="SpriteFrames" uid="uid://b2w7qgctk58os" path="res://UI/Run/Battle/Enemies/Stonewalker/stonewalker_sprite_frames.tres" id="4_q656b"]
+
+[resource]
+script = ExtResource("1_wcq1h")
+ai = ExtResource("1_kkl45")
+max_health = 25
+art = ExtResource("2_cbrgk")
+sprite_frames = ExtResource("4_q656b")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

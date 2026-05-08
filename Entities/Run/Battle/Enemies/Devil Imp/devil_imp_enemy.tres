@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://c1bpwdprc2igw"]
+
+[ext_resource type="PackedScene" uid="uid://cykw42bi86s3q" path="res://Entities/Run/Battle/Enemies/Devil Imp/devil_imp_enemy_ai.tscn" id="1_a528w"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_btmt2"]
+[ext_resource type="Texture2D" uid="uid://dxamrdgsp86d2" path="res://UI/Run/Battle/Enemies/Devil imp/devil_imp.png" id="2_pmmw0"]
+[ext_resource type="SpriteFrames" uid="uid://crf3nhbkytej" path="res://UI/Run/Battle/Enemies/Devil imp/devil_imp_sprite_frames.tres" id="4_fx582"]
+
+[resource]
+script = ExtResource("1_btmt2")
+ai = ExtResource("1_a528w")
+max_health = 17
+art = ExtResource("2_pmmw0")
+sprite_frames = ExtResource("4_fx582")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

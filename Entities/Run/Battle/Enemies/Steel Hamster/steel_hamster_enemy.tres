@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://c5dcmvhkumnx6"]
+
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_135gy"]
+[ext_resource type="PackedScene" uid="uid://4d47b8nf01cb" path="res://Entities/Run/Battle/Enemies/Steel Hamster/steel_hamster_enemy_ai.tscn" id="1_it5d5"]
+[ext_resource type="Texture2D" uid="uid://cneqn3u8xs4yp" path="res://UI/Run/Battle/Enemies/Steel hamster/steel_hamster.png" id="2_jujb1"]
+[ext_resource type="SpriteFrames" uid="uid://dxf0i45jjwl3m" path="res://UI/Run/Battle/Enemies/Steel hamster/steel_hamster_sprite_frames.tres" id="4_t2q2a"]
+
+[resource]
+script = ExtResource("1_135gy")
+ai = ExtResource("1_it5d5")
+max_health = 20
+art = ExtResource("2_jujb1")
+sprite_frames = ExtResource("4_t2q2a")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"
