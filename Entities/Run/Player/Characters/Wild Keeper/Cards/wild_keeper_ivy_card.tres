@@ -9,8 +9,8 @@ script = ExtResource("2_3qrdx")
 id = "Ivy"
 rarity = 1
 target = 2
-amount = 9
-cost = 2
+amount = 8
+cost = 1
 icon = ExtResource("1_3h1fg")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies. Apply [color=\"d3aa17\"]Shock[/color] for 1 turn.[/center]"
 sound = ExtResource("3_3qrdx")

@@ -7,7 +7,7 @@
 script = ExtResource("2_1bcce")
 id = "Beast Claw"
 target = 1
-amount = 2
+amount = 3
 cost = 1
 icon = ExtResource("1_of7mx")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 2 times. Apply %s stacks of  [color=\"d3aa17\"]Bleed[/color].[/center]"

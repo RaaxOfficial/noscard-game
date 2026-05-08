@@ -17,6 +17,6 @@ cards_per_turn = 5
 max_mana = 3
 base_crit_chance = 0.1
 starting_item = ExtResource("5_yy4jv")
-max_health = 35
+max_health = 44
 art = ExtResource("1_o6dw5")
 metadata/_custom_type_script = "uid://ct3m4uqtcbqtc"

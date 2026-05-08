@@ -8,7 +8,7 @@
 script = ExtResource("2_r3yxb")
 id = "Whirlwind"
 target = 2
-amount = 5
+amount = 7
 cost = 1
 icon = ExtResource("1_rigkg")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage to all enemies.[/center]"

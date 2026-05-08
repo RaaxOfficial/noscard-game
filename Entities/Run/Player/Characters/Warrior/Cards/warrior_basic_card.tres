@@ -8,7 +8,7 @@
 script = ExtResource("2_2jjii")
 id = "Basic"
 target = 1
-amount = 6
+amount = 7
 cost = 1
 icon = ExtResource("1_obyjn")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage.[/center]"

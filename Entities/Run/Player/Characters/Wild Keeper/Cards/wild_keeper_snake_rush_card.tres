@@ -9,7 +9,7 @@ script = ExtResource("2_kk756")
 id = "Snake Rush"
 target = 2
 amount = 3
-cost = 2
+cost = 1
 icon = ExtResource("1_v2yex")
 tooltip_text = "[center]Deal [color=\"ff0000\"]%s[/color] damage 2 times to all enemies. Apply [color=\"d3aa17\"]Blackout[/color] with a 25%% chance.[/center]"
 sound = ExtResource("3_kk756")
