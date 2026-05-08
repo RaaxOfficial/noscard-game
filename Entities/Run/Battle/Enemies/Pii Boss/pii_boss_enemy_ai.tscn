@@ -24,14 +24,14 @@ script = ExtResource("1_pafpm")
 
 [node name="PiiBossAttackAction" type="Node" parent="." unique_id=1711594864]
 script = ExtResource("2_y5jkh")
-damage = 15
+damage = 5
 intent = SubResource("Resource_kp58c")
 type = 1
 chance_weight = 1.0
 
 [node name="PiiBossBlockAction" type="Node" parent="." unique_id=842411529]
 script = ExtResource("6_vrfyl")
-block = 9
+block = 4
 intent = SubResource("Resource_vwp8o")
 type = 1
 chance_weight = 1.0

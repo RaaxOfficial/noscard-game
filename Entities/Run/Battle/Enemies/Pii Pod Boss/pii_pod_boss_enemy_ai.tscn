@@ -30,7 +30,7 @@ type = 1
 
 [node name="PiiPodBossBlockAction" type="Node" parent="." unique_id=842411529]
 script = ExtResource("5_bou0d")
-block = 20
+block = 13
 intent = SubResource("Resource_vwp8o")
 type = 1
 chance_weight = 1.0

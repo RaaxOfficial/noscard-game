@@ -8,7 +8,7 @@
 [resource]
 script = ExtResource("1_gaj36")
 ai = ExtResource("1_jtrm4")
-max_health = 25
+max_health = 15
 art = ExtResource("2_hnhtv")
 sprite_frames = ExtResource("4_p1rnq")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

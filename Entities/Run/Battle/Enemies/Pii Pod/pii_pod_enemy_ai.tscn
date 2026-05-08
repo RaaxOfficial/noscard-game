@@ -4,10 +4,8 @@
 [ext_resource type="Script" uid="uid://b5le133b03p82" path="res://Entities/Run/Battle/Enemies/Pii Pod/pii_pod_attack_action.gd" id="2_1gvew"]
 [ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_oiuoa"]
 [ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_f2bhn"]
-[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_jhvk6"]
 [ext_resource type="Script" uid="uid://c36ehhqxqtp2d" path="res://Entities/Run/Battle/Enemies/Pii Pod/pii_pod_block_action.gd" id="6_08yqs"]
 [ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_yb8hc"]
-[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_4tbbk"]
 [ext_resource type="Script" uid="uid://blhqln6gktpkh" path="res://Entities/Run/Battle/Enemies/Pii Pod/pii_pod_skip_action.gd" id="9_oiuoa"]
 [ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="10_rt0p1"]
 
@@ -33,16 +31,14 @@ script = ExtResource("1_1gvew")
 
 [node name="PiiPodAttackAction" type="Node" parent="." unique_id=1711594864]
 script = ExtResource("2_1gvew")
-damage = 10
+damage = 1
 intent = SubResource("Resource_kp58c")
-sound = ExtResource("5_jhvk6")
 type = 1
 
 [node name="PiiPodBlockAction" type="Node" parent="." unique_id=842411529]
 script = ExtResource("6_08yqs")
-block = 10
+block = 3
 intent = SubResource("Resource_vwp8o")
-sound = ExtResource("8_4tbbk")
 type = 1
 chance_weight = 1.0
 

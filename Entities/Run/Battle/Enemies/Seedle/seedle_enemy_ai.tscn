@@ -4,10 +4,8 @@
 [ext_resource type="Script" uid="uid://bb8fpxu1ytfor" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_attack_action.gd" id="2_mvluy"]
 [ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_lvksj"]
 [ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_dgag8"]
-[ext_resource type="AudioStream" uid="uid://de2ryat1pxq6" path="res://Assets/Audio/SFX/enemy_attack.ogg" id="5_18bt1"]
 [ext_resource type="Script" uid="uid://qumpsvfudyyo" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_block_action.gd" id="6_l1sjp"]
 [ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="7_cqbxx"]
-[ext_resource type="AudioStream" uid="uid://k8m4o3hlwm7l" path="res://Assets/Audio/SFX/enemy_block.ogg" id="8_0x7rv"]
 [ext_resource type="Script" uid="uid://c8fh8o3g561xc" path="res://Entities/Run/Battle/Enemies/Seedle/seedle_skip_action.gd" id="9_lvksj"]
 [ext_resource type="Texture2D" uid="uid://b6k3hvhc2gwf1" path="res://UI/Run/Card/Sprites/blackout_intent_x64.png" id="10_o5o45"]
 
@@ -33,17 +31,15 @@ script = ExtResource("1_mvluy")
 
 [node name="SeedleAttackAction" type="Node" parent="." unique_id=1711594864]
 script = ExtResource("2_mvluy")
-damage = 7
+damage = 2
 intent = SubResource("Resource_kp58c")
-sound = ExtResource("5_18bt1")
 type = 1
 chance_weight = 3.0
 
 [node name="SeedleBlockAction" type="Node" parent="." unique_id=842411529]
 script = ExtResource("6_l1sjp")
-block = 4
+block = 2
 intent = SubResource("Resource_vwp8o")
-sound = ExtResource("8_0x7rv")
 type = 1
 chance_weight = 1.0
 
