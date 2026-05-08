@@ -3,10 +3,12 @@
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_20dha"]
 [ext_resource type="PackedScene" uid="uid://cihn3ics2i3wp" path="res://Entities/Run/Battle/Enemies/Pii Boss/pii_boss_enemy_ai.tscn" id="1_tuvya"]
 [ext_resource type="Texture2D" uid="uid://dgwtt2cx7r8p1" path="res://UI/Run/Battle/Enemies/Pii boss/pii_boss.png" id="2_finh6"]
+[ext_resource type="SpriteFrames" uid="uid://co0rcmyajhjci" path="res://UI/Run/Battle/Enemies/Pii boss/pii_boss_sprite_frames.tres" id="4_finh6"]
 
 [resource]
 script = ExtResource("1_20dha")
 ai = ExtResource("1_tuvya")
 max_health = 22
 art = ExtResource("2_finh6")
+sprite_frames = ExtResource("4_finh6")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

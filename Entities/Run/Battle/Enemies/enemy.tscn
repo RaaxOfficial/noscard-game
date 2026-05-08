@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dvfawhc5l7bau"]
 
 [ext_resource type="Script" uid="uid://drkue30paxf81" path="res://Entities/Run/Battle/Enemies/enemy.gd" id="1_572h1"]
-[ext_resource type="SpriteFrames" uid="uid://c2amfvj4b428i" path="res://UI/Run/Battle/Enemies/Thousand Year Mandra/thousand_year_mandra_sprite_frames.tres" id="2_y50jg"]
+[ext_resource type="SpriteFrames" uid="uid://co0rcmyajhjci" path="res://UI/Run/Battle/Enemies/Pii boss/pii_boss_sprite_frames.tres" id="2_y50jg"]
 [ext_resource type="Texture2D" uid="uid://bb3rcs5nqntir" path="res://art/arrow.png" id="3_rt1x0"]
 [ext_resource type="Texture2D" uid="uid://dkjrbwlpfy3ma" path="res://UI/Run/Battle/Enemies/Chicken/chiken.png" id="3_y50jg"]
 [ext_resource type="PackedScene" uid="uid://dqghv0t4eg7pw" path="res://UI/Run/Battle/stats_ui.tscn" id="4_8wvsg"]

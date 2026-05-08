@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://co0rcmyajhjci"]
+
+[ext_resource type="Texture2D" uid="uid://dgwtt2cx7r8p1" path="res://UI/Run/Battle/Enemies/Pii boss/pii_boss.png" id="1_sskqo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xspn"]
+atlas = ExtResource("1_sskqo")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5sn4"]
+atlas = ExtResource("1_sskqo")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xspn")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5sn4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]

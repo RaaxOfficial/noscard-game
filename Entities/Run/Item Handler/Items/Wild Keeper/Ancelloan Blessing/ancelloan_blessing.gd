@@ -13,7 +13,8 @@ func initialize_item(owner: ItemUI) -> void:
 func activate_item(owner: ItemUI) -> void:
 	status_handler = owner.get_tree().get_first_node_in_group("player").find_child("StatusHandler") as StatusHandler
 	if card_played:
-		status_handler._get_status(card_played.id).duration += duration_extend
+		if status_handler._get_status(card_played.id):
+			status_handler._get_status(card_played.id).duration += duration_extend
 
 func deactivate_item(_onwer: ItemUI) -> void:
 	if not EventManager.card_played.is_connected(_on_card_played):
