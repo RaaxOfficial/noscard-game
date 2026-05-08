@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://xs4gbvm6gdhq"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_c00bi"]
+[ext_resource type="Resource" uid="uid://8e4h70f7xrbi" path="res://Entities/Run/Battle/Enemies/Koaren Sword/koaren_sword_enemy.tres" id="2_neila"]
+[ext_resource type="Resource" uid="uid://cgqlttjucuyko" path="res://Entities/Run/Battle/Enemies/Grassmandra/grassmandra_enemy.tres" id="3_stbb1"]
+
+[node name="Tier1KoarenSwordGrassmandra2" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_c00bi")]
+position = Vector2(458, 295)
+stats = ExtResource("2_neila")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_c00bi")]
+position = Vector2(520, 263)
+stats = ExtResource("3_stbb1")
+
+[node name="Enemy3" parent="." unique_id=1406567703 instance=ExtResource("1_c00bi")]
+position = Vector2(520, 315)
+stats = ExtResource("3_stbb1")

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://u17xypjk64cf"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_16sfq"]
+[ext_resource type="PackedScene" uid="uid://bq5pyl0o71q4j" path="res://Entities/Run/Battle/Battles/Act 2/Map 3/tier_0_garg_devil_imp_2.tscn" id="1_cviqg"]
+
+[resource]
+script = ExtResource("1_16sfq")
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_cviqg")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://dc6lvyn0le8a0"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_6ukef"]
+[ext_resource type="PackedScene" uid="uid://dw52ufnqqtvlu" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_1_kenko_sword_kenko_spear.tscn" id="1_glsy2"]
+
+[resource]
+script = ExtResource("1_6ukef")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_glsy2")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

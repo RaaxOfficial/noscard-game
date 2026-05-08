@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleStatsPool" format=3 uid="uid://crcl26cof524g"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_4h81f"]
+[ext_resource type="Resource" uid="uid://ddii4vfovgq6c" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_2_hells_guard_dog.tres" id="2_lkqxu"]
+[ext_resource type="Script" uid="uid://bv01ns8q10a7y" path="res://Entities/Run/Battle/battle_stats_pool.gd" id="2_xb3cw"]
+[ext_resource type="Resource" uid="uid://dlbef2yfydbtb" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_0_boing_2_devil_vampie.tres" id="2_yx1hq"]
+[ext_resource type="Resource" uid="uid://cx5qhxa4fju1t" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_0_boing_imp_2.tres" id="3_i8nxk"]
+[ext_resource type="Resource" uid="uid://dyieri1pyehi7" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_0_devil_vampie_mimic.tres" id="4_hy7ku"]
+[ext_resource type="Resource" uid="uid://bkx66e4mouubf" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_1_devil_vampie_2_kenko_spear.tres" id="5_7hpo6"]
+[ext_resource type="Resource" uid="uid://dc6lvyn0le8a0" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_1_kenko_sword_kenko_spear.tres" id="6_jxdfx"]
+[ext_resource type="Resource" uid="uid://b5tgwtnedaya" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_1_kenko_sword_mimic_kenko_spear.tres" id="7_ewccv"]
+
+[resource]
+script = ExtResource("2_xb3cw")
+pool = Array[ExtResource("1_4h81f")]([ExtResource("2_yx1hq"), ExtResource("3_i8nxk"), ExtResource("4_hy7ku"), ExtResource("5_7hpo6"), ExtResource("6_jxdfx"), ExtResource("7_ewccv"), ExtResource("2_lkqxu")])
+metadata/_custom_type_script = "uid://bv01ns8q10a7y"

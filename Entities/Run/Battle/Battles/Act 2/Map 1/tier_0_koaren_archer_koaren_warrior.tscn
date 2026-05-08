@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjtm20jpm8b5j"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_8h8oi"]
+[ext_resource type="Resource" uid="uid://coebdfrslhepj" path="res://Entities/Run/Battle/Enemies/Koaren Archer/koaren_archer_enemy.tres" id="2_8h8oi"]
+[ext_resource type="Resource" uid="uid://yt7ab42dd3nn" path="res://Entities/Run/Battle/Enemies/Koaren Warrior/koaren_warrior_enemy.tres" id="3_lhc65"]
+
+[node name="Tier0KoarenArcherKoarenWarrior" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_8h8oi")]
+position = Vector2(458, 295)
+stats = ExtResource("2_8h8oi")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_8h8oi")]
+position = Vector2(520, 295)
+stats = ExtResource("3_lhc65")

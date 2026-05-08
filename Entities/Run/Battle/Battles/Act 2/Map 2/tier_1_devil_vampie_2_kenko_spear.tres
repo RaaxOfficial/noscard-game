@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://bkx66e4mouubf"]
+
+[ext_resource type="PackedScene" uid="uid://dyuxm2dd0c7pb" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_1_devil_vampie_2_kenko_spear.tscn" id="1_3fidi"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_b2n58"]
+
+[resource]
+script = ExtResource("1_b2n58")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_3fidi")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

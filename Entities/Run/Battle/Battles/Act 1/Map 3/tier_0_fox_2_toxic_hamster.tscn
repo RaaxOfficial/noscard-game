@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cf2tdf21xupxg"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_b124j"]
+[ext_resource type="Resource" uid="uid://bxg51pfm1bomy" path="res://Entities/Run/Battle/Enemies/Fox/fox_enemy.tres" id="2_b124j"]
+[ext_resource type="Resource" uid="uid://cpt5tmm1yr3ri" path="res://Entities/Run/Battle/Enemies/Toxic Hamster/toxic_hamster_enemy.tres" id="3_lbqgu"]
+
+[node name="Tier0Fox2ToxicHamster" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_b124j")]
+position = Vector2(458, 272)
+stats = ExtResource("2_b124j")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_b124j")]
+position = Vector2(520, 313)
+stats = ExtResource("2_b124j")
+
+[node name="Enemy3" parent="." unique_id=253234584 instance=ExtResource("1_b124j")]
+position = Vector2(576, 295)
+stats = ExtResource("3_lbqgu")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://c3v4mdxsv41p5"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_0yvww"]
+[ext_resource type="PackedScene" uid="uid://dxdmwhnvia4hx" path="res://Entities/Run/Battle/Battles/Act 1/Map 3/tier_1_wild_pii_pod_2.tscn" id="1_aya4e"]
+
+[resource]
+script = ExtResource("1_0yvww")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_aya4e")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://vouorx31s8fu"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_wigep"]
+[ext_resource type="Resource" uid="uid://csyjecmtwutvx" path="res://Entities/Run/Battle/Enemies/Kenko Raider/kenko_raider_enemy.tres" id="3_v70ju"]
+[ext_resource type="Resource" uid="uid://cjsmj3rw41au5" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_enemy.tres" id="3_wigep"]
+
+[node name="Tier1KenkoRaiderKenkoSpear2" type="Node2D" unique_id=519215925]
+
+[node name="KenkoRaider" parent="." unique_id=383845783 instance=ExtResource("1_wigep")]
+position = Vector2(482, 295)
+stats = ExtResource("3_v70ju")
+
+[node name="KenkoSpear" parent="." unique_id=1381364638 instance=ExtResource("1_wigep")]
+position = Vector2(559, 270)
+stats = ExtResource("3_wigep")
+
+[node name="KenkoSpear2" parent="." unique_id=1315781337 instance=ExtResource("1_wigep")]
+position = Vector2(559, 324)
+stats = ExtResource("3_wigep")

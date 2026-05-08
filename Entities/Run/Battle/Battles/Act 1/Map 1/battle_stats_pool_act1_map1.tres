@@ -8,7 +8,7 @@
 [ext_resource type="Resource" uid="uid://vpjdhnv2usx2" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_1_dander_2_seedle.tres" id="5_8hf1u"]
 [ext_resource type="Resource" uid="uid://deuenjq0y4mfv" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_1_pii_pod_1.tres" id="6_2c3p2"]
 [ext_resource type="Resource" uid="uid://b8p8blrqvhpqr" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_1_seedle_wooly.tres" id="7_smxw4"]
-[ext_resource type="Resource" uid="uid://48utjjp5gvds" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_2_giant_chick.tres" id="8_i0sr8"]
+[ext_resource type="Resource" uid="uid://48utjjp5gvds" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_2_pii_pod_boss.tres" id="8_i0sr8"]
 
 [resource]
 script = ExtResource("3_3i8vh")

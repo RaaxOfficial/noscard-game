@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://7j65sp2tcklk"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_mjbii"]
+[ext_resource type="Resource" uid="uid://cbm106l20nhy8" path="res://Entities/Run/Battle/Enemies/Stonewalker/stonewalker_enemy.tres" id="2_bwvyp"]
+[ext_resource type="Resource" uid="uid://c1bpwdprc2igw" path="res://Entities/Run/Battle/Enemies/Devil Imp/devil_imp_enemy.tres" id="3_mjbii"]
+
+[node name="Tier0Stonewalker2DevilImp" type="Node2D" unique_id=519215925]
+
+[node name="Stonewalker" parent="." unique_id=383845783 instance=ExtResource("1_mjbii")]
+position = Vector2(458, 273)
+stats = ExtResource("2_bwvyp")
+
+[node name="Stonewalker2" parent="." unique_id=2092940792 instance=ExtResource("1_mjbii")]
+position = Vector2(458, 317)
+stats = ExtResource("2_bwvyp")
+
+[node name="DevilImp" parent="." unique_id=1381364638 instance=ExtResource("1_mjbii")]
+position = Vector2(520, 295)
+stats = ExtResource("3_mjbii")

@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dd0guoe1j5uw8"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_iyf2u"]
+[ext_resource type="Resource" uid="uid://b34ddd1e8xug5" path="res://Entities/Run/Battle/Enemies/Pii Pod Boss/pii_pod_boss.tres" id="2_rfbl8"]
+
+[node name="Tier2PiiPodBoss" type="Node2D" unique_id=519215925]
+
+[node name="PiiPodBoss" parent="." unique_id=845036419 instance=ExtResource("1_iyf2u")]
+position = Vector2(522, 271)
+scale = Vector2(1.5, 1.5)
+stats = ExtResource("2_rfbl8")

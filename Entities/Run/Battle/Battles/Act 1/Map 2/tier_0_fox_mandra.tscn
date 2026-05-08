@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dm66edgjenx1h"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_qteny"]
+[ext_resource type="Resource" uid="uid://bxg51pfm1bomy" path="res://Entities/Run/Battle/Enemies/Fox/fox_enemy.tres" id="2_hqa7e"]
+[ext_resource type="Resource" uid="uid://c4i7jtx6n241" path="res://Entities/Run/Battle/Enemies/Mandra/mandra_enemy.tres" id="3_exbp2"]
+
+[node name="Tier0FoxMandra" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_qteny")]
+position = Vector2(458, 295)
+stats = ExtResource("2_hqa7e")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_qteny")]
+position = Vector2(520, 295)
+stats = ExtResource("3_exbp2")

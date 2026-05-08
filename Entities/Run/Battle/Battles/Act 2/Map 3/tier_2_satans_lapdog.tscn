@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c383m0njmwphx"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_tdhrx"]
+[ext_resource type="Resource" uid="uid://2i3s8p5q0iq3" path="res://Entities/Run/Battle/Enemies/Satan's Lapdog/satans_lapdog_enemy.tres" id="2_tdhrx"]
+
+[node name="Tier2SatansLapdog" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=845036419 instance=ExtResource("1_tdhrx")]
+position = Vector2(522, 271)
+scale = Vector2(1.5, 1.5)
+stats = ExtResource("2_tdhrx")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://ddii4vfovgq6c"]
+
+[ext_resource type="PackedScene" uid="uid://dx47larjucb0k" path="res://Entities/Run/Battle/Battles/Act 2/Map 2/tier_2_hells_guard_dog.tscn" id="1_1eabl"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_vclgm"]
+
+[resource]
+script = ExtResource("1_vclgm")
+battle_tier = 2
+weight = 10.0
+gold_reward_min = 100
+gold_reward_max = 100
+enemies = ExtResource("1_1eabl")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

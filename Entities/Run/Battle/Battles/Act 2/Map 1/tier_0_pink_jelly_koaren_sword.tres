@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://s71qrwa02nxu"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_k11wj"]
+[ext_resource type="PackedScene" uid="uid://dcxxo8g0n7w8i" path="res://Entities/Run/Battle/Battles/Act 2/Map 1/tier_0_pink_jelly_koaren_sword.tscn" id="1_o6wp2"]
+
+[resource]
+script = ExtResource("1_k11wj")
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_o6wp2")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

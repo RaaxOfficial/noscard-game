@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cdhn7n8xl8y0p"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_ssb4f"]
+[ext_resource type="Resource" uid="uid://7sc7cbilq6eb" path="res://Entities/Run/Battle/Enemies/Mufflon/mufflon_enemy.tres" id="2_qlkh1"]
+[ext_resource type="Resource" uid="uid://cfp23h70cxeeu" path="res://Entities/Run/Battle/Enemies/Dussi Fox/dussi_fox_enemy.tres" id="3_3hyq2"]
+[ext_resource type="Resource" uid="uid://cpt5tmm1yr3ri" path="res://Entities/Run/Battle/Enemies/Toxic Hamster/toxic_hamster_enemy.tres" id="4_m4vsf"]
+
+[node name="Tier1MufflonDussiFoxToxicHamster" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_ssb4f")]
+position = Vector2(458, 295)
+stats = ExtResource("2_qlkh1")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_ssb4f")]
+position = Vector2(520, 266)
+stats = ExtResource("3_3hyq2")
+
+[node name="Enemy3" parent="." unique_id=324796037 instance=ExtResource("1_ssb4f")]
+position = Vector2(577, 295)
+stats = ExtResource("4_m4vsf")

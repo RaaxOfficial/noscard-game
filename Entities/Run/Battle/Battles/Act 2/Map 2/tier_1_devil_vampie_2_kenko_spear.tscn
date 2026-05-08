@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dyuxm2dd0c7pb"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_ohcoq"]
+[ext_resource type="Resource" uid="uid://bd6w3tjoi1gqr" path="res://Entities/Run/Battle/Enemies/Devil Vampie/devil_vampie_enemy.tres" id="2_ohcoq"]
+[ext_resource type="Resource" uid="uid://cjsmj3rw41au5" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_enemy.tres" id="3_74hbj"]
+
+[node name="Tier1DevilVampie2KenkoSpear" type="Node2D" unique_id=519215925]
+
+[node name="DevilVampie" parent="." unique_id=1381364638 instance=ExtResource("1_ohcoq")]
+position = Vector2(458, 262)
+stats = ExtResource("2_ohcoq")
+
+[node name="DevilVampie2" parent="." unique_id=2092940792 instance=ExtResource("1_ohcoq")]
+position = Vector2(458, 317)
+stats = ExtResource("2_ohcoq")
+
+[node name="KenkoSpear" parent="." unique_id=383845783 instance=ExtResource("1_ohcoq")]
+position = Vector2(520, 295)
+stats = ExtResource("3_74hbj")

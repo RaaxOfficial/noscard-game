@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cxb2hfuvybhry"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_gda23"]
+[ext_resource type="Resource" uid="uid://bd6w3tjoi1gqr" path="res://Entities/Run/Battle/Enemies/Devil Vampie/devil_vampie_enemy.tres" id="2_gda23"]
+[ext_resource type="Resource" uid="uid://cmu7pugpgmf17" path="res://Entities/Run/Battle/Enemies/Mimic/mimic_enemy.tres" id="3_4wbbd"]
+
+[node name="Tier0DevilVampiMimic" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_gda23")]
+position = Vector2(458, 295)
+stats = ExtResource("2_gda23")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_gda23")]
+position = Vector2(520, 295)
+stats = ExtResource("3_4wbbd")

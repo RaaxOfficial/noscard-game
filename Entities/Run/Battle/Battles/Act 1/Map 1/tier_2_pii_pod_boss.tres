@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://48utjjp5gvds"]
+
+[ext_resource type="PackedScene" uid="uid://dd0guoe1j5uw8" path="res://Entities/Run/Battle/Battles/Act 1/Map 1/tier_2_pii_pod_boss.tscn" id="1_gydl4"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="2_odsvy"]
+
+[resource]
+script = ExtResource("2_odsvy")
+battle_tier = 2
+weight = 10.0
+gold_reward_min = 75
+gold_reward_max = 110
+enemies = ExtResource("1_gydl4")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

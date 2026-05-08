@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://b8tbavn3cagkn"]
+
+[ext_resource type="PackedScene" uid="uid://w2shh50hvfls" path="res://Entities/Run/Battle/Battles/Act 1/Map 2/tier_1_hamster_mandra_2.tscn" id="1_smr4r"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_v6wsx"]
+
+[resource]
+script = ExtResource("1_v6wsx")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 33
+gold_reward_max = 45
+enemies = ExtResource("1_smr4r")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

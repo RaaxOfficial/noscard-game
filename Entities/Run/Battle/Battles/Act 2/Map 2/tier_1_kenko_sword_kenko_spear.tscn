@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dw52ufnqqtvlu"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_8okil"]
+[ext_resource type="Resource" uid="uid://cvi3voh4c4goe" path="res://Entities/Run/Battle/Enemies/Kenko Sword/kenko_sword_enemy.tres" id="2_8okil"]
+[ext_resource type="Resource" uid="uid://cjsmj3rw41au5" path="res://Entities/Run/Battle/Enemies/Kenko Spear/kenko_spear_enemy.tres" id="3_xjail"]
+
+[node name="Tier1KenkoSwordKenkoSpear" type="Node2D" unique_id=519215925]
+
+[node name="KenkoSword" parent="." unique_id=1381364638 instance=ExtResource("1_8okil")]
+position = Vector2(458, 295)
+stats = ExtResource("2_8okil")
+
+[node name="KenkoSpear" parent="." unique_id=383845783 instance=ExtResource("1_8okil")]
+position = Vector2(520, 295)
+stats = ExtResource("3_xjail")

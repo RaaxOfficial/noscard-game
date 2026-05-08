@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://cfv6bxjfyfadj"]
+
+[ext_resource type="PackedScene" uid="uid://cdhn7n8xl8y0p" path="res://Entities/Run/Battle/Battles/Act 1/Map 3/tier_1_mufflon_dussi_fox_toxic_hamster.tscn" id="1_2ypqg"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_807em"]
+
+[resource]
+script = ExtResource("1_807em")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_2ypqg")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

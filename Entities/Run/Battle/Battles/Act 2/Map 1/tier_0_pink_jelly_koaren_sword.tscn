@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dcxxo8g0n7w8i"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_uc48o"]
+[ext_resource type="Resource" uid="uid://cmli3y1qaboni" path="res://Entities/Run/Battle/Enemies/Pink Jelly/pink_jelly_enemy.tres" id="2_uc48o"]
+[ext_resource type="Resource" uid="uid://8e4h70f7xrbi" path="res://Entities/Run/Battle/Enemies/Koaren Sword/koaren_sword_enemy.tres" id="3_nx5ox"]
+
+[node name="Tier0PinkJellyKoarenSword" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_uc48o")]
+position = Vector2(458, 295)
+stats = ExtResource("2_uc48o")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_uc48o")]
+position = Vector2(520, 295)
+stats = ExtResource("3_nx5ox")

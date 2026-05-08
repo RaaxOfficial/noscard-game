@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cjiibrsi1g113"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_3w3pc"]
+[ext_resource type="Resource" uid="uid://8e4h70f7xrbi" path="res://Entities/Run/Battle/Enemies/Koaren Sword/koaren_sword_enemy.tres" id="2_3w3pc"]
+[ext_resource type="Resource" uid="uid://coebdfrslhepj" path="res://Entities/Run/Battle/Enemies/Koaren Archer/koaren_archer_enemy.tres" id="3_xn3dk"]
+[ext_resource type="Resource" uid="uid://yt7ab42dd3nn" path="res://Entities/Run/Battle/Enemies/Koaren Warrior/koaren_warrior_enemy.tres" id="4_5adop"]
+
+[node name="Tier1KoarenSwordKoarenArcherKoarenWarrior" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_3w3pc")]
+position = Vector2(458, 295)
+stats = ExtResource("2_3w3pc")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_3w3pc")]
+position = Vector2(520, 265)
+stats = ExtResource("3_xn3dk")
+
+[node name="Enemy3" parent="." unique_id=1406567703 instance=ExtResource("1_3w3pc")]
+position = Vector2(579, 295)
+stats = ExtResource("4_5adop")

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bq5p8bg5p5va4"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_01jnl"]
+[ext_resource type="Resource" uid="uid://c4byxifva466q" path="res://Entities/Run/Battle/Enemies/Toxic Dander/toxic_dander_enemy.tres" id="3_01jnl"]
+[ext_resource type="Resource" uid="uid://bxg51pfm1bomy" path="res://Entities/Run/Battle/Enemies/Fox/fox_enemy.tres" id="3_2afid"]
+
+[node name="Tier1FoxToxicDander" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_01jnl")]
+position = Vector2(458, 295)
+stats = ExtResource("3_2afid")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_01jnl")]
+position = Vector2(520, 295)
+stats = ExtResource("3_01jnl")

@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://yds7es0qikt6"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_krs5y"]
+
+[resource]
+script = ExtResource("1_krs5y")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EnemyStats" format=3 uid="uid://2i3s8p5q0iq3"]
+
+[ext_resource type="PackedScene" uid="uid://ckr2ryc1l13d2" path="res://Entities/Run/Battle/Enemies/Satan's Lapdog/satans_lapdog_enemy_ai.tscn" id="1_mvxhd"]
+[ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_qo0v0"]
+[ext_resource type="Texture2D" uid="uid://c1xji3omxde8a" path="res://UI/Run/Battle/Enemies/Satan's lapdog/satan_lapdog.png" id="2_x3m0h"]
+
+[resource]
+script = ExtResource("1_qo0v0")
+ai = ExtResource("1_mvxhd")
+max_health = 100
+art = ExtResource("2_x3m0h")
+metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

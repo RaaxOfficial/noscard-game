@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dplx346rrsudx"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_fnnvg"]
+[ext_resource type="Resource" uid="uid://cbm106l20nhy8" path="res://Entities/Run/Battle/Enemies/Stonewalker/stonewalker_enemy.tres" id="2_fotl4"]
+[ext_resource type="Resource" uid="uid://c1fdat0mk6yjk" path="res://Entities/Run/Battle/Enemies/Garg/garg_enemy.tres" id="2_kn8ev"]
+[ext_resource type="Resource" uid="uid://c1bpwdprc2igw" path="res://Entities/Run/Battle/Enemies/Devil Imp/devil_imp_enemy.tres" id="3_fotl4"]
+
+[node name="Tier0StonewalkerGargDevilImp" type="Node2D" unique_id=519215925]
+
+[node name="Stonewalker" parent="." unique_id=1381364638 instance=ExtResource("1_fnnvg")]
+position = Vector2(410, 263)
+stats = ExtResource("2_fotl4")
+
+[node name="Garg" parent="." unique_id=383845783 instance=ExtResource("1_fnnvg")]
+position = Vector2(458, 295)
+stats = ExtResource("2_kn8ev")
+
+[node name="DevilImp" parent="." unique_id=348061474 instance=ExtResource("1_fnnvg")]
+position = Vector2(512, 322)
+stats = ExtResource("3_fotl4")

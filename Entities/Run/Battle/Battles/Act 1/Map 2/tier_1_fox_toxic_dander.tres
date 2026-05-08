@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://bww5rh8j7wk2t"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_gxk3w"]
+[ext_resource type="PackedScene" uid="uid://bq5p8bg5p5va4" path="res://Entities/Run/Battle/Battles/Act 1/Map 2/tier_1_fox_toxic_dander.tscn" id="1_n7b1r"]
+
+[resource]
+script = ExtResource("1_gxk3w")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 65
+enemies = ExtResource("1_n7b1r")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

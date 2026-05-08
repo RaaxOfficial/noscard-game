@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c4trvqxsm0k44"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_derjb"]
+[ext_resource type="Resource" uid="uid://c4byxifva466q" path="res://Entities/Run/Battle/Enemies/Toxic Dander/toxic_dander_enemy.tres" id="2_batee"]
+
+[node name="Tier0ToxicDander" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_derjb")]
+position = Vector2(458, 295)
+stats = ExtResource("2_batee")

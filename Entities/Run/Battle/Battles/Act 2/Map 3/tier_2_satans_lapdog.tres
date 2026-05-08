@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://b150xrb6pghav"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_nho1r"]
+[ext_resource type="PackedScene" uid="uid://c383m0njmwphx" path="res://Entities/Run/Battle/Battles/Act 2/Map 3/tier_2_satans_lapdog.tscn" id="1_xtfoh"]
+
+[resource]
+script = ExtResource("1_nho1r")
+battle_tier = 2
+weight = 10.0
+gold_reward_min = 100
+gold_reward_max = 100
+enemies = ExtResource("1_xtfoh")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

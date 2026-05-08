@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vrcbrq654aaq"
-path="res://.godot/imported/boss_mandragora.png-ac6775c45f2afbe3edcdd2a4d832f4f9.ctex"
+path="res://.godot/imported/thousand_year_mandra.png-ae22975a9f38f456ce3aca6661b65074.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Mandragorayear/boss_mandragora.png"
-dest_files=["res://.godot/imported/boss_mandragora.png-ac6775c45f2afbe3edcdd2a4d832f4f9.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Thousand Year Mandra/thousand_year_mandra.png"
+dest_files=["res://.godot/imported/thousand_year_mandra.png-ae22975a9f38f456ce3aca6661b65074.ctex"]
 
 [params]
 

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://doebk18ql17e5"]
+
+[ext_resource type="PackedScene" uid="uid://lc44p0hskrd8" path="res://Entities/Run/Battle/Battles/Act 1/Map 3/tier_1_toxic_hamster_2_wild_pii_pod.tscn" id="1_6h85o"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_6wu6m"]
+
+[resource]
+script = ExtResource("1_6wu6m")
+battle_tier = 1
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_6h85o")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

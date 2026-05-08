@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dxdmwhnvia4hx"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_b33n8"]
+[ext_resource type="Resource" uid="uid://b3wlxyve73omm" path="res://Entities/Run/Battle/Enemies/Wild Pii Pod/wild_pii_pod_enemy.tres" id="2_1m73e"]
+
+[node name="Tier1WildPiiPod2" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_b33n8")]
+position = Vector2(458, 295)
+stats = ExtResource("2_1m73e")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_b33n8")]
+position = Vector2(520, 295)
+stats = ExtResource("2_1m73e")

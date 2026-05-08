@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://djila6851t5pq"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_8imhi"]
+[ext_resource type="Resource" uid="uid://dstd3c1dpc3hj" path="res://Entities/Run/Battle/Enemies/Boing/boing_enemy.tres" id="2_8imhi"]
+[ext_resource type="Resource" uid="uid://bd6w3tjoi1gqr" path="res://Entities/Run/Battle/Enemies/Devil Vampie/devil_vampie_enemy.tres" id="2_e2jid"]
+
+[node name="Tier0Boing2DevilVampie" type="Node2D" unique_id=519215925]
+
+[node name="Boing" parent="." unique_id=1381364638 instance=ExtResource("1_8imhi")]
+position = Vector2(458, 261)
+stats = ExtResource("2_8imhi")
+
+[node name="Boing2" parent="." unique_id=1339706785 instance=ExtResource("1_8imhi")]
+position = Vector2(458, 313)
+stats = ExtResource("2_8imhi")
+
+[node name="DevilVampie" parent="." unique_id=383845783 instance=ExtResource("1_8imhi")]
+position = Vector2(520, 295)
+stats = ExtResource("2_e2jid")

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://j7wynulhngw8"]
+
+[ext_resource type="PackedScene" uid="uid://cptcjopxcrnt4" path="res://Entities/Run/Battle/Battles/Act 1/Map 3/tier_2_thousand_year_mandra.tscn" id="1_54ph8"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_i0o3f"]
+
+[resource]
+script = ExtResource("1_i0o3f")
+battle_tier = 2
+weight = 10.0
+gold_reward_min = 100
+gold_reward_max = 100
+enemies = ExtResource("1_54ph8")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

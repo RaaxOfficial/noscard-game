@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://2oy7e56lfm6g"]
+
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_8oviy"]
+[ext_resource type="PackedScene" uid="uid://hmc7b10u6hbm" path="res://Entities/Run/Battle/Battles/Act 1/Map 3/tier_0_fox_dussi_fox.tscn" id="1_x2k1n"]
+
+[resource]
+script = ExtResource("1_8oviy")
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_x2k1n")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

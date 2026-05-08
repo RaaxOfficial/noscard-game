@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://1h6kcf83pqan"]
+
+[ext_resource type="PackedScene" uid="uid://bjtm20jpm8b5j" path="res://Entities/Run/Battle/Battles/Act 2/Map 1/tier_0_koaren_archer_koaren_warrior.tscn" id="1_utdcj"]
+[ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_vo552"]
+
+[resource]
+script = ExtResource("1_vo552")
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_utdcj")
+metadata/_custom_type_script = "uid://cwsfdktijnwk5"

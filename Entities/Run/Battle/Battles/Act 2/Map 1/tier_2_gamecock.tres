@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://cwb4whfsnaag3"]
+[gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://cx4yly6qjxewt"]
 
-[ext_resource type="PackedScene" uid="uid://bni70qny38lcu" path="res://Entities/Run/Battle/Battles/Act 2/Map 1/tier_2_gamecock.tscn" id="1_04x4l"]
+[ext_resource type="PackedScene" uid="uid://cfy78e82c3f6m" path="res://Entities/Run/Battle/Battles/Act 2/Map 1/tier_2_gamecock.tscn" id="1_04x4l"]
 [ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_ofpec"]
 
 [resource]
 script = ExtResource("1_ofpec")
 battle_tier = 2
 weight = 10.0
+gold_reward_min = 100
+gold_reward_max = 100
 enemies = ExtResource("1_04x4l")
 metadata/_custom_type_script = "uid://cwsfdktijnwk5"

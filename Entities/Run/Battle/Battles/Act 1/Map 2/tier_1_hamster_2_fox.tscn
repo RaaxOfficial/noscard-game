@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c4ghf2ouw3d75"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_15nrh"]
+[ext_resource type="Resource" uid="uid://dwkfhbleuqc05" path="res://Entities/Run/Battle/Enemies/Hamster/hamster_enemy.tres" id="2_qdwh3"]
+[ext_resource type="Resource" uid="uid://bxg51pfm1bomy" path="res://Entities/Run/Battle/Enemies/Fox/fox_enemy.tres" id="3_iir0a"]
+
+[node name="Tier1Hamster2Fox" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_15nrh")]
+position = Vector2(458, 287)
+stats = ExtResource("2_qdwh3")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_15nrh")]
+position = Vector2(515, 305)
+stats = ExtResource("2_qdwh3")
+
+[node name="Enemy3" parent="." unique_id=1576709675 instance=ExtResource("1_15nrh")]
+position = Vector2(570, 295)
+stats = ExtResource("3_iir0a")

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://dy25tpbsj6245"]
+
+[ext_resource type="Script" uid="uid://cbrdid2rb6wqa" path="res://Entities/Run/Battle/Enemies/Enemy Actions/enemy_action_picker.gd" id="1_6twqf"]
+[ext_resource type="Script" uid="uid://dmk0nnrvpt7xs" path="res://Entities/Run/Battle/Enemies/Hell's Guard Dog/hells_guard_dog_attack_action.gd" id="2_6twqf"]
+[ext_resource type="Texture2D" uid="uid://bfvi02kojsa00" path="res://art/tile_0103.png" id="3_ec1tw"]
+[ext_resource type="Script" uid="uid://qfuev8x2tj4x" path="res://Entities/Run/Battle/Enemies/Enemy Actions/intent.gd" id="4_yrvjl"]
+[ext_resource type="Script" uid="uid://cnqwoquetu5um" path="res://Entities/Run/Battle/Enemies/Hell's Guard Dog/hells_guard_dog_block_action.gd" id="5_7bn4r"]
+[ext_resource type="Texture2D" uid="uid://oe7v35ii8vrs" path="res://art/tile_0102.png" id="6_lyi3h"]
+
+[sub_resource type="Resource" id="Resource_kp58c"]
+script = ExtResource("4_yrvjl")
+base_text = "%s"
+icon = ExtResource("3_ec1tw")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[sub_resource type="Resource" id="Resource_vwp8o"]
+script = ExtResource("4_yrvjl")
+base_text = "%s"
+icon = ExtResource("6_lyi3h")
+metadata/_custom_type_script = "uid://qfuev8x2tj4x"
+
+[node name="HellsGuardDogEnemyAI" type="Node" unique_id=836036035]
+script = ExtResource("1_6twqf")
+
+[node name="HellsGuardDogAttackAction" type="Node" parent="." unique_id=1711594864]
+script = ExtResource("2_6twqf")
+damage = 20
+intent = SubResource("Resource_kp58c")
+type = 1
+chance_weight = 1.5
+
+[node name="HellsGuardDogBlockAction" type="Node" parent="." unique_id=842411529]
+script = ExtResource("5_7bn4r")
+block = 14
+intent = SubResource("Resource_vwp8o")
+type = 1
+chance_weight = 1.0

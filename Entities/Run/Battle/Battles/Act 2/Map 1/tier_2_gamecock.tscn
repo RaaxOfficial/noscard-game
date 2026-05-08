@@ -1,10 +1,11 @@
-[gd_scene format=3 uid="uid://bni70qny38lcu"]
+[gd_scene format=3 uid="uid://cfy78e82c3f6m"]
 
 [ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="2_by7dc"]
 [ext_resource type="Resource" uid="uid://lvs18kibudq2" path="res://Entities/Run/Battle/Enemies/Gamecock/gamecock_enemy.tres" id="3_35mxn"]
 
-[node name="Tier2Gamecock" type="Node2D" unique_id=72527955]
+[node name="Tier2Gamecock" type="Node2D" unique_id=519215925]
 
-[node name="Gamecock" parent="." unique_id=1381364638 instance=ExtResource("2_by7dc")]
-position = Vector2(557, 251)
+[node name="Enemy" parent="." unique_id=845036419 instance=ExtResource("2_by7dc")]
+position = Vector2(522, 271)
+scale = Vector2(1.5, 1.5)
 stats = ExtResource("3_35mxn")

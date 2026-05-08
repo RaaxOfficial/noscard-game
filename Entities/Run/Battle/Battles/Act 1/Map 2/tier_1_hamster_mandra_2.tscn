@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://w2shh50hvfls"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_y4b52"]
+[ext_resource type="Resource" uid="uid://dwkfhbleuqc05" path="res://Entities/Run/Battle/Enemies/Hamster/hamster_enemy.tres" id="2_y4b52"]
+[ext_resource type="Resource" uid="uid://c4i7jtx6n241" path="res://Entities/Run/Battle/Enemies/Mandra/mandra_enemy.tres" id="3_ne3b5"]
+
+[node name="Tier1HamsterMandra2" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_y4b52")]
+position = Vector2(458, 295)
+stats = ExtResource("2_y4b52")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_y4b52")]
+position = Vector2(520, 275)
+stats = ExtResource("3_ne3b5")
+
+[node name="Enemy3" parent="." unique_id=1094910886 instance=ExtResource("1_y4b52")]
+position = Vector2(570, 308)
+stats = ExtResource("3_ne3b5")

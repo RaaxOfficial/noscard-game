@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://lc44p0hskrd8"]
+
+[ext_resource type="PackedScene" uid="uid://dvfawhc5l7bau" path="res://Entities/Run/Battle/Enemies/enemy.tscn" id="1_uii76"]
+[ext_resource type="Resource" uid="uid://b3wlxyve73omm" path="res://Entities/Run/Battle/Enemies/Wild Pii Pod/wild_pii_pod_enemy.tres" id="3_iet02"]
+[ext_resource type="Resource" uid="uid://cpt5tmm1yr3ri" path="res://Entities/Run/Battle/Enemies/Toxic Hamster/toxic_hamster_enemy.tres" id="4_lhiw5"]
+
+[node name="Tier1ToxicHamster2WildPiiPod" type="Node2D" unique_id=519215925]
+
+[node name="Enemy" parent="." unique_id=1381364638 instance=ExtResource("1_uii76")]
+position = Vector2(458, 295)
+stats = ExtResource("4_lhiw5")
+
+[node name="Enemy2" parent="." unique_id=383845783 instance=ExtResource("1_uii76")]
+position = Vector2(520, 266)
+stats = ExtResource("3_iet02")
+
+[node name="Enemy3" parent="." unique_id=324796037 instance=ExtResource("1_uii76")]
+position = Vector2(577, 295)
+stats = ExtResource("4_lhiw5")
