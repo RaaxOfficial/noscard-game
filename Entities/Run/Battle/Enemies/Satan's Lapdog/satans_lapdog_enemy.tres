@@ -2,11 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://ckr2ryc1l13d2" path="res://Entities/Run/Battle/Enemies/Satan's Lapdog/satans_lapdog_enemy_ai.tscn" id="1_mvxhd"]
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_qo0v0"]
-[ext_resource type="Texture2D" uid="uid://c1xji3omxde8a" path="res://UI/Run/Battle/Enemies/Satan's lapdog/satan_lapdog.png" id="2_x3m0h"]
+[ext_resource type="Texture2D" uid="uid://c1xji3omxde8a" path="res://UI/Run/Battle/Enemies/Satan's lapdog/satans_lapdog.png" id="2_x3m0h"]
+[ext_resource type="SpriteFrames" uid="uid://lvbd837443k4" path="res://UI/Run/Battle/Enemies/Satan's lapdog/satans_lapdog_sprite_frames.tres" id="4_x3m0h"]
 
 [resource]
 script = ExtResource("1_qo0v0")
 ai = ExtResource("1_mvxhd")
 max_health = 100
 art = ExtResource("2_x3m0h")
+sprite_frames = ExtResource("4_x3m0h")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

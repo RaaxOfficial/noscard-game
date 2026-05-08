@@ -1,7 +1,12 @@
 [gd_resource type="Resource" script_class="BattleStats" format=3 uid="uid://yds7es0qikt6"]
 
+[ext_resource type="PackedScene" uid="uid://cf2tdf21xupxg" path="res://Entities/Run/Battle/Battles/Act 1/Map 3/tier_0_fox_2_toxic_hamster.tscn" id="1_7nwhp"]
 [ext_resource type="Script" uid="uid://cwsfdktijnwk5" path="res://Entities/Run/Battle/battle_stats.gd" id="1_krs5y"]
 
 [resource]
 script = ExtResource("1_krs5y")
+weight = 1.0
+gold_reward_min = 50
+gold_reward_max = 50
+enemies = ExtResource("1_7nwhp")
 metadata/_custom_type_script = "uid://cwsfdktijnwk5"

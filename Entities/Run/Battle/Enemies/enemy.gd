@@ -64,8 +64,10 @@ func update_enemy() -> void:
 	if not is_inside_tree():
 		await ready
 	
-	action_animated_sprite.sprite_frames = stats.sprite_frames
-	action_animated_sprite.play("idle")
+	if stats.sprite_frames:
+		action_animated_sprite.sprite_frames = stats.sprite_frames
+		action_animated_sprite.play("idle")
+	
 	update_ui()
 	setup_ai()
 	update_stats()

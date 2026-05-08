@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dvg271d2y2uiu"]
+
+[ext_resource type="Texture2D" uid="uid://bioe0ftfe2vod" path="res://UI/Run/Battle/Enemies/Hell's guard dog/hells_guard_dog.png" id="1_u4uue"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1xspn"]
+atlas = ExtResource("1_u4uue")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5sn4"]
+atlas = ExtResource("1_u4uue")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1xspn")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5sn4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]

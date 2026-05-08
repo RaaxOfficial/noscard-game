@@ -2,11 +2,13 @@
 
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_1qm5m"]
 [ext_resource type="PackedScene" uid="uid://dy25tpbsj6245" path="res://Entities/Run/Battle/Enemies/Hell's Guard Dog/hells_guard_dog_enemy_ai.tscn" id="1_ohceo"]
-[ext_resource type="Texture2D" uid="uid://bioe0ftfe2vod" path="res://UI/Run/Battle/Enemies/Hell's guard dog/hell_guard_dog.png" id="2_du1jc"]
+[ext_resource type="Texture2D" uid="uid://bioe0ftfe2vod" path="res://UI/Run/Battle/Enemies/Hell's guard dog/hells_guard_dog.png" id="2_du1jc"]
+[ext_resource type="SpriteFrames" uid="uid://dvg271d2y2uiu" path="res://UI/Run/Battle/Enemies/Hell's guard dog/hells_guard_dog_sprite_frames.tres" id="4_du1jc"]
 
 [resource]
 script = ExtResource("1_1qm5m")
 ai = ExtResource("1_ohceo")
 max_health = 100
 art = ExtResource("2_du1jc")
+sprite_frames = ExtResource("4_du1jc")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

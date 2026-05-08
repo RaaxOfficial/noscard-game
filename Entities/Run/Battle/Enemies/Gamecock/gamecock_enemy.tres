@@ -3,11 +3,12 @@
 [ext_resource type="Script" uid="uid://yyqi6uxlqlnb" path="res://Entities/Run/Battle/Enemies/enemy_stats.gd" id="1_3juky"]
 [ext_resource type="PackedScene" uid="uid://c3qmlg1xk3jdi" path="res://Entities/Run/Battle/Enemies/Gamecock/gamecock_enemy_ai.tscn" id="1_lbk55"]
 [ext_resource type="Texture2D" uid="uid://die7wy4aglmsh" path="res://UI/Run/Battle/Enemies/Gamecock/boss_gamecock.png" id="2_7up5f"]
-
+[ext_resource type="SpriteFrames" uid="uid://yvkuvvsuglc0" path="res://UI/Run/Battle/Enemies/Gamecock/gamecock_sprite_frames.tres" id="4_38uay"]
 
 [resource]
 script = ExtResource("1_3juky")
 ai = ExtResource("1_lbk55")
 max_health = 100
 art = ExtResource("2_7up5f")
+sprite_frames = ExtResource("4_38uay")
 metadata/_custom_type_script = "uid://yyqi6uxlqlnb"

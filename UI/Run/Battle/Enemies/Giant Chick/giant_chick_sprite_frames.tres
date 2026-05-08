@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dhoj22al6aloo"]
+
+[ext_resource type="Texture2D" uid="uid://brxp3m3dwvm0g" path="res://UI/Run/Battle/Enemies/Giant Chick/giant_chick.png" id="1_nvdb4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojck0"]
+atlas = ExtResource("1_nvdb4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y50jg"]
+atlas = ExtResource("1_nvdb4")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojck0")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y50jg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]

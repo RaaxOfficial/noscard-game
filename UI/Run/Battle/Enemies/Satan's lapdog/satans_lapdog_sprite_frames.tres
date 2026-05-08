@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://lvbd837443k4"]
+
+[ext_resource type="Texture2D" uid="uid://c1xji3omxde8a" path="res://UI/Run/Battle/Enemies/Satan's lapdog/satans_lapdog.png" id="1_h7a67"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_re8yx"]
+atlas = ExtResource("1_h7a67")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7isfs"]
+atlas = ExtResource("1_h7a67")
+region = Rect2(0, 0, 64, 64)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_re8yx")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7isfs")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]

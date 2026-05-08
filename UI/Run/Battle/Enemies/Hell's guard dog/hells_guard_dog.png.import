@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bioe0ftfe2vod"
-path="res://.godot/imported/hell_guard_dog.png-b5d825132056507d56fc600e21a22689.ctex"
+path="res://.godot/imported/hells_guard_dog.png-9f49bac98642e99893cd0abbf1fce782.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://UI/Run/Battle/Enemies/Hell's guard dog/hell_guard_dog.png"
-dest_files=["res://.godot/imported/hell_guard_dog.png-b5d825132056507d56fc600e21a22689.ctex"]
+source_file="res://UI/Run/Battle/Enemies/Hell's guard dog/hells_guard_dog.png"
+dest_files=["res://.godot/imported/hells_guard_dog.png-9f49bac98642e99893cd0abbf1fce782.ctex"]
 
 [params]
 
